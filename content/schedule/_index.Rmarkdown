@@ -1,0 +1,9 @@
+---
+title: Class Session Resources
+output:
+  bookdown::html_document2:
+  toc: true
+---
+
+
+Here you will find resources for class!

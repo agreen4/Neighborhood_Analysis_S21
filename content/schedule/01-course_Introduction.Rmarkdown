@@ -1,0 +1,21 @@
+---
+title: "Session 1: Course Introduction"
+toc: true
+---
+## Session Description
+
+In our first course session, we will introduce ourselves and discuss some of the basic tenets and expectations of our learning together. We'll also think through some foundational questions:
+
+1. What's a neighborhood?
+2. Why do neighborhoods matter?
+
+## Before Class
+
+Please read the course syllabus and bring questions with you.
+
+Please complete the course introductory survey.
+
+## Slides
+
+## Other Resources
+
