@@ -1,9 +1,38 @@
 ---
 title: Class Session Resources
-output:
-  bookdown::html_document2:
-  toc: true
 ---
+# Overview
 
+Please find descriptions of each of our course sessions here - you will also find resources that will help you prepare for what we'll cover each session.
 
-Here you will find resources for class!
+| Session | Date | Topic |
+|-|-|-|
+| [Session 1](#Session_1) | January 26 | Course Introduction |
+| [Session 2](#Session_2) | January 28 | What is a Neighborhood? |
+| [Session 3](#Session_3) | February 2 | Introduction to R: Starting with Data |
+| [Session 4](#Session_4) | February 4 | Introduction to R: Manipulating Data |
+| [Session 5](#Session_5) | February 9 | Introduction to R: Visualizing Data |
+| [Session 6](#Session_6) | February 11 | Introduction to R: Visualizing Data |
+| [Session 7](#Session_7) | February 16 | Modes of Neighborhood Analysis |
+| [Session 8](#Session_8) | February 18 | Population and Population Change |
+| [Session 9](#Session_9) | February 23 | Population and Population Change |
+| [Session 10](#Session_10) | February 25 | Population and Population Change |
+| [Session 11](#Session_11) | March 2 | Population Projections and Forecasts |
+| [Session 12](#Session_12) | March 4 | Population Projections and Forecasts |
+| [Session 13](#Session_13) | March 9 | Analyzing Population Distributions and Segregation |
+| [Session 14](#Session_14) | March 11 | Analyzing Population Distributions and Segregation |
+| [Session 15](#Session_15) | March 16 | Individual Advising and Independent Work |
+| [Session 16](#Session_16) | March 18 | Individual Advising and Independent Work |
+| [Session 17](#Session_17) | March 23 | Measuring Place Opportunity |
+| [Session 18](#Session_18) | March 25 | Measuring Place Opportunity |
+| [Session 19](#Session_19) | March 30 | Crime and Incarceration |
+| [Session 20](#Session_20) | April 1 | Crime and Incarceration |
+| [Session 21](#Session_21) | April 6 | COVID-19 Cases |
+| [Session 22](#Session_22) | April 8 | COVID-19 Cases |
+| [Session 23](#Session_23) | April 13 | Independent Work |
+| [Session 24](#Session_24) | April 15 | COVID-19 Cases |
+| [Session 25](#Session_25) | April 20 | Individual Advising and Independent Work |
+| [Session 26](#Session_26) | April 22 | Individual Advising and Independent Work |
+| [Session 27](#Session_27) | April 27 | Final Presentations |
+| [Session 28](#Session_28) | April 29 | Final Presentations |
+| [Session 29](#Session_29) | May 4    | Final Presentations and Course Wrap-Up |

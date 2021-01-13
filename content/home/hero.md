@@ -22,4 +22,4 @@ cta_note:
   label: Professor Andrew J. Greenlee <br> Department of Urban and Regional Planning <br>Spring 2021
 ---
 
-<br><br>Learn how to tell evocative stories about neighborhoods for public deliberation, decision-making, and accountability using R and principles of reproducible data analysis
+<br>Learn how to tell evocative stories about neighborhoods for public deliberation, decision-making, and accountability using R and principles of reproducible data analysis

@@ -1,8 +1,7 @@
 ---
-title: "Session 1: Course Introduction"
-toc: true
+title: 'Session 1: Course Introduction'
 ---
-## Session Description
+## Session Description{#Session_1}
 
 In our first course session, we will introduce ourselves and discuss some of the basic tenets and expectations of our learning together. We'll also think through some foundational questions:
 
@@ -18,4 +17,3 @@ Please complete the course introductory survey.
 ## Slides
 
 ## Other Resources
-
