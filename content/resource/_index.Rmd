@@ -1,0 +1,15 @@
+---
+title: "Resources"
+output:
+  blogdown::html_page:
+    toc: true
+    fig_caption: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Resources
+
+Resources go here!
