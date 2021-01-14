@@ -1,0 +1,44 @@
+---
+title: "UP 494-AG: Neighborhood Analysis"
+subtitle: "Week 1 Dossier"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output: 
+  pdf_document: default
+urlcolor: blue
+
+---
+# Weekly Description
+- This week we will focus on understanding the structure and expectations of our learning community for the semester. We will introduce ourselves, and talk about our expectations for each other this semester. 
+- We will also draw upon our own observations to start to define the rationale for conducting neighborhood analysis, and the rationale for planning intervention at the neighborhood level.
+
+# Reflection Prompt
+Each week, you will spend a few minutes reflecting on a prompt. For this week, please reflect upon the following questions. Before the end of the week, do some free writing around this question and come to class prepared to discuss your reflection. Submit your reflection in your assignment dropbox before Friday.
+
+- What is a neighborhood? How should neighborhoods be defined? Why might neighborhoods be important units of analysis for city planners and urbanists?
+- What characteristics make a place great?
+
+# Deliverables
+
+- Please review the course syllabus and come prepared to ask questions on Tuesday 1/21
+- Take the [course introductory survey](https://forms.illinois.edu/sec/7588550) available online by Thursday 1/23
+- [Register](https://forms.illinois.edu/sec/4461723) for the optional but highly recommended Introduction to R for Urban Planners workshop (January 25th and January 31st) - registration closes on Wednesday 1/22
+- Add the following important course dates to your calendar:
+  + Weekly reflections are due on Fridays by 11:59pm
+  + **January 25** - Introduction to R for Planners Workshop (optional), 9am - 2pm, TBH 227
+  + **January 31** - Introduction to R for Planners Workshop Part 2 (optional), 3pm - 7pm, TBH 227
+  + **February 6** - Our course session will meet at Champaign City Hall ([102 N. Neil Street, Champaign](https://goo.gl/maps/7xztTJCcb7SWNyBg7))
+  + **February 14** - R Learner's Permit Test due by 11:59pm
+  + **February 28** - Neighborhood Map and Narrative due by 11:59pm
+  + **March 3** - No class
+  + **March 13** - Neighborhood Wellness Concept Proposal due by 11:59pm
+  + **March 17** - No Class: Spring Break
+  + **March 19** - No Class: Spring Break
+  + **April 2** - No Class
+  + **April 3** - Neighborhood Wellness Concept and Analysis due by 11:59pm
+  + **April 17** - Physical Needs Analysis due by 11:59pm
+  + **April 30** - Neighborhood Wellness Concept Presentation at [City Hall](https://goo.gl/maps/7xztTJCcb7SWNyBg7) (tentative)
+  + **May 8** - Your Final Neighborhood Wellness Concept Proposal due by 11:59pm
+
+# Preparing for Next Week
+1. Download and install R and RStudio. You can find instructions in the Resources folder on Box.
+2. Purchase Keiran Healy's book *Data Visualization: A Practical Introduction* from the online retailer of your choice or link to the [pre-print version](https://socviz.co) of the book available online (I have not compared the print version with the pre-print, and will be making reference to the print version over the course of the semester)

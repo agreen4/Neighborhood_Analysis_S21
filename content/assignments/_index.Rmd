@@ -1,0 +1,23 @@
+---
+title: "Assignments"
+output:
+  blogdown::html_page:
+    toc: true
+    fig_caption: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Your Grading Contract
+
+# Class Reflections
+
+# R Learner's Permit
+
+# Term Assignment
+## Project Proposal
+## Project Background
+## Final Project
+## Project Presentation
