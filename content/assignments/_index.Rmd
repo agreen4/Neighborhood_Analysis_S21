@@ -15,6 +15,11 @@ knitr::opts_chunk$set(echo = TRUE)
 Our course syllabus outlines the approach to contract grading that we'll be using this semester. During the first two weeks of the class, you will develop your grading contact, which outlines the grade you are contracting for as well as the agreed upon expectations for attaining that grade.
 
 Please use the following [contract template](/documents/UP494 S21 Learning Contract.docx) to construct your proposed learning contract for the semester.
+
+After you submit your proposed learning contract, we will schedule a 20-minute one-on-one meeting to discuss your goals and contract elements. After that meeting (and after any agreed upon revisions are made), we will sign your contract and you will be held to contracted standards. You will have one opportunity to revisit the terms of your contract around the middle of the semester.
+
+*Due Date:* February 5, 2021
+
 # Class Reflections
 
 # R Learner's Permit

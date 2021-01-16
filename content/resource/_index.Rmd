@@ -23,7 +23,7 @@ All other readings will be provided online. These files are linked in our course
 
 ## Learning R
 
-One of our rationales for using R this semester is the range of support resources available that have been developed by the user community. As I will say to you many times in class, almost every problem you encounter in R, someone else has also encountered. A few tips:
+One of our rationales for using R this semester is the range of support resources available that have been developed by the user community. As you will hear many times in class, almost every problem you encounter in R, someone else has also encountered. A few tips:
 
 1. **Start with R's internal help.** in your console, you can search for documentation for a given command by prefacing it with a question mark (e.g. `?mean`). You can also type `help()` to access general help in R.
 
