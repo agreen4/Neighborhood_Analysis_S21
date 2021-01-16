@@ -12,6 +12,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Your Grading Contract
 
+Our course syllabus outlines the approach to contract grading that we'll be using this semester. During the first two weeks of the class, you will develop your grading contact, which outlines the grade you are contracting for as well as the agreed upon expectations for attaining that grade.
+
+Please use the following [contract template](/documents/UP494 S21 Learning Contract.docx) to construct your proposed learning contract for the semester.
 # Class Reflections
 
 # R Learner's Permit
