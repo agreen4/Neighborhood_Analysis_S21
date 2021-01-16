@@ -16,7 +16,7 @@ This page contains a wealth of resources that will help you over the course of t
 
 ## Required Text
 
-There is one required text for this class: Healey, Keiran, 2019. Data Visualization: A Practical Introduction.
+There is one required text for this class: Healey, Keiran, 2019. [Data Visualization: A Practical Introduction](https://press.princeton.edu/books/ebook/9780691185064/data-visualization).
 Please purchase online or access a [pre-print copy here](https://socviz.co/index.html).
 
 All other readings will be provided online. These files are linked in our course schedule, but you will need to authenticate with your UIUC credentials in order to access them.
@@ -39,6 +39,8 @@ While not set up as a support resource, there are other websites that may help y
 - A "classic" framing document for new learners of R is [The R Inferno](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf). 
 - Another important framing document is Keiran Healy's [The Plain Person's Guide to Plain Text Social Science](https://plain-text.co).
 - [Tidy Tuesday](https://www.tidytuesday.com): podcast that walks through data analysis using a new dataset weekly in R. Also check out [Julia Silge's](https://juliasilge.com) blog and video tutorials that perform more advanced analysis on Tidy Tuesday data.
+
+# Setting up a Github Repository for your Work
 
 # Neighborhood Analysis
 
