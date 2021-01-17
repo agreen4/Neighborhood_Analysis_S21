@@ -41,6 +41,20 @@ While not set up as a support resource, there are other websites that may help y
 - [Tidy Tuesday](https://www.tidytuesday.com): podcast that walks through data analysis using a new dataset weekly in R. Also check out [Julia Silge's](https://juliasilge.com) blog and video tutorials that perform more advanced analysis on Tidy Tuesday data.
 
 # Setting up a Github Repository for your Work
+The majority of the work you produce this semester will be submitted via a [GitHub](https://github.com) repository which you will create. 
+
+![codercat](https://octodex.github.com/images/codercat.jpg)
+
+GitHub offers some services for free, however, as a student at an educational institution, you can register via [GitHub for Education](https://education.github.com) to recieve enhanced benefits and services. 
+
+1. If you do not already have a GitHub account, go to [GitHub.com](https://github.com) and then click on Sign Up to create a new account. You will make a username, enter your email address, and password, and then hit create account. I recommend using your UIUC email address for this step if you're creating a new account.
+2. GitHub offers some services for free which you can access with your basic account, however, as a student at an educational institution, you can register with [GitHub Education](https://education.github.com) to receive enhanced benefits and services. You will be asked to verify your association with an academic institution, which you can do by entering your [netid]@illinois.edu email address and taking a picture of your [I-Card](https://www.icardnet.uillinois.edu/public/).
+3. While you're logged into your GitHub account, visit the [Neighborhood Analysis Assignment Repository Template](https://github.com/agreen4/Neighborhood_Analysis_S21_Assignments). You will use this repository as a template for your own assignments repository. Within the repository, you'll see a readme file that you can modify to track your work as you upload it. You'll also see folders into which you can upload your assignments. To use the template to create your own assignment repository, click on the green button that says `Use This Template`. On the next screen choose a name for this repository (you can name it whatever you like). You can choose to make the repository **public** or **private**. Public repositories can be seen by anyone. Private repositories can only be seen by those you give permission to (if you make your repository private, you will have to grant me permission to be able to view it for the purposes or grading).
+4. From the main folder in your new repository, make note of your username, the repository name, and the URL (for example...)
+  - Github Username: agreen4
+  - Repository Name: Neighborhood_Analysis_S21
+  - Repository URL: https://github.com/agreen4/Neighborhood_Analysis_S21
+5. Use the above information to [register your GitHub repository](https://forms.illinois.edu/sec/421969060) for our class.
 
 # Neighborhood Analysis
 
