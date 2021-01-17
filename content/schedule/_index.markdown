@@ -7,8 +7,8 @@ Please find descriptions of each of our course sessions here - you will also fin
 
 | Session | Date | Topic |
 |-|-|-|
-| [Session 1](#Session_1) | January 26 | Course Introduction |
-| [Session 2](#Session_2) | January 28 | What is a Neighborhood? |
+| [Session 1](01-course_introduction/) | January 26 | Course Introduction |
+| [Session 2](02-what_is_a_neighborhood/) | January 28 | What is a Neighborhood? |
 | [Session 3](#Session_3) | February 2 | Introduction to R: Starting with Data |
 | [Session 4](#Session_4) | February 4 | Introduction to R: Manipulating Data |
 | [Session 5](#Session_5) | February 9 | Introduction to R: Visualizing Data |
