@@ -17,11 +17,21 @@
   name = "Assignments"
   url = "assignments/"
   weight = 30
+
+[[main]]
+  name = "How To"
+  url = "howto/"
+  weight = 40
   
 [[main]]
   name = "Resources"
   url = "resource/"
-  weight = 40
+  weight = 50
+  
+[[main]]
+  name = "<i class='fab fa-slack'></i>"
+  url = "https://neighborhooda-esb1724.slack.com"
+  weight = 60
   
 #[[main]]
 #  name = "Demo"

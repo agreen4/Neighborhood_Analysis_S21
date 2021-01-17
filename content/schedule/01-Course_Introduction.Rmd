@@ -18,7 +18,7 @@ Please complete the course introductory survey.
 ## Slides
 
 ```{r embed-xaringan, echo=FALSE}
-xaringanExtra::embed_xaringan(url = "/slides/Session-1.html", ratio = "16:9")
+xaringanExtra::embed_xaringan(url = "/slides/Session_1/Session-1.html", ratio = "16:9")
 ```
 
 ## Other Resources

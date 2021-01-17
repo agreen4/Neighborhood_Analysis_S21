@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Learning Resources
 
-This page contains a wealth of resources that will help you over the course of the class. As you encounter more resources that you find useful, please share them so they can be added to this page.
+This page contains resources that will help you over the course of the class. As you encounter more resources that you find useful, please share them so they can be added to this page.
 
 ## Required Text
 
@@ -43,57 +43,6 @@ While not set up as a support resource, there are other websites that may help y
 - A "classic" framing document for new learners of R is [The R Inferno](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf). 
 - Another important framing document is Keiran Healy's [The Plain Person's Guide to Plain Text Social Science](https://plain-text.co).
 - [Tidy Tuesday](https://www.tidytuesday.com): podcast that walks through data analysis using a new dataset weekly in R. Also check out [Julia Silge's](https://juliasilge.com) blog and video tutorials that perform more advanced analysis on Tidy Tuesday data.
-
-# Setting up a Github Repository for your Work
-The majority of the work you produce this semester will be submitted via a [GitHub](https://github.com) repository which you will create. 
-
-![](https://octodex.github.com/images/codercat.jpg){width=30%}
-GitHub offers some services for free, however, as a student at an educational institution, you can register via [GitHub for Education](https://education.github.com) to recieve enhanced benefits and services. 
-
-1. If you do not already have a GitHub account, go to [GitHub.com](https://github.com) and then click on Sign Up to create a new account. You will make a username (see some [sage username advice here](https://happygitwithr.com/big-picture.html#is-it-going-to-hurt)), enter your email address, and password, and then hit create account. I recommend using your UIUC email address for this step if you're creating a new account.
-2. GitHub offers some services for free which you can access with your basic account, however, as a student at an educational institution, you can register with [GitHub Education](https://education.github.com) to receive enhanced benefits and services. You will be asked to verify your association with an academic institution, which you can do by entering your [netid]@illinois.edu email address and taking a picture of your [I-Card](https://www.icardnet.uillinois.edu/public/).
-3. While you're logged into your GitHub account, visit the [Neighborhood Analysis Assignment Repository Template](https://github.com/agreen4/Neighborhood_Analysis_S21_Assignments). You will use this repository as a template for your own assignments repository. Within the repository, you'll see a readme file that you can modify to track your work as you upload it. You'll also see folders into which you can upload your assignments. To use the template to create your own assignment repository, click on the green button that says `Use This Template`. On the next screen choose a name for this repository (you can name it whatever you like). You can choose to make the repository **public** or **private**. Public repositories can be seen by anyone. Private repositories can only be seen by those you give permission to (if you make your repository private, you will have to grant me permission to be able to view it for the purposes or grading). To grant access to a private repository, go to settings -> manage access -> Invite a collaborator, then invite user agreen4.
-4. From the main folder in your new repository, make note of your username, the repository name, and the URL (for example...)
-    - Github Username: agreen4
-    - Repository Name: Neighborhood_Analysis_S21
-    - Repository URL: https://github.com/agreen4/Neighborhood_Analysis_S21
-5. Use the above information to [register your GitHub repository](https://forms.illinois.edu/sec/421969060) for our class.
-
-![](https://octodex.github.com/images/bouncercat.png){width=30%}
-Cool. You're all set to use this repository for us to track your work this semester.
-
-# Linking GitHub and R
-
-You can upload files directly to a GitHub repository in the GitHub web interface, but as you create more complex files and file structures, that's not going to be a feasible way to manage your work. That strategy also overlooks most of the features of what GitHub is at its core - a version control system.
-
-![](https://octodex.github.com/images/collabocats.jpg){width=50%}
-
-We might want to version our work for several reasons:
-
-- To keep track of changes we've made, so that we can track when code works and when we've broken it
-- To be able to share code with collaborators and work on the same files at the same time and then reconcile and combine work all together
-- To be able to share code and data publicly with others
-
-All three of these rationales are important motivations within the context of our class. There are two strategies which you may want to try to integrate GitHub into your R workflow.
-
-## Using the GitHub Desktop Client
-[GitHub Desktop](https://desktop.github.com) is an application that allows you to upload, download, and reconcile github repositories stored on your computer with your GitHub account. From GitHub desktop, you can create new repositories, download previously created repositories, and upload new versions of repository contents to the cloud.
-
-## Using RStudio's integrated Github Functionality
-
-RStudio has GitHub functionality built right in, which is very handy for integrating version control into your R workflow. Getting RStudio set up to work with GitHub can be a bit tedious, but once it is set up, it is straightforward to use. An outstanding resource to help you get GitHub integrated with R is [Happy Git and GitHub for the useR](https://happygitwithr.com). As the authors mention in a section titled appropriately [*Is It Going to Hurt?*](https://happygitwithr.com/big-picture.html#is-it-going-to-hurt), integrating Git changes your workflow. However, since many of you are just starting to learn R, making this part of your typical workflow early on will be challenging, but less of a change from other ways of doing things. 
-
-Assuming you've already got R and RStudio installed on your system and have already set up a GitHub account, you can start here:
-
-1. [Check](https://happygitwithr.com/install-git.html#git-already-installed) to see if Git is installed on your computer, and if it isnt, [Install Git](https://happygitwithr.com/install-git.html#install-git).
-2. [Associate](https://happygitwithr.com/hello-git.html) git on your computer with your GitHub account.
-3. [Install a Git client](https://happygitwithr.com/git-client.html#recommended-git-clients) like GitHub Desktop.
-4. [Connect to GitHub](https://happygitwithr.com/push-pull-github.html)
-5. [Connect RStudio to GitHub](https://happygitwithr.com/rstudio-git-github.html)
-6. [Get Started](https://happygitwithr.com/usage-intro.html) using GitHub integrated with R (we'll talk more about this in class).
-
-![](https://octodex.github.com/images/femalecodertocat.png){width=30%}
-We will ease our way into using Git, and will also devote some time to troubleshooting in class. I promise, it's going to make sense soon!
 
 # Neighborhood Analysis
 

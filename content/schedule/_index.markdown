@@ -3,7 +3,7 @@ title: Class Session Resources
 ---
 # Overview
 
-Please find descriptions of each of our course sessions here - you will also find resources that will help you prepare for what we'll cover each session.
+Please find descriptions of each of our course sessions here - you will also find resources that will help you prepare for each session.
 
 | Session | Date | Topic |
 |-|-|-|
