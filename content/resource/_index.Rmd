@@ -43,7 +43,7 @@ While not set up as a support resource, there are other websites that may help y
 # Setting up a Github Repository for your Work
 The majority of the work you produce this semester will be submitted via a [GitHub](https://github.com) repository which you will create. 
 
-![codercat](https://octodex.github.com/images/codercat.jpg)
+![codercat](https://octodex.github.com/images/codercat.jpg =250x)
 
 GitHub offers some services for free, however, as a student at an educational institution, you can register via [GitHub for Education](https://education.github.com) to recieve enhanced benefits and services. 
 
