@@ -143,7 +143,9 @@ Please note that assessment of these contracted standards will be binary (yes / 
 
 Our grading system this semester focuses on capturing the consistent application of your labor towards our course goals. If you consistently submit your work as contracted, you'll receive a "B" at the end of the semester. Consequently, to contract for a higher (or lower) grade, you may commit yourself to applying more (or less) labor in support of course goals when you design your contract.
 
+{{% callout note %}}
 Please use the following [contract template](documents/UP494 S21 Learning Contract.docx) to construct your proposed learning contract for the semester.
+{{% /callout %}}
 
 # Honor Code
 
@@ -165,7 +167,11 @@ Put simply, don't cheat and give credit where credit is due.
 
 Whether you have prior experience working in R or not, you *will* face challenges related to working with the software this semester. That's a given, and is an expected part of learning in this class. Part of the goal is to teach you how to understand the intentionality behind the software so that you can anticipate where errors are likely to occur.
 
-The only way to do this, is to encounter errors -  and there will be many. You are learning a new language, it's grammar, and its application. While this will be frustrating at times, there is a major payoff in the capacity you will gain both in analytic skills, but also in problem-solving. This payoff will come slowly over time - do not expect it to come easily.
+{{% callout note %}}
+The only way to do this, is to encounter errors -  and there will be many!
+{{% /callout %}}
+
+You are learning a new language, it's grammar, and its application. While this will be frustrating at times, there is a major payoff in the capacity you will gain in analytic skills and problem-solving. This payoff will come slowly over time - do not expect it to come easily.
 
 ```{r debuggin_image, echo=FALSE}
 knitr::include_graphics("images/debugging.jpg")

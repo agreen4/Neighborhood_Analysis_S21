@@ -19,7 +19,11 @@ This page contains a wealth of resources that will help you over the course of t
 There is one required text for this class: Healey, Keiran, 2019. [Data Visualization: A Practical Introduction](https://press.princeton.edu/books/ebook/9780691185064/data-visualization).
 Please purchase online or access a [pre-print copy here](https://socviz.co/index.html).
 
-All other readings will be provided online. These files are linked in our course schedule, but you will need to authenticate with your UIUC credentials in order to access them.
+All other readings will be provided online. 
+
+{{% callout warning %}}
+You will need to authenticate with your UIUC credentials in order to access these files.
+{{% /callout %}}
 
 ## Learning R
 
