@@ -14,6 +14,10 @@ output:
 <li><a href="#learning-r">Learning R</a></li>
 </ul></li>
 <li><a href="#setting-up-a-github-repository-for-your-work">Setting up a Github Repository for your Work</a></li>
+<li><a href="#linking-github-and-r">Linking GitHub and R</a><ul>
+<li><a href="#using-the-github-desktop-client">Using the GitHub Desktop Client</a></li>
+<li><a href="#using-rstudios-integrated-github-functionality">Using RStudio’s integrated Github Functionality</a></li>
+</ul></li>
 <li><a href="#neighborhood-analysis">Neighborhood Analysis</a></li>
 <li><a href="#data-sources">Data Sources</a></li>
 <li><a href="#inspiration-and-miscellenia">Inspiration and Miscellenia</a></li>
@@ -51,22 +55,51 @@ Please purchase online or access a <a href="https://socviz.co/index.html">pre-pr
 <div id="setting-up-a-github-repository-for-your-work" class="section level1">
 <h1>Setting up a Github Repository for your Work</h1>
 <p>The majority of the work you produce this semester will be submitted via a <a href="https://github.com">GitHub</a> repository which you will create.</p>
-<p><img src="https://octodex.github.com/images/codercat.jpg%20=250x" alt="codercat" /></p>
-<p>GitHub offers some services for free, however, as a student at an educational institution, you can register via <a href="https://education.github.com">GitHub for Education</a> to recieve enhanced benefits and services.</p>
+<p><img src="https://octodex.github.com/images/codercat.jpg" style="width:30.0%" />
+GitHub offers some services for free, however, as a student at an educational institution, you can register via <a href="https://education.github.com">GitHub for Education</a> to recieve enhanced benefits and services.</p>
 <ol style="list-style-type: decimal">
-<li>If you do not already have a GitHub account, go to <a href="https://github.com">GitHub.com</a> and then click on Sign Up to create a new account. You will make a username, enter your email address, and password, and then hit create account. I recommend using your UIUC email address for this step if you’re creating a new account.</li>
+<li>If you do not already have a GitHub account, go to <a href="https://github.com">GitHub.com</a> and then click on Sign Up to create a new account. You will make a username (see some <a href="https://happygitwithr.com/big-picture.html#is-it-going-to-hurt">sage username advice here</a>), enter your email address, and password, and then hit create account. I recommend using your UIUC email address for this step if you’re creating a new account.</li>
 <li>GitHub offers some services for free which you can access with your basic account, however, as a student at an educational institution, you can register with <a href="https://education.github.com">GitHub Education</a> to receive enhanced benefits and services. You will be asked to verify your association with an academic institution, which you can do by entering your [netid]<span class="citation">@illinois.edu</span> email address and taking a picture of your <a href="https://www.icardnet.uillinois.edu/public/">I-Card</a>.</li>
-<li>While you’re logged into your GitHub account, visit the <a href="https://github.com/agreen4/Neighborhood_Analysis_S21_Assignments">Neighborhood Analysis Assignment Repository Template</a>. You will use this repository as a template for your own assignments repository. Within the repository, you’ll see a readme file that you can modify to track your work as you upload it. You’ll also see folders into which you can upload your assignments. To use the template to create your own assignment repository, click on the green button that says <code>Use This Template</code>. On the next screen choose a name for this repository (you can name it whatever you like). You can choose to make the repository <strong>public</strong> or <strong>private</strong>. Public repositories can be seen by anyone. Private repositories can only be seen by those you give permission to (if you make your repository private, you will have to grant me permission to be able to view it for the purposes or grading).</li>
-<li>From the main folder in your new repository, make note of your username, the repository name, and the URL (for example…)</li>
-</ol>
+<li>While you’re logged into your GitHub account, visit the <a href="https://github.com/agreen4/Neighborhood_Analysis_S21_Assignments">Neighborhood Analysis Assignment Repository Template</a>. You will use this repository as a template for your own assignments repository. Within the repository, you’ll see a readme file that you can modify to track your work as you upload it. You’ll also see folders into which you can upload your assignments. To use the template to create your own assignment repository, click on the green button that says <code>Use This Template</code>. On the next screen choose a name for this repository (you can name it whatever you like). You can choose to make the repository <strong>public</strong> or <strong>private</strong>. Public repositories can be seen by anyone. Private repositories can only be seen by those you give permission to (if you make your repository private, you will have to grant me permission to be able to view it for the purposes or grading). To grant access to a private repository, go to settings -&gt; manage access -&gt; Invite a collaborator, then invite user agreen4.</li>
+<li>From the main folder in your new repository, make note of your username, the repository name, and the URL (for example…)
 <ul>
 <li>Github Username: agreen4</li>
 <li>Repository Name: Neighborhood_Analysis_S21</li>
 <li>Repository URL: <a href="https://github.com/agreen4/Neighborhood_Analysis_S21" class="uri">https://github.com/agreen4/Neighborhood_Analysis_S21</a></li>
-</ul>
-<ol start="5" style="list-style-type: decimal">
+</ul></li>
 <li>Use the above information to <a href="https://forms.illinois.edu/sec/421969060">register your GitHub repository</a> for our class.</li>
 </ol>
+<p><img src="https://octodex.github.com/images/bouncercat.png" style="width:30.0%" />
+Cool. You’re all set to use this repository for us to track your work this semester.</p>
+</div>
+<div id="linking-github-and-r" class="section level1">
+<h1>Linking GitHub and R</h1>
+<p>You can upload files directly to a GitHub repository in the GitHub web interface, but as you create more complex files and file structures, that’s not going to be a feasible way to manage your work. That strategy also overlooks most of the features of what GitHub is at its core - a version control system.</p>
+<p>We might want to version our work for several reasons:</p>
+<ul>
+<li>To keep track of changes we’ve made, so that we can track when code works and when we’ve broken it</li>
+<li>To be able to share code with collaborators and work on the same files at the same time and then reconcile and combine work all together</li>
+<li>To be able to share code and data publicly with others</li>
+</ul>
+<p>All three of these rationales are important motivations within the context of our class. There are two strategies which you may want to try to integrate GitHub into your R workflow.</p>
+<div id="using-the-github-desktop-client" class="section level2">
+<h2>Using the GitHub Desktop Client</h2>
+<p><a href="https://desktop.github.com">GitHub Desktop</a> is an application that allows you to upload, download, and reconcile github repositories stored on your computer with your GitHub account. From GitHub desktop, you can create new repositories, download previously created repositories, and upload new versions of repository contents to the cloud.</p>
+</div>
+<div id="using-rstudios-integrated-github-functionality" class="section level2">
+<h2>Using RStudio’s integrated Github Functionality</h2>
+<p>RStudio has GitHub functionality built right in, which is very handy for integrating version control into your R workflow. Getting RStudio set up to work with GitHub can be a bit tedious, but once it is set up, it is straightforward to use. An outstanding resource to help you get GitHub integrated with R is <a href="https://happygitwithr.com">Happy Git and GitHub for the useR</a>. As the authors mention in a section titled appropriately <a href="https://happygitwithr.com/big-picture.html#is-it-going-to-hurt"><em>Is It Going to Hurt?</em></a>, integrating Git changes your workflow. However, since many of you are just starting to learn R, making this part of your typical workflow early on will be challenging, but less of a change from other ways of doing things.</p>
+<p>Assuming you’ve already got R and RStudio installed on your system and have already set up a GitHub account, you can start here:</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://happygitwithr.com/install-git.html#git-already-installed">Check</a> to see if Git is installed on your computer, and if it isnt, <a href="https://happygitwithr.com/install-git.html#install-git">Install Git</a>.</li>
+<li><a href="https://happygitwithr.com/hello-git.html">Associate</a> git on your computer with your GitHub account.</li>
+<li><a href="https://happygitwithr.com/git-client.html#recommended-git-clients">Install a Git client</a> like GitHub Desktop.</li>
+<li><a href="https://happygitwithr.com/push-pull-github.html">Connect to GitHub</a></li>
+<li><a href="https://happygitwithr.com/rstudio-git-github.html">Connect RStudio to GitHub</a></li>
+<li><a href="https://happygitwithr.com/usage-intro.html">Get Started</a> using GitHub integrated with R (we’ll talk more about this in class).</li>
+</ol>
+<p>We will ease our way into using Git, and will also devote some time to troubleshooting in class. I promise, it’s going to make sense soon!</p>
+</div>
 </div>
 <div id="neighborhood-analysis" class="section level1">
 <h1>Neighborhood Analysis</h1>
