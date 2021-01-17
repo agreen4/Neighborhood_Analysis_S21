@@ -62,6 +62,8 @@ Cool. You're all set to use this repository for us to track your work this semes
 
 You can upload files directly to a GitHub repository in the GitHub web interface, but as you create more complex files and file structures, that's not going to be a feasible way to manage your work. That strategy also overlooks most of the features of what GitHub is at its core - a version control system.
 
+![](https://octodex.github.com/images/collabocats.jpg){width=50%}
+
 We might want to version our work for several reasons:
 
 - To keep track of changes we've made, so that we can track when code works and when we've broken it
@@ -86,6 +88,7 @@ Assuming you've already got R and RStudio installed on your system and have alre
 5. [Connect RStudio to GitHub](https://happygitwithr.com/rstudio-git-github.html)
 6. [Get Started](https://happygitwithr.com/usage-intro.html) using GitHub integrated with R (we'll talk more about this in class).
 
+![](https://octodex.github.com/images/femalecodertocat.png){width=30%}
 We will ease our way into using Git, and will also devote some time to troubleshooting in class. I promise, it's going to make sense soon!
 
 # Neighborhood Analysis
