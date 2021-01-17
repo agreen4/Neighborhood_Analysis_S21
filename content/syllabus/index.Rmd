@@ -19,26 +19,100 @@ By the end of this course, we will:
 
 1. Become familiar with common sources of information used to describe neighborhoods and
 neighborhood characteristics;
-2. Learn how to use R, RStudio, and Github in service of creating reproducible analysis of
+2. Learn how to use [R](https://www.r-project.org), [RStudio](https://rstudio.com), and [Github](https://github.com) in service of creating reproducible analysis of
 neighborhood-level information;
 3. Learn how to use the information to tell compelling stories for deliberation and decisionmaking;
 4. Demonstrate your application of skills by preparing a virtual portfolio of your work.
 
 # Course Format and Expectations
 
-We will learn together using a combination of direct instruction, lab sessions, and tutorials. We will use reading and reflection to help us contextualize our understanding of
-neighborhoods, however, our focus will be on learning by doing. 
-Please plan on being able to work on a computer during most of our course sessions (including optional in-person course sessions). Given our focus on learning by doing, I am expecting a polished end product by the end of the semester. I expect that your final work in this class will be of “A” quality, meaning that it is ready for dissemination (see the Assignments, Grading, and Attendance section below for more detail on grading criteria).
+We will learn together using a combination of direct instruction, lab sessions, and tutorials. We will use reading and reflection to help us contextualize our understanding of neighborhoods, however, our focus will be on learning by doing.
+
+Our class will meet synchronously online twice per week. As the weather improves (and assuming public health concerns abate), some course sessions may include the option to meet in person following all University of Illinois classroom safety precautions). 
+
+Please plan on working on a laptop or desktop computer that will run R and RStudio (available for PC/Mac/Linux) and for which you have administrative privileges. 
+
+Given our focus on learning by doing, I am expecting a polished end product by the end of the semester. As you will note in the in the syllabus section on your [Grading Contract](#evaluation-and-grading-contract), we will use a contract-based evaluation system this semester. Regardless of the grade you contract for, I expect that your final work in this class will be of “A” quality, meaning that it is ready for dissemination.
+
+## What to Expect from Me
+
+- **Availability:** I am generally accessible 9am to 5pm Monday to Friday, however I have research and administrative commitments in addition to teaching and advising during the work week. I have generally reserved dedicated time on Tuesdays and Thursdays to focus on our class and student advising.
+- **Communicating:** The easiest ways to communicate with me outside of class are via [email](mailto:agreen4@illinois.edu) or our course [Slack channel](https://neighborhooda-esb1724.slack.com). I try to respond to emails sent during the week within 24 hours. Emails sent over the weekend will receive a response within 48 hours. If you don't hear from me after that amount of time elapses, please feel welcome to nudge me to respond.
+- **Office Hours:** Please feel welcome to make an appointment to speak (virtually) one-on-one. The easiest way to schedule a meeting with me is via the dedicated [Calendly page](https://calendly.com/agreen4/neighborhood-analysis?back=1&month=2021-01) for our class.
+- **Troubleshooting:** You should feel welcome to use email, slack, and office hours to get help with troubleshooting problems as they arise in your work. The [Resources](/resource/#learning-r) page provides thoughts and resources for troubleshooting errors as they occur. I suggest using Slack as an initial means of soliciting collective support for problems you are having - it is highly likely that others in the class have encountered similar problems, and also allows us to create a collective repository of our problems and responses.
+
+## What I Expect from You
+
+- **Be Present:** I expect that you'll engage fully in our course sessions and in our class community.
+- **Seek Balance:** I expect that you'll actively work to find balance between the many demands in your life. This means finding time for adequate rest and sleep, exercise, and other actions that support your mental and physical health.
+- **Actively Support Each Other:** I expect that each of you will take on leadership roles within our class, that includes actively supporting our learning community over the course of the semester. While this expectation becomes harder to meet due to remote learning, those circumstances make it all the more important to actively support our learning community.
+- **Read with Care:** This course is not particularly reading intensive since our focus is on learning by doing, however, there are important details contained within the documentation on our course website and within reading selections. Be intentional about reading carefully and completely important course documents (including this syllabus).
+- **Act with Integrity:** In general, I expect that you will act with integrity in all that you do in this class. The contract grading system we will use this semester places a lot of trust in you to not just meet the nominal standards contained within the contract, but to *push yourself* to produce your best work.
 
 # Prerequisites
 
 UP 494-AG: Neighborhood Analysis has no prerequisites aside from upper-level undergraduate or graduate-level standing. 
 
-- Students will benefit from some prior knowledge of urban planning concepts, and analytical techniques, although these can be learned along the way. 
+- Students will benefit from some prior knowledge of urban planning concepts, and analytic techniques, although these can be learned along the way. 
 - Students will also benefit from some prior knowledge working in R and RStudio, however, this is also not a course prerequisite. 
 - The first few weeks of our class incorporate an accelerated schedule for learning R and RStudio to support your deeper learning of neighborhood analysis. Please plan your time accordingly. 
 
 Please *talk with me* if you have any questions regarding whether this course is right for you.
+
+# Evaluation and Grading Contract
+
+Alongside our learning of techniques and perspectives on working with data, a primary goal of this class is to learn to think critically about the ways in which those data and our analysis embody *power* and exist within *power relationships*. One implicit goal of our learning this semester is to envision and embody through our work alternative ways to share power and create meaning. We will consequently share power and authority for evaluation of work by establishing individualized grading contracts which will allow you to set many of the terms upon which your work is evaluated this semester. You will then be held accountable to the standards you propose and we agree upon.
+
+We are using this approach for several reasons:
+
+1.    Implementing a contract-based assessment approach mirrors some of the broader course goals regarding our understanding and practice around the power of data, particularly with regards to public deliberation, decision-making, and governance. Dealing differently with power around evaluation in our classroom mirrors potential differences in how we deal with power and power relationships around other processes we participate in, including professional practice.
+2.    A unitary assessment of performance in a 400-level class is not likely to serve students well. This class is open to advanced undergraduate students, Masters students, and Doctoral students, some pursuing degrees in planning and others who are not. Given the heterogeneity of our learning community and your individual motivations for taking this class, contracts will allow us to assess your work against your own expectations and your evaluation of learning goals and capacity this semester.
+3.    There is increasing evidence, particularly in higher education settings, that traditional unitary grading measures tend to hamper individual learning, and have the potential to be biased towards certain types of students. Put simply, obsessing about grades in advanced coursework is counter-productive. This course adheres to the pedagogy that when given more control and ownership over the terms of evaluation, a student is more likely to embrace the challenges presented to them within the classroom, and are more likely to take ownership of their work (see, for instance [Elbow](https://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1002&context=eng_faculty_pubs) and [Inoue](https://wac.colostate.edu/books/perspectives/labor/)).
+4.    We are attempting to learn together through a set of extremely challenging times. The impact of COVID-19 on your lives and your learning should not be discounted. The impact is also very individualized to each of your situations. A unitary grading standard would typically be strained to account for your circumstances.
+
+## Baseline Standards
+
+Each of you is expected to meet the following baseline standards. By doing so, you will earn a grade of "B". 
+
+- **Attend class regularly:** Show up for course sessions before or on time, be absent from no more than three course sessions over the course of the semester. If you are unable to be present due to illness or other extenuating circumstances, please let me know *before* the course session in which you are absent, and I will consider excusing the absent.  
+- **Participate actively:** In addition to showing up to class sessions on time, you are expected to make thoughtful and informed contributions to our class community. This includes coming to class prepared and having completed readings, reflections and assignments. This also includes thoughtful engagement with course material, asking and responding to questions, and helping other students familiarize course concepts.
+- **Be visible:** Due to necessary COVID-19 safety precautions, most of our synchronous course sessions will be offered via Zoom. Active participation in the discussion portions of our course ask that you engage with your camera on.
+- **Submit work on time:** There will be three grade reconciliation periods in the semester. Each assignment will be due within a reconciliation period. Each assignment will also list a *recommended* due date. You are responsible for submitting your work by the end of the grade reconciliation period. Work due within a reconciliation period that is submitted within 48 hours of the conclusion of that period will be counted as *late*. Work due within a reconciliation period submitted more than 48 hours will be considered *ignored*.
+
+## Expectation Summary
+
+```{r grade_expectations, results="asis", echo=FALSE}
+g_points <- tribble(
+  ~points, ~ grade, ~ absences, ~late_a, ~missed_a, ~ignored_a,
+  "90-100", "A", 3, 1, 0, 0,
+  "80-89", "B", 3, 1, 0, 0,
+  "70-79", "C", 4, 2, 1, 1,
+  "60-69", "D", 5, 3, 2, 1,
+  "0-59", "F", 6, 4, 3, 1
+)
+
+g_points %>%
+  pandoc.table(justify = "llllll",
+               col.names = c("Percent", "Grade", "Absences", "Late", "Missed", "Ignored"))
+```
+
+The baseline contract standard in the class is a "B". The above summary helps you understand how deviations from that baseline standard may be reflected in your own contract proposals. You can contract for a grade between C and A (C, C+, B-, B, B+, A-, A). The above table may help you to propose accountability expectations that deviate from our baseline expectations.
+
+- **Absences** indicate the number of times you can be absent from class. Additional excused absences may be allowed due to documented extenuating circumstances.
+- **Late Assignments** are assignments submitted within 48 hours of the grade reconciliation period within which they are due.
+- **Missed Assignments** are assignments submitted more than 48 hours after the grade reconciliation period within which they are due. Note that missing assignments is considered a more serious breach of your contract when compared to late assignments.
+- **Ignored Assignments** are assignments that are not submitted by the end of the semester. Ignored assignments are a more serious breach of contract than missed assignments as they reflect contracted work which you have not completed.
+
+Please note that assessment of these contracted standards will be binary (yes / no) in nature are are based upon *what you do*. The default contracted "B" grade does not include any direct assessment of the quality of your work.  As you design your learning contract, you can use the above table to help you propose expectations in line with the final grade you wish to contract to received.
+
+## Preparing your Contract
+
+Our grading system this semester focuses on capturing the consistent application of your labor towards our course goals. If you consistently submit your work as contracted, you'll receive a "B" at the end of the semester. Consequently, to contract for a higher (or lower) grade, you may commit yourself to applying more (or less) labor in support of course goals when you design your contract.
+
+{{% callout note %}}
+Please use the following [contract template](documents/UP494 S21 Learning Contract.docx) to construct your proposed learning contract for the semester.
+{{% /callout %}}
+
 
 # Assignments 
 
@@ -93,60 +167,6 @@ We will be using a contract grading system this semester (more details on the in
 
 Again, these are just a few suggested ways in which you can contract to extend your grade. Please spend some time early in the class thinking about what your goals are this semester, and what work (in addition to our base expectations) might be part of this. Please be prepared to share these ideas when we meet one-on-one early in the semester to review your contract proposal. Of course we can also talk through some of these ideas in our class sessions during the first few weeks of class.
 
-# Evaluation and Grading Contract
-
-Alongside our learning of techniques and perspectives on working with data, a primary goal of this class is to learn to think critically about the ways in which those data and our analysis embody *power* and exist within power relationships. One implicit goal of our learning this semester is to envision and embody through our work alternative ways to share power and create meaning. We will consequently share power and authority for evaluation of work by establishing individualized grading contracts which will allow you to set many of the terms upon which your work is evaluated this semester. You will then be held accountable to the standards we agree upon.
-
-We are using this approach for several reasons:
-
-1.    As aforementioned, implementing a contract-based assessment approach mirrors some of the broader course goals regarding our understanding and practice around the power of data, particularly with regards to public deliberation, decision-making, and governance. Dealing differently with power around evaluation in our classroom mirrors potential differences in how we deal with power and power relationships around other processes we participate in, including professional practice.
-2.    A unitary assessment of performance in a 400-level class is not likely to serve students well. This class is open to advanced undergraduate students, Masters students, and Doctoral students, some pursuing degrees in planning and others who are not. Given the heterogeneity of our learning community and your individual motivations for taking this class, contracts will allow us to assess your work against your own expectations and evaluation of learning.
-3.    There is increasing evidence, particularly in higher education settings, that traditional unitary grading measures often hamper individual learning, and have the potential to be biased towards certain types of students. When given more control and ownership over the terms of their evaluation, students are more likely to embrace the challenges presented to them within the classroom, and are more likely to take ownership of their work (see, for instance [Elbow](https://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1002&context=eng_faculty_pubs) and [Inoue](https://wac.colostate.edu/books/perspectives/labor/)).
-4.    We are attempting to learn together through a set of extremely challenging times. The impact of COVID-19 on your lives and your learning should not be discounted. The impact is also very individualized to each of your situations. A unitary grading standard would typically be strained to account for your circumstances.
-
-## Baseline Standards
-
-Each of you is expected to meet the following baseline standards. By doing so, you will earn a grade of "B". 
-
-- **Attend class regularly:** Show up for course sessions before or on time, be absent from no more than three course sessions over the course of the semester. If you are unable to be present due to illness or other extenuating circumstances, please let me know *before* the course session in which you are absent, and I will consider excusing the absent.  
-- **Participate actively:** In addition to showing up to class sessions on time, you are expected to make thoughtful and informed contributions to our class community. This includes coming to class prepared and having completed readings, reflections and assignments. This also includes thoughtful engagement with course material, asking and responding to questions, and helping other students familiarize course concepts.
-- **Be visible:** Due to necessary COVID-19 safety precautions, most of our synchronous course sessions will be offered via Zoom. Active participation in the discussion portions of our course ask that you engage with your camera on.
-- **Submit work on time:** There will be three grade reconciliation periods in the semester. Each assignment will be due within a reconciliation period. Each assignment will also list a *recommended* due date. You are responsible for submitting your work by the end of the grade reconciliation period. Work due within a reconciliation period that is submitted within 48 hours of the conclusion of that period will be counted as *late*. Work due within a reconciliation period submitted more than 48 hours will be considered *ignored*.
-
-## Expectation Summary
-
-```{r grade_expectations, results="asis", echo=FALSE}
-g_points <- tribble(
-  ~points, ~ grade, ~ absences, ~late_a, ~missed_a, ~ignored_a,
-  "90-100", "A", 3, 1, 0, 0,
-  "80-89", "B", 3, 1, 0, 0,
-  "70-79", "C", 4, 2, 1, 1,
-  "60-69", "D", 5, 3, 2, 1,
-  "0-59", "F", 6, 4, 3, 1
-)
-
-g_points %>%
-  pandoc.table(justify = "llllll",
-               col.names = c("Percent", "Grade", "Absences", "Late", "Missed", "Ignored"))
-```
-
-The baseline contract standard in the class is a "B". The above summary helps you understand how deviations from that baseline standard may be reflected in your own contract proposals. You can contract for a grade between C and A (C, C+, B-, B, B+, A-, A). The above table may help you to propose accountability expectations that deviate from our baseline expectations.
-
-- **Absences** indicate the number of times you can be absent from class. Additional excused absences may be allowed due to documented extenuating circumstances.
-- **Late Assignments** are assignments submitted within 48 hours of the grade reconciliation period within which they are due.
-- **Missed Assignments** are assignments submitted more than 48 hours after the grade reconciliation period within which they are due. Note that missing assignments is considered a more serious breach of your contract when compared to late assignments.
-- **Ignored Assignments** are assignments that are not submitted by the end of the semester. Ignored assignments are a more serious breach of contract than missed assignments as they reflect contracted work which you have not completed.
-
-Please note that assessment of these contracted standards will be binary (yes / no) in nature are are based upon *what you do*. The default contracted "B" grade does not include any direct assessment of the quality of your work.  As you design your learning contract, you can use the above table to help you propose expectations in line with the final grade you wish to contract to received.
-
-## Preparing your Contract
-
-Our grading system this semester focuses on capturing the consistent application of your labor towards our course goals. If you consistently submit your work as contracted, you'll receive a "B" at the end of the semester. Consequently, to contract for a higher (or lower) grade, you may commit yourself to applying more (or less) labor in support of course goals when you design your contract.
-
-{{% callout note %}}
-Please use the following [contract template](documents/UP494 S21 Learning Contract.docx) to construct your proposed learning contract for the semester.
-{{% /callout %}}
-
 # Honor Code
 
 The [Illinois Student Code](https://studentcode.illinois.edu) states: “It is the responsibility of the student to refrain from infractions of academic integrity, from conduct that may lead to suspicion of such infractions, and from conduct that aids others in such infractions.” Note that you are subject to the Honor Code, as well as procedures for addressing violations to the Code, regardless of whether you have read it and understand it. According to the Code, “ignorance is no excuse.”
@@ -173,10 +193,9 @@ The only way to do this, is to encounter errors -  and there will be many!
 
 You are learning a new language, it's grammar, and its application. While this will be frustrating at times, there is a major payoff in the capacity you will gain in analytic skills and problem-solving. This payoff will come slowly over time - do not expect it to come easily.
 
-```{r debuggin_image, echo=FALSE}
-knitr::include_graphics("images/debugging.jpg")
+```{r echo=FALSE}
+blogdown::shortcode("figure", src = "images/debugging.jpg", caption = "Image by [Allison Horst](https://github.com/allisonhorst/stats-illustrations)", type="Markdown")
 ```
-Image by [Allison Horst](https://github.com/allisonhorst/stats-illustrations)
 
 You are not alone in this struggle. In addition to your classmates and others who are going through the same thing, there is a large R user community, and lots of existing documentation and troubleshooting on sites like [Stack Overflow](https://stackoverflow.com) and [RStudio Community](https://community.rstudio.com). Any problem you will encounter has likely been encountered and addressed before. When I run into an error, after an initial check for simple issues like closing parentheses and spelling errors, I copy and paste error codes directly into a web search to see how others have dealt with similar problems. I encourage you to do the same.
 
