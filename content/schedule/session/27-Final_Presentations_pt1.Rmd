@@ -1,0 +1,21 @@
+---
+linktitle: "27 Final Presentations"
+menu:
+  session:
+    parent: Course Sessions
+    weight: 27
+title: 'Session 27: Final Presentations (Session 1)'
+toc: true
+type: docs
+weight: 27
+---
+
+## Session Description
+
+This session is reserved for final presentations. We will talk more about final presentations in class, and eventually the order for today's presentations will be posted here.
+
+## Before Class
+
+## Slides
+
+## Other Resources

@@ -1,0 +1,25 @@
+---
+linktitle: "11 Forecasting 1"
+menu:
+  session:
+    parent: Course Sessions
+    weight: 11
+title: 'Session 11: Population Projections and Forecasts (Session 1)'
+toc: true
+type: docs
+weight: 11
+---
+
+## Session Description
+
+## Before Class
+
+[Hopkins 9](https://uofi.box.com/s/p251aw1783lqevufdh137w8vogouv92q)
+
+Klosterman [Chapter 3](https://uofi.box.com/s/q46d20tpwa5eynoqvcckon1c86yijr1y), [Chapter 4](https://uofi.box.com/s/8iueatbw3l3qebvfu9nesufzpvwntg0q), [Chapter 5](https://uofi.box.com/s/x0orydmrxcxaecmj4vyevwo398dtzeg6)
+
+## Slides
+
+## Other Resources
+
+[Planning Support Methods](https://planningsupport.org)

@@ -1,0 +1,19 @@
+---
+linktitle: "24 Eviction 3"
+menu:
+  session:
+    parent: Course Sessions
+    weight: 24
+title: 'Session 24: The Geography of Eviction (Session 3)'
+toc: true
+type: docs
+weight: 24
+---
+
+## Session Description
+
+## Before Class
+
+## Slides
+
+## Other Resources

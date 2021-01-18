@@ -1,0 +1,19 @@
+---
+linktitle: "14 Segregation 2"
+menu:
+  session:
+    parent: Course Sessions
+    weight: 14
+title: 'Session 14: Population Distribution and Segregation (Session 2)'
+toc: true
+type: docs
+weight: 14
+---
+
+## Session Description
+
+## Before Class
+
+## Slides
+
+## Other Resources

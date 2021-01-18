@@ -1,0 +1,23 @@
+---
+linktitle: "13 Segregation 1"
+menu:
+  session:
+    parent: Course Sessions
+    weight: 13
+title: 'Session 13: Population Distribution and Segregation (Session 1)'
+toc: true
+type: docs
+weight: 13
+---
+
+## Session Description
+
+## Before Class
+
+Cunningham, Mary K., and Augrey Droesch. [Neighborhood Quality and Racial Segregation](https://uofi.box.com/s/vwuk8s7ys53bgddv3buio7jhjgg13sgy). The Urban Institute
+
+U.S. Bureau of the Census: [Measures of Residential Segregation](https://uofi.box.com/s/lrfcfiod757p8paph9u4w0tq8hrs1tsq)
+
+## Slides
+
+## Other Resources

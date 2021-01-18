@@ -1,0 +1,19 @@
+---
+linktitle: "18 Place Opportunity 2"
+menu:
+  session:
+    parent: Course Sessions
+    weight: 18
+title: 'Session 18: Measuring Place Opportunity (Session 2)'
+toc: true
+type: docs
+weight: 18
+---
+
+## Session Description
+
+## Before Class
+
+## Slides
+
+## Other Resources

@@ -1,0 +1,21 @@
+---
+linktitle: "8 Population 1"
+menu:
+  session:
+    parent: Course Sessions
+    weight: 8
+title: 'Session 8: Population and Population Change (Session 1)'
+toc: true
+type: docs
+weight: 8
+---
+
+## Session Description
+
+## Before Class
+
+[Klosterman 2](https://uofi.box.com/s/ysc0fi5fn3on0342v758viggd355m04v)
+
+## Slides
+
+## Other Resources

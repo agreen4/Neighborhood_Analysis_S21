@@ -1,0 +1,23 @@
+---
+linktitle: "23 Independent Work"
+menu:
+  session:
+    parent: Course Sessions
+    weight: 23
+title: 'Session 23: Independent Work Day'
+toc: true
+type: docs
+weight: 23
+---
+
+## Session Description
+
+Today is an independent work day - there are no course sessions scheduled for today. You should use this time to continue working, and to take stock of your progress.
+
+## Before Class
+
+Professor Greenlee has extended availability for office hours appointments. If you have not already scheduled an appointment and wish to, please [sign up](https://calendly.com/agreen4/neighborhood-analysis?back=1&month=2021-01) for an advising appointment.
+
+## Slides
+
+## Other Resources

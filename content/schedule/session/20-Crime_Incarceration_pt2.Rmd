@@ -1,0 +1,19 @@
+---
+linktitle: "20 Crime 2"
+menu:
+  session:
+    parent: Course Sessions
+    weight: 20
+title: 'Session 20: Crime and Incarceration (Session 2)'
+toc: true
+type: docs
+weight: 20
+---
+
+## Session Description
+
+## Before Class
+
+## Slides
+
+## Other Resources

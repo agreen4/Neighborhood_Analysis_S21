@@ -1,0 +1,25 @@
+---
+linktitle: "21 Eviction 1"
+menu:
+  session:
+    parent: Course Sessions
+    weight: 21
+title: 'Session 21: The Geography of Eviction (Session 1)'
+toc: true
+type: docs
+weight: 21
+---
+
+## Session Description
+
+## Before Class
+
+Cunningham, Mary, Ananya Hariharan, and Olivia Fiol. 2021. [The Looming Eviction Cliff](https://www.urban.org/sites/default/files/publication/103453/the-looming-eviction-cliff_0.pdf). Urban Institute.
+
+Hepburn, Peter, Renee Louis, and Matthew Desmond. 2020. [Racial and Gender Disparities among Evicted Americans](https://sociologicalscience.com/download/vol-7/december/SocSci_v7_649to662.pdf). *Sociological Science 7*: 649-662.
+
+## Slides
+
+## Other Resources
+
+Layser, Michelle D. and De Barbieri, Edward and Greenlee, Andrew and Kaye, Tracy and Saito, Blaine G., [Mitigating Housing Instability During a Pandemic](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3613789) (June 15, 2020).
