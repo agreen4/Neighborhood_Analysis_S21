@@ -21,4 +21,4 @@ design:
 cta_note:
   label: Professor Andrew J. Greenlee &nbsp;&nbsp;&nbsp;[<i class="far fa-envelope"></i>](mailto:agreen4@illinois.edu) &nbsp;[<i class="fab fa-twitter"></i>](https://twitter.com/urbprof) &nbsp;[<i class="fab fa-github"></i>](https://www.github.com/agreen4) <br>Department of Urban and Regional Planning
 ---
-Spring 2021<br><br>Learn how to tell evocative stories about neighborhoods for public deliberation, decision-making, and accountability using R and principles of reproducible data analysis
+Spring 2021<br><br>Learn how to tell stories about neighborhoods for decision-making, public deliberation, and accountability using R and principles of reproducible data analysis

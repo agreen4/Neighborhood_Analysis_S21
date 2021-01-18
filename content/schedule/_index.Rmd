@@ -1,0 +1,42 @@
+---
+title: "Class Session Resources"
+output:
+  blogdown::html_page:
+    toc: false
+    fig_caption: false
+---
+# Overview
+
+Please find descriptions of each of our course sessions here - you will also find resources that will help you prepare for each session.
+
+| Session | Date | Topic |
+|-|-|-|
+| [Session 1](01-course_introduction/) | January 26 | Course Introduction |
+| [Session 2](02-what_is_a_neighborhood/) | January 28 | What is a Neighborhood? |
+| [Session 3](03-starting_with_data/) | February 2 | Introduction to R: Starting with Data |
+| [Session 4](04-manipulating_data) | February 4 | Introduction to R: Manipulating Data |
+| [Session 5](05-visualizing_data_pt1) | February 9 | Introduction to R: Visualizing Data |
+| [Session 6](06-visualizing_data_pt2) | February 11 | Introduction to R: Visualizing Data |
+| [Session 7](07-modes_of_analysis) | February 16 | Modes of Neighborhood Analysis |
+| [Session 8](08-population_pt1) | February 18 | Population and Population Change |
+| [Session 9](09-population_pt2) | February 23 | Population and Population Change |
+| [Session 10](10-population_pt3) | February 25 | Population and Population Change |
+| [Session 11](11-population_projection_pt1) | March 2 | Population Projections and Forecasts |
+| [Session 12](12-population_projection_pt2) | March 4 | Population Projections and Forecasts |
+| [Session 13](13-population_segregation_pt1) | March 9 | Analyzing Population Distributions and Segregation |
+| [Session 14](14-population_segregation_pt2) | March 11 | Analyzing Population Distributions and Segregation |
+| [Session 15](15-individual_advising_pt1) | March 16 | Individual Advising and Independent Work |
+| [Session 16](16-individual_advising_pt2) | March 18 | Individual Advising and Independent Work |
+| [Session 17](17-place_opportunity_pt1) | March 23 | Measuring Place Opportunity |
+| [Session 18](18-place_opportunity_pt2) | March 25 | Measuring Place Opportunity |
+| [Session 19](19-crime_incarceration_pt1) | March 30 | Crime and Incarceration |
+| [Session 20](20-crime_incarceration_pt2) | April 1 | Crime and Incarceration |
+| [Session 21](21-covid_cases_pt1) | April 6 | The Geography of Eviction |
+| [Session 22](22-covid_cases_pt2) | April 8 | The Geography of Eviction |
+| [Session 23](23-independent_work) | April 13 | Independent Work |
+| [Session 24](24-covid_cases_pt3) | April 15 | The Geography of Eviction |
+| [Session 25](25-individual_advising_pt1) | April 20 | Individual Advising and Independent Work |
+| [Session 26](26-individual_advising_pt2) | April 22 | Individual Advising and Independent Work |
+| [Session 27](27-final_presentations_pt1) | April 27 | Final Presentations |
+| [Session 28](28-final_presentations_pt2) | April 29 | Final Presentations |
+| [Session 29](29-final_presentations_pt3) | May 4    | Final Presentations and Course Wrap-Up |
