@@ -2,7 +2,7 @@
 title: Resources
 linktitle: Overview
 menu:
-  resources:
+  files:
     name: Overview
     weight: 1
 summary: Resources to aid in your learning this semester.
