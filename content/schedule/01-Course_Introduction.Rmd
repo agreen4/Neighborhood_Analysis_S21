@@ -11,9 +11,9 @@ In our first course session, we will introduce ourselves and discuss some of the
 
 ## Before Class
 
-Please read the course syllabus and bring questions with you.
+Please read the [course syllabus](/syllabus) and bring questions with you.
 
-Please complete the course introductory survey.
+If you haven't already, please complete the [course introductory survey](https://forms.illinois.edu/sec/1174889502).
 
 ## Slides
 
@@ -23,4 +23,3 @@ xaringanExtra::embed_xaringan(url = "/slides/Session_1/Session-1.html", ratio = 
 
 ## Other Resources
 
-Other Resources Go Here
