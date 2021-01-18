@@ -1,5 +1,13 @@
 ---
+linktitle: "29 Course Wrap-Up"
+menu:
+  example:
+    parent: Course Sessions
+    weight: 29
 title: 'Session 29: Final Presentations (Session 3) and Course Wrap-Up'
+toc: true
+type: docs
+weight: 29
 ---
 
 ## Session Description

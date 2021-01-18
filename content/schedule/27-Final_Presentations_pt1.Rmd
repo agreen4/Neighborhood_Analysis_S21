@@ -1,5 +1,13 @@
 ---
+linktitle: "27 Final Presentations"
+menu:
+  example:
+    parent: Course Sessions
+    weight: 27
 title: 'Session 27: Final Presentations (Session 1)'
+toc: true
+type: docs
+weight: 27
 ---
 
 ## Session Description

@@ -1,5 +1,13 @@
 ---
+linktitle: "21 Eviction 1"
+menu:
+  example:
+    parent: Course Sessions
+    weight: 21
 title: 'Session 21: The Geography of Eviction (Session 1)'
+toc: true
+type: docs
+weight: 21
 ---
 
 ## Session Description

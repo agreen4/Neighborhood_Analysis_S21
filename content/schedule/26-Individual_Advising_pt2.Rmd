@@ -1,5 +1,13 @@
 ---
+linktitle: "26 Independent Work"
+menu:
+  example:
+    parent: Course Sessions
+    weight: 26
 title: 'Session 26: Individual Advising and Independent Work'
+toc: true
+type: docs
+weight: 26
 ---
 
 ## Session Description

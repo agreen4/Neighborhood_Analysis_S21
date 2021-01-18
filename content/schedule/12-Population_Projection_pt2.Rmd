@@ -1,5 +1,13 @@
 ---
+linktitle: "12 Forecasting 2"
+menu:
+  example:
+    parent: Course Sessions
+    weight: 12
 title: 'Session 12: Population Projections and Forecasts (Session 2)'
+toc: true
+type: docs
+weight: 12
 ---
 
 ## Session Description

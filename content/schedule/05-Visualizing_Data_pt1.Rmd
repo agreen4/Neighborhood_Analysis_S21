@@ -1,5 +1,13 @@
 ---
+linktitle: "5 Visualizing Data 1"
+menu:
+  example:
+    parent: Course Sessions
+    weight: 5
 title: 'Session 5: Visualizing Data (Session 1)'
+toc: true
+type: docs
+weight: 5
 ---
 
 ## Session Description

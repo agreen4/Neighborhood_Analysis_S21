@@ -1,5 +1,13 @@
 ---
+linktitle: "9 Population 2"
+menu:
+  example:
+    parent: Course Sessions
+    weight: 9
 title: 'Session 9: Population and Population Change (Session 2)'
+toc: true
+type: docs
+weight: 9
 ---
 
 ## Session Description

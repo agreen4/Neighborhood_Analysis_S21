@@ -1,5 +1,13 @@
 ---
+linktitle: "7 Modes of Analysis"
+menu:
+  example:
+    parent: Course Sessions
+    weight: 7
 title: 'Session 7: Modes of Neighborhood Analysis'
+toc: true
+type: docs
+weight: 7
 ---
 
 ## Session Description

@@ -1,5 +1,13 @@
 ---
+linktitle: "13 Segregation 1"
+menu:
+  example:
+    parent: Course Sessions
+    weight: 13
 title: 'Session 13: Population Distribution and Segregation (Session 1)'
+toc: true
+type: docs
+weight: 13
 ---
 
 ## Session Description
