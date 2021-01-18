@@ -1,0 +1,37 @@
+---
+title: Required Text
+linktitle: Requited Text
+menu:
+  files:
+    parent: Resources
+    weight: 2
+toc: true
+type: docs
+weight: 2
+---
+
+::::{style="display: grid; grid-template-columns: 1fr 1.5fr;grid-column-gap: 40px;"}
+
+:::{}
+```{r socviz, echo=FALSE, fig.align="left"}
+knitr::include_graphics("https://socviz.co/assets/dv-cover-pupress.jpg")
+```
+:::
+
+:::{}
+<br>
+<br>
+There is one required text for this class: Healey, Keiran, 2019. [Data Visualization: A Practical Introduction](https://press.princeton.edu/books/ebook/9780691185064/data-visualization).
+
+Please purchase online or access a [pre-print copy here](https://socviz.co/index.html).
+<br>
+<br>
+
+:::
+::::
+
+All other readings will be provided via this site. 
+
+{{% callout warning %}}
+You will need to authenticate with your UIUC credentials in order to access some of these files.
+{{% /callout %}}

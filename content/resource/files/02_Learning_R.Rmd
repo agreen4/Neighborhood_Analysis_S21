@@ -1,0 +1,30 @@
+---
+title: Learning R
+linktitle: Learning R
+menu:
+  files:
+    parent: Resources
+    weight: 3
+toc: true
+type: docs
+weight: 3
+---
+
+## Learning R
+
+One of our rationales for using R this semester is the range of support resources available that have been developed by the user community. As you will hear many times in class, almost every problem you encounter in R, someone else has also encountered. A few tips:
+
+1. **Start with R's internal help.** in your console, you can search for documentation for a given command by prefacing it with a question mark (e.g. `?mean`). You can also type `help()` to access general help in R.
+
+2. Next, **turn to the internet.** You might start with [R Documentation](https://www.rdocumentation.org) or [Stack Overflow](https://stackoverflow.com).
+
+3. **Get help from our class community.** A big portion of our time together in class will be devoted to learning from each other - part of that includes learning to troubleshoot problems. We'll devote some synchronous time in class to working through challenges, and will supplement that with asynchronous means of communication via our course Slack channel. Ask questions *early* and *often* - there's no need to unduly suffer through setbacks (although as you solve these you will learn deeply how to address similar problems in the future).
+
+While not set up as a support resource, there are other websites that may help you to extend your capacity in R. 
+
+- Some of the initial tutorials we'll use to learn R come from [Data Carpentry](https://datacarpentry.org), especially their series on [R for Social Scientists](https://datacarpentry.org/r-socialsci/) and [Introduction to R for Geospatial Data](https://datacarpentry.org/r-intro-geospatial/). 
+- The [swirl](https://swirlstats.com) package is designed to teach you the basics of R in R.
+- Check out other useful tutorials available at [r4ds](https://r4ds.had.co.nz), [STHDA.com](http://www.sthda.com/english/), and [R Bloggers](https://www.r-bloggers.com). 
+- A "classic" framing document for new learners of R is [The R Inferno](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf). 
+- Another important framing document is Keiran Healy's [The Plain Person's Guide to Plain Text Social Science](https://plain-text.co).
+- [Tidy Tuesday](https://www.tidytuesday.com): podcast that walks through data analysis using a new dataset weekly in R. Also check out [Julia Silge's](https://juliasilge.com) blog and video tutorials that perform more advanced analysis on Tidy Tuesday data.
