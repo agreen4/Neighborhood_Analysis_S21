@@ -12,6 +12,12 @@ weight: 5
 
 ## Session Description
 
+## This Week's Reflection Prompt
+
+- How is working with data via a command line interface different from using a graphical user interface?
+- How do we balance reproducibility of our analysis with accessibility of the analytical tools?
+- What's challenging for you right now regarding learning and using R? What are the "a-ha" moments that you're celebrating?
+
 ## Before Class
 
 Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (Chapters 5, 6, and 7)

@@ -17,6 +17,11 @@ In our first course session, we will introduce ourselves and discuss some of the
 1. What's a neighborhood?
 2. Why do neighborhoods matter?
 
+## This Week's Reflection Prompt
+
+- What is a neighborhood? How should neighborhoods be defined? Why might neighborhoods be important units of analysis for city planners and urbanists?
+- What characteristics make a neighborhood great?
+
 ## Before Class
 
 Please read the [course syllabus](/syllabus) and bring questions with you.
@@ -29,4 +34,17 @@ If you haven't already, please complete the [course introductory survey](https:/
 xaringanExtra::embed_xaringan(url = "/slides/Session_1/Session-1.html", ratio = "16:9")
 ```
 
-## Other Resources
+## Other Resources and Actions
+
+#### Introduction to R for Planners
+
+Register for the optional but highly recommended [Introduction to R for Urban Planners virtual workshop](https://urban.illinois.edu/about-us/events/introduction-to-r-for-planners-2-day-workshop/) (January 30th and February 6th) - registration closes on Wednesday 1/28.
+
+```{r intro_r, echo=FALSE, fig.align="left", out.width="95%"}
+knitr::include_graphics("https://web.faa.illinois.edu/app/uploads/sites/2/2021/01/Intro-to-R-for-Planners-2021-1600x918.51851851852-c-default.jpg")
+
+```
+
+#### Download and Install R and RStudio
+
+We will begin working in R and RStudio starting next week. If you have not already done so, download and install R on the computer you will work on.

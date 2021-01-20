@@ -14,6 +14,12 @@ weight: 3
 
 In this session, we'll take our first foray into the R and RStudio ecosystem. We'll begin to explore data types, how to describe data, and how R can help us manipulate data.
 
+## This Week's Reflection Prompt
+
+- What are the challenges associated with representing neighborhoods quantitatively?
+- What are the benefits of using quantitative data to represent neighborhoods?
+- What can we learn? What is likely to be missed?
+
 ## Before Class
 
 Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. ([Preface](https://uofi.box.com/s/o2vk802ig5bqggdz3iks21cqo5jv0hsk) and [Chapter 2](https://uofi.box.com/s/3ex015jd082iyza1z9su2a6yysnihg8n))
