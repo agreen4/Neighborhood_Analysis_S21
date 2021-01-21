@@ -22,7 +22,7 @@ By the end of this course, we will:
 neighborhood-level information;
 3. Learn how to use the information to tell compelling stories for deliberation and decision-making;
 
-# Course Format, Expectations, and Prerequisites
+# Course Format and Expectations
 
 We will learn together using a combination of direct instruction, lab sessions, and tutorials. We will use reading and reflection to help us contextualize our understanding of neighborhoods, however, our focus will be on learning by doing.
 
@@ -111,34 +111,24 @@ Our grading system this semester focuses on capturing the consistent application
 Please use the following [contract template](documents/UP494 S21 Learning Contract.docx) to construct your proposed learning contract for the semester.
 {{% /callout %}}
 
+## Contract Extensions
+
+You may want to propose extensions to your contract in order to contract for a higher grade. You will find more information and inspiration for proposed contract extensions in the [Assignments](/assignments) section.
+
 # Assignments 
 
 You will find detailed information on assignments in the [Assignments](/assignments) section. 
 
-| Assignment | Due Date | Submit Via |
+| Assignment | Due Date | Description |
 |-|-|-|
-| [Grading Contract](/assignments/#your-grading-contract) | February 5, 2021 | Upload to Github |
-| [R Learner's Permit](/assignments/#r-learners-permit) | February 19, 2021  | Upload to Github |
-| [Class Reflections](/assignments/#class-reflections) | Ongoing | Upload to Github |
-| [Polished Lab Notebooks](/assignments/#lab-notebook-extensions) | March, 2021</br> April, 2021 | Upload to Github |
-| [Final Project Proposal](/assignments/#project-proposal) | March 5, 2021  | Upload to Github |
-| [Final Project Background](/assignments/#project-background) | March 26, 2021  | Upload to Github |
-| [Final Project Presentation](/assignments/#project-presentation) | April 25, 2021  | Upload to Github |
-| [Final Project](/assignments/#final-project) | May 7, 2021  | Upload to Github |
-
-## Contract Extensions
-
-You may want to propose extensions to your contract in order to contract for a higher grade. Here are some ideas for contract extensions you may wish to propose (you can of course develop and propose other ideas as well):
-
-- **Develop a Neighborhood Analysis Portfolio:** You could contract to create a portfolio of your analysis work over the course of the semester. This portfolio would include polished output suitable to share with a prospective employer or internship site.
-
-- **Extend a Lab Notebook:** Over the course of the semester, you'll be working through several lab notebooks that walk you through techniques and approaches to different modes of neighborhood analysis. You could propose extending the analysis you are asked to do in these notebooks beyond what is asked of you in the lab. This might include a more expanded analysis of the data, or the application of the lab concepts to a different context or data of your choosing. Extending a lab notebook should involve producing some type of formalized output that is polished and ready for review..
-
-- **Write an Op Ed:** Your final project asks you to perform a neighborhood-level analysis of your own design that is policy-relevant to a particular place. Based upon what your analysis reveals, you may have policy-relevant conclusions that it would be useful to share with a public audience. You can write an OpEd targeting a local newspaper that articulates a persuasive public argument and that draws substantively from your analysis. Good resources for this include [The OpEd Project](https://www.theopedproject.org), the [New York Times](https://www.nytimes.com/2017/08/25/opinion/tips-for-aspiring-op-ed-writers.html), [Goh and Bourne](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008187), and [Scientific American](https://blogs.scientificamerican.com/observations/if-you-want-to-explain-your-science-to-the-public-heres-some-advice/).
-
-- **Develop a proposed extension to your final project:** It is likely that your final project will produce some insightful information drawing upon your analysis of existing data. It is also likely that through the process of conducting your analysis that you will reach the limits of what the data can tell you, and that you will have additional questions which you would like to answer. You can develop a proposed set of next steps based upon what you would do to continue to develop the analysis which you have conducted. This might include gaining insight from other sources of secondary data, applying other types of analytical techniques, or developing a plan for primary data collection to supplement your existing analysis.
-
-These are a few suggested ways in which you can contract to extend your grade. You may have other ideas which you would like to propose. Please spend some time early in the class thinking about what your goals are this semester, and what work (in addition to our base expectations) might be part of this. Please be prepared to share these ideas when we meet one-on-one early in the semester to review your contract proposal. Of course we can also talk through some of these ideas in our class sessions during the first few weeks of class.
+| [Grading Contract](/assignments/#your-grading-contract) | February 5, 2021 | You will propose an individual grading contract by which you will be assessed this semester. |
+| [R Learner's Permit](/assignments/#r-learners-permit) | February 19, 2021  | You will demonstrate a basic understanding of the R programming language by completing the description of a dataset. |
+| [Class Reflections](/assignments/#class-reflections) | Ongoing | On a weekly basis, you will reflect upon questions related to our class and your work. |
+| [Polished Lab Notebooks](/assignments/#lab-notebook-extensions) | March, 2021</br> April, 2021 | We will introduce new course material and analysis strategies via a series of lab notebooks. You will extend the work you have done in three of these notebooks and submit them for assessment. |
+| [Final Project Proposal](/assignments/#project-proposal) | March 5, 2021  | As part of your final project, you will submit an initial proposal regarding the topic, scope, and strategy for your final analysis. |
+| [Final Project Background](/assignments/#project-background) | March 26, 2021  | As part of your final project, you will submit project background that helps to describe your final analysis. |
+| [Final Project Presentation](/assignments/#project-presentation) | April 25, 2021  | As part of your final project graduate students will present their final projects in a 10-15 minute presentation. Undergraduate students may include a final project presentation as part of their contract.  |
+| [Final Project](/assignments/#final-project) | May 7, 2021  | You will complete an independent policy analysis on a topic of your choice and will submit it along with a repository containing your code and supporting materials. |
 
 # Honor Code
 
@@ -146,7 +136,10 @@ The [Illinois Student Code](https://studentcode.illinois.edu) states: “It is t
 
 To meet this standard in this course, note the following: in written work, all ideas (as well as data or other information) that are not your own must be cited. Note that ideas that require citation may not have been published or written down anywhere. While you are free—and indeed encouraged—to discuss assignments with your peers, all of your analysis, and writing should be your own. The consequence for violating these expectations may include receiving no credit for the assignment in question, and may include automatic failure of the course.
 
+{{% callout warning %}}
 Put simply, don't cheat and give credit where credit is due.
+{{% /callout %}}
+
 
 # Learning Environment and Support
 
