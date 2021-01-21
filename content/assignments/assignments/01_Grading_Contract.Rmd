@@ -1,0 +1,47 @@
+---
+title: Your Grading Contract
+linktitle: Grading Contract
+menu:
+  assignments:
+    parent: Assignments
+    weight: 2
+toc: true
+type: docs
+weight: 2
+---
+
+**Due Date:** February 5, 2021 | **Submit Via:** Upload to Github
+
+Our course syllabus outlines the approach to contract grading that we'll be using this semester. During the first two weeks of the class, you will develop your grading contact, which outlines the grade you are contracting for in the class as well as the agreed upon expectations for attaining that grade.
+
+The grade you receive at the end of the class will be based on whether you did the work which you contracted for. Separately from this assessment, you will receive feedback on the qualities of your work.
+
+{{% callout warning %}}
+Please use the following [contract template](/documents/UP494 S21 Learning Contract.docx) to construct your proposed learning contract for the semester. 
+{{% /callout %}}
+
+A few guidelines for constructing your contract:
+
+- For most of you, your learning contract will include  the following baseline standard items in order to contract for a grade of "B": 
+  - Class Interaction
+      - *Attend Class Regularly:* Show up for course sessions before or on time, be absent from no more than three course sessions over the course of the semester. If you are unable to be present due to illness or other extenuating circumstances, please let me know before the course session in which you are absent, and I will consider excusing the absent.
+      - *Participate Actively:* In addition to showing up to class sessions on time, you are expected to make thoughtful and informed contributions to our class community. This includes coming to class prepared and having completed readings, reflections and assignments. This also includes thoughtful engagement with course material, asking and responding to questions, and helping other students familiarize course concepts.
+      - *Be Visible:* Due to necessary COVID-19 safety precautions, most of our synchronous course sessions will be offered via Zoom. Active participation in the discussion portions of our course ask that you engage with your camera on. If there are reasons you cannot meet this expectation, you may propose omitting or modifying this component of your contract.
+      - *Submit Work On Time:* There will be three grade reconciliation periods in the semester. Each assignment will be due within a reconciliation period. Each assignment will also list a recommended due date. You are responsible for submitting your work by the end of the grade reconciliation period. Work due within a reconciliation period that is submitted within 48 hours of the conclusion of that period will be counted as late. Work due within a reconciliation period submitted more than 48 hours will be considered ignored.
+  - Assignments  
+      - *Class Reflections:* On a weekly basis, you will reflect **briefly** on a few questions that guide our work in that week.
+      - *R Learner's Permit:* You will complete the R Learner's Permit notebook which tests your knowledge of basic R programming concepts.
+      - *Lab Notebooks (3):* Throughout the course you will work with lab notebooks that are designed to help you learn new analytical concepts, approaches, and datasets. You will select three of these notebooks to polish and submit for review.
+      - *Term Project Proposal:* You will develop a proposal for your term project, which asks you to perform an in-depth analysis around a theme of your choice. Your proposal will provide a broad overview rationale for your project, and will lay out details that will go into the project background and completed project.
+      - *Term Project Background:* Your project background documentation will build upon your term project proposal. You will provide a detailed exploration of data and analysis strategies for your term project, and will also start to sketch out key outputs and findings.
+      - *Completed Project:* You will produce a final project which will include a complete project rationale, background, and analysis. 
+      - *Project Presentation:* Graduate students are required to prepare a 10-minute presentation on their project which they will give at the end of the semester. Undergraduates may elect to include a presentation as an extended component of their contract.
+  - Contract Extensions and Deletions
+    - You may propose contract extensions in order to contract for a higher grade. 
+    - You may propose contract deletions in order to contract for a lower grade.
+
+After you submit your proposed learning contract, we will schedule a 20-minute one-on-one meeting to discuss your goals and contract elements. After that meeting (and after any agreed upon revisions are made), we will sign your contract and you will be held to contracted standards. You will have one opportunity to revisit the terms of your contract around the middle of the semester.
+
+## Submission Instructions
+
+Upload your grading contract to the appropriate folder in your class GitHub repository.

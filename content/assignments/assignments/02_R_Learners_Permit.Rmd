@@ -1,0 +1,17 @@
+---
+title: R Learner's Permit
+linktitle: Learner's Permit
+menu:
+  assignments:
+    parent: Assignments
+    weight: 2
+toc: true
+type: docs
+weight: 2
+---
+
+**Due Date:** February 19, 2021 | **Submit Via:** Upload to Github
+
+## Submission Instructions
+
+Upload your Learner's Permit notebook to the appropriate folder in your class GitHub repository.

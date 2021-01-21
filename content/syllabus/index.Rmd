@@ -57,6 +57,25 @@ UP 494-AG: Neighborhood Analysis has no prerequisites aside from upper-level und
 
 Please *talk with me* if you have any questions regarding whether this course is right for you.
 
+# Assignments 
+
+You will find detailed information on assignments in the [Assignments](/assignments) section. 
+
+| Assignment | Due Date | Description |
+|-|-|-|
+| [Grading Contract](/assignments/#your-grading-contract) | February 5, 2021 | You will propose an individual grading contract by which you will be assessed this semester. |
+| [R Learner's Permit](/assignments/#r-learners-permit) | February 19, 2021  | You will demonstrate a basic understanding of the R programming language by completing the description of a dataset. |
+| [Class Reflections](/assignments/#class-reflections) | Ongoing | On a weekly basis, you will reflect upon questions related to our class and your work. |
+| [Polished Lab Notebooks](/assignments/#lab-notebook-extensions) | April, 2021 | We will introduce new course material and analysis strategies via a series of lab notebooks. You will extend the work you have done in three of these notebooks and submit them for assessment. |
+| [Final Project Proposal](/assignments/#project-proposal) | March 5, 2021  | As part of your final project, you will submit an initial proposal regarding the topic, scope, and strategy for your final analysis. |
+| [Final Project Background](/assignments/#project-background) | March 26, 2021  | As part of your final project, you will submit project background that helps to describe your final analysis. |
+| [Final Project Presentation](/assignments/#project-presentation) | April 25, 2021  | As part of your final project graduate students will present their final projects in a 10-15 minute presentation. Undergraduate students may include a final project presentation as part of their contract.  |
+| [Final Project](/assignments/#final-project) | May 7, 2021  | You will complete an independent policy analysis on a topic of your choice and will submit it along with a repository containing your code and supporting materials. |
+
+## Contract Extensions
+
+You may want to propose extensions to your contract in order to contract for a higher grade. You will find more information and inspiration for proposed contract extensions in the [Assignments](/assignments) section.
+
 # Evaluation and Grading Contract
 
 Alongside our learning of techniques and perspectives on working with small area data, a primary goal of this class is to learn to think critically about the ways in which those data and our analysis embody *power* and exist within *power relationships*. One implicit goal of our learning this semester is to embody through our work alternative ways to *share power* and *create meaning*. We will share power and authority for the evaluation of learning by establishing individualized grading contracts which will allow you to set many of the terms upon which your work is evaluated this semester. You will be held accountable to the standards you propose and we agree upon.
@@ -110,25 +129,6 @@ Our grading system this semester focuses on capturing the consistent application
 {{% callout note %}}
 Please use the following [contract template](documents/UP494 S21 Learning Contract.docx) to construct your proposed learning contract for the semester.
 {{% /callout %}}
-
-## Contract Extensions
-
-You may want to propose extensions to your contract in order to contract for a higher grade. You will find more information and inspiration for proposed contract extensions in the [Assignments](/assignments) section.
-
-# Assignments 
-
-You will find detailed information on assignments in the [Assignments](/assignments) section. 
-
-| Assignment | Due Date | Description |
-|-|-|-|
-| [Grading Contract](/assignments/#your-grading-contract) | February 5, 2021 | You will propose an individual grading contract by which you will be assessed this semester. |
-| [R Learner's Permit](/assignments/#r-learners-permit) | February 19, 2021  | You will demonstrate a basic understanding of the R programming language by completing the description of a dataset. |
-| [Class Reflections](/assignments/#class-reflections) | Ongoing | On a weekly basis, you will reflect upon questions related to our class and your work. |
-| [Polished Lab Notebooks](/assignments/#lab-notebook-extensions) | March, 2021</br> April, 2021 | We will introduce new course material and analysis strategies via a series of lab notebooks. You will extend the work you have done in three of these notebooks and submit them for assessment. |
-| [Final Project Proposal](/assignments/#project-proposal) | March 5, 2021  | As part of your final project, you will submit an initial proposal regarding the topic, scope, and strategy for your final analysis. |
-| [Final Project Background](/assignments/#project-background) | March 26, 2021  | As part of your final project, you will submit project background that helps to describe your final analysis. |
-| [Final Project Presentation](/assignments/#project-presentation) | April 25, 2021  | As part of your final project graduate students will present their final projects in a 10-15 minute presentation. Undergraduate students may include a final project presentation as part of their contract.  |
-| [Final Project](/assignments/#final-project) | May 7, 2021  | You will complete an independent policy analysis on a topic of your choice and will submit it along with a repository containing your code and supporting materials. |
 
 # Honor Code
 

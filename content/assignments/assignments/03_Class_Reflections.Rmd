@@ -1,0 +1,17 @@
+---
+title: Weekly Reflections
+linktitle: Weekly Reflections
+menu:
+  assignments:
+    parent: Assignments
+    weight: 3
+toc: true
+type: docs
+weight: 3
+---
+
+**Due Date:** Ongoing | **Submit Via:** Upload to Github
+
+## Submission Instructions
+
+Upload your weekly reflections to the appropriate folder in your class GitHub repository.

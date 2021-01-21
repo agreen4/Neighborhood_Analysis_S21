@@ -1,0 +1,37 @@
+---
+title: Term Assignment
+linktitle: Term Assignment
+menu:
+  assignments:
+    parent: Assignments
+    weight: 6
+toc: true
+type: docs
+weight: 6
+---
+
+You will independently apply the skills and principles of data analysis we learn  to produce a policy-relevant analysis. Your term assignment will have several deliverables which are spread throughout the semester:
+
+## Project Proposal
+**Due Date:** March 5, 2021 | **Submit Via:** Upload to Github
+
+You will develop a proposal that describes the analysis which you contract to complete by the end of the semester. Your proposal will include a statement regarding the motivation for your analysis, the information you plan to use, your analytical strategy, your anticipated outcomes, and information on the format of your final outputs.
+## Project Background
+**Due Date:** March 26, 2021| **Submit Via:** Upload to Github
+
+You will prepare some general project background that includes a descriptive analysis.
+
+## Final Project
+**Due Date:** May 7, 2021 |**Submit Via:** Upload to Github
+
+You will synthesize elements of your project proposal, project background, and additional analysis into a final project that includes analysis and interpretation.
+
+## Project Presentation
+**Due Date:** April 25, 2021 | **Submit Via:** Upload to Github
+
+Graduate students are required to include a 10-minute presentation on their final project which will be given during one of our final course sessions as part of their grading contract. Undergraduate students are not required to complete a final project presentation, but may contract to do so for a higher grade (see more information on our approach to grades this semester below).
+
+
+## Submission Instructions
+
+Upload your final project components to the appropriate folder in your class GitHub repository.

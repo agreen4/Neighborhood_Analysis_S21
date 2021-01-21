@@ -1,0 +1,20 @@
+---
+title: Lab Notebooks
+linktitle: Lab Notebooks
+menu:
+  assignments:
+    parent: Assignments
+    weight: 4
+toc: true
+type: docs
+weight: 4
+---
+
+**Due Date:** 1 by X, 2 additional by Y | **Submit Via:** Upload to Github
+
+Over the course of the semester, you will work on a series of lab notebooks which ask you to apply what you've learned in class to new data and analysis questions.
+
+
+## Submission Instructions
+
+Upload your polished lab notebooks to the appropriate folder in your class GitHub repository.
