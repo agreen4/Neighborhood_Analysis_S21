@@ -1,0 +1,98 @@
+---
+title: Your First Commands
+linktitle: First Commands
+menu:
+  howto:
+    parent: Code
+    weight: 1
+toc: true
+type: docs
+weight: 1
+---
+
+With those basics in mind, you can start to explore the basic functionality of R.
+
+### Starting Simple - Math and Basic Operators
+
+Now that you have a basic lay of the land for the RStudio console, we can start to explore some logic and functionality. Let's start simple - with some basic math operators. Try doing some basic math by typing in the console window and hitting return / enter to execute:
+
+``` {r}
+2+2
+```
+Note that you type in code, R executes it, and immediately below what you've typed in, it has returned an answer. Here are some of the most common mathematical operators which you'll take advantage of:
+
+- `+` Addition
+- `-` Subtraction
+- `*` Multiplication
+- `/` Division
+- `^` Exponent (e.g. `2^3 = 8`)
+- `()` parentheses (to enforce a desired order of operations - r automatically follows the typical order of operation rules)
+
+There are also some built in mathematical constants:
+``` {r}
+pi
+```
+
+Which makes it really easy to figure out things, like the area of a circle with a radius of 5 (recall $A = \pi r^2$):
+``` {r}
+pi*5^2
+```
+While we won't be doing much (if any) math this way, it's important to become familiar with how this works, and what the expected response is from R.
+
+### Assigning values to objects
+
+One of the useful things about R is that it is an *object oriented* programming language. This means that we can easily assign values to objects and then use those objects in calculations later on. We can assign values using the `<-` assignment operator.
+``` {r}
+r <- 5
+```
+Hmm - what did we do here? We assigned the value 5 to a variable named `r`. That variable could have just about any name - the name isn't really important - it's just a place holder. Notice in our environment window that we have a new row that shows a variable named r with a value of 5. We can easily retrieve this value by typing the name of the variable in our console:
+``` {r}
+r
+```
+
+This means we can use it in place of a value anywhere in our code:
+``` {r}
+pi*r^2
+```
+
+If we assigned a new value to r, the value would change:
+``` {r}
+r<-10
+pi*r^2
+```
+Instead of returning a value from an operation to our console, we could also store that in a variable:
+
+``` {r}
+circle_area<-pi*r^2
+```
+And now we could retrieve that:
+``` {r}
+circle_area
+```
+This will become more intuitive the more you use R. Now's a good time to start to internalize some conventions around variable naming. 
+
+- Variables are case sensitive, so `variable` and `Variable` are different things.
+- Variables cannot start with numerals, they must start with a letter
+- Variables cannot contain spaces. Convention is to use an underscore or period (e.g. variable_one or variable.one) if you want to denote spaces in a variable name.
+- If you define a variable with the same name as an R constant (such as `pi`), your variable will supersede R's value:
+
+```{r}
+pi
+pi<-2000
+pi
+```
+
+You will start to develop your own naming conventions for variables as you learn R. Keeping variable names short and descriptive becomes important, particularly as you add objects to your workspace.
+
+As we learn more about other R features, you'll also want to avoid naming variables in ways that are similar to R functions. No need to worry about those details just yet, but keep this in mind as we move along.
+
+Finally, keep in mind that you can remove existing variables from your workspace using the `rm()` command. `rm()` will accept in the bracket the name of the object you'd like to remove (be careful is this is permanent):
+
+```{r}
+rm(pi)
+```
+
+Even more finally, if you want to clear your entire workspace, you can do so as follows (remember that this is a permanent clearing):
+```{r}
+rm(list=ls())
+```

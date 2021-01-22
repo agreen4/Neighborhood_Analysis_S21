@@ -1,0 +1,143 @@
+---
+title: Installing R and RStudio
+linktitle: Install R + RStudio
+menu:
+  howto:
+    parent: How To
+    weight: 2
+toc: true
+type: docs
+weight: 2
+---
+
+R is an open source programming language that is a common tool used for data analysis across a range of disciplines. This means that in addition to being free and available for a range of operating systems and environments, R is also directly supported by a diverse user community who continually develop approaches for specialized applications or data. Need to download U.S. Census Data? There's an R package for that. Need to perform common data cleaning tasks? There's an R package for that too. We'll be exploring a range of these specialized applications in this book.
+
+Of course there are alternate languages which we could employ in service of neighborhood analysis. Python, for example, is an even more ubiquitous programming language with its own set of tools for data science. R was originally built as a *statistical computing* language, and that brings some important benefits for the types of data science we'll be learning this semester. R is also fairly prevalent amongst the user community working in public policy analysis and urban data science - this is the user community which you will be joining. Finally, R has a high learning curve, but also a very active user community, meaning that abundant documentation of problems and their solutions is available.
+
+As we get started, let's be clear - you are going to experience some frustration and challenges as you learn the R programming language. This book assumes no prior background in R or any other programming language for that matter, and works to quickly build your "vocabulary" and the ability to get results. We will spend some time picking up basics, and will then use our exploration of specific analysis approaches to reinforce our use of the grammer and structure of the language and to build more complex scripts over time.
+
+I think it's fair to equate learning R with learning to drive a manual car. Increasingly, people learn how to drive in automatic cars - essentially allowing the car to handle the function of switching gears - you put the car into *drive*, press the accelerator pedal and the car moves forward. Your past exposure to computer-based analytic tools has probably followed a similar strategy - you likely learned using software that had graphical user interfaces that allow them to call up and run programs and then spit out results. Most of us learn to point and click in order to accomplish a particular set of analytic tasks, meaning that if we want to reproduce it in the future, we have to repeat all of those same steps over again.
+
+So why learn on a manual? For many car enthusiasts, manuals are more efficient and more engaging to drive - they offer additional control, and come with a heightened awareness of what the car is doing. Of course, they also come with a steep learning curve. 
+
+Some of the same attributes apply to our use of R as a tool for analysis. First, a manual approach forces you to explicitly understand more of the requirements and assumptions that go into the analysis that you're doing. Second, you have to know your data (and its strengths and limitations) well in order to get it set up for analysis and to produce useful output. Third, this approach emphasizes *reproducible* analysis, meaning that you will develop workflows that can be repeated over and over again producing the same results - important for sharing your work with others and for accountability, especially within contexts related to public deliberation of the strengths and weaknesses of policy arguments.
+
+Keeping these three benefits in mind, we'll be using the R software coupled with the RStudio *Integrated Development Environment* (IDE) to counter some of the downsides of a purely manual approach. RStudio will help us implement R code more effectively and efficiently. Hopefully at this point, this prospect leaves you excited rather than daunted! Let's jump right in by downloading and configuring both R and RStudio.
+
+## Download and Install R
+
+R can be downloaded from the Comprehensive R Archive Network (CRAN), a network of mirrored servers throughout the world that host the R software as well as user-developed packages. Visit [https://cloud.r-project.org](https://cloud.r-project.org) which will automatically direct you to the best download server.
+
+Once here, you can then download and install R using the version that matches your operating system:
+
+![](/howto/howto/01-Install-R_files/02_RDownload.png)
+
+Go ahead and download R and install following the installer defaults. After R is downloaded and installed, run R to confirm. You should see a single window that looks something like this:
+
+![](/howto/howto/01-Install-R_files/03_ROpen.png)
+
+That's it for R. This should be the first and last time you'll need to open the R console directly. We typically will not access R directly, but instead will use RStudio as our primary interface. Go ahead and close the R console and proceed by downloading and installing RStudio, which is the IDE we will use to interface and write code with R.
+
+## Downlad RStudio
+
+Next up, let's download RStudio. Go to [https://rstudio.com/products/rstudio/download](https://rstudio.com/products/rstudio/download). Click on "Download" under RStudio Desktop. The website will suggest the most appropriate current version of the software based upon the computer you are loading RStudio on. You may also choose from an alternate installer if you believe it is more appropriate for your operating system.
+
+Download and install RStudio, again using the default installation settings.
+
+Once you have RStudio installed, open RStudio. You should see something that looks like this (the information in your console window will likely describe a newer version of R than what is displayed here).
+
+![](/howto/howto/01-Install-R_files/04_RStudioOpen.png)
+
+You'll note that what appears in the portion of the console to the left looks very similar to the R console window which you opened before you started your install of RStudio. This console functions in exactly the same way, however, you'll also note that there are other areas which you have access to as well.
+
+![](/howto/howto/01-Install-R_files/05_RStudioOpenAnnotate.png)
+
+## The RStudio Interface
+
+- **The R Console** is the place where code you write is executed. Typically we'll write code in a *script* or *R Notebook* (more on those later) and active pieces of code will them be executed in the R console. You can also type code directly into the console and execute it by hitting the return or enter key. 
+- **The Environment Window** provides information on variables, data tables, and other objects you create and define as you work.
+- **The Auxiliary Window** provides a range of information, and includes a file browser, plot visualization window, and access to help documentation.
+
+With those basics in mind, you can start to explore the basic functionality of R.
+
+### Starting Simple - Math and Basic Operators
+
+Now that you have a basic lay of the land for the RStudio console, we can start to explore some logic and functionality. Let's start simple - with some basic math operators. Try doing some basic math by typing in the console window and hitting return / enter to execute:
+
+``` {r}
+2+2
+```
+Note that you type in code, R executes it, and immediately below what you've typed in, it has returned an answer. Here are some of the most common mathematical operators which you'll take advantage of:
+- + Addition
+- - Subtraction
+- * Multiplication
+- / Division
+- ^ Exponent (e.g. `2^3 = 8`)
+- () parentheses (to enforce a desired order of operations - r automatically follows the typical order of operation rules)
+
+There are also some built in mathematical constants:
+``` {r}
+pi
+```
+
+Which makes it really easy to figure out things, like the area of a circle with a radius of 5 (recall $A = \pi r^2$):
+``` {r}
+pi*5^2
+```
+While we won't be doing much (if any) math this way, it's important to become familiar with how this works, and what the expected response is from R.
+
+### Assigning values to objects
+
+One of the useful things about R is that it is an *object oriented* programming language. This means that we can easily assign values to objects and then use those objects in calculations later on. We can assign values using the `<-` assignment operator.
+``` {r}
+r <- 5
+```
+Hmm - what did we do here? We assigned the value 5 to a variable named `r`. That variable could have just about any name - the name isn't really important - it's just a place holder. Notice in our environment window that we have a new row that shows a variable named r with a value of 5. We can easily retrieve this value by typing the name of the variable in our console:
+``` {r}
+r
+```
+
+This means we can use it in place of a value anywhere in our code:
+``` {r}
+pi*r^2
+```
+
+If we assigned a new value to r, the value would change:
+``` {r}
+r<-10
+pi*r^2
+```
+Instead of returning a value from an operation to our console, we could also store that in a variable:
+
+``` {r}
+circle_area<-pi*r^2
+```
+And now we could retrieve that:
+``` {r}
+circle_area
+```
+This will become more intuitive the more you use R. Now's a good time to start to internalize some conventions around variable naming. 
+- Variables are case sensitive, so `variable` and `Variable` are different things.
+- Variables cannot start with numerals, they must start with a letter
+- Variables cannot contain spaces. Convention is to use an underscore or period (e.g. variable_one or variable.one) if you want to denote spaces in a variable name.
+- If you define a variable with the same name as an R constant (such as `pi`), your variable will supersede R's value:
+```{r}
+pi
+pi<-2000
+pi
+```
+
+You will start to develop your own naming conventions for variables as you learn R. Keeping variable names short and descriptive becomes important, particularly as you add objects to your workspace.
+
+As we learn more about other R features, you'll also want to avoid naming variables in ways that are similar to R functions. No need to worry about those details just yet, but keep this in mind as we move along.
+
+Finally, keep in mind that you can remove existing variables from your workspace using the `rm()` command. `rm()` will accept in the bracket the name of the object you'd like to remove (be careful is this is permanent):
+
+```{r}
+rm(pi)
+```
+
+Even more finally, if you want to clear your entire workspace, you can do so as follows (remember that this is a permanent clearing):
+```{r}
+rm(list=ls())
+```

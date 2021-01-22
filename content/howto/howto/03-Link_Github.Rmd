@@ -1,0 +1,42 @@
+---
+title: Linking GitHub and R
+linktitle: Link GitHub and R
+menu:
+  howto:
+    parent: How To
+    weight: 4
+toc: true
+type: docs
+weight: 4
+---
+
+You can upload files directly to a GitHub repository in the GitHub web interface, but as you create more complex files and file structures, that's not going to be a feasible way to manage your work. That strategy also overlooks most of the features of what GitHub is at its core - a version control system.
+
+![](https://octodex.github.com/images/collabocats.jpg){width=50%}
+
+We might want to version our work for several reasons:
+
+- To keep track of changes we've made, so that we can track when code works and when we've broken it
+- To be able to share code with collaborators and work on the same files at the same time and then reconcile and combine work all together
+- To be able to share code and data publicly with others
+
+All three of these rationales are important motivations within the context of our class. There are two strategies which you may want to try to integrate GitHub into your R workflow.
+
+## Using the GitHub Desktop Client
+[GitHub Desktop](https://desktop.github.com) is an application that allows you to upload, download, and reconcile github repositories stored on your computer with your GitHub account. From GitHub desktop, you can create new repositories, download previously created repositories, and upload new versions of repository contents to the cloud.
+
+## Using RStudio's integrated Github Functionality
+
+RStudio has GitHub functionality built right in, which is very handy for integrating version control into your R workflow. Getting RStudio set up to work with GitHub can be a bit tedious, but once it is set up, it is straightforward to use. An outstanding resource to help you get GitHub integrated with R is [Happy Git and GitHub for the useR](https://happygitwithr.com). As the authors mention in a section titled appropriately [*Is It Going to Hurt?*](https://happygitwithr.com/big-picture.html#is-it-going-to-hurt), integrating Git changes your workflow. However, since many of you are just starting to learn R, making this part of your typical workflow early on will be challenging, but less of a change from other ways of doing things. 
+
+Assuming you've already got R and RStudio installed on your system and have already set up a GitHub account, you can start here:
+
+1. [Check](https://happygitwithr.com/install-git.html#git-already-installed) to see if Git is installed on your computer, and if it isnt, [Install Git](https://happygitwithr.com/install-git.html#install-git).
+2. [Associate](https://happygitwithr.com/hello-git.html) git on your computer with your GitHub account.
+3. [Install a Git client](https://happygitwithr.com/git-client.html#recommended-git-clients) like GitHub Desktop.
+4. [Connect to GitHub](https://happygitwithr.com/push-pull-github.html)
+5. [Connect RStudio to GitHub](https://happygitwithr.com/rstudio-git-github.html)
+6. [Get Started](https://happygitwithr.com/usage-intro.html) using GitHub integrated with R (we'll talk more about this in class).
+
+![](https://octodex.github.com/images/femalecodertocat.png){width=30%}
+We will ease our way into using Git, and will also devote some time to troubleshooting in class. I promise, it's going to make sense soon!
