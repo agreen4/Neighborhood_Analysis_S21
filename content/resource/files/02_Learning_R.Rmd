@@ -33,7 +33,7 @@ While not set up as a support resource, there are other websites that may help y
 - Another important framing document is Keiran Healy's [The Plain Person's Guide to Plain Text Social Science](https://plain-text.co).
 - [Tidy Tuesday](https://www.tidytuesday.com): podcast that walks through data analysis using a new dataset weekly in R. Also check out [Julia Silge's](https://juliasilge.com) blog and video tutorials that perform more advanced analysis on Tidy Tuesday data.
 
-```{r}
+```{r data_science, echo=FALSE}
 blogdown::shortcode("tweet", "1352655262054834182")
 ```
 
