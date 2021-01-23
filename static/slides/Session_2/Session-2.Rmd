@@ -20,13 +20,13 @@ output:
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
-library(knitr)
-#devtools::install_github("rstudio/fontawesome")
-#devtools::install_github("gadenbuie/countdown")
-library(fontawesome)
-library(countdown)
+library(pacman)
+p_load(knitr, fontawesome, countdown, xaringanExtra)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-
+xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket")
+)
 ```
 name: xaringan-title
 class: left, top, inverse
@@ -372,3 +372,9 @@ background-size: cover
 
 # Tuesday's Class
 On Tuesday, we'll start exploring the R programming <br>language and RStudio Integrated Development Environment
+
+```{r pdf, include=FALSE}
+#install.packages("webshot")
+library(webshot)
+webshot("Session-2.html", "Session-2.pdf")
+```
