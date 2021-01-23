@@ -28,7 +28,7 @@ xaringanExtra::embed_xaringan(url = "/slides/Session_2/Session-2.html", ratio = 
 
 #### Introduction to R for Planners
 
-Register for the optional but highly recommended [Introduction to R for Urban Planners virtual workshop](https://urban.illinois.edu/about-us/events/introduction-to-r-for-planners-2-day-workshop/) (January 30th and February 6th) - registration closes on Wednesday 1/28.
+Register for the optional but highly recommended [Introduction to R for Urban Planners virtual workshop](https://urban.illinois.edu/about-us/events/introduction-to-r-for-planners-2-day-workshop/) (January 30th and February 6th) - registration closes on Wednesday 1/28 (you're late!).
 
 ```{r intro_r, echo=FALSE, fig.align="left", out.width="95%"}
 knitr::include_graphics("https://web.faa.illinois.edu/app/uploads/sites/2/2021/01/Intro-to-R-for-Planners-2021-1600x918.51851851852-c-default.jpg")
@@ -37,4 +37,4 @@ knitr::include_graphics("https://web.faa.illinois.edu/app/uploads/sites/2/2021/0
 
 #### Download and Install R and RStudio
 
-We will begin working in R and RStudio starting next week. If you have not already done so, download and install R on the computer you will work on.
+We will begin working in R and RStudio starting next week. If you have not already done so, download and install R on the computer you will work on. See the [How To](/howto) for instructions.
