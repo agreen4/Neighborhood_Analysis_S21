@@ -20,6 +20,10 @@ One of our rationales for using R this semester is the range of support resource
 
 3. **Get help from our class community.** A big portion of our time together in class will be devoted to learning from each other - part of that includes learning to troubleshoot problems. We'll devote some synchronous time in class to working through challenges, and will supplement that with asynchronous means of communication via our course Slack channel. Ask questions *early* and *often* - there's no need to unduly suffer through setbacks (although as you solve these you will learn deeply how to address similar problems in the future).
 
+```{r carrots, echo=FALSE}
+blogdown::shortcode("tweet", "1351206308716929032")
+```
+
 While not set up as a support resource, there are other websites that may help you to extend your capacity in R. 
 
 - Some of the initial tutorials we'll use to learn R come from [Data Carpentry](https://datacarpentry.org), especially their series on [R for Social Scientists](https://datacarpentry.org/r-socialsci/) and [Introduction to R for Geospatial Data](https://datacarpentry.org/r-intro-geospatial/). 
