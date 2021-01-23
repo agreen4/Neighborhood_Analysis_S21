@@ -12,6 +12,12 @@ weight: 3
 
 **Due Date:** Ongoing | **Submit Via:** Upload to Github
 
+Thoughtful data analysis requires thoughtful questions, which require a thorough understanding of your own positionality and role as a data practitioner and storyteller. To develop this positionality and understand your own desired roles, you will reflect weekly, drawing from prompts you will find in your [Tuesday session descriptions](/schedule) for each week.
+
+Reflections may be brief - around 1 page or less, although you should feel welcome to use more space if you wish. You may also choose to pose alternate questions or reflect on things related to our class but which fall outside of the prompt(s) you are given.
+
+Reflections are not designed to be onerous or rigorous, but rather an ongoing dialog or narrative that helps you to externalize some of your positionality and thinking in the moment. Enjoy taking the time to reflect, and consider making this part of your ongoing professional practice.
+
 ## Submission Instructions
 
 Upload your weekly reflections to the appropriate folder in your class GitHub repository.

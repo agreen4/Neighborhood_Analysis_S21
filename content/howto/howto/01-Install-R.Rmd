@@ -21,7 +21,6 @@ Once here, you can then download and install R using the version that matches yo
 Go ahead and download R and install following the installer defaults. After R is downloaded and installed, run R to confirm. You should see a single window that looks something like this:
 
 ![](/howto/howto/01-Install-R_files/03_ROpen.png)
-
 That's it for R. This should be the first and last time you'll need to open the R console directly. We typically will not access R directly, but instead will use RStudio as our primary interface. Go ahead and close the R console and proceed by downloading and installing RStudio, which is the IDE we will use to interface and write code with R.
 
 ## Downlad RStudio
@@ -37,7 +36,6 @@ Once you have RStudio installed, open RStudio. You should see something that loo
 You'll note that what appears in the portion of the console to the left looks very similar to the R console window which you opened before you started your install of RStudio. This console functions in exactly the same way, however, you'll also note that there are other areas which you have access to as well.
 
 ![](/howto/howto/01-Install-R_files/05_RStudioOpenAnnotate.png)
-
 ## The RStudio Interface
 
 - **The R Console** is the place where code you write is executed. Typically we'll write code in a *script* or *R Notebook* (more on those later) and active pieces of code will them be executed in the R console. You can also type code directly into the console and execute it by hitting the return or enter key. 

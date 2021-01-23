@@ -12,6 +12,31 @@ weight: 2
 
 **Due Date:** February 19, 2021 | **Submit Via:** Upload to Github
 
+## Introduction
+Over the course of the first few weeks of our class, you have learned some basic elements of the R programming language and RStudio IDE. As we move forwards with our class, we will continue to add knowledge of new packages, tools, and data within R.
+
+This R Learner's Permit is designed to assess your knowledge of the elements of the R language and software that we have focused on so far in class.
+
+## Instructions
+Working by yourself, please follow the instructions contained in the included R Notebook, which involve filling in code and generating output. Most instructions ask you to add or fill in code chunks. Others ask you to provide a written interpretation in the notebook portion of the document.
+
+Complete as many items as you can. If you run into trouble completing an item, add comments to your code or in the notebook describing where you are running into problems, and what you think the next step might be to solving the problem you're having.
+
+Complete as many items as you can and then upload your R Notebook to the appropriate folder in your GitHub repository.
+
+## The Data
+
+In the "data" subfolder of Learner's Permit, you will find one .rds file called NYC_Violations.rds. This is the data you will use to earn your learner's permit. 
+
+These are "real world" data derived from two sources:
+
+1. New York City [housing maintainance code violation](https://data.cityofnewyork.us/Housing-Development/Housing-Maintenance-Code-Violations/wvxf-dwi5) data for the years 2009 to 2019
+2. Data on property characteristics from the [Primary Land Use Tax Lot Output (PLUTO)](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page) database
+
+I have merged selected columns from these datasets for you (you will find data documentation and metadata for both datasets in the documentation subfolder), and after taking a close look at the dataset and the documentation, you should be able to identify which portions of the data you will work with come from each dataset. It's my assumption that you have likely not worked with these data before - that's part of the point!
+
+The PLUTO data contains information on each tax lot within the city of New York. By merging these data which contain characteristics of buildings and land with the building code violation data, the data you have to work with describes the characteristics of the building and property where the violation occurred as well as the nature of the violation. It is essential for you to spend the time to think carefully about what each row in the building code violation data represents.
+
 ## Submission Instructions
 
 Upload your Learner's Permit notebook to the appropriate folder in your class GitHub repository.

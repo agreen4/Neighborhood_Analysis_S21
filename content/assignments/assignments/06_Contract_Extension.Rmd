@@ -3,7 +3,7 @@ title: Contract Extension Ideas
 linktitle: Extension Ideas
 menu:
   assignments:
-    parent: Contract
+    parent: Your Contract
     weight: 7
 toc: true
 type: docs
@@ -20,4 +20,4 @@ Here are some ideas for contract extensions you may wish to propose (you can of 
 
 - **Develop a proposed extension to your final project:** It is likely that your final project will produce some insightful information drawing upon your analysis of existing data. It is also likely that through the process of conducting your analysis that you will reach the limits of what the data can tell you, and that you will have additional questions which you would like to answer. You can develop a proposed set of next steps based upon what you would do to continue to develop the analysis which you have conducted. This might include gaining insight from other sources of secondary data, applying other types of analytical techniques, or developing a plan for primary data collection to supplement your existing analysis.
 
-These are a few suggested ways in which you can contract to extend your grade. You may have other ideas which you would like to propose. Please spend some time early in the class thinking about what your goals are this semester, and what work (in addition to our base expectations) might be part of this. Please be prepared to share these ideas when we meet one-on-one early in the semester to review your contract proposal. Of course we can also talk through some of these ideas in our class sessions during the first few weeks of class.
+These are a few suggested ways in which you can contract to extend your grade. You may have other ideas which you would like to propose. Please spend some time early in the class thinking about what your goals are this semester, and what work (in addition to our base expectations) might be part of this. Please be prepared to share these ideas when we meet one-on-one early in the semester to review your contract proposal. Of course we can also talk through some of these ideas in our class sessions during the first few weeks of class. As part of your contract proposal you will need to write a description of each extended contract component. Please be prepared to share this when we meet.

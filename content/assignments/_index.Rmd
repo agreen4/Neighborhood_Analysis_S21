@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = TRUE)
 | [Grading Contract](assignments/01_grading_contract/) | February 5, 2021 | Upload to Github |
 | [R Learner's Permit](assignments/02_r_learners_permit/) | February 19, 2021  | Upload to Github |
 | [Class Reflections](assignments/03_class_reflections/) | Ongoing | Upload to Github |
-| [Polished Lab Notebooks](assignments/04_lab_notebooks/) | March, 2021</br> April, 2021 | Upload to Github |
+| [Polished Lab Notebooks](assignments/04_lab_notebooks/) | March 19, 2021</br> April 21, 2021 | Upload to Github |
 | [Final Project Proposal](assignments/05_term_assignment/#project-proposal-1) | March 5, 2021  | Upload to Github |
 | [Final Project Background](assignments/05_term_assignment/#project-background) | March 26, 2021  | Upload to Github |
 | [Final Project Presentation](assignments/05_term_assignment/#project-presentation) | April 25, 2021  | Upload to Github |

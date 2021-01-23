@@ -15,16 +15,42 @@ You will independently apply the skills and principles of data analysis we learn
 ## Project Proposal
 **Due Date:** March 5, 2021 | **Submit Via:** Upload to Github
 
+#### Assignment
 You will develop a proposal that describes the analysis which you contract to complete by the end of the semester. Your proposal will include a statement regarding the motivation for your analysis, the information you plan to use, your analytical strategy, your anticipated outcomes, and information on the format of your final outputs.
+
+By the end of this assignment you will:
+
+1.	Articulate a question or problem which you will analyze over the course of the term project
+2. Describe the context within which the question exists
+3. Propose a strategy for how you will approach the problem - including the data you will use, the methods by which you will analyze that information, and the outputs which you will produce
+4. Identify how the answers to this question are relevant for general knowledge, policy, or decision-making
+
+#### Deliverable
+Please prepare a 3-4 page (single-spaced) proposal. Your proposal should address the following:
+
+1. **Outline the question or problem** which your analysis will examine. You should provide a clear and succinct description of the question or problem, and also discuss its relevance - who will the answer to this question be relevant to? How might your analysis guide their actions?
+2. **Describe the context within which the question or problem exists** in such a way that it is clear why answering this question is of value. What's the geographic location and scale you are examining? Why is this question of importance here? Who is impacted by the phenomena you seek to explore? What do we already know, and what information is missing? How will you engage both the known and the unknown through exploration of your question?
+3. **Propose a strategy for how you will approach the problem** that is clear, connected to the question and context, and that is appropriate for the information you plan to use. What specific data source(s) will you use for your analysis? What methods will you use to engage your question? What's the precedent for using these methods to answer similar questions? Why is this an appropriate approach given your answers to (1) and (2) above?
+4. **Identify the target audience for your work** by telling us who has a stake in learning from your answers to the questions you pose. What contribution will this make, and how might it be useful for advocacy, deliberation, and decision-making?
+5. **Identify any limitations or assistance you will need** to successfully complete your analysis. You may not yet completely know the answer to this, but please spend some time thinking about how I (and we as a class) can help to support you in your work, or can help you identify ways to access those resources that will help. If you can, also articulate the limitations of your work - your answers will likely have some important limitations that we should have in mind, even before you jump into your actual analysis.
+
+#### Tips for a Successful Assignment
+- Your proposal should be 3-4 single-spaced pages in length. 
+- Write clearly and succinctly, paying attention to spelling, grammar, and the organization of information.
+- Provide a clear and logical structure to your proposal, using descriptive section titles to organize information.
+- The judicious use of maps, photographs, charts, tables, and diagrams should be considered as a valuable means of effectively conveying information. These do not count against your proposal page limit.
+
 ## Project Background
 **Due Date:** March 26, 2021| **Submit Via:** Upload to Github
 
-You will prepare some general project background that includes a descriptive analysis.
+You will prepare some general project background that includes a descriptive analysis. More on this soon.
 
 ## Final Project
 **Due Date:** May 7, 2021 |**Submit Via:** Upload to Github
 
 You will synthesize elements of your project proposal, project background, and additional analysis into a final project that includes analysis and interpretation.
+
+More on this soon.
 
 ## Project Presentation
 **Due Date:** April 25, 2021 | **Submit Via:** Upload to Github
