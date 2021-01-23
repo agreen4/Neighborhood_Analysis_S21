@@ -22,6 +22,8 @@ In this session, we'll take our first foray into the R and RStudio ecosystem. We
 
 ## Before Class
 
+Please make sure you have R, RStudio, and GitHub Desktop installed on your computer, and that you have set up and registered the GitHub repository in which you will store your work this semester. Instructions are available in the [How To](/howto) section.
+
 Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. ([Preface](https://uofi.box.com/s/o2vk802ig5bqggdz3iks21cqo5jv0hsk) and [Chapter 2](https://uofi.box.com/s/3ex015jd082iyza1z9su2a6yysnihg8n))
  
 Data Carpentry ([Before We Start](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html), [Intro to R](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html), [Starting with Data](https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html))
