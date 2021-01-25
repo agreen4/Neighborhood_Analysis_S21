@@ -24,6 +24,7 @@ Rohe, William. (2009). [From Local to Global: One Hundred Years of Neighborhood 
 ```{r embed-xaringan, echo=FALSE}
 xaringanExtra::embed_xaringan(url = "/slides/Session_2/Session-2.html", ratio = "16:9")
 ```
+
 ## Other Resources and Actions
 
 #### Download and Install R and RStudio
