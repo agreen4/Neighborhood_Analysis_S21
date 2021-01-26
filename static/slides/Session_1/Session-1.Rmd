@@ -197,6 +197,182 @@ class: top, left, inverse
 - What do you hope to gain from our class?
 ]
 ---
+name: My turn to share
+class: right, top
+background-image: url(images/1_1_ross-elder-uXQVNkam3hE-unsplash.jpg)
+background-size: cover
+
+<img class="circle" src="images/2_Greenlee.jpg" width="250px"/>
+
+# My turn to share
+---
+name: My turn to share
+class: right, top, inverse
+background-image: url(images/02_6_neal-kharawala-XXA8PTuLD1Y-unsplash.jpg)
+background-size: cover
+
+# I Grew Up Here
+---
+name: My turn to share
+class: left, top
+background-image: url(images/02_7_map-chicago-panoramic-view-centered-on-hyde-park-projection-called-this-is-our-neighborhood-lauren-nassef.jpg)
+background-size: auto
+background-position: bottom
+
+# More Specifically Here
+.font-35[Hyde Park - Kenwood]
+---
+name: My turn to share
+class: left, top
+
+# Hyde Park - Kenwood
+
+.pull-left[
+<img src = "images/02_8_WorldsColumbian-mcnally-1893.jpg" height = 370, align="right">
+]
+---
+name: My turn to share
+class: left, top
+
+# Hyde Park - Kenwood
+
+.pull-left[
+<img src = "images/02_8_WorldsColumbian-mcnally-1893.jpg" height = 370, align="left">
+]
+.pull-right[
+<img src = "images/02_9_robie-house-03-2.jpg" height = 360, align="right">
+]
+---
+name: My turn to share
+class: left, top
+
+# Hyde Park - Kenwood
+
+.pull-left[
+<img src = "images/02_10_frontwindow.jpg" height = 370, align="left">
+]
+.pull-right[
+<img src = "images/02_9_robie-house-03-2.jpg" height = 360, align="right">
+]
+---
+name: My turn to share
+class: left, top
+
+# Hyde Park - Kenwood
+
+.pull-left[
+<img src = "images/02_10_frontwindow.jpg" height = 370, align="left">
+]
+.pull-right[
+<img src = "images/02_11_racial.png" height = 360, align="right">
+]
+---
+name: My turn to share
+class: left, top
+
+# Hyde Park - Kenwood
+
+.pull-left[
+<img src = "images/02_12_racial.png" height = 370, align="left">
+]
+.pull-right[
+<img src = "images/02_11_racial.png" height = 360, align="right">
+]
+---
+name: My turn to share
+class: left, top
+
+# Hyde Park - Kenwood
+
+.pull-left[
+<img src = "images/02_12_racial.png" height = 370, align="left">
+]
+.pull-right[
+<img src = "images/02_13_divide.png" height = 380, align="right">
+]
+---
+name: My turn to share
+class: left, top
+
+# This is Chicago
+
+.pull-left[
+<img src = "images/02_14_gelato.png" height = 370, align="left">
+]
+.pull-right[
+<img src = "images/02_13_divide.png" height = 380, align="right">
+]
+---
+name: My turn to share
+class: left, top
+
+# This is Chicago
+
+.pull-left[
+<img src = "images/02_14_gelato.png" height = 370, align="left">
+]
+.pull-right[
+<img src = "images/02_15_settlement.png" height = 470, align="right">
+]
+---
+name: My turn to share
+class: left, top
+
+# This is Chicago
+
+.pull-left[
+<img src = "images/02_16_greenlees.png" height = 300, align="left">
+]
+.pull-right[
+<img src = "images/02_15_settlement.png" height = 500, align="right">
+]
+---
+name: My turn to share
+class: left, top
+
+# This is Chicago
+
+.pull-left[
+<img src = "images/02_16_greenlees.png" height = 280, align="left">
+]
+.pull-right[
+<img src = "images/02_17_CA1940.png", align="right">
+]
+---
+name: My turn to share
+class: left, top
+
+# This is Chicago
+
+.pull-left[
+<img src = "images/02_18_CA1980.png", align="left">
+]
+.pull-right[
+<img src = "images/02_17_CA1940.png", align="right">
+]
+---
+name: My turn to share
+class: left, top
+
+# This is Chicago
+
+.pull-left[
+<img src = "images/02_18_CA1980.png", align="left">
+]
+.pull-right[
+<img src = "images/02_19_Andy.jpeg", height = 460, align="right">
+]
+---
+name: My turn to share
+class: left, top, inverse
+background-image: url(images/02_21_Network_CL.png)
+background-size:contain
+---
+name: My turn to share
+class: left, top
+background-image: url(images/02_22_Distriibution.png)
+background-size:contain
+---
 name: Thursday's Class
 class: top, left, inverse
 background-image: url(images/14_javier-garcia-jJbQBP_yh68-unsplash.jpg)
