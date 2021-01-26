@@ -38,6 +38,9 @@ background-size: cover
 
 # Neighborhood Analysis
 .font-35[Session 1: Course Introduction]
+
+???
+Welcome to our first class... let's start with a simple question...
 ---
 name: What is a neighborhood?
 class: middle, inverse
@@ -45,6 +48,9 @@ class: middle, inverse
 # What is a <br> .salt[.fancy[neighborhood?]]
 
 `r countdown(minutes = 2, seconds=0, color_text = "white", top=0, font_size="4em")`
+
+???
+Take two minutes to think about how you might define a neighborhood - don't worry, there's no right or wrong answers here - this is just to help us start developing some foundational definitions.
 ---
 name: Answer 1
 class: right, middle, inverse
@@ -53,24 +59,49 @@ background-size: cover
 
 # There's less consensus about <br> .fat[how to define]<br> neighborhoods than you might think
 
+???
+We use neighborhoods to represent lots of different things - administrative geographies, personal and community identities, geographic units for plans...
+
+Let's start by looking at a fairly normative view on what a neighborhood is...
 ---
 name: Champaign Comprehensive Plan 1950
 background-image: url(images/cc_comp-1950.png)
 background-size: contain
+
+???
+This is an image from the 1950 comprehensive plan for Champaign, IL. This visual is designed to represent the qualities of a neighborhood unit. Looking at this what are some of the core functions of a neighborhood?
+
+We can zoom in on the text description to learn more about some of the intended qualities for a neighborhood.
 ---
 name: Champaign Comprehensive Plan 1950 Inset
 background-image: url(images/cc_comp-1950-inset.png)
 background-size: contain
+
+???
+- self contained
+- scale
+- local institutions
+- civil society
+- infrastructure
+- accessible
+
+The argument for neighborhood planning focuses on livability and economy
 ---
 name: Champaign Comprehensive Plan 1950 Inset2
 background-image: url(images/cc-comp_neigh.png)
 background-size: contain
+
+???
+It's also important to note that neighborhoods scale in relationship to other neighborhoods - an important component of our work together is thinking about how neighborhoods fit with each other and how they compare to each other.
 ---
 name: Champaign Comprehensive Plan 1950 Inset2
 background-image: url(images/cc_comp_neigh2.png)
 background-size: contain
+
+???
+This helps us to describe a coherent city through its complexity.
 ---
-name: Info 1
+name: Human Scale
 class: left, middle
 background-size: cover
 
@@ -92,9 +123,9 @@ background-size: cover
 
 .font-35[
 - Together, we will learn techniques for analyzing the demographic, economic, physical, and social conditions that exist at the neighborhood scale
-- We will focus on the craft of translating multiple sources of information into stories that can be used to inform decisionmaking
+- We will focus on the craft of translating multiple sources of information into stories that can be used to inform decision making
 - We will focus on telling stories about the past, present, and future of neighborhoods
-- We will learn to work with many types of information, including census data and administrative data
+- We will learn to work with and layer many types of information, including census data,  administrative data, and data extracted from the internet
 ]
 
 ---
@@ -114,12 +145,12 @@ background-size: cover
 ]
 
 ---
-name: Question 3
+name: Question 2
 class: middle, inverse
 
 # What makes for .salt[effective] analysis?
 
-.font-35[(Thinking about neighborhoods, of course...)]
+.font-35[Thinking about neighborhoods, of course...]
 
 `r countdown(minutes = 2, seconds=0, color_text = "white", top=0, font_size="4em")`
 ---
@@ -141,38 +172,32 @@ background-size: cover
 ---
 name: Getting Set Up
 class: top, inverse
-background-image: url(images/13_ray-fragapane-QM5-lbqzREc-unsplash.jpg)
-background-size: cover
 
 # Getting Set Up
 
 .font-35[
 - Complete the course introductory survey
-- Download and install R and RSudio
-- Create a GitHub Account
-- Download and install GitHub Desktop Client
 - Familiarize yourself with the course website
+- Download and install R and RStudio
+- Create a GitHub Account and install Github Desktop Client
 ]
 
 ---
-name: Question 4
+name: Question 3
 background-image: url(images/dark-texture.jpg)
 background-size: cover
 class: top, left, inverse
 
 # Who are you?
+
 .font-35[
-<br>
-Where is home?<br>
-<br>
-What do you do here? (Degree, Major, Interests)<br>
-<br>
-What was significant about a neighborhood you've lived in?<br>
-<br>
-What do you hope to gain from our class?
+- Where is home?
+- What do you do here? (Degree, Major, Interests)
+- What was significant about a neighborhood you've lived in?<br>
+- What do you hope to gain from our class?
 ]
 ---
-name: Next Class
+name: Thursday's Class
 class: top, left, inverse
 background-image: url(images/14_javier-garcia-jJbQBP_yh68-unsplash.jpg)
 background-size: cover
