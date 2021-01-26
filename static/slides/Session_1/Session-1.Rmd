@@ -210,6 +210,19 @@ background-size: cover
   + What characteristics make a place great?
   ]
 ---
+name: Bootcamp
+background-image: url(https://web.faa.illinois.edu/app/uploads/sites/2/2021/01/Intro-to-R-for-Planners-2021-1600x918.51851851852-c-default.jpg)
+background-size: cover
+
+???
+Please sign up before Wednesday 1.27
+
+- Basics, including some of the things we'll cover next week - a good chance to get ahead
+- Data manipulation
+- Working with Census data
+- Data Visualization
+- Making Maps
+---
 class: right, top
 background-image: url(images/1_1_ross-elder-uXQVNkam3hE-unsplash.jpg)
 background-size: cover
