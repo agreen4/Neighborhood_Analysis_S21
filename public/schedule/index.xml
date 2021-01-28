@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview | Neighborhood Analysis</title>
+    <link>/schedule/</link>
+      <atom:link href="/schedule/index.xml" rel="self" type="application/rss+xml" />
+    <description>Overview</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Overview</title>
+      <link>/schedule/</link>
+    </image>
+    
+    <item>
+      <title>Session 1: Course Introduction</title>
+      <link>/schedule/session/01-course_introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/01-course_introduction/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;In our first course session, we will introduce ourselves and discuss some of the basic tenets and expectations of our learning together. We’ll also think through two foundational questions:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;What’s a neighborhood?&lt;/li&gt;
+&lt;li&gt;Why do neighborhoods matter?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;this-weeks-reflection-prompt&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;This Week’s Reflection Prompt&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What is a neighborhood? How should neighborhoods be defined? Why might neighborhoods be important units of analysis for city planners and urbanists?&lt;/li&gt;
+&lt;li&gt;What characteristics make a neighborhood great?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Please read the &lt;a href=&#34;/syllabus&#34;&gt;course syllabus&lt;/a&gt; and bring questions with you.&lt;/p&gt;
+&lt;p&gt;If you haven’t already, please complete the &lt;a href=&#34;https://forms.illinois.edu/sec/1174889502&#34;&gt;course introductory survey&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
+&lt;iframe src=&#34;/slides/Session_1/Session-1.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources-and-actions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources and Actions&lt;/h2&gt;
+&lt;div id=&#34;introduction-to-r-for-planners&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Introduction to R for Planners&lt;/h4&gt;
+&lt;p&gt;Register for the optional but highly recommended &lt;a href=&#34;https://urban.illinois.edu/about-us/events/introduction-to-r-for-planners-2-day-workshop/&#34;&gt;Introduction to R for Urban Planners virtual workshop&lt;/a&gt; (January 30th and February 6th) - registration closes on Wednesday 1/28.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://web.faa.illinois.edu/app/uploads/sites/2/2021/01/Intro-to-R-for-Planners-2021-1600x918.51851851852-c-default.jpg&#34; width=&#34;95%&#34; style=&#34;display: block; margin: auto auto auto 0;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;download-and-install-r-and-rstudio&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Download and Install R and RStudio&lt;/h4&gt;
+&lt;p&gt;We will begin working in R and RStudio starting next week. If you have not already done so, download and install R on the computer you will work on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 2: What is a Neighborhood?</title>
+      <link>/schedule/session/02-what_is_a_neighborhood/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/02-what_is_a_neighborhood/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;In this session, we’ll explore the many ways in which the concept of neighborhoods are used in various areas of urban planning and governance. We will continue to build upon previous questions regarding the significance of neighborhoods as a unit of analysis, planning, and policymaking, and will explore frameworks for neighborhood analysis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Talen, Emily, Sunny Menozzi, and Chloe Schaefer. (2015). &lt;a href=&#34;https://uofi.box.com/s/b43bwh2x5v12y20u7ewz301phxcfi6tf&#34;&gt;What is a “Great Neighborhood”? An Analysis of APA’s Top-Rated Places&lt;/a&gt;. Journal of the American Planning Association, 81(2): 121-141.&lt;/p&gt;
+&lt;p&gt;Rohe, William. (2009). &lt;a href=&#34;https://uofi.box.com/s/oat3tpk2fxfaq3t0h9faco31rrevsve3&#34;&gt;From Local to Global: One Hundred Years of Neighborhood Planning&lt;/a&gt;. Journal of the American Planning Association 75(2): 209-230&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;p&gt;&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
+&lt;iframe src=&#34;/slides/Session_2/Session-2.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
+&lt;/div&gt;
+## Other Resources&lt;/p&gt;
+&lt;div id=&#34;introduction-to-r-for-planners&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Introduction to R for Planners&lt;/h4&gt;
+&lt;p&gt;Register for the optional but highly recommended &lt;a href=&#34;https://urban.illinois.edu/about-us/events/introduction-to-r-for-planners-2-day-workshop/&#34;&gt;Introduction to R for Urban Planners virtual workshop&lt;/a&gt; (January 30th and February 6th) - registration closes on Wednesday 1/28 (you’re late!).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://web.faa.illinois.edu/app/uploads/sites/2/2021/01/Intro-to-R-for-Planners-2021-1600x918.51851851852-c-default.jpg&#34; width=&#34;95%&#34; style=&#34;display: block; margin: auto auto auto 0;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;download-and-install-r-and-rstudio&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Download and Install R and RStudio&lt;/h4&gt;
+&lt;p&gt;We will begin working in R and RStudio starting next week. If you have not already done so, download and install R on the computer you will work on. See the &lt;a href=&#34;/howto&#34;&gt;How To&lt;/a&gt; for instructions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 3: Starting With Data</title>
+      <link>/schedule/session/03-starting_with_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/03-starting_with_data/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;In this session, we’ll take our first foray into the R and RStudio ecosystem. We’ll begin to explore data types, how to describe data, and how R can help us manipulate data.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;this-weeks-reflection-prompt&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;This Week’s Reflection Prompt&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What are the challenges associated with representing neighborhoods quantitatively?&lt;/li&gt;
+&lt;li&gt;What are the benefits of using quantitative data to represent neighborhoods?&lt;/li&gt;
+&lt;li&gt;What can we learn? What is likely to be missed?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (&lt;a href=&#34;https://uofi.box.com/s/o2vk802ig5bqggdz3iks21cqo5jv0hsk&#34;&gt;Preface&lt;/a&gt; and &lt;a href=&#34;https://uofi.box.com/s/3ex015jd082iyza1z9su2a6yysnihg8n&#34;&gt;Chapter 2&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Data Carpentry (&lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html&#34;&gt;Before We Start&lt;/a&gt;, &lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html&#34;&gt;Intro to R&lt;/a&gt;, &lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html&#34;&gt;Starting with Data&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 4: Manipulating Data</title>
+      <link>/schedule/session/04-manipulating_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/04-manipulating_data/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (Chapters 3 and 4)&lt;/p&gt;
+&lt;p&gt;Data Carpentry (&lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/03-dplyr.html&#34;&gt;Manipulating Data Frames&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 5: Visualizing Data (Session 1)</title>
+      <link>/schedule/session/05-visualizing_data_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/05-visualizing_data_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;this-weeks-reflection-prompt&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;This Week’s Reflection Prompt&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How is working with data via a command line interface different from using a graphical user interface?&lt;/li&gt;
+&lt;li&gt;How do we balance reproducibility of our analysis with accessibility of the analytical tools?&lt;/li&gt;
+&lt;li&gt;What’s challenging for you right now regarding learning and using R? What are the “a-ha” moments that you’re celebrating?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (Chapters 5, 6, and 7)&lt;/p&gt;
+&lt;p&gt;Optional Supplement - Data Carpentry (&lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html&#34;&gt;Visualizing Data&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 5: Visualizing Data (Session 2)</title>
+      <link>/schedule/session/06-visualizing_data_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/06-visualizing_data_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 7: Modes of Neighborhood Analysis</title>
+      <link>/schedule/session/07-modes_of_analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/07-modes_of_analysis/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Hopkins &lt;a href=&#34;https://uofi.box.com/s/cdx047l4xxte8xrjhhlp0iv88fe9nz4p&#34;&gt;Chapter 1&lt;/a&gt; and &lt;a href=&#34;https://uofi.box.com/s/9fl1i4z0hmh7m9x9ngbdp2a8irstjtbu&#34;&gt;Chapter 4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lynch, Kevin (1960). The Image of the City. &lt;a href=&#34;https://uofi.box.com/s/j26a825opr1hgfi84b7ag27hy83r358p&#34;&gt;Chapter 3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uofi.box.com/s/2vo0si7jk24kqylkxgmy8vv44fksifl2&#34;&gt;Denver Far Northeast Area Plan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uofi.box.com/s/onyvjulnuzarsq8yfha7jjeb9mkh7p7z&#34;&gt;E. 38th Street Urban Design Assessment&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 8: Population and Population Change (Session 1)</title>
+      <link>/schedule/session/08-population_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/08-population_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uofi.box.com/s/ysc0fi5fn3on0342v758viggd355m04v&#34;&gt;Klosterman 2&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 9: Population and Population Change (Session 2)</title>
+      <link>/schedule/session/09-population_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/09-population_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Natalie P. Voorhees Center. (2014). &lt;a href=&#34;https://uofi.box.com/s/dueb33gc3em48y39ku9twhl5e8ja45pp&#34;&gt;The Socioeconomic Change of Chicago’s Community Areas (1970-2010)&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 10: Population and Population Change (Session 3)</title>
+      <link>/schedule/session/10-population_pt3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/10-population_pt3/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 11: Population Projections and Forecasts (Session 1)</title>
+      <link>/schedule/session/11-population_projection_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/11-population_projection_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uofi.box.com/s/p251aw1783lqevufdh137w8vogouv92q&#34;&gt;Hopkins 9&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Klosterman &lt;a href=&#34;https://uofi.box.com/s/q46d20tpwa5eynoqvcckon1c86yijr1y&#34;&gt;Chapter 3&lt;/a&gt;, &lt;a href=&#34;https://uofi.box.com/s/8iueatbw3l3qebvfu9nesufzpvwntg0q&#34;&gt;Chapter 4&lt;/a&gt;, &lt;a href=&#34;https://uofi.box.com/s/x0orydmrxcxaecmj4vyevwo398dtzeg6&#34;&gt;Chapter 5&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://planningsupport.org&#34;&gt;Planning Support Methods&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 12: Population Projections and Forecasts (Session 2)</title>
+      <link>/schedule/session/12-population_projection_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/12-population_projection_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Pendall, Rolf. (2017). &lt;a href=&#34;https://uofi.box.com/s/wtkwe2wyiianeex2d7po2ex2f3vjxig6&#34;&gt;The Cost of Segregation: Population and Household Projections in the Chicago Commuting Zone and Implications for Economic and Racial Segregation&lt;/a&gt;. The Urban Institute.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 13: Population Distribution and Segregation (Session 1)</title>
+      <link>/schedule/session/13-population_segregation_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/13-population_segregation_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Cunningham, Mary K., and Augrey Droesch. &lt;a href=&#34;https://uofi.box.com/s/vwuk8s7ys53bgddv3buio7jhjgg13sgy&#34;&gt;Neighborhood Quality and Racial Segregation&lt;/a&gt;. The Urban Institute&lt;/p&gt;
+&lt;p&gt;U.S. Bureau of the Census: &lt;a href=&#34;https://uofi.box.com/s/lrfcfiod757p8paph9u4w0tq8hrs1tsq&#34;&gt;Measures of Residential Segregation&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 14: Population Distribution and Segregation (Session 2)</title>
+      <link>/schedule/session/14-population_segregation_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/14-population_segregation_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 15: Individual Advising and Independent Work</title>
+      <link>/schedule/session/15-individual_advising_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/15-individual_advising_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This week is devoted to individual advising and independent work. There are no course sessions scheduled for today. You should use this time to continue working, to take stock of your progress towards your course contract, and to solidify plans for your final project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Professor Greenlee has extended availability for office hours appointments. If you have not already scheduled an appointment and wish to, please &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis?back=1&amp;amp;month=2021-01&#34;&gt;sign up&lt;/a&gt; for an advising appointment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 16: Individual Advising and Independent Work</title>
+      <link>/schedule/session/16-individual_advising_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/16-individual_advising_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This week is devoted to individual advising and independent work. There are no course sessions scheduled for today. You should use this time to continue working, to take stock of your progress towards your course contract, and to solidify plans for your final project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Professor Greenlee has extended availability for office hours appointments. If you have not already scheduled an appointment and wish to, please &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis?back=1&amp;amp;month=2021-01&#34;&gt;sign up&lt;/a&gt; for an advising appointment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 17: Measuring Place Opportunity (Session 1)</title>
+      <link>/schedule/session/17-place_opportunity_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/17-place_opportunity_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Stromberg, Brian. (2016). &lt;a href=&#34;https://uofi.box.com/s/icccjttbig4mq94nbi123b6x3o33a4zi&#34;&gt;Opportunity Mapping&lt;/a&gt;. National Housing Conference&lt;/p&gt;
+&lt;p&gt;powell, john. (2005). &lt;a href=&#34;https://uofi.box.com/s/59a51ibzzk5sd9b14obvvz7u5l12u07k&#34;&gt;Remedial Phase Expert Report of john powell in Thompson v. HUD&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 18: Measuring Place Opportunity (Session 2)</title>
+      <link>/schedule/session/18-place_opportunity_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/18-place_opportunity_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 19: Crime and Incarceration (Session 1)</title>
+      <link>/schedule/session/19-crime_incarceration_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/19-crime_incarceration_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Cooper, Dan. And Ryan Lugalia-Hollan. &lt;a href=&#34;https://chicagosmilliondollarblocks.com&#34;&gt;Chicago’s Million Dollar Blocks&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 20: Crime and Incarceration (Session 2)</title>
+      <link>/schedule/session/20-crime_incarceration_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/20-crime_incarceration_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 21: The Geography of Eviction (Session 1)</title>
+      <link>/schedule/session/21-covid_cases_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/21-covid_cases_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Cunningham, Mary, Ananya Hariharan, and Olivia Fiol. 2021. &lt;a href=&#34;https://www.urban.org/sites/default/files/publication/103453/the-looming-eviction-cliff_0.pdf&#34;&gt;The Looming Eviction Cliff&lt;/a&gt;. Urban Institute.&lt;/p&gt;
+&lt;p&gt;Hepburn, Peter, Renee Louis, and Matthew Desmond. 2020. &lt;a href=&#34;https://sociologicalscience.com/download/vol-7/december/SocSci_v7_649to662.pdf&#34;&gt;Racial and Gender Disparities among Evicted Americans&lt;/a&gt;. &lt;em&gt;Sociological Science 7&lt;/em&gt;: 649-662.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;p&gt;Layser, Michelle D. and De Barbieri, Edward and Greenlee, Andrew and Kaye, Tracy and Saito, Blaine G., &lt;a href=&#34;https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3613789&#34;&gt;Mitigating Housing Instability During a Pandemic&lt;/a&gt; (June 15, 2020).&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 22: The Geography of Eviction (Session 2)</title>
+      <link>/schedule/session/22-covid_cases_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/22-covid_cases_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 23: Independent Work Day</title>
+      <link>/schedule/session/23-independent_work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/23-independent_work/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;Today is an independent work day - there are no course sessions scheduled for today. You should use this time to continue working, and to take stock of your progress.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Professor Greenlee has extended availability for office hours appointments. If you have not already scheduled an appointment and wish to, please &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis?back=1&amp;amp;month=2021-01&#34;&gt;sign up&lt;/a&gt; for an advising appointment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 24: The Geography of Eviction (Session 3)</title>
+      <link>/schedule/session/24-covid_cases_pt3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/24-covid_cases_pt3/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 25: Individual Advising and Independent Work</title>
+      <link>/schedule/session/25-individual_advising_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/25-individual_advising_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This week is devoted to individual advising and independent work. There are no course sessions scheduled for today. You should use this time to continue working on your final project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Professor Greenlee has extended availability for office hours appointments. If you have not already scheduled an appointment and wish to, please &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis?back=1&amp;amp;month=2021-01&#34;&gt;sign up&lt;/a&gt; for an advising appointment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 26: Individual Advising and Independent Work</title>
+      <link>/schedule/session/26-individual_advising_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/26-individual_advising_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This week is devoted to individual advising and independent work. There are no course sessions scheduled for today. You should use this time to continue working on your final project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Professor Greenlee has extended availability for office hours appointments. If you have not already scheduled an appointment and wish to, please &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis?back=1&amp;amp;month=2021-01&#34;&gt;sign up&lt;/a&gt; for an advising appointment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 27: Final Presentations (Session 1)</title>
+      <link>/schedule/session/27-final_presentations_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/27-final_presentations_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This session is reserved for final presentations. We will talk more about final presentations in class, and eventually the order for today’s presentations will be posted here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 28: Final Presentations (Session 2)</title>
+      <link>/schedule/session/28-final_presentations_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/28-final_presentations_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This session is reserved for final presentations. We will talk more about final presentations in class, and eventually the order for today’s presentations will be posted here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 29: Final Presentations (Session 3) and Course Wrap-Up</title>
+      <link>/schedule/session/29-final_presentations_pt3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/29-final_presentations_pt3/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;You made it! This is the final session for Neighborhood Analysis. A portion of this session is reserved for any remaining presentations. In addition, we will discuss what we have covered over the course of the semester, as well as some next steps in your journey as neighborhood analysts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

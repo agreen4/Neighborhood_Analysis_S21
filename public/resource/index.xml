@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resources | Neighborhood Analysis</title>
+    <link>/resource/</link>
+      <atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <description>Resources</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Resources</title>
+      <link>/resource/</link>
+    </image>
+    
+    <item>
+      <title>Required Text</title>
+      <link>/resource/files/01_required_text/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/files/01_required_text/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div style=&#34;display: grid; grid-template-columns: 1fr 1.5fr;grid-column-gap: 40px;&#34;&gt;
+&lt;div&gt;
+&lt;p&gt;&lt;img src=&#34;https://socviz.co/assets/dv-cover-pupress.jpg&#34; style=&#34;display: block; margin: auto auto auto 0;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;
+There is one required text for this class: Healey, Keiran, 2019. &lt;a href=&#34;https://press.princeton.edu/books/ebook/9780691185064/data-visualization&#34;&gt;Data Visualization: A Practical Introduction&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please purchase online or access a &lt;a href=&#34;https://socviz.co/index.html&#34;&gt;pre-print copy here&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;All other readings will be provided via this site.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    You will need to authenticate with your UIUC credentials in order to access some of these files.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning R</title>
+      <link>/resource/files/02_learning_r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/files/02_learning_r/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;learning-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Learning R&lt;/h2&gt;
+&lt;p&gt;One of our rationales for using R this semester is the range of support resources available that have been developed by the user community. As you will hear many times in class, almost every problem you encounter in R, someone else has also encountered. A few tips:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Start with R’s internal help.&lt;/strong&gt; in your console, you can search for documentation for a given command by prefacing it with a question mark (e.g. &lt;code&gt;?mean&lt;/code&gt;). You can also type &lt;code&gt;help()&lt;/code&gt; to access general help in R.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Next, &lt;strong&gt;turn to the internet.&lt;/strong&gt; You might start with &lt;a href=&#34;https://www.rdocumentation.org&#34;&gt;R Documentation&lt;/a&gt; or &lt;a href=&#34;https://stackoverflow.com&#34;&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Get help from our class community.&lt;/strong&gt; A big portion of our time together in class will be devoted to learning from each other - part of that includes learning to troubleshoot problems. We’ll devote some synchronous time in class to working through challenges, and will supplement that with asynchronous means of communication via our course Slack channel. Ask questions &lt;em&gt;early&lt;/em&gt; and &lt;em&gt;often&lt;/em&gt; - there’s no need to unduly suffer through setbacks (although as you solve these you will learn deeply how to address similar problems in the future).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Whenever I get discouraged and want to quit something, I remember the words of my then 3 year-old after she puked carrots all over the living room floor: &amp;quot;I&amp;#39;m gonna need more carrots.&amp;quot;&lt;/p&gt;&amp;mdash; Jessica Valenti (@JessicaValenti) &lt;a href=&#34;https://twitter.com/JessicaValenti/status/1351206308716929032?ref_src=twsrc%5Etfw&#34;&gt;January 18, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;While not set up as a support resource, there are other websites that may help you to extend your capacity in R.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some of the initial tutorials we’ll use to learn R come from &lt;a href=&#34;https://datacarpentry.org&#34;&gt;Data Carpentry&lt;/a&gt;, especially their series on &lt;a href=&#34;https://datacarpentry.org/r-socialsci/&#34;&gt;R for Social Scientists&lt;/a&gt; and &lt;a href=&#34;https://datacarpentry.org/r-intro-geospatial/&#34;&gt;Introduction to R for Geospatial Data&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://swirlstats.com&#34;&gt;swirl&lt;/a&gt; package is designed to teach you the basics of R in R.&lt;/li&gt;
+&lt;li&gt;Check out other useful tutorials available at &lt;a href=&#34;https://r4ds.had.co.nz&#34;&gt;r4ds&lt;/a&gt;, &lt;a href=&#34;http://www.sthda.com/english/&#34;&gt;STHDA.com&lt;/a&gt;, and &lt;a href=&#34;https://www.r-bloggers.com&#34;&gt;R Bloggers&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A “classic” framing document for new learners of R is &lt;a href=&#34;https://www.burns-stat.com/pages/Tutor/R_inferno.pdf&#34;&gt;The R Inferno&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Another important framing document is Keiran Healy’s &lt;a href=&#34;https://plain-text.co&#34;&gt;The Plain Person’s Guide to Plain Text Social Science&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tidytuesday.com&#34;&gt;Tidy Tuesday&lt;/a&gt;: podcast that walks through data analysis using a new dataset weekly in R. Also check out &lt;a href=&#34;https://juliasilge.com&#34;&gt;Julia Silge’s&lt;/a&gt; blog and video tutorials that perform more advanced analysis on Tidy Tuesday data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Good reasons to not be a Data Scientist:&lt;br&gt;&lt;br&gt;- It is a lot of work&lt;br&gt;- Literally nobody will know what you&amp;#39;re talking about&lt;br&gt;- In the end, your computer will be your only real friend&lt;/p&gt;&amp;mdash; 🔥Kareem Carr🔥 (@kareem_carr) &lt;a href=&#34;https://twitter.com/kareem_carr/status/1352655262054834182?ref_src=twsrc%5Etfw&#34;&gt;January 22, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Neighborhood Analysis</title>
+      <link>/resource/files/03_neighborhood_analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/files/03_neighborhood_analysis/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;City of Champaign &lt;a href=&#34;https://cityofchampaign.sharepoint.com/City%20Documents%20Internal/WordPress%20Media%20Files/Planning%20and%20Development%20Department/Long%20Range%20Planning/2006-2010%20NW%20Vision%20Report_final.pdf?originalPath=aHR0cHM6Ly9jaXR5b2ZjaGFtcGFpZ24uc2hhcmVwb2ludC5jb20vOmI6L2cvRVFVdzd6ZGVQMlpJcGtSVFAxTnFuTDRCSnZHOXQ4VzNUX2VJeVV6UFNsNUh0QT9ydGltZT1PNnYtZGxDNjJFZw&#34;&gt;Neighborhood Wellness Vision Report&lt;/a&gt; and &lt;a href=&#34;https://cityofchampaign.sharepoint.com/City%20Documents%20Internal/WordPress%20Media%20Files/Neighborhood%20Services%20Department/Neighborhood%20Wellness%202008-10-Action-Plan-Final.pdf?originalPath=aHR0cHM6Ly9jaXR5b2ZjaGFtcGFpZ24uc2hhcmVwb2ludC5jb20vOmI6L2cvRVJCMGtaUEo2dWRCcUJJaDg5aVFQYW9Cd091bTFFU1V5ZzcwVFMzZFVxV2dyUT9ydGltZT1QZkF2a0ZDNjJFZw&#34;&gt;Action Plan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chicagosmilliondollarblocks.com&#34;&gt;Chicago’s Million Dollar Blocks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DePaul Institute for Housing Studies: &lt;a href=&#34;https://www.housingstudies.org/releases/mapping-displacement-pressure-chic-2020/&#34;&gt;Mapping Displacement Pressure in Chicago, 2020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Nathalie P. Voorhees Center’s &lt;a href=&#34;https://voorheescenter.uic.edu/what-we-do/areas-of-research/gentrification-index/&#34;&gt;Socioeconomic Change of Chicago’s Community Areas (1970-2010)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.neighborhoodindicators.org&#34;&gt;National Neighborhood Indicators Partnership&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://findmylandlord.chicagodsa.org&#34;&gt;Find My Landlord&lt;/a&gt;, a tool that maps the properties in Chicago owned by a single landlord or management company.&lt;/li&gt;
+&lt;li&gt;Metropolitan Planning Council and Urban Institute’s &lt;a href=&#34;https://www.urban.org/sites/default/files/publication/98453/the_cost_of_segregation_7.pdf&#34;&gt;The Cost of Segregation&lt;/a&gt; report for Chicago.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.vox.com/policy-and-politics/2019/2/18/18217346/work-home-segregation-map&#34;&gt;American segregation, mapped at day and night&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Sources</title>
+      <link>/resource/files/04_data_sources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/files/04_data_sources/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kjhealy.github.io/covdata/&#34;&gt;covdata R Package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Data Science Central &lt;a href=&#34;https://www.datasciencecentral.com/profiles/blogs/big-data-sets-available-for-free&#34;&gt;Big data sets available for free&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Economic Innovation Group &lt;a href=&#34;https://eig.org/dci&#34;&gt;Distressed Communities Index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://evictionlab.org/get-the-data/&#34;&gt;Eviction Lab&lt;/a&gt; data on residential evictions summarized to various administrative geographies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.statsmapsnpix.com/2016/10/the-global-human-settlement-layer.html?m=1&#34;&gt;Global Human Settlements Dataset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HUD &lt;a href=&#34;https://www.hudexchange.info/programs/location-affordability-index/&#34;&gt;Location Affordability Index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HUD &lt;a href=&#34;https://www.huduser.gov/portal/AHS-neighborhood-description-study-2017.html#small-area-tab&#34;&gt;Urbanization Perceptions Small Area Index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HUD &lt;a href=&#34;https://www.huduser.gov/portal/datasets/usps.html&#34;&gt;USPS Vacancy Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://s4.ad.brown.edu/projects/diversity/researcher/bridging.htm&#34;&gt;Longitudinal Tract Database (LTDB)&lt;/a&gt;: 1970 - 2010 Census data normalized to 2010 census tracts&lt;/li&gt;
+&lt;li&gt;MIT Senseable Cities Lab &lt;a href=&#34;http://senseable.mit.edu/treepedia/&#34;&gt;Treepedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://preservationdatabase.org/about-the-database/&#34;&gt;National Housing Preservation Database (NHPD)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Policy Surveillance Program &lt;a href=&#34;https://lawatlas.org/datasets/eviction-laws-1530797420&#34;&gt;Eviction Laws database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;USDA &lt;a href=&#34;https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes.aspx&#34;&gt;Rural-Urban Commuting Area Codes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://openpolicing.stanford.edu&#34;&gt;Stanford Open Policing Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SURGO Foundation &lt;a href=&#34;https://precisionforcovid.org/ccvi&#34;&gt;U.S. COVID Community Vulnerability Index (CCVI)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inspiration and Miscellenia</title>
+      <link>/resource/files/05_inspiration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/files/05_inspiration/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;BBC: &lt;a href=&#34;https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535&#34;&gt;How the BBC Visual and Data Journalism Team Works with Graphics in R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bloomberg: &lt;a href=&#34;https://www.bloomberg.com/news/articles/2018-12-17/visualizing-u-s-immigration-history-as-tree-rings&#34;&gt;Visualizing U.S. Immigration History as Tree Rings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Craig Dalton and Timm Stallmann: &lt;a href=&#34;https://onlinelibrary.wiley.com/doi/full/10.1111/cag.12398&#34;&gt;Counter-mapping data science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GeoDa Center &lt;a href=&#34;https://geodacenter.github.io/covid/&#34;&gt;U.S. COVID Atlas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio.com/resources/rstudioconf-2019/r-at-the-aclu-joining-tables-to-to-reunite-families/&#34;&gt;R at the ACLU: Joining Tables to Reunite Families&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oliveruberti.com/the-information-capital&#34;&gt;London: The Information Capital&lt;/a&gt;: Stunning book featuring 100 visualizations about the city of London. Many visualizations &lt;a href=&#34;https://www.r-bloggers.com/2014/11/improving-r-data-visualisations-through-design/&#34;&gt;were created using R&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;MIT: &lt;a href=&#34;https://inequality.media.mit.edu/#&#34;&gt;Atlas of Inequality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New York City &lt;a href=&#34;https://www1.nyc.gov/assets/hpd/downloads/pdfs/services/neighborhood-planning-playbook.pdf&#34;&gt;Neighborhood Planning Playbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.r-graph-gallery.com/index.html&#34;&gt;R Graph Gallery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Washington Post: &lt;a href=&#34;https://www.washingtonpost.com/graphics/2018/national/segregation-us-cities/?noredirect=on&amp;amp;utm_term=.5d7398b764d0&#34;&gt;America is more diverse than ever - but still segregated&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://papress.com/products/w-e-b-du-boiss-data-portraits-visualizing-black-america&#34;&gt;W.E.B. Du Bois’s Data Portraits: Visualizing Black America&lt;/a&gt; and related background from &lt;a href=&#34;https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/&#34;&gt;Smithsonian Magazine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

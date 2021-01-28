@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How To | Neighborhood Analysis</title>
+    <link>/howto/</link>
+      <atom:link href="/howto/index.xml" rel="self" type="application/rss+xml" />
+    <description>How To</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>How To</title>
+      <link>/howto/</link>
+    </image>
+    
+    <item>
+      <title>Your First Commands</title>
+      <link>/howto/howto/04-basic_commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/howto/howto/04-basic_commands/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;With those basics in mind, you can start to explore the basic functionality of R.&lt;/p&gt;
+&lt;div id=&#34;starting-simple---math-and-basic-operators&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Starting Simple - Math and Basic Operators&lt;/h3&gt;
+&lt;p&gt;Now that you have a basic lay of the land for the RStudio console, we can start to explore some logic and functionality. Let’s start simple - with some basic math operators. Try doing some basic math by typing in the console window and hitting return / enter to execute:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;2+2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 4&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that you type in code, R executes it, and immediately below what you’ve typed in, it has returned an answer. Here are some of the most common mathematical operators which you’ll take advantage of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt; Addition&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-&lt;/code&gt; Subtraction&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; Multiplication&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/&lt;/code&gt; Division&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;^&lt;/code&gt; Exponent (e.g. &lt;code&gt;2^3 = 8&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;()&lt;/code&gt; parentheses (to enforce a desired order of operations - r automatically follows the typical order of operation rules)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are also some built in mathematical constants:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pi&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 3.141593&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Which makes it really easy to figure out things, like the area of a circle with a radius of 5 (recall &lt;span class=&#34;math inline&#34;&gt;\(A = \pi r^2\)&lt;/span&gt;):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pi*5^2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 78.53982&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;While we won’t be doing much (if any) math this way, it’s important to become familiar with how this works, and what the expected response is from R.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assigning-values-to-objects&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Assigning values to objects&lt;/h3&gt;
+&lt;p&gt;One of the useful things about R is that it is an &lt;em&gt;object oriented&lt;/em&gt; programming language. This means that we can easily assign values to objects and then use those objects in calculations later on. We can assign values using the &lt;code&gt;&amp;lt;-&lt;/code&gt; assignment operator.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r &amp;lt;- 5&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hmm - what did we do here? We assigned the value 5 to a variable named &lt;code&gt;r&lt;/code&gt;. That variable could have just about any name - the name isn’t really important - it’s just a place holder. Notice in our environment window that we have a new row that shows a variable named r with a value of 5. We can easily retrieve this value by typing the name of the variable in our console:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 5&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This means we can use it in place of a value anywhere in our code:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pi*r^2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 78.53982&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If we assigned a new value to r, the value would change:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r&amp;lt;-10
+pi*r^2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 314.1593&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Instead of returning a value from an operation to our console, we could also store that in a variable:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;circle_area&amp;lt;-pi*r^2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And now we could retrieve that:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;circle_area&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 314.1593&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will become more intuitive the more you use R. Now’s a good time to start to internalize some conventions around variable naming.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variables are case sensitive, so &lt;code&gt;variable&lt;/code&gt; and &lt;code&gt;Variable&lt;/code&gt; are different things.&lt;/li&gt;
+&lt;li&gt;Variables cannot start with numerals, they must start with a letter&lt;/li&gt;
+&lt;li&gt;Variables cannot contain spaces. Convention is to use an underscore or period (e.g. variable_one or variable.one) if you want to denote spaces in a variable name.&lt;/li&gt;
+&lt;li&gt;If you define a variable with the same name as an R constant (such as &lt;code&gt;pi&lt;/code&gt;), your variable will supersede R’s value:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pi&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 3.141593&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pi&amp;lt;-2000
+pi&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 2000&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You will start to develop your own naming conventions for variables as you learn R. Keeping variable names short and descriptive becomes important, particularly as you add objects to your workspace.&lt;/p&gt;
+&lt;p&gt;As we learn more about other R features, you’ll also want to avoid naming variables in ways that are similar to R functions. No need to worry about those details just yet, but keep this in mind as we move along.&lt;/p&gt;
+&lt;p&gt;Finally, keep in mind that you can remove existing variables from your workspace using the &lt;code&gt;rm()&lt;/code&gt; command. &lt;code&gt;rm()&lt;/code&gt; will accept in the bracket the name of the object you’d like to remove (be careful is this is permanent):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rm(pi)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Even more finally, if you want to clear your entire workspace, you can do so as follows (remember that this is a permanent clearing):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rm(list=ls())&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Get Started</title>
+      <link>/howto/howto/00-get_started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/howto/howto/00-get_started/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;R is an open source programming language that is a common tool used for data analysis across a range of disciplines. This means that in addition to being free and available for a range of operating systems and environments, R is also directly supported by a diverse user community who continually develop approaches for specialized applications or data. Need to download U.S. Census Data? There’s an &lt;a href=&#34;https://walker-data.com/tidycensus/&#34;&gt;R package&lt;/a&gt; for that. Need to perform common data cleaning tasks? There’s an R package for that too. We’ll be exploring a range of these specialized applications over the course of the semester.&lt;/p&gt;
+&lt;p&gt;Of course there are alternate languages which we could employ in service of neighborhood analysis. &lt;a href=&#34;https://www.python.org&#34;&gt;Python&lt;/a&gt;, for example, is an even more ubiquitous programming language with its own set of tools for data science. R was originally built as a &lt;em&gt;statistical computing&lt;/em&gt; language, and that brings some important benefits for the types of data science we’ll be learning this semester. R is also fairly prevalent among the user community working in public policy analysis and urban data science - this is the user community which you will be joining. Finally, R has a high learning curve, but also a very active user community, meaning that abundant documentation of problems and their solutions is available.&lt;/p&gt;
+&lt;p&gt;As we get started, let’s be clear - you are going to experience some frustration and challenges as you learn the R programming language. This class assumes no prior background in R or any other programming language for that matter, and we’ll work to quickly build your “vocabulary” and the ability to get results. We will spend some time picking up basics, and will then use our exploration of specific analysis approaches to reinforce our use of the grammar and structure of the language and to build more complex scripts over time.&lt;/p&gt;
+&lt;p&gt;It’s fair to equate learning R with learning to drive a manual car. Increasingly, people learn how to drive in automatic cars - essentially allowing the car to handle the function of switching gears - you put the car into drive, press the accelerator pedal and the car moves forward. Your past exposure to computer-based analytic tools has probably followed a similar strategy - you likely learned using software that had graphical user interfaces that allow them to call up and run programs and then spit out results. Most of us learn to point and click in order to accomplish a particular set of analytic tasks, meaning that if we want to generate the same results in the future, we would have to repeat all of those same steps over again.&lt;/p&gt;
+&lt;p&gt;So why learn on a manual? For many car enthusiasts, manuals are both more efficient and more engaging to drive - they offer additional control, and come with a heightened awareness of what the car is doing. Of course, they also come with a steep learning curve.&lt;/p&gt;
+&lt;p&gt;Some of the same attributes apply to our use of R as a tool for analysis. First, a manual approach forces you to explicitly understand more of the requirements and assumptions that go into the analysis that you’re doing. Second, you have to know your data (and its strengths and limitations) well in order to get it set up for analysis and to produce useful output. Third, this approach emphasizes &lt;em&gt;reproducible&lt;/em&gt; analysis, meaning that you will develop workflows that can be repeated over and over again producing the same results - important for sharing your work with others and for accountability, especially within contexts related to public deliberation of the strengths and weaknesses of policy arguments.&lt;/p&gt;
+&lt;p&gt;Keeping these three benefits in mind, we’ll be using the R software coupled with the RStudio &lt;em&gt;Integrated Development Environment&lt;/em&gt; (IDE) to counter some of the downsides of a purely manual approach. RStudio will help us implement R code more effectively and efficiently. Hopefully at this point, this prospect leaves you excited rather than daunted!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing R and RStudio</title>
+      <link>/howto/howto/01-install-r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/howto/howto/01-install-r/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;downlad-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Downlad R&lt;/h2&gt;
+&lt;p&gt;R can be downloaded from the Comprehensive R Archive Network (CRAN), a network of mirrored servers throughout the world that host the R software as well as user-developed packages. Visit &lt;a href=&#34;https://cloud.r-project.org&#34;&gt;https://cloud.r-project.org&lt;/a&gt; which will automatically direct you to the best download server.&lt;/p&gt;
+&lt;p&gt;Once here, you can then download and install R using the version that matches your operating system:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/howto/howto/01-Install-R_files/02_RDownload.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Go ahead and download R and install following the installer defaults. After R is downloaded and installed, run R to confirm. You should see a single window that looks something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/howto/howto/01-Install-R_files/03_ROpen.png&#34; /&gt;
+That’s it for R. This should be the first and last time you’ll need to open the R console directly. We typically will not access R directly, but instead will use RStudio as our primary interface. Go ahead and close the R console and proceed by downloading and installing RStudio, which is the IDE we will use to interface and write code with R.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;downlad-rstudio&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Downlad RStudio&lt;/h2&gt;
+&lt;p&gt;Next up, let’s download RStudio. Go to &lt;a href=&#34;https://rstudio.com/products/rstudio/download&#34;&gt;https://rstudio.com/products/rstudio/download&lt;/a&gt;. Click on “Download” under RStudio Desktop. The website will suggest the most appropriate current version of the software based upon the computer you are loading RStudio on. You may also choose from an alternate installer if you believe it is more appropriate for your operating system.&lt;/p&gt;
+&lt;p&gt;Download and install RStudio, again using the default installation settings.&lt;/p&gt;
+&lt;p&gt;Once you have RStudio installed, open RStudio. You should see something that looks like this (the information in your console window will likely describe a newer version of R than what is displayed here).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/howto/howto/01-Install-R_files/04_RStudioOpen.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You’ll note that what appears in the portion of the console to the left looks very similar to the R console window which you opened before you started your install of RStudio. This console functions in exactly the same way, however, you’ll also note that there are other areas which you have access to as well.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/howto/howto/01-Install-R_files/05_RStudioOpenAnnotate.png&#34; /&gt;
+## The RStudio Interface&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The R Console&lt;/strong&gt; is the place where code you write is executed. Typically we’ll write code in a &lt;em&gt;script&lt;/em&gt; or &lt;em&gt;R Notebook&lt;/em&gt; (more on those later) and active pieces of code will them be executed in the R console. You can also type code directly into the console and execute it by hitting the return or enter key.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Environment Window&lt;/strong&gt; provides information on variables, data tables, and other objects you create and define as you work.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Auxiliary Window&lt;/strong&gt; provides a range of information, and includes a file browser, plot visualization window, and access to help documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With those basics in mind, you can start to explore the basic functionality of R.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Set Up a GitHub Repository</title>
+      <link>/howto/howto/02-github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/howto/howto/02-github/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;The majority of the work you produce this semester will be submitted via a &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt; repository which you will create.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://octodex.github.com/images/codercat.jpg&#34; style=&#34;width:30.0%&#34; /&gt;
+GitHub offers some services for free, however, as a student at an educational institution, you can register via &lt;a href=&#34;https://education.github.com&#34;&gt;GitHub for Education&lt;/a&gt; to recieve enhanced benefits and services. Let’s get this set up:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;If you do not already have a GitHub account, go to &lt;a href=&#34;https://github.com&#34;&gt;GitHub.com&lt;/a&gt; and then click on Sign Up to create a new account. You will make a username (see some &lt;a href=&#34;https://happygitwithr.com/big-picture.html#is-it-going-to-hurt&#34;&gt;sage username advice here&lt;/a&gt;), enter your email address, and password, and then hit create account. I recommend using your UIUC email address for this step if you’re creating a new account (for my rationale, see the next step).&lt;/li&gt;
+&lt;li&gt;GitHub offers some services for free which you can access with your basic account, however, as a student at an educational institution, you can register with &lt;a href=&#34;https://education.github.com&#34;&gt;GitHub Education&lt;/a&gt; to receive enhanced benefits and services. You will be asked to verify your association with an academic institution, which you can do by entering your [netid]&lt;span class=&#34;citation&#34;&gt;@illinois.edu&lt;/span&gt; email address and taking a picture of your &lt;a href=&#34;https://www.icardnet.uillinois.edu/public/&#34;&gt;I-Card&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;While you’re logged into your GitHub account, visit the &lt;a href=&#34;https://github.com/agreen4/Neighborhood_Analysis_S21_Assignments&#34;&gt;Neighborhood Analysis Assignment Repository Template&lt;/a&gt;. You will use this repository as a template for your own assignments repository. Within the repository, you’ll see a readme file that you can modify to track your work as you upload it. You’ll also see folders into which you can upload your assignments. To use the template to create your own assignment repository, click on the green button that says &lt;code&gt;Use This Template&lt;/code&gt;. On the next screen choose a name for this repository (you can name it whatever you like). You can choose to make the repository &lt;strong&gt;public&lt;/strong&gt; or &lt;strong&gt;private&lt;/strong&gt;. Public repositories can be seen by anyone. Private repositories can only be seen by those you give permission to (if you make your repository private, you will have to grant me permission to be able to view it for the purposes or grading). To grant access to a private repository, go to settings -&amp;gt; manage access -&amp;gt; Invite a collaborator, then invite user agreen4.&lt;/li&gt;
+&lt;li&gt;From the main folder in your new repository, make note of your username, the repository name, and the URL (for example…)
+&lt;ul&gt;
+&lt;li&gt;Github Username: agreen4&lt;/li&gt;
+&lt;li&gt;Repository Name: Neighborhood_Analysis_S21&lt;/li&gt;
+&lt;li&gt;Repository URL: &lt;a href=&#34;https://github.com/agreen4/Neighborhood_Analysis_S21&#34; class=&#34;uri&#34;&gt;https://github.com/agreen4/Neighborhood_Analysis_S21&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Use the above information to &lt;a href=&#34;https://forms.illinois.edu/sec/421969060&#34;&gt;register your GitHub repository&lt;/a&gt; for our class.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://octodex.github.com/images/bouncercat.png&#34; style=&#34;width:30.0%&#34; /&gt;
+Cool. You’re all set to use this repository for us to track your work this semester.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linking GitHub and R</title>
+      <link>/howto/howto/03-link_github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/howto/howto/03-link_github/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;You can upload files directly to a GitHub repository in the GitHub web interface, but as you create more complex files and file structures, that’s not going to be a feasible way to manage your work. That strategy also overlooks most of the features of what GitHub is at its core - a version control system.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://octodex.github.com/images/collabocats.jpg&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We might want to version our work for several reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To keep track of changes we’ve made, so that we can track when code works and when we’ve broken it&lt;/li&gt;
+&lt;li&gt;To be able to share code with collaborators and work on the same files at the same time and then reconcile and combine work all together&lt;/li&gt;
+&lt;li&gt;To be able to share code and data publicly with others&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All three of these rationales are important motivations within the context of our class. There are two strategies which you may want to try to integrate GitHub into your R workflow.&lt;/p&gt;
+&lt;div id=&#34;using-the-github-desktop-client&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Using the GitHub Desktop Client&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://desktop.github.com&#34;&gt;GitHub Desktop&lt;/a&gt; is an application that allows you to upload, download, and reconcile github repositories stored on your computer with your GitHub account. From GitHub desktop, you can create new repositories, download previously created repositories, and upload new versions of repository contents to the cloud.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;using-rstudios-integrated-github-functionality&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Using RStudio’s integrated Github Functionality&lt;/h2&gt;
+&lt;p&gt;RStudio has GitHub functionality built right in, which is very handy for integrating version control into your R workflow. Getting RStudio set up to work with GitHub can be a bit tedious, but once it is set up, it is straightforward to use. An outstanding resource to help you get GitHub integrated with R is &lt;a href=&#34;https://happygitwithr.com&#34;&gt;Happy Git and GitHub for the useR&lt;/a&gt;. As the authors mention in a section titled appropriately &lt;a href=&#34;https://happygitwithr.com/big-picture.html#is-it-going-to-hurt&#34;&gt;&lt;em&gt;Is It Going to Hurt?&lt;/em&gt;&lt;/a&gt;, integrating Git changes your workflow. However, since many of you are just starting to learn R, making this part of your typical workflow early on will be challenging, but less of a change from other ways of doing things.&lt;/p&gt;
+&lt;p&gt;Assuming you’ve already got R and RStudio installed on your system and have already set up a GitHub account, you can start here:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/install-git.html#git-already-installed&#34;&gt;Check&lt;/a&gt; to see if Git is installed on your computer, and if it isnt, &lt;a href=&#34;https://happygitwithr.com/install-git.html#install-git&#34;&gt;Install Git&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/hello-git.html&#34;&gt;Associate&lt;/a&gt; git on your computer with your GitHub account.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/git-client.html#recommended-git-clients&#34;&gt;Install a Git client&lt;/a&gt; like GitHub Desktop.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/push-pull-github.html&#34;&gt;Connect to GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/rstudio-git-github.html&#34;&gt;Connect RStudio to GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/usage-intro.html&#34;&gt;Get Started&lt;/a&gt; using GitHub integrated with R (we’ll talk more about this in class).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://octodex.github.com/images/femalecodertocat.png&#34; style=&#34;width:30.0%&#34; /&gt;
+We will ease our way into using Git, and will also devote some time to troubleshooting in class. I promise, it’s going to make sense soon!&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,6 +5,13 @@
     <meta charset="utf-8" />
     <meta name="author" content="Andrew J. Greenlee" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/sfah.css" type="text/css" />
     <link rel="stylesheet" href="css/fonts.css" type="text/css" />
@@ -14,223 +21,72 @@
 
 
 
-name: xaringan-title
-class: left, top, inverse
+name: What is a neighborhood?
+class: left, bottom, inverse
 background-image: url(images/02_1_anastasia-dulgier-OKOOGO578eo-unsplash.jpg)
 background-size: cover
 
 # Neighborhood Analysis
-## Session 2: What is a Neighborhood?
----
-name: Question 1
-class: middle, inverse
+.font-35[Session 2: What is a Neighborhood?]
 
-# How has a neighborhood .salt[influenced] your life?
+???
+Today, we're going to spend more time getting to know one another, digging into some of our assumptions about what neighborhoods are, and exploring a bit of our judgements regarding what makes a neighborhood good or bad.
 
----
-name: My turn to share
-class: right, top
-background-image: url(images/1_1_ross-elder-uXQVNkam3hE-unsplash.jpg)
-background-size: cover
-
-&lt;img class="circle" src="images/2_Greenlee.jpg" width="250px"/&gt;
-
-# My turn to share
----
-name: My turn to share
-class: right, top, inverse
-background-image: url(images/02_6_neal-kharawala-XXA8PTuLD1Y-unsplash.jpg)
-background-size: cover
-
-# I Grew Up Here
----
-name: My turn to share
-class: left, top
-background-image: url(images/02_7_map-chicago-panoramic-view-centered-on-hyde-park-projection-called-this-is-our-neighborhood-lauren-nassef.jpg)
-background-size: auto
-
-# More Specifically Here
-## Hyde Park - Kenwood
----
-name: My turn to share
-class: left, top
-
-# Hyde Park - Kenwood
-
-.pull-left[
-&lt;img src = "images/02_8_WorldsColumbian-mcnally-1893.jpg" height = 370, align="right"&gt;
-]
----
-name: My turn to share
-class: left, top
-
-# Hyde Park - Kenwood
-
-.pull-left[
-&lt;img src = "images/02_8_WorldsColumbian-mcnally-1893.jpg" height = 370, align="left"&gt;
-]
-.pull-right[
-&lt;img src = "images/02_9_robie-house-03-2.jpg" height = 360, align="right"&gt;
-]
----
-name: My turn to share
-class: left, top
-
-# Hyde Park - Kenwood
-
-.pull-left[
-&lt;img src = "images/02_10_frontwindow.jpg" height = 370, align="left"&gt;
-]
-.pull-right[
-&lt;img src = "images/02_9_robie-house-03-2.jpg" height = 360, align="right"&gt;
-]
----
-name: My turn to share
-class: left, top
-
-# Hyde Park - Kenwood
-
-.pull-left[
-&lt;img src = "images/02_10_frontwindow.jpg" height = 370, align="left"&gt;
-]
-.pull-right[
-&lt;img src = "images/02_11_racial.png" height = 360, align="right"&gt;
-]
----
-name: My turn to share
-class: left, top
-
-# Hyde Park - Kenwood
-
-.pull-left[
-&lt;img src = "images/02_12_racial.png" height = 370, align="left"&gt;
-]
-.pull-right[
-&lt;img src = "images/02_11_racial.png" height = 360, align="right"&gt;
-]
----
-name: My turn to share
-class: left, top
-
-# Hyde Park - Kenwood
-
-.pull-left[
-&lt;img src = "images/02_12_racial.png" height = 370, align="left"&gt;
-]
-.pull-right[
-&lt;img src = "images/02_13_divide.png" height = 380, align="right"&gt;
-]
----
-name: My turn to share
-class: left, top
-
-# This is Chicago
-
-.pull-left[
-&lt;img src = "images/02_14_gelato.png" height = 370, align="left"&gt;
-]
-.pull-right[
-&lt;img src = "images/02_13_divide.png" height = 380, align="right"&gt;
-]
----
-name: My turn to share
-class: left, top
-
-# This is Chicago
-
-.pull-left[
-&lt;img src = "images/02_14_gelato.png" height = 370, align="left"&gt;
-]
-.pull-right[
-&lt;img src = "images/02_15_settlement.png" height = 500, align="right"&gt;
-]
----
-name: My turn to share
-class: left, top
-
-# This is Chicago
-
-.pull-left[
-&lt;img src = "images/02_16_greenlees.png" height = 280, align="left"&gt;
-]
-.pull-right[
-&lt;img src = "images/02_15_settlement.png" height = 500, align="right"&gt;
-]
----
-name: My turn to share
-class: left, top
-
-# This is Chicago
-
-.pull-left[
-&lt;img src = "images/02_16_greenlees.png" height = 280, align="left"&gt;
-]
-.pull-right[
-&lt;img src = "images/02_17_CA1940.png", align="right"&gt;
-]
----
-name: My turn to share
-class: left, top
-
-# This is Chicago
-
-.pull-left[
-&lt;img src = "images/02_18_CA1980.png", align="left"&gt;
-]
-.pull-right[
-&lt;img src = "images/02_17_CA1940.png", align="right"&gt;
-]
----
-name: My turn to share
-class: left, top
-
-# This is Chicago
-
-.pull-left[
-&lt;img src = "images/02_18_CA1980.png", align="left"&gt;
-]
-.pull-right[
-&lt;img src = "images/02_19_Andy.jpeg", height = 460, align="right"&gt;
-]
----
-name: My turn to share
-class: left, top, inverse
-background-image: url(images/02_20_Network.png)
-background-size:contain
----
-name: My turn to share
-class: left, top, inverse
-background-image: url(images/02_21_Network_CL.png)
-background-size:contain
----
-name: My turn to share
-class: left, top
-background-image: url(images/02_22_Distriibution.png)
-background-size:contain
+Let's start by introducing ourselves...
 ---
 name: Your Turn
-class: left, middle, inverse
-background-image: url(images/02_4_osh-nuttall-xl2piFfdzyA-unsplash.jpg)
+class: right, middle
+background-image: url(images/bruno-aguirre-sHP3l9iMM30-unsplash-2.jpg)
 background-size: cover
 
-# Now its your turn &lt;br&gt;to share...
+# Its your turn to share...
 ---
-name: Your Turn
-class: left, middle, inverse
-background-image: url(images/02_4_osh-nuttall-xl2piFfdzyA-unsplash.jpg)
+name: Your Turn 2
+class: right, middle
+background-image: url(images/bruno-aguirre-sHP3l9iMM30-unsplash-2.jpg)
 background-size: cover
+#&lt;br&gt;
 
 # Who are you?
 # Where is home? 
 # What do you do here?
-# What do you hope to &lt;br&gt;gain from our class?
+# What types of stories &lt;br&gt;do you hope to tell?
+
 ---
-name: Question 3 - Good Bad
+name: Last Class Whats a Neighborhood
+class: top, left
+
+.pull-left[
+&lt;img src="images/4_Farr_NeighUnit.jpg" width="100%" /&gt;
+]
+
+.font-35[.pull-right[
+In our last session, you articulated qualities of neighborhoods...
+- A space to live in and interact
+- Sense of place
+- Distinct boundaries
+- Overlap of neighborhood and community
+- Overlapping dimensions
+- Living organism - complex adaptive system
+- Functional unit for value capture
+]
+]
+---
+name: Question 1 - Good or Bad
 class: top, right
 background-image: url(images/02_5_pawel-czerwinski-T1ZIQDUjwiY-unsplash.jpg)
 background-size: cover
 
 # What makes a neighborhood &lt;br&gt;.salt[good] or .heat[bad]?
+
+---
+
+name: Question 2 - APA Places
+class: top, right
+background-image: url(images/meghan-schiereck-REgC5GZEXU4-unsplash.jpg)
+background-size: cover
+
+# Are APA Great Places &lt;br&gt;.heat[biased?]
 ---
 name: Question 4 - Gentrification
 class: top, inverse
@@ -238,22 +94,221 @@ background-image: url(images/02_2_fernando-hernandez-zQzaErgqAmY-unsplash.jpg)
 background-size: cover
 
 # .fat[Gentrification] &lt;br&gt; What is it?
+--
+
+# How should &lt;br&gt;we measure it?
+
+--
+
+# Let's explore a &lt;br&gt;bit more...
 ---
-name: Question 2 - How should we measure Gentrification?
-class: top, left, inverse
-background-image: url(images/02_3_brandi-ibrao-fbRyfjb5N2Y-unsplash.jpg)
+name: pause for covid
+class: top, left
+
+# A Tweet sparks a question...
+.pull-left[
+&lt;img src="images/CDPH_Tweet.png" width="83%" /&gt;
+]
+
+.pull-right[
+.font-35[
+Sorry to bring COVID into this...
+
+What demographic factors help to explain the difference between where people are dying and where vaccinations are occurring?
+]
+]
+---
+name: Get Data
+class: top, left
+
+&lt;img src="images/chi_portal_covid.png" width="100%" /&gt;
+---
+name: Get Data 2
+class: top, left
+
+&lt;img src="images/chi_portal_covid_2.png" width="100%" /&gt;
+---
+name: Get Data 3
+class: top, left
+
+&lt;img src="images/chi_portal_covid_3.png" width="100%" /&gt;
+---
+name: Scatterplot COVID Infection Rate
+class: top, left
+
+
+.font-35[What's the relationship between COVID *cases* and vaccinations?]
+.pull-left[
+
+.panelset[
+   .panel[.panel-name[Output]
+   ![](Session-2_files/figure-html/scatterplot-1.png)&lt;!-- --&gt;
+   ]
+   .panel[.panel-name[Code]
+
+```r
+ggplot(dataset %&gt;% filter(percent_tested_positive_cumulative !=0)) +
+  geom_point(aes(x=percent_tested_positive_cumulative, y=X_1st_dose_percent_population))+
+  labs(x="Pop. Positive (%)", y="Pop. Vaccinated (%)")+
+  scale_x_continuous(labels=scales::percent)+
+  scale_y_continuous(labels=scales::percent)+
+  theme_minimal()
+```
+   ]
+]
+]
+.pull-right[
+How would you describe this in your own words?
+
+- What does each point represent?
+
+- Are the scales for X and Y reasonable? What do they tell you?
+
+- Is there a particular region on this plot that might spark questions for further exploration?
+
+- Are you ready to write an op-ed for the Chicago Tribune or Sun Times (the two major newspapers)?
+]
+---
+name: Scatterplot death rate
+class: top, left
+
+.font-35[What's the relationship between COVID *deaths* and vaccinations?]
+.pull-left[
+.panelset[
+.panel[.panel-name[Output]
+![](Session-2_files/figure-html/scatterplot_death-1.png)&lt;!-- --&gt;
+]
+
+.panel[.panel-name[Code]
+
+```r
+ggplot(dataset %&gt;% filter(percent_tested_positive_cumulative !=0)) +
+  geom_point(aes(x=death_rate_cumulative, y=X_1st_dose_percent_population))+
+  labs(x="Death Rate (per 1,000)", y="Pop. Vaccinated (%)")+
+  scale_x_continuous(labels=scales::percent)+
+  scale_y_continuous(labels=scales::percent)+
+  theme_minimal()
+```
+]
+
+]
+]
+.pull-right[
+How would you describe this in your own words?
+
+- What does each point represent?
+
+- Are the scales for X and Y reasonable? What do they tell you?
+
+- Is there a particular region on this plot that might spark questions for further exploration?
+
+- Are you ready to write an op-ed for the Chicago Tribune or Sun Times (the two major newspapers)?
+]
+---
+name: Maps
+class: top, left
+
+
+.pull-left[
+.panelset[
+.panel[.panel-name[Output]
+![](Session-2_files/figure-html/map_tested-1.png)&lt;!-- --&gt;
+]
+.panel[.panel-name[Code]
+
+```r
+ggplot() +
+  geom_sf(data=dataset, aes(fill=percent_tested_positive_cumulative))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Positive (%)")+
+  theme_minimal()
+```
+]
+]]
+
+.pull-right[
+.panelset[
+.panel[.panel-name[Output]
+![](Session-2_files/figure-html/map_vaccinated-1.png)&lt;!-- --&gt;
+]
+.panel[.panel-name[Code]
+
+```r
+ggplot() +
+  geom_sf(data=dataset, aes(fill=X_1st_dose_percent_population))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Vaccinated (%)")+
+  theme_minimal()
+```
+]
+]
+
+]
+
+---
+name: Maps2
+class: top, left
+
+.pull-left[
+.panelset[
+.panel[.panel-name[Output]
+![](Session-2_files/figure-html/map_died-1.png)&lt;!-- --&gt;
+]
+.panel[.panel-name[Code]
+
+```r
+ggplot() +
+  geom_sf(data=dataset, aes(fill=death_rate_cumulative))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Died (%)")+
+  theme_minimal()
+```
+]
+]]
+
+.pull-right[
+.panelset[
+.panel[.panel-name[Output]
+![](Session-2_files/figure-html/map_vaccinated2-1.png)&lt;!-- --&gt;
+]
+.panel[.panel-name[Code]
+
+```r
+ggplot() +
+  geom_sf(data=dataset, aes(fill=X_1st_dose_percent_population))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Vaccinated (%)")+
+  theme_minimal()
+```
+]
+]
+
+]
+---
+name: What Next?
+class: bottom, left
+background-image: url(images/kelly-sikkema-cXkrqY2wFyc-unsplash.jpg)
 background-size: cover
-# How should we measure it?
+
+### .salt[What Next?]
+.font-35[
+What are the types of things you would want to &lt;br&gt;explore to understand what's going on here?
+
+Where might the information come from?
+]
 
 ---
-
 name: Next Class
 class: top, left, inverse
 background-image: url(images/03_23_david-werbrouck-5GwLlb-_UYk-unsplash.jpg)
 background-size: cover
 
 # Tuesday's Class
-On Tuesday, we'll start exploring the R programming &lt;br&gt;language and RStudio Integrated Development Environment
+.footnote[.font-35[On Tuesday, we'll start exploring the R programming language and RStudio Integrated Development Environment]]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

@@ -1,0 +1,1785 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neighborhood Analysis</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>Neighborhood Analysis</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Neighborhood Analysis</title>
+      <link>/</link>
+    </image>
+    
+    <item>
+      <title>Session 1: Course Introduction</title>
+      <link>/schedule/session/01-course_introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/01-course_introduction/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;In our first course session, we will introduce ourselves and discuss some of the basic tenets and expectations of our learning together. We’ll also think through two foundational questions:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;What’s a neighborhood?&lt;/li&gt;
+&lt;li&gt;Why do neighborhoods matter?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;this-weeks-reflection-prompt&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;This Week’s Reflection Prompt&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What is a neighborhood? How should neighborhoods be defined? Why might neighborhoods be important units of analysis for city planners and urbanists?&lt;/li&gt;
+&lt;li&gt;What characteristics make a neighborhood great?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Please read the &lt;a href=&#34;/syllabus&#34;&gt;course syllabus&lt;/a&gt; and bring questions with you.&lt;/p&gt;
+&lt;p&gt;If you haven’t already, please complete the &lt;a href=&#34;https://forms.illinois.edu/sec/1174889502&#34;&gt;course introductory survey&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
+&lt;iframe src=&#34;/slides/Session_1/Session-1.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources-and-actions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources and Actions&lt;/h2&gt;
+&lt;div id=&#34;introduction-to-r-for-planners&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Introduction to R for Planners&lt;/h4&gt;
+&lt;p&gt;Register for the optional but highly recommended &lt;a href=&#34;https://urban.illinois.edu/about-us/events/introduction-to-r-for-planners-2-day-workshop/&#34;&gt;Introduction to R for Urban Planners virtual workshop&lt;/a&gt; (January 30th and February 6th) - registration closes on Wednesday 1/28.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://web.faa.illinois.edu/app/uploads/sites/2/2021/01/Intro-to-R-for-Planners-2021-1600x918.51851851852-c-default.jpg&#34; width=&#34;95%&#34; style=&#34;display: block; margin: auto auto auto 0;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;download-and-install-r-and-rstudio&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Download and Install R and RStudio&lt;/h4&gt;
+&lt;p&gt;We will begin working in R and RStudio starting next week. If you have not already done so, download and install R on the computer you will work on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Your First Commands</title>
+      <link>/howto/howto/04-basic_commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/howto/howto/04-basic_commands/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;With those basics in mind, you can start to explore the basic functionality of R.&lt;/p&gt;
+&lt;div id=&#34;starting-simple---math-and-basic-operators&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Starting Simple - Math and Basic Operators&lt;/h3&gt;
+&lt;p&gt;Now that you have a basic lay of the land for the RStudio console, we can start to explore some logic and functionality. Let’s start simple - with some basic math operators. Try doing some basic math by typing in the console window and hitting return / enter to execute:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;2+2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 4&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that you type in code, R executes it, and immediately below what you’ve typed in, it has returned an answer. Here are some of the most common mathematical operators which you’ll take advantage of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt; Addition&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-&lt;/code&gt; Subtraction&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; Multiplication&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/&lt;/code&gt; Division&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;^&lt;/code&gt; Exponent (e.g. &lt;code&gt;2^3 = 8&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;()&lt;/code&gt; parentheses (to enforce a desired order of operations - r automatically follows the typical order of operation rules)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are also some built in mathematical constants:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pi&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 3.141593&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Which makes it really easy to figure out things, like the area of a circle with a radius of 5 (recall &lt;span class=&#34;math inline&#34;&gt;\(A = \pi r^2\)&lt;/span&gt;):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pi*5^2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 78.53982&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;While we won’t be doing much (if any) math this way, it’s important to become familiar with how this works, and what the expected response is from R.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assigning-values-to-objects&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Assigning values to objects&lt;/h3&gt;
+&lt;p&gt;One of the useful things about R is that it is an &lt;em&gt;object oriented&lt;/em&gt; programming language. This means that we can easily assign values to objects and then use those objects in calculations later on. We can assign values using the &lt;code&gt;&amp;lt;-&lt;/code&gt; assignment operator.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r &amp;lt;- 5&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hmm - what did we do here? We assigned the value 5 to a variable named &lt;code&gt;r&lt;/code&gt;. That variable could have just about any name - the name isn’t really important - it’s just a place holder. Notice in our environment window that we have a new row that shows a variable named r with a value of 5. We can easily retrieve this value by typing the name of the variable in our console:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 5&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This means we can use it in place of a value anywhere in our code:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pi*r^2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 78.53982&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If we assigned a new value to r, the value would change:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;r&amp;lt;-10
+pi*r^2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 314.1593&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Instead of returning a value from an operation to our console, we could also store that in a variable:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;circle_area&amp;lt;-pi*r^2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And now we could retrieve that:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;circle_area&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 314.1593&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will become more intuitive the more you use R. Now’s a good time to start to internalize some conventions around variable naming.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variables are case sensitive, so &lt;code&gt;variable&lt;/code&gt; and &lt;code&gt;Variable&lt;/code&gt; are different things.&lt;/li&gt;
+&lt;li&gt;Variables cannot start with numerals, they must start with a letter&lt;/li&gt;
+&lt;li&gt;Variables cannot contain spaces. Convention is to use an underscore or period (e.g. variable_one or variable.one) if you want to denote spaces in a variable name.&lt;/li&gt;
+&lt;li&gt;If you define a variable with the same name as an R constant (such as &lt;code&gt;pi&lt;/code&gt;), your variable will supersede R’s value:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pi&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 3.141593&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pi&amp;lt;-2000
+pi&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 2000&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You will start to develop your own naming conventions for variables as you learn R. Keeping variable names short and descriptive becomes important, particularly as you add objects to your workspace.&lt;/p&gt;
+&lt;p&gt;As we learn more about other R features, you’ll also want to avoid naming variables in ways that are similar to R functions. No need to worry about those details just yet, but keep this in mind as we move along.&lt;/p&gt;
+&lt;p&gt;Finally, keep in mind that you can remove existing variables from your workspace using the &lt;code&gt;rm()&lt;/code&gt; command. &lt;code&gt;rm()&lt;/code&gt; will accept in the bracket the name of the object you’d like to remove (be careful is this is permanent):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rm(pi)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Even more finally, if you want to clear your entire workspace, you can do so as follows (remember that this is a permanent clearing):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rm(list=ls())&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Get Started</title>
+      <link>/howto/howto/00-get_started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/howto/howto/00-get_started/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;R is an open source programming language that is a common tool used for data analysis across a range of disciplines. This means that in addition to being free and available for a range of operating systems and environments, R is also directly supported by a diverse user community who continually develop approaches for specialized applications or data. Need to download U.S. Census Data? There’s an &lt;a href=&#34;https://walker-data.com/tidycensus/&#34;&gt;R package&lt;/a&gt; for that. Need to perform common data cleaning tasks? There’s an R package for that too. We’ll be exploring a range of these specialized applications over the course of the semester.&lt;/p&gt;
+&lt;p&gt;Of course there are alternate languages which we could employ in service of neighborhood analysis. &lt;a href=&#34;https://www.python.org&#34;&gt;Python&lt;/a&gt;, for example, is an even more ubiquitous programming language with its own set of tools for data science. R was originally built as a &lt;em&gt;statistical computing&lt;/em&gt; language, and that brings some important benefits for the types of data science we’ll be learning this semester. R is also fairly prevalent among the user community working in public policy analysis and urban data science - this is the user community which you will be joining. Finally, R has a high learning curve, but also a very active user community, meaning that abundant documentation of problems and their solutions is available.&lt;/p&gt;
+&lt;p&gt;As we get started, let’s be clear - you are going to experience some frustration and challenges as you learn the R programming language. This class assumes no prior background in R or any other programming language for that matter, and we’ll work to quickly build your “vocabulary” and the ability to get results. We will spend some time picking up basics, and will then use our exploration of specific analysis approaches to reinforce our use of the grammar and structure of the language and to build more complex scripts over time.&lt;/p&gt;
+&lt;p&gt;It’s fair to equate learning R with learning to drive a manual car. Increasingly, people learn how to drive in automatic cars - essentially allowing the car to handle the function of switching gears - you put the car into drive, press the accelerator pedal and the car moves forward. Your past exposure to computer-based analytic tools has probably followed a similar strategy - you likely learned using software that had graphical user interfaces that allow them to call up and run programs and then spit out results. Most of us learn to point and click in order to accomplish a particular set of analytic tasks, meaning that if we want to generate the same results in the future, we would have to repeat all of those same steps over again.&lt;/p&gt;
+&lt;p&gt;So why learn on a manual? For many car enthusiasts, manuals are both more efficient and more engaging to drive - they offer additional control, and come with a heightened awareness of what the car is doing. Of course, they also come with a steep learning curve.&lt;/p&gt;
+&lt;p&gt;Some of the same attributes apply to our use of R as a tool for analysis. First, a manual approach forces you to explicitly understand more of the requirements and assumptions that go into the analysis that you’re doing. Second, you have to know your data (and its strengths and limitations) well in order to get it set up for analysis and to produce useful output. Third, this approach emphasizes &lt;em&gt;reproducible&lt;/em&gt; analysis, meaning that you will develop workflows that can be repeated over and over again producing the same results - important for sharing your work with others and for accountability, especially within contexts related to public deliberation of the strengths and weaknesses of policy arguments.&lt;/p&gt;
+&lt;p&gt;Keeping these three benefits in mind, we’ll be using the R software coupled with the RStudio &lt;em&gt;Integrated Development Environment&lt;/em&gt; (IDE) to counter some of the downsides of a purely manual approach. RStudio will help us implement R code more effectively and efficiently. Hopefully at this point, this prospect leaves you excited rather than daunted!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 2: What is a Neighborhood?</title>
+      <link>/schedule/session/02-what_is_a_neighborhood/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/02-what_is_a_neighborhood/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;In this session, we’ll explore the many ways in which the concept of neighborhoods are used in various areas of urban planning and governance. We will continue to build upon previous questions regarding the significance of neighborhoods as a unit of analysis, planning, and policymaking, and will explore frameworks for neighborhood analysis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Talen, Emily, Sunny Menozzi, and Chloe Schaefer. (2015). &lt;a href=&#34;https://uofi.box.com/s/b43bwh2x5v12y20u7ewz301phxcfi6tf&#34;&gt;What is a “Great Neighborhood”? An Analysis of APA’s Top-Rated Places&lt;/a&gt;. Journal of the American Planning Association, 81(2): 121-141.&lt;/p&gt;
+&lt;p&gt;Rohe, William. (2009). &lt;a href=&#34;https://uofi.box.com/s/oat3tpk2fxfaq3t0h9faco31rrevsve3&#34;&gt;From Local to Global: One Hundred Years of Neighborhood Planning&lt;/a&gt;. Journal of the American Planning Association 75(2): 209-230&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;p&gt;&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
+&lt;iframe src=&#34;/slides/Session_2/Session-2.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
+&lt;/div&gt;
+## Other Resources&lt;/p&gt;
+&lt;div id=&#34;introduction-to-r-for-planners&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Introduction to R for Planners&lt;/h4&gt;
+&lt;p&gt;Register for the optional but highly recommended &lt;a href=&#34;https://urban.illinois.edu/about-us/events/introduction-to-r-for-planners-2-day-workshop/&#34;&gt;Introduction to R for Urban Planners virtual workshop&lt;/a&gt; (January 30th and February 6th) - registration closes on Wednesday 1/28 (you’re late!).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://web.faa.illinois.edu/app/uploads/sites/2/2021/01/Intro-to-R-for-Planners-2021-1600x918.51851851852-c-default.jpg&#34; width=&#34;95%&#34; style=&#34;display: block; margin: auto auto auto 0;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;download-and-install-r-and-rstudio&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Download and Install R and RStudio&lt;/h4&gt;
+&lt;p&gt;We will begin working in R and RStudio starting next week. If you have not already done so, download and install R on the computer you will work on. See the &lt;a href=&#34;/howto&#34;&gt;How To&lt;/a&gt; for instructions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Your Grading Contract</title>
+      <link>/assignments/assignments/01_grading_contract/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/01_grading_contract/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; February 5, 2021 | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;Our course syllabus outlines the approach to contract grading that we’ll be using this semester. During the first two weeks of the class, you will develop your grading contact, which outlines the grade you are contracting for in the class as well as the agreed upon expectations for attaining that grade.&lt;/p&gt;
+&lt;p&gt;The grade you receive at the end of the class will be based on whether you did the work which you contracted for. Separately from this assessment, you will receive feedback on the qualities of your work.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Please use the following &lt;a href=&#34;/documents/UP494%20S21%20Learning%20Contract.docx&#34;&gt;contract template&lt;/a&gt; to construct your proposed learning contract for the semester.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;A few guidelines for constructing your contract:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For most of you, your learning contract will include the following baseline standard items in order to contract for a grade of “B”:
+&lt;ul&gt;
+&lt;li&gt;Class Interaction
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Attend Class Regularly:&lt;/em&gt; Show up for course sessions before or on time, be absent from no more than three course sessions over the course of the semester. If you are unable to be present due to illness or other extenuating circumstances, please let me know before the course session in which you are absent, and I will consider excusing the absent.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Participate Actively:&lt;/em&gt; In addition to showing up to class sessions on time, you are expected to make thoughtful and informed contributions to our class community. This includes coming to class prepared and having completed readings, reflections and assignments. This also includes thoughtful engagement with course material, asking and responding to questions, and helping other students familiarize course concepts.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Be Visible:&lt;/em&gt; Due to necessary COVID-19 safety precautions, most of our synchronous course sessions will be offered via Zoom. Active participation in the discussion portions of our course ask that you engage with your camera on. If there are reasons you cannot meet this expectation, you may propose omitting or modifying this component of your contract.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Submit Work On Time:&lt;/em&gt; There will be three grade reconciliation periods in the semester. Each assignment will be due within a reconciliation period. Each assignment will also list a recommended due date. You are responsible for submitting your work by the end of the grade reconciliation period. Work due within a reconciliation period that is submitted within 48 hours of the conclusion of that period will be counted as late. Work due within a reconciliation period submitted more than 48 hours will be considered ignored.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Assignments
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Class Reflections:&lt;/em&gt; On a weekly basis, you will reflect &lt;strong&gt;briefly&lt;/strong&gt; on a few questions that guide our work in that week.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;R Learner’s Permit:&lt;/em&gt; You will complete the R Learner’s Permit notebook which tests your knowledge of basic R programming concepts.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Lab Notebooks (3):&lt;/em&gt; Throughout the course you will work with lab notebooks that are designed to help you learn new analytical concepts, approaches, and datasets. You will select three of these notebooks to polish and submit for review.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Term Project Proposal:&lt;/em&gt; You will develop a proposal for your term project, which asks you to perform an in-depth analysis around a theme of your choice. Your proposal will provide a broad overview rationale for your project, and will lay out details that will go into the project background and completed project.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Term Project Background:&lt;/em&gt; Your project background documentation will build upon your term project proposal. You will provide a detailed exploration of data and analysis strategies for your term project, and will also start to sketch out key outputs and findings.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Completed Project:&lt;/em&gt; You will produce a final project which will include a complete project rationale, background, and analysis.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Project Presentation:&lt;/em&gt; Graduate students are required to prepare a 10-minute presentation on their project which they will give at the end of the semester. Undergraduates may elect to include a presentation as an extended component of their contract.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Contract Extensions and Deletions
+&lt;ul&gt;
+&lt;li&gt;You may propose contract extensions in order to contract for a higher grade.&lt;/li&gt;
+&lt;li&gt;You may propose contract deletions in order to contract for a lower grade.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After you submit your proposed learning contract, we will schedule a 20-minute one-on-one meeting to discuss your goals and contract elements. After that meeting (and after any agreed upon revisions are made), we will sign your contract and you will be held to contracted standards. You will have one opportunity to revisit the terms of your contract around the middle of the semester.&lt;/p&gt;
+&lt;div id=&#34;submission-instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Submission Instructions&lt;/h2&gt;
+&lt;p&gt;Upload your grading contract to the appropriate folder in your class GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing R and RStudio</title>
+      <link>/howto/howto/01-install-r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/howto/howto/01-install-r/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;downlad-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Downlad R&lt;/h2&gt;
+&lt;p&gt;R can be downloaded from the Comprehensive R Archive Network (CRAN), a network of mirrored servers throughout the world that host the R software as well as user-developed packages. Visit &lt;a href=&#34;https://cloud.r-project.org&#34;&gt;https://cloud.r-project.org&lt;/a&gt; which will automatically direct you to the best download server.&lt;/p&gt;
+&lt;p&gt;Once here, you can then download and install R using the version that matches your operating system:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/howto/howto/01-Install-R_files/02_RDownload.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Go ahead and download R and install following the installer defaults. After R is downloaded and installed, run R to confirm. You should see a single window that looks something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/howto/howto/01-Install-R_files/03_ROpen.png&#34; /&gt;
+That’s it for R. This should be the first and last time you’ll need to open the R console directly. We typically will not access R directly, but instead will use RStudio as our primary interface. Go ahead and close the R console and proceed by downloading and installing RStudio, which is the IDE we will use to interface and write code with R.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;downlad-rstudio&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Downlad RStudio&lt;/h2&gt;
+&lt;p&gt;Next up, let’s download RStudio. Go to &lt;a href=&#34;https://rstudio.com/products/rstudio/download&#34;&gt;https://rstudio.com/products/rstudio/download&lt;/a&gt;. Click on “Download” under RStudio Desktop. The website will suggest the most appropriate current version of the software based upon the computer you are loading RStudio on. You may also choose from an alternate installer if you believe it is more appropriate for your operating system.&lt;/p&gt;
+&lt;p&gt;Download and install RStudio, again using the default installation settings.&lt;/p&gt;
+&lt;p&gt;Once you have RStudio installed, open RStudio. You should see something that looks like this (the information in your console window will likely describe a newer version of R than what is displayed here).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/howto/howto/01-Install-R_files/04_RStudioOpen.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You’ll note that what appears in the portion of the console to the left looks very similar to the R console window which you opened before you started your install of RStudio. This console functions in exactly the same way, however, you’ll also note that there are other areas which you have access to as well.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/howto/howto/01-Install-R_files/05_RStudioOpenAnnotate.png&#34; /&gt;
+## The RStudio Interface&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The R Console&lt;/strong&gt; is the place where code you write is executed. Typically we’ll write code in a &lt;em&gt;script&lt;/em&gt; or &lt;em&gt;R Notebook&lt;/em&gt; (more on those later) and active pieces of code will them be executed in the R console. You can also type code directly into the console and execute it by hitting the return or enter key.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Environment Window&lt;/strong&gt; provides information on variables, data tables, and other objects you create and define as you work.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Auxiliary Window&lt;/strong&gt; provides a range of information, and includes a file browser, plot visualization window, and access to help documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With those basics in mind, you can start to explore the basic functionality of R.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Learner&#39;s Permit</title>
+      <link>/assignments/assignments/02_r_learners_permit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/02_r_learners_permit/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; February 19, 2021 | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Over the course of the first few weeks of our class, you have learned some basic elements of the R programming language and RStudio IDE. As we move forwards with our class, we will continue to add knowledge of new packages, tools, and data within R.&lt;/p&gt;
+&lt;p&gt;This R Learner’s Permit is designed to assess your knowledge of the elements of the R language and software that we have focused on so far in class.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Instructions&lt;/h2&gt;
+&lt;p&gt;Working by yourself, please follow the instructions contained in the included R Notebook, which involve filling in code and generating output. Most instructions ask you to add or fill in code chunks. Others ask you to provide a written interpretation in the notebook portion of the document.&lt;/p&gt;
+&lt;p&gt;Complete as many items as you can. If you run into trouble completing an item, add comments to your code or in the notebook describing where you are running into problems, and what you think the next step might be to solving the problem you’re having.&lt;/p&gt;
+&lt;p&gt;Complete as many items as you can and then upload your R Notebook to the appropriate folder in your GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The Data&lt;/h2&gt;
+&lt;p&gt;In the “data” subfolder of Learner’s Permit, you will find one .rds file called NYC_Violations.rds. This is the data you will use to earn your learner’s permit.&lt;/p&gt;
+&lt;p&gt;These are “real world” data derived from two sources:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;New York City &lt;a href=&#34;https://data.cityofnewyork.us/Housing-Development/Housing-Maintenance-Code-Violations/wvxf-dwi5&#34;&gt;housing maintainance code violation&lt;/a&gt; data for the years 2009 to 2019&lt;/li&gt;
+&lt;li&gt;Data on property characteristics from the &lt;a href=&#34;https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page&#34;&gt;Primary Land Use Tax Lot Output (PLUTO)&lt;/a&gt; database&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I have merged selected columns from these datasets for you (you will find data documentation and metadata for both datasets in the documentation subfolder), and after taking a close look at the dataset and the documentation, you should be able to identify which portions of the data you will work with come from each dataset. It’s my assumption that you have likely not worked with these data before - that’s part of the point!&lt;/p&gt;
+&lt;p&gt;The PLUTO data contains information on each tax lot within the city of New York. By merging these data which contain characteristics of buildings and land with the building code violation data, the data you have to work with describes the characteristics of the building and property where the violation occurred as well as the nature of the violation. It is essential for you to spend the time to think carefully about what each row in the building code violation data represents.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;submission-instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Submission Instructions&lt;/h2&gt;
+&lt;p&gt;Upload your Learner’s Permit notebook to the appropriate folder in your class GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Required Text</title>
+      <link>/resource/files/01_required_text/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/files/01_required_text/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div style=&#34;display: grid; grid-template-columns: 1fr 1.5fr;grid-column-gap: 40px;&#34;&gt;
+&lt;div&gt;
+&lt;p&gt;&lt;img src=&#34;https://socviz.co/assets/dv-cover-pupress.jpg&#34; style=&#34;display: block; margin: auto auto auto 0;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;
+There is one required text for this class: Healey, Keiran, 2019. &lt;a href=&#34;https://press.princeton.edu/books/ebook/9780691185064/data-visualization&#34;&gt;Data Visualization: A Practical Introduction&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please purchase online or access a &lt;a href=&#34;https://socviz.co/index.html&#34;&gt;pre-print copy here&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;All other readings will be provided via this site.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    You will need to authenticate with your UIUC credentials in order to access some of these files.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 3: Starting With Data</title>
+      <link>/schedule/session/03-starting_with_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/03-starting_with_data/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;In this session, we’ll take our first foray into the R and RStudio ecosystem. We’ll begin to explore data types, how to describe data, and how R can help us manipulate data.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;this-weeks-reflection-prompt&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;This Week’s Reflection Prompt&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What are the challenges associated with representing neighborhoods quantitatively?&lt;/li&gt;
+&lt;li&gt;What are the benefits of using quantitative data to represent neighborhoods?&lt;/li&gt;
+&lt;li&gt;What can we learn? What is likely to be missed?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (&lt;a href=&#34;https://uofi.box.com/s/o2vk802ig5bqggdz3iks21cqo5jv0hsk&#34;&gt;Preface&lt;/a&gt; and &lt;a href=&#34;https://uofi.box.com/s/3ex015jd082iyza1z9su2a6yysnihg8n&#34;&gt;Chapter 2&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Data Carpentry (&lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html&#34;&gt;Before We Start&lt;/a&gt;, &lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html&#34;&gt;Intro to R&lt;/a&gt;, &lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html&#34;&gt;Starting with Data&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning R</title>
+      <link>/resource/files/02_learning_r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/files/02_learning_r/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;learning-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Learning R&lt;/h2&gt;
+&lt;p&gt;One of our rationales for using R this semester is the range of support resources available that have been developed by the user community. As you will hear many times in class, almost every problem you encounter in R, someone else has also encountered. A few tips:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Start with R’s internal help.&lt;/strong&gt; in your console, you can search for documentation for a given command by prefacing it with a question mark (e.g. &lt;code&gt;?mean&lt;/code&gt;). You can also type &lt;code&gt;help()&lt;/code&gt; to access general help in R.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Next, &lt;strong&gt;turn to the internet.&lt;/strong&gt; You might start with &lt;a href=&#34;https://www.rdocumentation.org&#34;&gt;R Documentation&lt;/a&gt; or &lt;a href=&#34;https://stackoverflow.com&#34;&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Get help from our class community.&lt;/strong&gt; A big portion of our time together in class will be devoted to learning from each other - part of that includes learning to troubleshoot problems. We’ll devote some synchronous time in class to working through challenges, and will supplement that with asynchronous means of communication via our course Slack channel. Ask questions &lt;em&gt;early&lt;/em&gt; and &lt;em&gt;often&lt;/em&gt; - there’s no need to unduly suffer through setbacks (although as you solve these you will learn deeply how to address similar problems in the future).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Whenever I get discouraged and want to quit something, I remember the words of my then 3 year-old after she puked carrots all over the living room floor: &amp;quot;I&amp;#39;m gonna need more carrots.&amp;quot;&lt;/p&gt;&amp;mdash; Jessica Valenti (@JessicaValenti) &lt;a href=&#34;https://twitter.com/JessicaValenti/status/1351206308716929032?ref_src=twsrc%5Etfw&#34;&gt;January 18, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;While not set up as a support resource, there are other websites that may help you to extend your capacity in R.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some of the initial tutorials we’ll use to learn R come from &lt;a href=&#34;https://datacarpentry.org&#34;&gt;Data Carpentry&lt;/a&gt;, especially their series on &lt;a href=&#34;https://datacarpentry.org/r-socialsci/&#34;&gt;R for Social Scientists&lt;/a&gt; and &lt;a href=&#34;https://datacarpentry.org/r-intro-geospatial/&#34;&gt;Introduction to R for Geospatial Data&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://swirlstats.com&#34;&gt;swirl&lt;/a&gt; package is designed to teach you the basics of R in R.&lt;/li&gt;
+&lt;li&gt;Check out other useful tutorials available at &lt;a href=&#34;https://r4ds.had.co.nz&#34;&gt;r4ds&lt;/a&gt;, &lt;a href=&#34;http://www.sthda.com/english/&#34;&gt;STHDA.com&lt;/a&gt;, and &lt;a href=&#34;https://www.r-bloggers.com&#34;&gt;R Bloggers&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A “classic” framing document for new learners of R is &lt;a href=&#34;https://www.burns-stat.com/pages/Tutor/R_inferno.pdf&#34;&gt;The R Inferno&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Another important framing document is Keiran Healy’s &lt;a href=&#34;https://plain-text.co&#34;&gt;The Plain Person’s Guide to Plain Text Social Science&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tidytuesday.com&#34;&gt;Tidy Tuesday&lt;/a&gt;: podcast that walks through data analysis using a new dataset weekly in R. Also check out &lt;a href=&#34;https://juliasilge.com&#34;&gt;Julia Silge’s&lt;/a&gt; blog and video tutorials that perform more advanced analysis on Tidy Tuesday data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Good reasons to not be a Data Scientist:&lt;br&gt;&lt;br&gt;- It is a lot of work&lt;br&gt;- Literally nobody will know what you&amp;#39;re talking about&lt;br&gt;- In the end, your computer will be your only real friend&lt;/p&gt;&amp;mdash; 🔥Kareem Carr🔥 (@kareem_carr) &lt;a href=&#34;https://twitter.com/kareem_carr/status/1352655262054834182?ref_src=twsrc%5Etfw&#34;&gt;January 22, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Neighborhood Analysis</title>
+      <link>/resource/files/03_neighborhood_analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/files/03_neighborhood_analysis/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;City of Champaign &lt;a href=&#34;https://cityofchampaign.sharepoint.com/City%20Documents%20Internal/WordPress%20Media%20Files/Planning%20and%20Development%20Department/Long%20Range%20Planning/2006-2010%20NW%20Vision%20Report_final.pdf?originalPath=aHR0cHM6Ly9jaXR5b2ZjaGFtcGFpZ24uc2hhcmVwb2ludC5jb20vOmI6L2cvRVFVdzd6ZGVQMlpJcGtSVFAxTnFuTDRCSnZHOXQ4VzNUX2VJeVV6UFNsNUh0QT9ydGltZT1PNnYtZGxDNjJFZw&#34;&gt;Neighborhood Wellness Vision Report&lt;/a&gt; and &lt;a href=&#34;https://cityofchampaign.sharepoint.com/City%20Documents%20Internal/WordPress%20Media%20Files/Neighborhood%20Services%20Department/Neighborhood%20Wellness%202008-10-Action-Plan-Final.pdf?originalPath=aHR0cHM6Ly9jaXR5b2ZjaGFtcGFpZ24uc2hhcmVwb2ludC5jb20vOmI6L2cvRVJCMGtaUEo2dWRCcUJJaDg5aVFQYW9Cd091bTFFU1V5ZzcwVFMzZFVxV2dyUT9ydGltZT1QZkF2a0ZDNjJFZw&#34;&gt;Action Plan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chicagosmilliondollarblocks.com&#34;&gt;Chicago’s Million Dollar Blocks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DePaul Institute for Housing Studies: &lt;a href=&#34;https://www.housingstudies.org/releases/mapping-displacement-pressure-chic-2020/&#34;&gt;Mapping Displacement Pressure in Chicago, 2020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Nathalie P. Voorhees Center’s &lt;a href=&#34;https://voorheescenter.uic.edu/what-we-do/areas-of-research/gentrification-index/&#34;&gt;Socioeconomic Change of Chicago’s Community Areas (1970-2010)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.neighborhoodindicators.org&#34;&gt;National Neighborhood Indicators Partnership&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://findmylandlord.chicagodsa.org&#34;&gt;Find My Landlord&lt;/a&gt;, a tool that maps the properties in Chicago owned by a single landlord or management company.&lt;/li&gt;
+&lt;li&gt;Metropolitan Planning Council and Urban Institute’s &lt;a href=&#34;https://www.urban.org/sites/default/files/publication/98453/the_cost_of_segregation_7.pdf&#34;&gt;The Cost of Segregation&lt;/a&gt; report for Chicago.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.vox.com/policy-and-politics/2019/2/18/18217346/work-home-segregation-map&#34;&gt;American segregation, mapped at day and night&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Set Up a GitHub Repository</title>
+      <link>/howto/howto/02-github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/howto/howto/02-github/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;The majority of the work you produce this semester will be submitted via a &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt; repository which you will create.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://octodex.github.com/images/codercat.jpg&#34; style=&#34;width:30.0%&#34; /&gt;
+GitHub offers some services for free, however, as a student at an educational institution, you can register via &lt;a href=&#34;https://education.github.com&#34;&gt;GitHub for Education&lt;/a&gt; to recieve enhanced benefits and services. Let’s get this set up:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;If you do not already have a GitHub account, go to &lt;a href=&#34;https://github.com&#34;&gt;GitHub.com&lt;/a&gt; and then click on Sign Up to create a new account. You will make a username (see some &lt;a href=&#34;https://happygitwithr.com/big-picture.html#is-it-going-to-hurt&#34;&gt;sage username advice here&lt;/a&gt;), enter your email address, and password, and then hit create account. I recommend using your UIUC email address for this step if you’re creating a new account (for my rationale, see the next step).&lt;/li&gt;
+&lt;li&gt;GitHub offers some services for free which you can access with your basic account, however, as a student at an educational institution, you can register with &lt;a href=&#34;https://education.github.com&#34;&gt;GitHub Education&lt;/a&gt; to receive enhanced benefits and services. You will be asked to verify your association with an academic institution, which you can do by entering your [netid]&lt;span class=&#34;citation&#34;&gt;@illinois.edu&lt;/span&gt; email address and taking a picture of your &lt;a href=&#34;https://www.icardnet.uillinois.edu/public/&#34;&gt;I-Card&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;While you’re logged into your GitHub account, visit the &lt;a href=&#34;https://github.com/agreen4/Neighborhood_Analysis_S21_Assignments&#34;&gt;Neighborhood Analysis Assignment Repository Template&lt;/a&gt;. You will use this repository as a template for your own assignments repository. Within the repository, you’ll see a readme file that you can modify to track your work as you upload it. You’ll also see folders into which you can upload your assignments. To use the template to create your own assignment repository, click on the green button that says &lt;code&gt;Use This Template&lt;/code&gt;. On the next screen choose a name for this repository (you can name it whatever you like). You can choose to make the repository &lt;strong&gt;public&lt;/strong&gt; or &lt;strong&gt;private&lt;/strong&gt;. Public repositories can be seen by anyone. Private repositories can only be seen by those you give permission to (if you make your repository private, you will have to grant me permission to be able to view it for the purposes or grading). To grant access to a private repository, go to settings -&amp;gt; manage access -&amp;gt; Invite a collaborator, then invite user agreen4.&lt;/li&gt;
+&lt;li&gt;From the main folder in your new repository, make note of your username, the repository name, and the URL (for example…)
+&lt;ul&gt;
+&lt;li&gt;Github Username: agreen4&lt;/li&gt;
+&lt;li&gt;Repository Name: Neighborhood_Analysis_S21&lt;/li&gt;
+&lt;li&gt;Repository URL: &lt;a href=&#34;https://github.com/agreen4/Neighborhood_Analysis_S21&#34; class=&#34;uri&#34;&gt;https://github.com/agreen4/Neighborhood_Analysis_S21&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Use the above information to &lt;a href=&#34;https://forms.illinois.edu/sec/421969060&#34;&gt;register your GitHub repository&lt;/a&gt; for our class.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://octodex.github.com/images/bouncercat.png&#34; style=&#34;width:30.0%&#34; /&gt;
+Cool. You’re all set to use this repository for us to track your work this semester.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Weekly Reflections</title>
+      <link>/assignments/assignments/03_class_reflections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/03_class_reflections/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; Ongoing | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;Thoughtful data analysis requires thoughtful questions, which require a thorough understanding of your own positionality and role as a data practitioner and storyteller. To develop this positionality and understand your own desired roles, you will reflect weekly, drawing from prompts you will find in your &lt;a href=&#34;/schedule&#34;&gt;Tuesday session descriptions&lt;/a&gt; for each week.&lt;/p&gt;
+&lt;p&gt;Reflections may be brief - around 1 page or less, although you should feel welcome to use more space if you wish. You may also choose to pose alternate questions or reflect on things related to our class but which fall outside of the prompt(s) you are given.&lt;/p&gt;
+&lt;p&gt;Reflections are not designed to be onerous or rigorous, but rather an ongoing dialog or narrative that helps you to externalize some of your positionality and thinking in the moment. Enjoy taking the time to reflect, and consider making this part of your ongoing professional practice.&lt;/p&gt;
+&lt;div id=&#34;submission-instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Submission Instructions&lt;/h2&gt;
+&lt;p&gt;Upload your weekly reflections to the appropriate folder in your class GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 4: Manipulating Data</title>
+      <link>/schedule/session/04-manipulating_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/04-manipulating_data/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (Chapters 3 and 4)&lt;/p&gt;
+&lt;p&gt;Data Carpentry (&lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/03-dplyr.html&#34;&gt;Manipulating Data Frames&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Sources</title>
+      <link>/resource/files/04_data_sources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/files/04_data_sources/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kjhealy.github.io/covdata/&#34;&gt;covdata R Package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Data Science Central &lt;a href=&#34;https://www.datasciencecentral.com/profiles/blogs/big-data-sets-available-for-free&#34;&gt;Big data sets available for free&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Economic Innovation Group &lt;a href=&#34;https://eig.org/dci&#34;&gt;Distressed Communities Index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://evictionlab.org/get-the-data/&#34;&gt;Eviction Lab&lt;/a&gt; data on residential evictions summarized to various administrative geographies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.statsmapsnpix.com/2016/10/the-global-human-settlement-layer.html?m=1&#34;&gt;Global Human Settlements Dataset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HUD &lt;a href=&#34;https://www.hudexchange.info/programs/location-affordability-index/&#34;&gt;Location Affordability Index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HUD &lt;a href=&#34;https://www.huduser.gov/portal/AHS-neighborhood-description-study-2017.html#small-area-tab&#34;&gt;Urbanization Perceptions Small Area Index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HUD &lt;a href=&#34;https://www.huduser.gov/portal/datasets/usps.html&#34;&gt;USPS Vacancy Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://s4.ad.brown.edu/projects/diversity/researcher/bridging.htm&#34;&gt;Longitudinal Tract Database (LTDB)&lt;/a&gt;: 1970 - 2010 Census data normalized to 2010 census tracts&lt;/li&gt;
+&lt;li&gt;MIT Senseable Cities Lab &lt;a href=&#34;http://senseable.mit.edu/treepedia/&#34;&gt;Treepedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://preservationdatabase.org/about-the-database/&#34;&gt;National Housing Preservation Database (NHPD)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Policy Surveillance Program &lt;a href=&#34;https://lawatlas.org/datasets/eviction-laws-1530797420&#34;&gt;Eviction Laws database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;USDA &lt;a href=&#34;https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes.aspx&#34;&gt;Rural-Urban Commuting Area Codes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://openpolicing.stanford.edu&#34;&gt;Stanford Open Policing Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SURGO Foundation &lt;a href=&#34;https://precisionforcovid.org/ccvi&#34;&gt;U.S. COVID Community Vulnerability Index (CCVI)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebooks</title>
+      <link>/assignments/assignments/04_lab_notebooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/04_lab_notebooks/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; 1 by March 19, 2021, 1 by April 21, 2021 | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;Over the course of the semester, you will work on a series of lab notebooks which ask you to apply what you’ve learned in class to new data and analysis questions. These lab notebooks will guide you through learning new approaches to manipulating data. At the end of each notebook, there’s information on how you might extend your analysis beyond the lab.&lt;/p&gt;
+&lt;p&gt;This course requirement asks you to choose two of these labs to produce a more polished analysis and data brief. You may select any of the labs to polish and to work with. You are expected to submit &lt;em&gt;at least&lt;/em&gt; one of these polished notebooks in March and one in April.&lt;/p&gt;
+&lt;p&gt;Taking cues from the lab notebook and the prompts you will find at the end of the notebook, prepare a separate analytical notebook using RMarkdown that contains analysis and accompanying write-up. Rather than focusing on specific methodological steps as you will in the lab notebook, you should focus on interpreting the data itself, and posing and answering questions arising from the data. Using your notebook, you will weave together narrative description of the data with your analytic outputs, and should target creating a data brief of between 1,000-2,000 words plus analytic output.&lt;/p&gt;
+&lt;div id=&#34;submission-instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Submission Instructions&lt;/h2&gt;
+&lt;p&gt;Upload your polished lab notebooks to the appropriate folder in your class GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linking GitHub and R</title>
+      <link>/howto/howto/03-link_github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/howto/howto/03-link_github/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;You can upload files directly to a GitHub repository in the GitHub web interface, but as you create more complex files and file structures, that’s not going to be a feasible way to manage your work. That strategy also overlooks most of the features of what GitHub is at its core - a version control system.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://octodex.github.com/images/collabocats.jpg&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We might want to version our work for several reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To keep track of changes we’ve made, so that we can track when code works and when we’ve broken it&lt;/li&gt;
+&lt;li&gt;To be able to share code with collaborators and work on the same files at the same time and then reconcile and combine work all together&lt;/li&gt;
+&lt;li&gt;To be able to share code and data publicly with others&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All three of these rationales are important motivations within the context of our class. There are two strategies which you may want to try to integrate GitHub into your R workflow.&lt;/p&gt;
+&lt;div id=&#34;using-the-github-desktop-client&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Using the GitHub Desktop Client&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://desktop.github.com&#34;&gt;GitHub Desktop&lt;/a&gt; is an application that allows you to upload, download, and reconcile github repositories stored on your computer with your GitHub account. From GitHub desktop, you can create new repositories, download previously created repositories, and upload new versions of repository contents to the cloud.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;using-rstudios-integrated-github-functionality&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Using RStudio’s integrated Github Functionality&lt;/h2&gt;
+&lt;p&gt;RStudio has GitHub functionality built right in, which is very handy for integrating version control into your R workflow. Getting RStudio set up to work with GitHub can be a bit tedious, but once it is set up, it is straightforward to use. An outstanding resource to help you get GitHub integrated with R is &lt;a href=&#34;https://happygitwithr.com&#34;&gt;Happy Git and GitHub for the useR&lt;/a&gt;. As the authors mention in a section titled appropriately &lt;a href=&#34;https://happygitwithr.com/big-picture.html#is-it-going-to-hurt&#34;&gt;&lt;em&gt;Is It Going to Hurt?&lt;/em&gt;&lt;/a&gt;, integrating Git changes your workflow. However, since many of you are just starting to learn R, making this part of your typical workflow early on will be challenging, but less of a change from other ways of doing things.&lt;/p&gt;
+&lt;p&gt;Assuming you’ve already got R and RStudio installed on your system and have already set up a GitHub account, you can start here:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/install-git.html#git-already-installed&#34;&gt;Check&lt;/a&gt; to see if Git is installed on your computer, and if it isnt, &lt;a href=&#34;https://happygitwithr.com/install-git.html#install-git&#34;&gt;Install Git&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/hello-git.html&#34;&gt;Associate&lt;/a&gt; git on your computer with your GitHub account.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/git-client.html#recommended-git-clients&#34;&gt;Install a Git client&lt;/a&gt; like GitHub Desktop.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/push-pull-github.html&#34;&gt;Connect to GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/rstudio-git-github.html&#34;&gt;Connect RStudio to GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://happygitwithr.com/usage-intro.html&#34;&gt;Get Started&lt;/a&gt; using GitHub integrated with R (we’ll talk more about this in class).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://octodex.github.com/images/femalecodertocat.png&#34; style=&#34;width:30.0%&#34; /&gt;
+We will ease our way into using Git, and will also devote some time to troubleshooting in class. I promise, it’s going to make sense soon!&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 5: Visualizing Data (Session 1)</title>
+      <link>/schedule/session/05-visualizing_data_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/05-visualizing_data_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;this-weeks-reflection-prompt&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;This Week’s Reflection Prompt&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How is working with data via a command line interface different from using a graphical user interface?&lt;/li&gt;
+&lt;li&gt;How do we balance reproducibility of our analysis with accessibility of the analytical tools?&lt;/li&gt;
+&lt;li&gt;What’s challenging for you right now regarding learning and using R? What are the “a-ha” moments that you’re celebrating?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (Chapters 5, 6, and 7)&lt;/p&gt;
+&lt;p&gt;Optional Supplement - Data Carpentry (&lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html&#34;&gt;Visualizing Data&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inspiration and Miscellenia</title>
+      <link>/resource/files/05_inspiration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/files/05_inspiration/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;BBC: &lt;a href=&#34;https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535&#34;&gt;How the BBC Visual and Data Journalism Team Works with Graphics in R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bloomberg: &lt;a href=&#34;https://www.bloomberg.com/news/articles/2018-12-17/visualizing-u-s-immigration-history-as-tree-rings&#34;&gt;Visualizing U.S. Immigration History as Tree Rings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Craig Dalton and Timm Stallmann: &lt;a href=&#34;https://onlinelibrary.wiley.com/doi/full/10.1111/cag.12398&#34;&gt;Counter-mapping data science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GeoDa Center &lt;a href=&#34;https://geodacenter.github.io/covid/&#34;&gt;U.S. COVID Atlas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio.com/resources/rstudioconf-2019/r-at-the-aclu-joining-tables-to-to-reunite-families/&#34;&gt;R at the ACLU: Joining Tables to Reunite Families&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oliveruberti.com/the-information-capital&#34;&gt;London: The Information Capital&lt;/a&gt;: Stunning book featuring 100 visualizations about the city of London. Many visualizations &lt;a href=&#34;https://www.r-bloggers.com/2014/11/improving-r-data-visualisations-through-design/&#34;&gt;were created using R&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;MIT: &lt;a href=&#34;https://inequality.media.mit.edu/#&#34;&gt;Atlas of Inequality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New York City &lt;a href=&#34;https://www1.nyc.gov/assets/hpd/downloads/pdfs/services/neighborhood-planning-playbook.pdf&#34;&gt;Neighborhood Planning Playbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.r-graph-gallery.com/index.html&#34;&gt;R Graph Gallery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Washington Post: &lt;a href=&#34;https://www.washingtonpost.com/graphics/2018/national/segregation-us-cities/?noredirect=on&amp;amp;utm_term=.5d7398b764d0&#34;&gt;America is more diverse than ever - but still segregated&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://papress.com/products/w-e-b-du-boiss-data-portraits-visualizing-black-america&#34;&gt;W.E.B. Du Bois’s Data Portraits: Visualizing Black America&lt;/a&gt; and related background from &lt;a href=&#34;https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/&#34;&gt;Smithsonian Magazine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 5: Visualizing Data (Session 2)</title>
+      <link>/schedule/session/06-visualizing_data_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/06-visualizing_data_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Term Assignment</title>
+      <link>/assignments/assignments/05_term_assignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/05_term_assignment/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;You will independently apply the skills and principles of data analysis we learn to produce a policy-relevant analysis. Your term assignment will have several deliverables which are spread throughout the semester:&lt;/p&gt;
+&lt;div id=&#34;project-proposal&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Project Proposal&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; March 5, 2021 | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;div id=&#34;assignment&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Assignment&lt;/h4&gt;
+&lt;p&gt;You will develop a proposal that describes the analysis which you contract to complete by the end of the semester. Your proposal will include a statement regarding the motivation for your analysis, the information you plan to use, your analytical strategy, your anticipated outcomes, and information on the format of your final outputs.&lt;/p&gt;
+&lt;p&gt;By the end of this assignment you will:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Articulate a question or problem which you will analyze over the course of the term project&lt;/li&gt;
+&lt;li&gt;Describe the context within which the question exists&lt;/li&gt;
+&lt;li&gt;Propose a strategy for how you will approach the problem - including the data you will use, the methods by which you will analyze that information, and the outputs which you will produce&lt;/li&gt;
+&lt;li&gt;Identify how the answers to this question are relevant for general knowledge, policy, or decision-making&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;deliverable&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Deliverable&lt;/h4&gt;
+&lt;p&gt;Please prepare a 3-4 page (single-spaced) proposal. Your proposal should address the following:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Outline the question or problem&lt;/strong&gt; which your analysis will examine. You should provide a clear and succinct description of the question or problem, and also discuss its relevance - who will the answer to this question be relevant to? How might your analysis guide their actions?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Describe the context within which the question or problem exists&lt;/strong&gt; in such a way that it is clear why answering this question is of value. What’s the geographic location and scale you are examining? Why is this question of importance here? Who is impacted by the phenomena you seek to explore? What do we already know, and what information is missing? How will you engage both the known and the unknown through exploration of your question?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Propose a strategy for how you will approach the problem&lt;/strong&gt; that is clear, connected to the question and context, and that is appropriate for the information you plan to use. What specific data source(s) will you use for your analysis? What methods will you use to engage your question? What’s the precedent for using these methods to answer similar questions? Why is this an appropriate approach given your answers to (1) and (2) above?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identify the target audience for your work&lt;/strong&gt; by telling us who has a stake in learning from your answers to the questions you pose. What contribution will this make, and how might it be useful for advocacy, deliberation, and decision-making?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identify any limitations or assistance you will need&lt;/strong&gt; to successfully complete your analysis. You may not yet completely know the answer to this, but please spend some time thinking about how I (and we as a class) can help to support you in your work, or can help you identify ways to access those resources that will help. If you can, also articulate the limitations of your work - your answers will likely have some important limitations that we should have in mind, even before you jump into your actual analysis.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tips-for-a-successful-assignment&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Tips for a Successful Assignment&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Your proposal should be 3-4 single-spaced pages in length.&lt;/li&gt;
+&lt;li&gt;Write clearly and succinctly, paying attention to spelling, grammar, and the organization of information.&lt;/li&gt;
+&lt;li&gt;Provide a clear and logical structure to your proposal, using descriptive section titles to organize information.&lt;/li&gt;
+&lt;li&gt;The judicious use of maps, photographs, charts, tables, and diagrams should be considered as a valuable means of effectively conveying information. These do not count against your proposal page limit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;project-background&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Project Background&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; March 26, 2021| &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;You will prepare some general project background that includes a descriptive analysis. More on this soon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;final-project&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Final Project&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; May 7, 2021 |&lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;You will synthesize elements of your project proposal, project background, and additional analysis into a final project that includes analysis and interpretation.&lt;/p&gt;
+&lt;p&gt;More on this soon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;project-presentation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Project Presentation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; April 25, 2021 | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;Graduate students are required to include a 10-minute presentation on their final project which will be given during one of our final course sessions as part of their grading contract. Undergraduate students are not required to complete a final project presentation, but may contract to do so for a higher grade (see more information on our approach to grades this semester below).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;submission-instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Submission Instructions&lt;/h2&gt;
+&lt;p&gt;Upload your final project components to the appropriate folder in your class GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 7: Modes of Neighborhood Analysis</title>
+      <link>/schedule/session/07-modes_of_analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/07-modes_of_analysis/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Hopkins &lt;a href=&#34;https://uofi.box.com/s/cdx047l4xxte8xrjhhlp0iv88fe9nz4p&#34;&gt;Chapter 1&lt;/a&gt; and &lt;a href=&#34;https://uofi.box.com/s/9fl1i4z0hmh7m9x9ngbdp2a8irstjtbu&#34;&gt;Chapter 4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lynch, Kevin (1960). The Image of the City. &lt;a href=&#34;https://uofi.box.com/s/j26a825opr1hgfi84b7ag27hy83r358p&#34;&gt;Chapter 3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uofi.box.com/s/2vo0si7jk24kqylkxgmy8vv44fksifl2&#34;&gt;Denver Far Northeast Area Plan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uofi.box.com/s/onyvjulnuzarsq8yfha7jjeb9mkh7p7z&#34;&gt;E. 38th Street Urban Design Assessment&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contract Extension Ideas</title>
+      <link>/assignments/assignments/06_contract_extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/06_contract_extension/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Here are some ideas for contract extensions you may wish to propose (you can of course develop and propose other ideas as well):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Develop a Neighborhood Analysis Portfolio:&lt;/strong&gt; You could contract to create a portfolio of your analysis work over the course of the semester. This portfolio would include polished output suitable to share with a prospective employer or internship site.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Extend a Lab Notebook:&lt;/strong&gt; Over the course of the semester, you’ll be working through several lab notebooks that walk you through techniques and approaches to different modes of neighborhood analysis. You could propose extending the analysis you are asked to do in these notebooks beyond what is asked of you in the lab. This might include a more expanded analysis of the data, or the application of the lab concepts to a different context or data of your choosing. Extending a lab notebook should involve producing some type of formalized output that is polished and ready for review.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Write an Op Ed:&lt;/strong&gt; Your final project asks you to perform a neighborhood-level analysis of your own design that is policy-relevant to a particular place. Based upon what your analysis reveals, you may have policy-relevant conclusions that it would be useful to share with a public audience. You can write an OpEd targeting a local newspaper that articulates a persuasive public argument and that draws substantively from your analysis. Good resources for this include &lt;a href=&#34;https://www.theopedproject.org&#34;&gt;The OpEd Project&lt;/a&gt;, the &lt;a href=&#34;https://www.nytimes.com/2017/08/25/opinion/tips-for-aspiring-op-ed-writers.html&#34;&gt;New York Times&lt;/a&gt;, &lt;a href=&#34;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008187&#34;&gt;Goh and Bourne&lt;/a&gt;, and &lt;a href=&#34;https://blogs.scientificamerican.com/observations/if-you-want-to-explain-your-science-to-the-public-heres-some-advice/&#34;&gt;Scientific American&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Develop a proposed extension to your final project:&lt;/strong&gt; It is likely that your final project will produce some insightful information drawing upon your analysis of existing data. It is also likely that through the process of conducting your analysis that you will reach the limits of what the data can tell you, and that you will have additional questions which you would like to answer. You can develop a proposed set of next steps based upon what you would do to continue to develop the analysis which you have conducted. This might include gaining insight from other sources of secondary data, applying other types of analytical techniques, or developing a plan for primary data collection to supplement your existing analysis.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are a few suggested ways in which you can contract to extend your grade. You may have other ideas which you would like to propose. Please spend some time early in the class thinking about what your goals are this semester, and what work (in addition to our base expectations) might be part of this. Please be prepared to share these ideas when we meet one-on-one early in the semester to review your contract proposal. Of course we can also talk through some of these ideas in our class sessions during the first few weeks of class. As part of your contract proposal you will need to write a description of each extended contract component. Please be prepared to share this when we meet.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 8: Population and Population Change (Session 1)</title>
+      <link>/schedule/session/08-population_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/08-population_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uofi.box.com/s/ysc0fi5fn3on0342v758viggd355m04v&#34;&gt;Klosterman 2&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 9: Population and Population Change (Session 2)</title>
+      <link>/schedule/session/09-population_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/09-population_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Natalie P. Voorhees Center. (2014). &lt;a href=&#34;https://uofi.box.com/s/dueb33gc3em48y39ku9twhl5e8ja45pp&#34;&gt;The Socioeconomic Change of Chicago’s Community Areas (1970-2010)&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 10: Population and Population Change (Session 3)</title>
+      <link>/schedule/session/10-population_pt3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/10-population_pt3/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 11: Population Projections and Forecasts (Session 1)</title>
+      <link>/schedule/session/11-population_projection_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/11-population_projection_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uofi.box.com/s/p251aw1783lqevufdh137w8vogouv92q&#34;&gt;Hopkins 9&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Klosterman &lt;a href=&#34;https://uofi.box.com/s/q46d20tpwa5eynoqvcckon1c86yijr1y&#34;&gt;Chapter 3&lt;/a&gt;, &lt;a href=&#34;https://uofi.box.com/s/8iueatbw3l3qebvfu9nesufzpvwntg0q&#34;&gt;Chapter 4&lt;/a&gt;, &lt;a href=&#34;https://uofi.box.com/s/x0orydmrxcxaecmj4vyevwo398dtzeg6&#34;&gt;Chapter 5&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://planningsupport.org&#34;&gt;Planning Support Methods&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 12: Population Projections and Forecasts (Session 2)</title>
+      <link>/schedule/session/12-population_projection_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/12-population_projection_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Pendall, Rolf. (2017). &lt;a href=&#34;https://uofi.box.com/s/wtkwe2wyiianeex2d7po2ex2f3vjxig6&#34;&gt;The Cost of Segregation: Population and Household Projections in the Chicago Commuting Zone and Implications for Economic and Racial Segregation&lt;/a&gt;. The Urban Institute.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 13: Population Distribution and Segregation (Session 1)</title>
+      <link>/schedule/session/13-population_segregation_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/13-population_segregation_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Cunningham, Mary K., and Augrey Droesch. &lt;a href=&#34;https://uofi.box.com/s/vwuk8s7ys53bgddv3buio7jhjgg13sgy&#34;&gt;Neighborhood Quality and Racial Segregation&lt;/a&gt;. The Urban Institute&lt;/p&gt;
+&lt;p&gt;U.S. Bureau of the Census: &lt;a href=&#34;https://uofi.box.com/s/lrfcfiod757p8paph9u4w0tq8hrs1tsq&#34;&gt;Measures of Residential Segregation&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 14: Population Distribution and Segregation (Session 2)</title>
+      <link>/schedule/session/14-population_segregation_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/14-population_segregation_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 15: Individual Advising and Independent Work</title>
+      <link>/schedule/session/15-individual_advising_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/15-individual_advising_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This week is devoted to individual advising and independent work. There are no course sessions scheduled for today. You should use this time to continue working, to take stock of your progress towards your course contract, and to solidify plans for your final project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Professor Greenlee has extended availability for office hours appointments. If you have not already scheduled an appointment and wish to, please &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis?back=1&amp;amp;month=2021-01&#34;&gt;sign up&lt;/a&gt; for an advising appointment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 16: Individual Advising and Independent Work</title>
+      <link>/schedule/session/16-individual_advising_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/16-individual_advising_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This week is devoted to individual advising and independent work. There are no course sessions scheduled for today. You should use this time to continue working, to take stock of your progress towards your course contract, and to solidify plans for your final project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Professor Greenlee has extended availability for office hours appointments. If you have not already scheduled an appointment and wish to, please &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis?back=1&amp;amp;month=2021-01&#34;&gt;sign up&lt;/a&gt; for an advising appointment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 17: Measuring Place Opportunity (Session 1)</title>
+      <link>/schedule/session/17-place_opportunity_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/17-place_opportunity_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Stromberg, Brian. (2016). &lt;a href=&#34;https://uofi.box.com/s/icccjttbig4mq94nbi123b6x3o33a4zi&#34;&gt;Opportunity Mapping&lt;/a&gt;. National Housing Conference&lt;/p&gt;
+&lt;p&gt;powell, john. (2005). &lt;a href=&#34;https://uofi.box.com/s/59a51ibzzk5sd9b14obvvz7u5l12u07k&#34;&gt;Remedial Phase Expert Report of john powell in Thompson v. HUD&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 18: Measuring Place Opportunity (Session 2)</title>
+      <link>/schedule/session/18-place_opportunity_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/18-place_opportunity_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 19: Crime and Incarceration (Session 1)</title>
+      <link>/schedule/session/19-crime_incarceration_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/19-crime_incarceration_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Cooper, Dan. And Ryan Lugalia-Hollan. &lt;a href=&#34;https://chicagosmilliondollarblocks.com&#34;&gt;Chicago’s Million Dollar Blocks&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 20: Crime and Incarceration (Session 2)</title>
+      <link>/schedule/session/20-crime_incarceration_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/20-crime_incarceration_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 21: The Geography of Eviction (Session 1)</title>
+      <link>/schedule/session/21-covid_cases_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/21-covid_cases_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Cunningham, Mary, Ananya Hariharan, and Olivia Fiol. 2021. &lt;a href=&#34;https://www.urban.org/sites/default/files/publication/103453/the-looming-eviction-cliff_0.pdf&#34;&gt;The Looming Eviction Cliff&lt;/a&gt;. Urban Institute.&lt;/p&gt;
+&lt;p&gt;Hepburn, Peter, Renee Louis, and Matthew Desmond. 2020. &lt;a href=&#34;https://sociologicalscience.com/download/vol-7/december/SocSci_v7_649to662.pdf&#34;&gt;Racial and Gender Disparities among Evicted Americans&lt;/a&gt;. &lt;em&gt;Sociological Science 7&lt;/em&gt;: 649-662.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;p&gt;Layser, Michelle D. and De Barbieri, Edward and Greenlee, Andrew and Kaye, Tracy and Saito, Blaine G., &lt;a href=&#34;https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3613789&#34;&gt;Mitigating Housing Instability During a Pandemic&lt;/a&gt; (June 15, 2020).&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 22: The Geography of Eviction (Session 2)</title>
+      <link>/schedule/session/22-covid_cases_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/22-covid_cases_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 23: Independent Work Day</title>
+      <link>/schedule/session/23-independent_work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/23-independent_work/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;Today is an independent work day - there are no course sessions scheduled for today. You should use this time to continue working, and to take stock of your progress.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Professor Greenlee has extended availability for office hours appointments. If you have not already scheduled an appointment and wish to, please &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis?back=1&amp;amp;month=2021-01&#34;&gt;sign up&lt;/a&gt; for an advising appointment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 24: The Geography of Eviction (Session 3)</title>
+      <link>/schedule/session/24-covid_cases_pt3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/24-covid_cases_pt3/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 25: Individual Advising and Independent Work</title>
+      <link>/schedule/session/25-individual_advising_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/25-individual_advising_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This week is devoted to individual advising and independent work. There are no course sessions scheduled for today. You should use this time to continue working on your final project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Professor Greenlee has extended availability for office hours appointments. If you have not already scheduled an appointment and wish to, please &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis?back=1&amp;amp;month=2021-01&#34;&gt;sign up&lt;/a&gt; for an advising appointment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 26: Individual Advising and Independent Work</title>
+      <link>/schedule/session/26-individual_advising_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/26-individual_advising_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This week is devoted to individual advising and independent work. There are no course sessions scheduled for today. You should use this time to continue working on your final project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Professor Greenlee has extended availability for office hours appointments. If you have not already scheduled an appointment and wish to, please &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis?back=1&amp;amp;month=2021-01&#34;&gt;sign up&lt;/a&gt; for an advising appointment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 27: Final Presentations (Session 1)</title>
+      <link>/schedule/session/27-final_presentations_pt1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/27-final_presentations_pt1/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This session is reserved for final presentations. We will talk more about final presentations in class, and eventually the order for today’s presentations will be posted here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 28: Final Presentations (Session 2)</title>
+      <link>/schedule/session/28-final_presentations_pt2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/28-final_presentations_pt2/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;This session is reserved for final presentations. We will talk more about final presentations in class, and eventually the order for today’s presentations will be posted here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session 29: Final Presentations (Session 3) and Course Wrap-Up</title>
+      <link>/schedule/session/29-final_presentations_pt3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/session/29-final_presentations_pt3/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Description&lt;/h2&gt;
+&lt;p&gt;You made it! This is the final session for Neighborhood Analysis. A portion of this session is reserved for any remaining presentations. In addition, we will discuss what we have covered over the course of the semester, as well as some next steps in your journey as neighborhood analysts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Syllabus</title>
+      <link>/syllabus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/syllabus/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#course-overview-and-objectives&#34;&gt;Course Overview and Objectives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#course-format-and-expectations&#34;&gt;Course Format and Expectations&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#what-to-expect-from-me&#34;&gt;What to Expect from Me&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#what-i-expect-from-you&#34;&gt;What I Expect from You&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#prerequisites&#34;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;Assignments&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#contract-extensions&#34;&gt;Contract Extensions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#evaluation-and-grading-contract&#34;&gt;Evaluation and Grading Contract&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#baseline-standards&#34;&gt;Baseline Standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#expectation-summary&#34;&gt;Expectation Summary&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#preparing-your-contract&#34;&gt;Preparing your Contract&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#honor-code&#34;&gt;Honor Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#learning-environment-and-support&#34;&gt;Learning Environment and Support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#your-wellness&#34;&gt;Your Wellness&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#learning-r-and-your-wellness&#34;&gt;Learning R and your Wellness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#covid-and-your-wellness&#34;&gt;Covid and your Wellness&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;course-overview-and-objectives&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Course Overview and Objectives&lt;/h1&gt;
+&lt;p&gt;This course teaches techniques for analyzing the demographic, economic, physical, and social conditions that exist at the neighborhood and local government scale. While our focus will be on analyzing current conditions, we will also learn how to tell stories about neighborhood change, and will learn how to project and forecast future trends. We will learn how to describe community characteristics with small area census data, work with local administrative data, and will think about how our analysis of quantitative data fit with other forms of data and engagement fill in gaps in knowledge.&lt;/p&gt;
+&lt;p&gt;By the end of this course, we will:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Become familiar with common sources of information used to describe neighborhoods and neighborhood characteristics;&lt;/li&gt;
+&lt;li&gt;Learn how to use &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, &lt;a href=&#34;https://rstudio.com&#34;&gt;RStudio&lt;/a&gt;, and &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; to create reproducible analysis of
+neighborhood-level information;&lt;/li&gt;
+&lt;li&gt;Learn how to use the information to tell compelling stories for deliberation and decision-making;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;course-format-and-expectations&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Course Format and Expectations&lt;/h1&gt;
+&lt;p&gt;We will learn together using a combination of direct instruction, lab sessions, and tutorials. We will use reading and reflection to help us contextualize our understanding of neighborhoods, however, our focus will be on learning by doing.&lt;/p&gt;
+&lt;p&gt;Our class will typically meet synchronously online twice per week. As the weather improves (and assuming public health concerns abate), some course sessions may include the option to meet in person following all University of Illinois classroom safety precautions).&lt;/p&gt;
+&lt;p&gt;Please plan on working on a laptop or desktop computer that will run R and RStudio (available for PC/Mac/Linux) and for which you have administrative privileges.&lt;/p&gt;
+&lt;p&gt;Given our focus on learning by doing, I am expecting a polished end product by the end of the semester. As you will note in the in the syllabus section on your &lt;a href=&#34;#evaluation-and-grading-contract&#34;&gt;Grading Contract&lt;/a&gt;, we will use a contract-based evaluation system this semester. Regardless of the grade you contract for, I expect that your final work in this class will be high quality, meaning that it is ready for public dissemination.&lt;/p&gt;
+&lt;div id=&#34;what-to-expect-from-me&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;What to Expect from Me&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Availability:&lt;/strong&gt; I am generally accessible 9am to 5pm Monday to Friday, however I have research and administrative commitments in addition to teaching and advising during the work week. I have reserved dedicated time on Tuesdays and Thursdays to focus on our class and student advising.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Communicating:&lt;/strong&gt; The easiest ways to communicate with me outside of class are via &lt;a href=&#34;mailto:agreen4@illinois.edu&#34;&gt;email&lt;/a&gt; or our course &lt;a href=&#34;https://neighborhooda-esb1724.slack.com&#34;&gt;Slack channel&lt;/a&gt;. I try to respond to emails sent during the week within 24 hours. Emails sent over the weekend will receive a response within 48 hours. If you don’t hear from me after that amount of time elapses, it is okay to nudge me to respond.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Office Hours:&lt;/strong&gt; Please feel welcome to make an appointment to speak (virtually) one-on-one. The easiest way to schedule a meeting with me is via the dedicated &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis?back=1&amp;amp;month=2021-01&#34;&gt;Calendly page&lt;/a&gt; for our class.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Troubleshooting:&lt;/strong&gt; You should feel welcome to use email, slack, and office hours to get help with troubleshooting problems as they arise in your work. The &lt;a href=&#34;/resource/#learning-r&#34;&gt;Resources&lt;/a&gt; page provides thoughts and resources for troubleshooting errors as they occur. I suggest using Slack as an initial support for problems you are having - it is highly likely that others in the class have encountered similar problems, and also allows us to create a repository of our problems and responses.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;what-i-expect-from-you&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;What I Expect from You&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Be Present:&lt;/strong&gt; I expect that you’ll engage fully in our course sessions and in our class community.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Actively Support Each Other:&lt;/strong&gt; I expect that each of you will take on leadership roles within our class, that includes actively supporting our learning community over the course of the semester. While this expectation becomes harder to meet due to remote learning, those circumstances make it all the more important to engage each other and to be present for each other.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Read with Care:&lt;/strong&gt; This course focuses on learning by doing, however, there are important details contained within the documentation on our course website and within reading selections. As you will soon learn, &lt;em&gt;details matter&lt;/em&gt; in this class. Be intentional about reading carefully and completely important course documents (including this syllabus).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Act with Integrity:&lt;/strong&gt; I expect that you will act with integrity in all that you do in this class. The class contract grading system places a lot of trust in you to not just meet the nominal standards contained within the contract, but to &lt;em&gt;push yourself&lt;/em&gt; to produce your best work.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Seek Balance:&lt;/strong&gt; I expect that you’ll actively work to find balance between the many demands in your life. This means finding time for adequate rest and sleep, exercise, and other actions that support your mental and physical health. This also means budgeting adequate time to engage fully in our course.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;prerequisites&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;UP 494-AG: Neighborhood Analysis has no prerequisites aside from upper-level undergraduate or graduate-level standing.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Students will benefit from some prior knowledge of urban planning concepts, and analytic techniques, although these can be learned along the way.&lt;/li&gt;
+&lt;li&gt;Students will also benefit from some prior knowledge working in R and RStudio, however, this is also not a course prerequisite.&lt;/li&gt;
+&lt;li&gt;The first few weeks of our class incorporate an accelerated schedule for learning R and RStudio to support your deeper learning of neighborhood analysis. Please plan your time accordingly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please &lt;em&gt;talk with me&lt;/em&gt; if you have any questions regarding whether this course is right for you.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Assignments&lt;/h1&gt;
+&lt;p&gt;You will find detailed information on assignments in the &lt;a href=&#34;/assignments&#34;&gt;Assignments&lt;/a&gt; section.&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;33%&#34; /&gt;
+&lt;col width=&#34;33%&#34; /&gt;
+&lt;col width=&#34;33%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Assignment&lt;/th&gt;
+&lt;th&gt;Due Date&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;/assignments/#your-grading-contract&#34;&gt;Grading Contract&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;February 5, 2021&lt;/td&gt;
+&lt;td&gt;You will propose an individual grading contract by which you will be assessed this semester.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;/assignments/#r-learners-permit&#34;&gt;R Learner’s Permit&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;February 19, 2021&lt;/td&gt;
+&lt;td&gt;You will demonstrate a basic understanding of the R programming language by completing the description of a dataset.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;/assignments/#class-reflections&#34;&gt;Class Reflections&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Ongoing&lt;/td&gt;
+&lt;td&gt;On a weekly basis, you will reflect upon questions related to our class and your work.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;/assignments/#lab-notebook-extensions&#34;&gt;Polished Lab Notebooks&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;March 19, 2021 &lt;br&gt;April 21, 2021&lt;/td&gt;
+&lt;td&gt;We will introduce new course material and analysis strategies via a series of lab notebooks. You will extend the work you have done in two of these notebooks and submit them for assessment.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;/assignments/#project-proposal&#34;&gt;Final Project Proposal&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;March 5, 2021&lt;/td&gt;
+&lt;td&gt;As part of your final project, you will submit an initial proposal regarding the topic, scope, and strategy for your final analysis.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;/assignments/#project-background&#34;&gt;Final Project Background&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;March 26, 2021&lt;/td&gt;
+&lt;td&gt;As part of your final project, you will submit project background that helps to describe your final analysis.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;/assignments/#project-presentation&#34;&gt;Final Project Presentation&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;April 25, 2021&lt;/td&gt;
+&lt;td&gt;As part of your final project graduate students will present their final projects in a 10-15 minute presentation. Undergraduate students may include a final project presentation as part of their contract.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;/assignments/#final-project&#34;&gt;Final Project&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;May 7, 2021&lt;/td&gt;
+&lt;td&gt;You will complete an independent policy analysis on a topic of your choice and will submit it along with a repository containing your code and supporting materials.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;contract-extensions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Contract Extensions&lt;/h2&gt;
+&lt;p&gt;You may want to propose extensions to your contract in order to contract for a higher grade. You will find more information and inspiration for proposed contract extensions in the &lt;a href=&#34;/assignments&#34;&gt;Assignments&lt;/a&gt; section.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;evaluation-and-grading-contract&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Evaluation and Grading Contract&lt;/h1&gt;
+&lt;p&gt;Alongside our learning of techniques and perspectives on working with small area data, a primary goal of this class is to learn to think critically about the ways in which those data and our analysis embody &lt;em&gt;power&lt;/em&gt; and exist within &lt;em&gt;power relationships&lt;/em&gt;. One implicit goal of our learning this semester is to embody through our work alternative ways to &lt;em&gt;share power&lt;/em&gt; and &lt;em&gt;create meaning&lt;/em&gt;. We will share power and authority for the evaluation of learning by establishing individualized grading contracts which will allow you to set many of the terms upon which your work is evaluated this semester. You will be held accountable to the standards you propose and we agree upon.&lt;/p&gt;
+&lt;p&gt;We are using this approach for several reasons:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Implementing a contract-based assessment approach mirrors some of the broader course goals regarding our understanding and practice around the power of data, particularly with regards to public deliberation, decision-making, and governance. Dealing differently with power around evaluation in our classroom mirrors how we might deal with power and power relationships around other processes we participate in, including professional practice.&lt;/li&gt;
+&lt;li&gt;A unitary assessment of performance in a 400-level class is not likely to serve students well. This class is open to advanced undergraduate students, masters students, and doctoral students - some who are pursuing degrees in planning and others who are not. Given the heterogeneity of our learning community and your individual motivations for taking this class, contracts will allow us to assess your work against your own expectations and your evaluation of learning goals and capacity this semester.&lt;/li&gt;
+&lt;li&gt;There is increasing evidence in higher education settings that traditional unitary grading measures tend to hamper individual learning, and have the potential to be biased towards certain types of students. Put simply, obsessing about grades in advanced coursework is counter-productive to deep learning. This course adheres to the pedagogy that when given more control and ownership over the terms of evaluation, a student is more likely to embrace the challenges presented to them within the classroom, and are more likely to take ownership of their work (see, for instance &lt;a href=&#34;https://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1002&amp;amp;context=eng_faculty_pubs&#34;&gt;Elbow&lt;/a&gt; and &lt;a href=&#34;https://wac.colostate.edu/books/perspectives/labor/&#34;&gt;Inoue&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;We are attempting to learn together through a set of &lt;em&gt;extremely challenging&lt;/em&gt; times. The impact of COVID-19 on your lives and your learning should not be discounted. The impact is also very individualized to each of your situations. A unitary grading standard would typically be strained to account for your circumstances.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div id=&#34;baseline-standards&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Baseline Standards&lt;/h2&gt;
+&lt;p&gt;Each of you is expected to meet the following baseline standards. By doing so, you will earn a grade of “B”.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Attend class regularly:&lt;/strong&gt; Show up for course sessions before or on time, be absent from no more than three course sessions over the course of the semester. If you are unable to be present due to illness or other extenuating circumstances, please let me know &lt;em&gt;before&lt;/em&gt; the course session in which you are absent, and I will consider excusing the absent.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Participate actively:&lt;/strong&gt; In addition to showing up to class sessions on time, you are expected to make thoughtful and informed contributions to our class community. This includes coming to class prepared and having completed readings, reflections and assignments. This also includes thoughtful engagement with course material, asking and responding to questions, and helping other students learn course concepts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Be visible:&lt;/strong&gt; Due to necessary COVID-19 safety precautions, our synchronous course sessions will be offered via Zoom. Active participation during the discussion portion of our class involves engaging with your camera on. Please communicate with me if you anticipate barriers to meeting this expectation, and we can discuss appropriate accommodations via alterations to your grading contract.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Submit work on time:&lt;/strong&gt; Your assignments have due dates. You are responsible for submitting your work by this date. Work submitted within 48 hours of the due date will be counted as &lt;em&gt;late&lt;/em&gt;. Work submitted more than 48 hours after the due date will be considered &lt;em&gt;ignored&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;expectation-summary&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Expectation Summary&lt;/h2&gt;
+&lt;p&gt;The baseline contract standard in the class is a “B”. You may customize your grading contract to contract for a grade between A and C (C, C+, B-, B, B+, A-, A). The below table will help you to propose accountability expectations:&lt;/p&gt;
+&lt;table style=&#34;width:62%;&#34;&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;11%&#34; /&gt;
+&lt;col width=&#34;15%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;12%&#34; /&gt;
+&lt;col width=&#34;13%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Grade&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Absences&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Late&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Missed&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ignored&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;D&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;F&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Absences&lt;/strong&gt; indicate the number of times you can be absent from class. Additional excused absences may be allowed due to documented extenuating circumstances.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Late Assignments&lt;/strong&gt; are assignments submitted within 48 hours of the due date.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Missed Assignments&lt;/strong&gt; are assignments submitted more than 48 hours after the due date. Note that missing assignments is considered a more serious breach of your contract when compared to late assignments.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ignored Assignments&lt;/strong&gt; are assignments that are not submitted by the last day of class (excluding your final assignment). Ignored assignments are a more serious breach of contract than missed assignments as they reflect contracted work which you have not completed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please note that assessment of these contracted standards are based upon &lt;em&gt;what you do&lt;/em&gt;. The default contracted “B” grade does not include any direct assessment of the &lt;em&gt;quality&lt;/em&gt; of your work. As you design your personalized learning contract, you can use the above table to help you propose expectations in line with the final grade you wish to contract to receive.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;preparing-your-contract&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Preparing your Contract&lt;/h2&gt;
+&lt;p&gt;Our grading system this semester focuses on capturing the consistent application of your labor towards our course goals. If you consistently submit your work as contracted, you’ll receive a “B” at the end of the semester. Consequently, to contract for a higher (or lower) grade, you may commit yourself to applying more (or less) labor in support of course goals when you design your contract.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Please use the following &lt;a href=&#34;documents/UP494%20S21%20Learning%20Contract.docx&#34;&gt;contract template&lt;/a&gt; to construct your proposed learning contract for the semester.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;honor-code&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Honor Code&lt;/h1&gt;
+&lt;p&gt;The &lt;a href=&#34;https://studentcode.illinois.edu&#34;&gt;Illinois Student Code&lt;/a&gt; states: “It is the responsibility of the student to refrain from infractions of academic integrity, from conduct that may lead to suspicion of such infractions, and from conduct that aids others in such infractions.” Note that you are subject to the Honor Code, as well as procedures for addressing violations to the Code, regardless of whether you have read it and understand it. According to the Code, “ignorance is no excuse.”&lt;/p&gt;
+&lt;p&gt;To meet this standard in this course, note the following: in written work, all ideas (as well as data or other information) that are not your own must be cited. Note that ideas that require citation may not have been published or written down anywhere. While you are free—and indeed encouraged—to discuss assignments with your peers, all of your analysis, and writing should be your own. The consequence for violating these expectations may include receiving no credit for the assignment in question, and may include automatic failure of the course.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Put simply, don’t cheat and give credit where credit is due.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;learning-environment-and-support&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Learning Environment and Support&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Learning Environment:&lt;/strong&gt; The &lt;a href=&#34;https://urban.illinois.edu&#34;&gt;Department of Urban and Regional Planning&lt;/a&gt; is committed to maintaining a learning environment that is rooted in the goals and responsibilities of professional planners. By enrolling in a class offered by the Department of Urban and Regional Planning, students agree to be responsible for maintaining an atmosphere of mutual respect in all activities, including lectures, discussions, labs, projects, and extracurricular opportunities. See &lt;a href=&#34;https://studentcode.illinois.edu/article1/part1/1-101/&#34;&gt;Student Code Article 1-Student Rights and Responsibilities, Part 1&lt;/a&gt;. Student Rights: §1-102.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Counseling Center and Student Support:&lt;/strong&gt; Throughout the semester, you may need assistance coping with emotional, interpersonal, or academic concerns. The &lt;a href=&#34;http://www.counselingcenter.illinois.edu&#34;&gt;Counseling Center&lt;/a&gt; provides both short-term and longer-term counseling to students who may need assistance. Please do not hesitate to reach out or request assistance.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;your-wellness&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Your Wellness&lt;/h1&gt;
+&lt;div id=&#34;learning-r-and-your-wellness&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Learning R and your Wellness&lt;/h2&gt;
+&lt;p&gt;Whether you have prior experience working in R or not, you &lt;em&gt;will&lt;/em&gt; face challenges related to working with the software this semester. That’s a given, and is an expected part of learning in this class. Part of the goal is to teach you how to understand the intentionality behind the software so that you can anticipate where errors are likely to occur.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    The only way to do this, is to encounter errors - and there will be many!
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;You are learning a new language, it’s grammar, and its application. While this will be frustrating at times, there is a major payoff in the capacity you will gain in analytic skills and problem-solving. This payoff will come slowly over time - do not expect it to come easily.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-image-by-allison-horsthttpsgithubcomallisonhorststats-illustrations&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/syllabus/images/debugging_hu69066f6168e2706a3c28437edb8628a0_1756613_2000x2000_fit_q75_lanczos.jpg&#34; data-caption=&#34;Image by &amp;lt;a href=&amp;#34;https://github.com/allisonhorst/stats-illustrations&amp;#34;&amp;gt;Allison Horst&amp;lt;/a&amp;gt;&#34;&gt;
+
+
+  &lt;img data-src=&#34;/syllabus/images/debugging_hu69066f6168e2706a3c28437edb8628a0_1756613_2000x2000_fit_q75_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;6728&#34; height=&#34;4132&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Image by &lt;a href=&#34;https://github.com/allisonhorst/stats-illustrations&#34;&gt;Allison Horst&lt;/a&gt;
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;You are not alone in this struggle. In addition to your classmates and others who are going through the same thing, there is a large R user community, and lots of existing documentation and troubleshooting on sites like &lt;a href=&#34;https://stackoverflow.com&#34;&gt;Stack Overflow&lt;/a&gt; and &lt;a href=&#34;https://community.rstudio.com&#34;&gt;RStudio Community&lt;/a&gt;. Any problem you will encounter has likely been encountered and addressed before. When I run into an error, after an initial check for simple issues like closing parentheses and spelling errors, I copy and paste error codes directly into a web search to see how others have dealt with similar problems. I encourage you to do the same.&lt;/p&gt;
+&lt;p&gt;You got this, and there will be a payoff, so long as you use the tools consistently - I &lt;em&gt;promise&lt;/em&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;covid-and-your-wellness&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Covid and your Wellness&lt;/h2&gt;
+&lt;p&gt;These are not normal times, and it would be irresponsible to expect that teaching and learning would occur “normally” given the circumstances. We are teaching and learning under emergency circumstances amidst a global pandemic. I understand that you have lives outside of this class and more generally outside of your studies, and I understand that especially given the current circumstances that things will come up that take your attention away from our coursework.&lt;/p&gt;
+&lt;p&gt;While I will expect a lot of you this semester, I am also willing to be flexible. I have designed course deliverable dates with this flexibility in mind, and will devote some of our class time to checking in about class progress. In return, I need you to communicate with me, either during those course sessions or individually. You can schedule an appointment with me at your convenience via my &lt;a href=&#34;https://calendly.com/agreen4/neighborhood-analysis&#34;&gt;Calendly page&lt;/a&gt;. I promise to listen, to be a resource, and to help in any way that I can - if I can’t help you, I will find someone who can.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assignments | Neighborhood Analysis</title>
+    <link>/assignments/</link>
+      <atom:link href="/assignments/index.xml" rel="self" type="application/rss+xml" />
+    <description>Assignments</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Assignments</title>
+      <link>/assignments/</link>
+    </image>
+    
+    <item>
+      <title>Your Grading Contract</title>
+      <link>/assignments/assignments/01_grading_contract/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/01_grading_contract/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; February 5, 2021 | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;Our course syllabus outlines the approach to contract grading that we’ll be using this semester. During the first two weeks of the class, you will develop your grading contact, which outlines the grade you are contracting for in the class as well as the agreed upon expectations for attaining that grade.&lt;/p&gt;
+&lt;p&gt;The grade you receive at the end of the class will be based on whether you did the work which you contracted for. Separately from this assessment, you will receive feedback on the qualities of your work.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Please use the following &lt;a href=&#34;/documents/UP494%20S21%20Learning%20Contract.docx&#34;&gt;contract template&lt;/a&gt; to construct your proposed learning contract for the semester.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;A few guidelines for constructing your contract:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For most of you, your learning contract will include the following baseline standard items in order to contract for a grade of “B”:
+&lt;ul&gt;
+&lt;li&gt;Class Interaction
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Attend Class Regularly:&lt;/em&gt; Show up for course sessions before or on time, be absent from no more than three course sessions over the course of the semester. If you are unable to be present due to illness or other extenuating circumstances, please let me know before the course session in which you are absent, and I will consider excusing the absent.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Participate Actively:&lt;/em&gt; In addition to showing up to class sessions on time, you are expected to make thoughtful and informed contributions to our class community. This includes coming to class prepared and having completed readings, reflections and assignments. This also includes thoughtful engagement with course material, asking and responding to questions, and helping other students familiarize course concepts.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Be Visible:&lt;/em&gt; Due to necessary COVID-19 safety precautions, most of our synchronous course sessions will be offered via Zoom. Active participation in the discussion portions of our course ask that you engage with your camera on. If there are reasons you cannot meet this expectation, you may propose omitting or modifying this component of your contract.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Submit Work On Time:&lt;/em&gt; There will be three grade reconciliation periods in the semester. Each assignment will be due within a reconciliation period. Each assignment will also list a recommended due date. You are responsible for submitting your work by the end of the grade reconciliation period. Work due within a reconciliation period that is submitted within 48 hours of the conclusion of that period will be counted as late. Work due within a reconciliation period submitted more than 48 hours will be considered ignored.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Assignments
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Class Reflections:&lt;/em&gt; On a weekly basis, you will reflect &lt;strong&gt;briefly&lt;/strong&gt; on a few questions that guide our work in that week.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;R Learner’s Permit:&lt;/em&gt; You will complete the R Learner’s Permit notebook which tests your knowledge of basic R programming concepts.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Lab Notebooks (3):&lt;/em&gt; Throughout the course you will work with lab notebooks that are designed to help you learn new analytical concepts, approaches, and datasets. You will select three of these notebooks to polish and submit for review.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Term Project Proposal:&lt;/em&gt; You will develop a proposal for your term project, which asks you to perform an in-depth analysis around a theme of your choice. Your proposal will provide a broad overview rationale for your project, and will lay out details that will go into the project background and completed project.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Term Project Background:&lt;/em&gt; Your project background documentation will build upon your term project proposal. You will provide a detailed exploration of data and analysis strategies for your term project, and will also start to sketch out key outputs and findings.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Completed Project:&lt;/em&gt; You will produce a final project which will include a complete project rationale, background, and analysis.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Project Presentation:&lt;/em&gt; Graduate students are required to prepare a 10-minute presentation on their project which they will give at the end of the semester. Undergraduates may elect to include a presentation as an extended component of their contract.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Contract Extensions and Deletions
+&lt;ul&gt;
+&lt;li&gt;You may propose contract extensions in order to contract for a higher grade.&lt;/li&gt;
+&lt;li&gt;You may propose contract deletions in order to contract for a lower grade.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After you submit your proposed learning contract, we will schedule a 20-minute one-on-one meeting to discuss your goals and contract elements. After that meeting (and after any agreed upon revisions are made), we will sign your contract and you will be held to contracted standards. You will have one opportunity to revisit the terms of your contract around the middle of the semester.&lt;/p&gt;
+&lt;div id=&#34;submission-instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Submission Instructions&lt;/h2&gt;
+&lt;p&gt;Upload your grading contract to the appropriate folder in your class GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Learner&#39;s Permit</title>
+      <link>/assignments/assignments/02_r_learners_permit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/02_r_learners_permit/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; February 19, 2021 | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Over the course of the first few weeks of our class, you have learned some basic elements of the R programming language and RStudio IDE. As we move forwards with our class, we will continue to add knowledge of new packages, tools, and data within R.&lt;/p&gt;
+&lt;p&gt;This R Learner’s Permit is designed to assess your knowledge of the elements of the R language and software that we have focused on so far in class.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Instructions&lt;/h2&gt;
+&lt;p&gt;Working by yourself, please follow the instructions contained in the included R Notebook, which involve filling in code and generating output. Most instructions ask you to add or fill in code chunks. Others ask you to provide a written interpretation in the notebook portion of the document.&lt;/p&gt;
+&lt;p&gt;Complete as many items as you can. If you run into trouble completing an item, add comments to your code or in the notebook describing where you are running into problems, and what you think the next step might be to solving the problem you’re having.&lt;/p&gt;
+&lt;p&gt;Complete as many items as you can and then upload your R Notebook to the appropriate folder in your GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The Data&lt;/h2&gt;
+&lt;p&gt;In the “data” subfolder of Learner’s Permit, you will find one .rds file called NYC_Violations.rds. This is the data you will use to earn your learner’s permit.&lt;/p&gt;
+&lt;p&gt;These are “real world” data derived from two sources:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;New York City &lt;a href=&#34;https://data.cityofnewyork.us/Housing-Development/Housing-Maintenance-Code-Violations/wvxf-dwi5&#34;&gt;housing maintainance code violation&lt;/a&gt; data for the years 2009 to 2019&lt;/li&gt;
+&lt;li&gt;Data on property characteristics from the &lt;a href=&#34;https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page&#34;&gt;Primary Land Use Tax Lot Output (PLUTO)&lt;/a&gt; database&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I have merged selected columns from these datasets for you (you will find data documentation and metadata for both datasets in the documentation subfolder), and after taking a close look at the dataset and the documentation, you should be able to identify which portions of the data you will work with come from each dataset. It’s my assumption that you have likely not worked with these data before - that’s part of the point!&lt;/p&gt;
+&lt;p&gt;The PLUTO data contains information on each tax lot within the city of New York. By merging these data which contain characteristics of buildings and land with the building code violation data, the data you have to work with describes the characteristics of the building and property where the violation occurred as well as the nature of the violation. It is essential for you to spend the time to think carefully about what each row in the building code violation data represents.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;submission-instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Submission Instructions&lt;/h2&gt;
+&lt;p&gt;Upload your Learner’s Permit notebook to the appropriate folder in your class GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Weekly Reflections</title>
+      <link>/assignments/assignments/03_class_reflections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/03_class_reflections/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; Ongoing | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;Thoughtful data analysis requires thoughtful questions, which require a thorough understanding of your own positionality and role as a data practitioner and storyteller. To develop this positionality and understand your own desired roles, you will reflect weekly, drawing from prompts you will find in your &lt;a href=&#34;/schedule&#34;&gt;Tuesday session descriptions&lt;/a&gt; for each week.&lt;/p&gt;
+&lt;p&gt;Reflections may be brief - around 1 page or less, although you should feel welcome to use more space if you wish. You may also choose to pose alternate questions or reflect on things related to our class but which fall outside of the prompt(s) you are given.&lt;/p&gt;
+&lt;p&gt;Reflections are not designed to be onerous or rigorous, but rather an ongoing dialog or narrative that helps you to externalize some of your positionality and thinking in the moment. Enjoy taking the time to reflect, and consider making this part of your ongoing professional practice.&lt;/p&gt;
+&lt;div id=&#34;submission-instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Submission Instructions&lt;/h2&gt;
+&lt;p&gt;Upload your weekly reflections to the appropriate folder in your class GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebooks</title>
+      <link>/assignments/assignments/04_lab_notebooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/04_lab_notebooks/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; 1 by March 19, 2021, 1 by April 21, 2021 | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;Over the course of the semester, you will work on a series of lab notebooks which ask you to apply what you’ve learned in class to new data and analysis questions. These lab notebooks will guide you through learning new approaches to manipulating data. At the end of each notebook, there’s information on how you might extend your analysis beyond the lab.&lt;/p&gt;
+&lt;p&gt;This course requirement asks you to choose two of these labs to produce a more polished analysis and data brief. You may select any of the labs to polish and to work with. You are expected to submit &lt;em&gt;at least&lt;/em&gt; one of these polished notebooks in March and one in April.&lt;/p&gt;
+&lt;p&gt;Taking cues from the lab notebook and the prompts you will find at the end of the notebook, prepare a separate analytical notebook using RMarkdown that contains analysis and accompanying write-up. Rather than focusing on specific methodological steps as you will in the lab notebook, you should focus on interpreting the data itself, and posing and answering questions arising from the data. Using your notebook, you will weave together narrative description of the data with your analytic outputs, and should target creating a data brief of between 1,000-2,000 words plus analytic output.&lt;/p&gt;
+&lt;div id=&#34;submission-instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Submission Instructions&lt;/h2&gt;
+&lt;p&gt;Upload your polished lab notebooks to the appropriate folder in your class GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Term Assignment</title>
+      <link>/assignments/assignments/05_term_assignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/05_term_assignment/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;You will independently apply the skills and principles of data analysis we learn to produce a policy-relevant analysis. Your term assignment will have several deliverables which are spread throughout the semester:&lt;/p&gt;
+&lt;div id=&#34;project-proposal&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Project Proposal&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; March 5, 2021 | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;div id=&#34;assignment&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Assignment&lt;/h4&gt;
+&lt;p&gt;You will develop a proposal that describes the analysis which you contract to complete by the end of the semester. Your proposal will include a statement regarding the motivation for your analysis, the information you plan to use, your analytical strategy, your anticipated outcomes, and information on the format of your final outputs.&lt;/p&gt;
+&lt;p&gt;By the end of this assignment you will:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Articulate a question or problem which you will analyze over the course of the term project&lt;/li&gt;
+&lt;li&gt;Describe the context within which the question exists&lt;/li&gt;
+&lt;li&gt;Propose a strategy for how you will approach the problem - including the data you will use, the methods by which you will analyze that information, and the outputs which you will produce&lt;/li&gt;
+&lt;li&gt;Identify how the answers to this question are relevant for general knowledge, policy, or decision-making&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;deliverable&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Deliverable&lt;/h4&gt;
+&lt;p&gt;Please prepare a 3-4 page (single-spaced) proposal. Your proposal should address the following:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Outline the question or problem&lt;/strong&gt; which your analysis will examine. You should provide a clear and succinct description of the question or problem, and also discuss its relevance - who will the answer to this question be relevant to? How might your analysis guide their actions?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Describe the context within which the question or problem exists&lt;/strong&gt; in such a way that it is clear why answering this question is of value. What’s the geographic location and scale you are examining? Why is this question of importance here? Who is impacted by the phenomena you seek to explore? What do we already know, and what information is missing? How will you engage both the known and the unknown through exploration of your question?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Propose a strategy for how you will approach the problem&lt;/strong&gt; that is clear, connected to the question and context, and that is appropriate for the information you plan to use. What specific data source(s) will you use for your analysis? What methods will you use to engage your question? What’s the precedent for using these methods to answer similar questions? Why is this an appropriate approach given your answers to (1) and (2) above?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identify the target audience for your work&lt;/strong&gt; by telling us who has a stake in learning from your answers to the questions you pose. What contribution will this make, and how might it be useful for advocacy, deliberation, and decision-making?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identify any limitations or assistance you will need&lt;/strong&gt; to successfully complete your analysis. You may not yet completely know the answer to this, but please spend some time thinking about how I (and we as a class) can help to support you in your work, or can help you identify ways to access those resources that will help. If you can, also articulate the limitations of your work - your answers will likely have some important limitations that we should have in mind, even before you jump into your actual analysis.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tips-for-a-successful-assignment&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Tips for a Successful Assignment&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Your proposal should be 3-4 single-spaced pages in length.&lt;/li&gt;
+&lt;li&gt;Write clearly and succinctly, paying attention to spelling, grammar, and the organization of information.&lt;/li&gt;
+&lt;li&gt;Provide a clear and logical structure to your proposal, using descriptive section titles to organize information.&lt;/li&gt;
+&lt;li&gt;The judicious use of maps, photographs, charts, tables, and diagrams should be considered as a valuable means of effectively conveying information. These do not count against your proposal page limit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;project-background&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Project Background&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; March 26, 2021| &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;You will prepare some general project background that includes a descriptive analysis. More on this soon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;final-project&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Final Project&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; May 7, 2021 |&lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;You will synthesize elements of your project proposal, project background, and additional analysis into a final project that includes analysis and interpretation.&lt;/p&gt;
+&lt;p&gt;More on this soon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;project-presentation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Project Presentation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Due Date:&lt;/strong&gt; April 25, 2021 | &lt;strong&gt;Submit Via:&lt;/strong&gt; Upload to Github&lt;/p&gt;
+&lt;p&gt;Graduate students are required to include a 10-minute presentation on their final project which will be given during one of our final course sessions as part of their grading contract. Undergraduate students are not required to complete a final project presentation, but may contract to do so for a higher grade (see more information on our approach to grades this semester below).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;submission-instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Submission Instructions&lt;/h2&gt;
+&lt;p&gt;Upload your final project components to the appropriate folder in your class GitHub repository.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contract Extension Ideas</title>
+      <link>/assignments/assignments/06_contract_extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignments/assignments/06_contract_extension/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Here are some ideas for contract extensions you may wish to propose (you can of course develop and propose other ideas as well):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Develop a Neighborhood Analysis Portfolio:&lt;/strong&gt; You could contract to create a portfolio of your analysis work over the course of the semester. This portfolio would include polished output suitable to share with a prospective employer or internship site.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Extend a Lab Notebook:&lt;/strong&gt; Over the course of the semester, you’ll be working through several lab notebooks that walk you through techniques and approaches to different modes of neighborhood analysis. You could propose extending the analysis you are asked to do in these notebooks beyond what is asked of you in the lab. This might include a more expanded analysis of the data, or the application of the lab concepts to a different context or data of your choosing. Extending a lab notebook should involve producing some type of formalized output that is polished and ready for review.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Write an Op Ed:&lt;/strong&gt; Your final project asks you to perform a neighborhood-level analysis of your own design that is policy-relevant to a particular place. Based upon what your analysis reveals, you may have policy-relevant conclusions that it would be useful to share with a public audience. You can write an OpEd targeting a local newspaper that articulates a persuasive public argument and that draws substantively from your analysis. Good resources for this include &lt;a href=&#34;https://www.theopedproject.org&#34;&gt;The OpEd Project&lt;/a&gt;, the &lt;a href=&#34;https://www.nytimes.com/2017/08/25/opinion/tips-for-aspiring-op-ed-writers.html&#34;&gt;New York Times&lt;/a&gt;, &lt;a href=&#34;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008187&#34;&gt;Goh and Bourne&lt;/a&gt;, and &lt;a href=&#34;https://blogs.scientificamerican.com/observations/if-you-want-to-explain-your-science-to-the-public-heres-some-advice/&#34;&gt;Scientific American&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Develop a proposed extension to your final project:&lt;/strong&gt; It is likely that your final project will produce some insightful information drawing upon your analysis of existing data. It is also likely that through the process of conducting your analysis that you will reach the limits of what the data can tell you, and that you will have additional questions which you would like to answer. You can develop a proposed set of next steps based upon what you would do to continue to develop the analysis which you have conducted. This might include gaining insight from other sources of secondary data, applying other types of analytical techniques, or developing a plan for primary data collection to supplement your existing analysis.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are a few suggested ways in which you can contract to extend your grade. You may have other ideas which you would like to propose. Please spend some time early in the class thinking about what your goals are this semester, and what work (in addition to our base expectations) might be part of this. Please be prepared to share these ideas when we meet one-on-one early in the semester to review your contract proposal. Of course we can also talk through some of these ideas in our class sessions during the first few weeks of class. As part of your contract proposal you will need to write a description of each extended contract component. Please be prepared to share this when we meet.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
