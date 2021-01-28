@@ -20,4 +20,4 @@ Reflections are not designed to be onerous or rigorous, but rather an ongoing di
 
 ## Submission Instructions
 
-Upload your weekly reflections to the appropriate folder in your class GitHub repository.
+Upload your weekly reflections to the appropriate folder in your class GitHub repository. There is no hard and fast due date - I will periodically check in on your reflections, and expect to see consistent work present.
