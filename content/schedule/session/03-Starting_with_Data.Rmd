@@ -37,7 +37,9 @@ Data Carpentry ([Before We Start](https://datacarpentry.org/R-ecology-lesson/00-
 
 ## Other Resources
 
-This lab will serve as your initial introduction to the R programming language and RStudio development environment. We will work on this over the course of the week.
+This lab will serve as your initial introduction to the R programming language and RStudio development environment. There are two lab notebooks for this week - today's, which introduces a few general principles of the R programming language and interface, and one for Session 4 which introduces more advanced data manipulation tools contained in the `dplyr` package. We will adjust the speed at which we work based upon your feedback and how things go this week. After that, most labs will be introduced on Tuesdays and we will continue working in the same lab notebook on Thursday.
+
+
 
 
 ### Lab Download

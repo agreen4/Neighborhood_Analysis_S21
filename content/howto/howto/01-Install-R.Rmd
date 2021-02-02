@@ -36,6 +36,18 @@ Once you have RStudio installed, open RStudio. You should see something that loo
 You'll note that what appears in the portion of the console to the left looks very similar to the R console window which you opened before you started your install of RStudio. This console functions in exactly the same way, however, you'll also note that there are other areas which you have access to as well.
 
 ![](/howto/howto/01-Install-R_files/05_RStudioOpenAnnotate.png)
+## Rtools error (PC users)
+
+Some PC users may encounter an error message regarding Rtools not being installed. This would come up with you first try to install a package such as `tidyverse` either using R's package manager or using the `install.packages()` command. To remedy this error if it occurs, PC users need to close R, manually download a patch, install it, and restart your computer. This error should then be remedied.
+
+If you are a PC user who encounters this error, please do the following:
+1. Save any work and close your RStudio session
+2. Download Rtools ([download link](https://cran.rstudio.com/bin/windows/Rtools/))
+  + the link above contains instructions for putting Rtools on the PATH - you should not need to do this.
+3. Run the downloaded executable file to install Rtools
+4. Restart your computer
+5. Re-open RStudio - the problem should be resolved
+
 ## The RStudio Interface
 
 - **The R Console** is the place where code you write is executed. Typically we'll write code in a *script* or *R Notebook* (more on those later) and active pieces of code will them be executed in the R console. You can also type code directly into the console and execute it by hitting the return or enter key. 
