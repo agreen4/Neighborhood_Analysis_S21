@@ -843,6 +843,43 @@
 <div id="session-description" class="section level2">
 <h2>Session Description</h2>
 <p>In this session, we’ll take our first foray into the R and RStudio ecosystem. We’ll begin to explore data types, how to describe data, and how R can help us manipulate data.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-image-by-allison-horsthttpsgithubcomallisonhorststats-illustrations">
+
+
+  <a data-fancybox="" href="/schedule/session/03-Starting_with_Data_files/r_first_then.png" data-caption="Image by &lt;a href=&#34;https://github.com/allisonhorst/stats-illustrations&#34;&gt;Allison Horst&lt;/a&gt;">
+
+
+  <img src="/schedule/session/03-Starting_with_Data_files/r_first_then.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption>
+    Image by <a href="https://github.com/allisonhorst/stats-illustrations">Allison Horst</a>
+  </figcaption>
+
+
+</figure>
+</p>
 </div>
 <div id="this-weeks-reflection-prompt" class="section level2">
 <h2>This Week’s Reflection Prompt</h2>
@@ -854,6 +891,7 @@
 </div>
 <div id="before-class" class="section level2">
 <h2>Before Class</h2>
+<p>Please make sure you have R, RStudio, and GitHub Desktop installed on your computer, and that you have set up and registered the GitHub repository in which you will store your work this semester. Instructions are available in the <a href="/howto">How To</a> section.</p>
 <p>Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (<a href="https://uofi.box.com/s/o2vk802ig5bqggdz3iks21cqo5jv0hsk">Preface</a> and <a href="https://uofi.box.com/s/3ex015jd082iyza1z9su2a6yysnihg8n">Chapter 2</a>)</p>
 <p>Data Carpentry (<a href="https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html">Before We Start</a>, <a href="https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html">Intro to R</a>, <a href="https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html">Starting with Data</a>)</p>
 </div>
@@ -862,6 +900,81 @@
 </div>
 <div id="other-resources" class="section level2">
 <h2>Other Resources</h2>
+<p>This lab will serve as your initial introduction to the R programming language and RStudio development environment. We will work on this over the course of the week.</p>
+<div id="lab-download" class="section level3">
+<h3>Lab Download</h3>
+<ol style="list-style-type: decimal">
+<li>Please <a href="/schedule/session/03-Starting_with_Data_files/Session%203%20Lab.zip">download the lab files</a>.</li>
+<li>Once downloaded and decompressed, click on the “Session 3 Lab.Rproj” file. R will open, but nothing will (seem to) happen.</li>
+<li>In the R file browser (lower right quadrant), open the “Session 3 Workbook Blank.Rmd” file. You can start following the instructions contained within the file. (To make things easier to read, you may want to hit the "Knit: button, which will produce an html file you can open in any browser.)</li>
+<li>When you’re done, have a look at the “Session 3 Workbook Solutions.Rmd” file, which shows you my answers to the work in this lab. Note - I encourage you to take a look when you need to, but there is NO good reason to rush to answers as opposed to learning through doing and thinking through the problems you are presented with.</li>
+</ol>
+</div>
+<div id="lab-goals" class="section level3">
+<h3>Lab Goals</h3>
+<p>By the end of this lab, you should be familiar with:</p>
+<ul>
+<li>The RStudio console and R language</li>
+<li>R data types and structures</li>
+<li>Basic data manipulation and querying</li>
+</ul>
+</div>
+<div id="lab-description" class="section level3">
+<h3>Lab Description</h3>
+<p>For new users, R can be an intimidating programming language to learn, especially compared to other popular data analysis tools:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-learning-curves-for-popular-data-analysis-tools-leah-a-wasserhttpsnceasgithubiooss-lessonsspatial-data-gis-law1-mon-spatial-data-introhtml">
+
+
+  <a data-fancybox="" href="/schedule/session/03-Starting_with_Data_files/1_LearningCurve.png" data-caption="Learning Curves for Popular Data Analysis Tools, &lt;a href=&#34;https://nceas.github.io/oss-lessons/spatial-data-gis-law/1-mon-spatial-data-intro.html&#34;&gt;Leah A. Wasser&lt;/a&gt;">
+
+
+  <img src="/schedule/session/03-Starting_with_Data_files/1_LearningCurve.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption>
+    Learning Curves for Popular Data Analysis Tools, <a href="https://nceas.github.io/oss-lessons/spatial-data-gis-law/1-mon-spatial-data-intro.html">Leah A. Wasser</a>
+  </figcaption>
+
+
+</figure>
+</p>
+<p>At the same time, there are some really good reasons to gain familiarity with R and RStudio, particularly within the context of urban planning analysis.</p>
+<ul>
+<li>R and RStudio are open source tools, and are therefore available to be downloaded and used without cost (this does not negate questions regarding <em>accessibility</em> of the language, given its steep learning curve)</li>
+<li>R and RStudio are supported by a wide range of users who develop packages for specific use cases, including those that are useful for urban planning analysis (we will spend more time learning about packages later in this lab)</li>
+<li>R and RStudio provide a framework for reproducible data manipulation and analysis - rather than sharing output with others, we can share raw data and code and they can reproduce our output</li>
+<li>Principles of reproducible analysis make it easy to modify previous code for new data or use cases</li>
+</ul>
+<p>Thinking about the type of analysis we will do in this class, there are some additional rationales for learning and working in R and RStudio:</p>
+<ul>
+<li>R has a powerful set of functions for aggregating and manipulating many data records into a smaller number of summary records - we use these types of functions frequently to summarize neighborhood characteristics</li>
+<li>R can natively read from and write to many types of data sources - this allows us to perform most or all of our analysis within a single applcation rather than passing data between applications for different types of manipulation or analysis</li>
+<li>R can help us to automate elements of data visualization, which can be useful when we need to reproduce forms of analysis for different places or other data categories</li>
+<li>Looking beyond the reasons to use R and RStudio as a platform for analysis, these tools represent one of several programming languages frequently used for data science (the other main language being Python) - learning these langugages prepares you for future interface with other data science tools and strategies</li>
+</ul>
+<p>With the basic rationale laid out, let’s start exploring the logic behind the R language.</p>
+</div>
 </div>
 
           </div>

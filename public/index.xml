@@ -53,14 +53,14 @@
 &lt;/div&gt;
 &lt;div id=&#34;other-resources-and-actions&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Other Resources and Actions&lt;/h2&gt;
+&lt;div id=&#34;download-and-install-r-and-rstudio&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Download and Install R and RStudio&lt;/h4&gt;
+&lt;p&gt;We will begin working in R and RStudio starting next week. If you have not already done so, download and install R on the computer you will work on.&lt;/p&gt;
+&lt;/div&gt;
 &lt;div id=&#34;introduction-to-r-for-planners&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Introduction to R for Planners&lt;/h4&gt;
 &lt;p&gt;Register for the optional but highly recommended &lt;a href=&#34;https://urban.illinois.edu/about-us/events/introduction-to-r-for-planners-2-day-workshop/&#34;&gt;Introduction to R for Urban Planners virtual workshop&lt;/a&gt; (January 30th and February 6th) - registration closes on Wednesday 1/28.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://web.faa.illinois.edu/app/uploads/sites/2/2021/01/Intro-to-R-for-Planners-2021-1600x918.51851851852-c-default.jpg&#34; width=&#34;95%&#34; style=&#34;display: block; margin: auto auto auto 0;&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;download-and-install-r-and-rstudio&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;Download and Install R and RStudio&lt;/h4&gt;
-&lt;p&gt;We will begin working in R and RStudio starting next week. If you have not already done so, download and install R on the computer you will work on.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -185,17 +185,23 @@ pi&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Slides&lt;/h2&gt;
-&lt;p&gt;&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
+&lt;div class=&#34;shareagain&#34; style=&#34;min-width:300px;margin:1em auto;&#34;&gt;
 &lt;iframe src=&#34;/slides/Session_2/Session-2.html&#34; width=&#34;1600&#34; height=&#34;900&#34; style=&#34;border:2px solid currentColor;&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;script&gt;fitvids(&#39;.shareagain&#39;, {players: &#39;iframe&#39;});&lt;/script&gt;
 &lt;/div&gt;
-## Other Resources&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-resources-and-actions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Resources and Actions&lt;/h2&gt;
+&lt;div id=&#34;download-and-install-r-and-rstudio&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Download and Install R and RStudio&lt;/h4&gt;
+&lt;p&gt;We will begin working in R and RStudio starting next week. If you have not already done so, download and install R on the computer you will work on.&lt;/p&gt;
+&lt;/div&gt;
 &lt;div id=&#34;introduction-to-r-for-planners&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Introduction to R for Planners&lt;/h4&gt;
 &lt;p&gt;Register for the optional but highly recommended &lt;a href=&#34;https://urban.illinois.edu/about-us/events/introduction-to-r-for-planners-2-day-workshop/&#34;&gt;Introduction to R for Urban Planners virtual workshop&lt;/a&gt; (January 30th and February 6th) - registration closes on Wednesday 1/28 (you’re late!).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://web.faa.illinois.edu/app/uploads/sites/2/2021/01/Intro-to-R-for-Planners-2021-1600x918.51851851852-c-default.jpg&#34; width=&#34;95%&#34; style=&#34;display: block; margin: auto auto auto 0;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;download-and-install-r-and-rstudio&#34; class=&#34;section level4&#34;&gt;
+&lt;div id=&#34;download-and-install-r-and-rstudio-1&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Download and Install R and RStudio&lt;/h4&gt;
 &lt;p&gt;We will begin working in R and RStudio starting next week. If you have not already done so, download and install R on the computer you will work on. See the &lt;a href=&#34;/howto&#34;&gt;How To&lt;/a&gt; for instructions.&lt;/p&gt;
 &lt;/div&gt;
@@ -387,6 +393,43 @@ There is one required text for this class: Healey, Keiran, 2019. &lt;a href=&#34
 &lt;div id=&#34;session-description&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Session Description&lt;/h2&gt;
 &lt;p&gt;In this session, we’ll take our first foray into the R and RStudio ecosystem. We’ll begin to explore data types, how to describe data, and how R can help us manipulate data.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-image-by-allison-horsthttpsgithubcomallisonhorststats-illustrations&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/schedule/session/03-Starting_with_Data_files/r_first_then.png&#34; data-caption=&#34;Image by &amp;lt;a href=&amp;#34;https://github.com/allisonhorst/stats-illustrations&amp;#34;&amp;gt;Allison Horst&amp;lt;/a&amp;gt;&#34;&gt;
+
+
+  &lt;img src=&#34;/schedule/session/03-Starting_with_Data_files/r_first_then.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Image by &lt;a href=&#34;https://github.com/allisonhorst/stats-illustrations&#34;&gt;Allison Horst&lt;/a&gt;
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;this-weeks-reflection-prompt&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;This Week’s Reflection Prompt&lt;/h2&gt;
@@ -398,6 +441,7 @@ There is one required text for this class: Healey, Keiran, 2019. &lt;a href=&#34
 &lt;/div&gt;
 &lt;div id=&#34;before-class&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Before Class&lt;/h2&gt;
+&lt;p&gt;Please make sure you have R, RStudio, and GitHub Desktop installed on your computer, and that you have set up and registered the GitHub repository in which you will store your work this semester. Instructions are available in the &lt;a href=&#34;/howto&#34;&gt;How To&lt;/a&gt; section.&lt;/p&gt;
 &lt;p&gt;Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (&lt;a href=&#34;https://uofi.box.com/s/o2vk802ig5bqggdz3iks21cqo5jv0hsk&#34;&gt;Preface&lt;/a&gt; and &lt;a href=&#34;https://uofi.box.com/s/3ex015jd082iyza1z9su2a6yysnihg8n&#34;&gt;Chapter 2&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;Data Carpentry (&lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html&#34;&gt;Before We Start&lt;/a&gt;, &lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html&#34;&gt;Intro to R&lt;/a&gt;, &lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html&#34;&gt;Starting with Data&lt;/a&gt;)&lt;/p&gt;
 &lt;/div&gt;
@@ -406,6 +450,81 @@ There is one required text for this class: Healey, Keiran, 2019. &lt;a href=&#34
 &lt;/div&gt;
 &lt;div id=&#34;other-resources&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Other Resources&lt;/h2&gt;
+&lt;p&gt;This lab will serve as your initial introduction to the R programming language and RStudio development environment. We will work on this over the course of the week.&lt;/p&gt;
+&lt;div id=&#34;lab-download&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Lab Download&lt;/h3&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Please &lt;a href=&#34;/schedule/session/03-Starting_with_Data_files/Session%203%20Lab.zip&#34;&gt;download the lab files&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Once downloaded and decompressed, click on the “Session 3 Lab.Rproj” file. R will open, but nothing will (seem to) happen.&lt;/li&gt;
+&lt;li&gt;In the R file browser (lower right quadrant), open the “Session 3 Workbook Blank.Rmd” file. You can start following the instructions contained within the file. (To make things easier to read, you may want to hit the &#34;Knit: button, which will produce an html file you can open in any browser.)&lt;/li&gt;
+&lt;li&gt;When you’re done, have a look at the “Session 3 Workbook Solutions.Rmd” file, which shows you my answers to the work in this lab. Note - I encourage you to take a look when you need to, but there is NO good reason to rush to answers as opposed to learning through doing and thinking through the problems you are presented with.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lab-goals&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Lab Goals&lt;/h3&gt;
+&lt;p&gt;By the end of this lab, you should be familiar with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The RStudio console and R language&lt;/li&gt;
+&lt;li&gt;R data types and structures&lt;/li&gt;
+&lt;li&gt;Basic data manipulation and querying&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lab-description&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Lab Description&lt;/h3&gt;
+&lt;p&gt;For new users, R can be an intimidating programming language to learn, especially compared to other popular data analysis tools:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-learning-curves-for-popular-data-analysis-tools-leah-a-wasserhttpsnceasgithubiooss-lessonsspatial-data-gis-law1-mon-spatial-data-introhtml&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/schedule/session/03-Starting_with_Data_files/1_LearningCurve.png&#34; data-caption=&#34;Learning Curves for Popular Data Analysis Tools, &amp;lt;a href=&amp;#34;https://nceas.github.io/oss-lessons/spatial-data-gis-law/1-mon-spatial-data-intro.html&amp;#34;&amp;gt;Leah A. Wasser&amp;lt;/a&amp;gt;&#34;&gt;
+
+
+  &lt;img src=&#34;/schedule/session/03-Starting_with_Data_files/1_LearningCurve.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Learning Curves for Popular Data Analysis Tools, &lt;a href=&#34;https://nceas.github.io/oss-lessons/spatial-data-gis-law/1-mon-spatial-data-intro.html&#34;&gt;Leah A. Wasser&lt;/a&gt;
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;At the same time, there are some really good reasons to gain familiarity with R and RStudio, particularly within the context of urban planning analysis.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;R and RStudio are open source tools, and are therefore available to be downloaded and used without cost (this does not negate questions regarding &lt;em&gt;accessibility&lt;/em&gt; of the language, given its steep learning curve)&lt;/li&gt;
+&lt;li&gt;R and RStudio are supported by a wide range of users who develop packages for specific use cases, including those that are useful for urban planning analysis (we will spend more time learning about packages later in this lab)&lt;/li&gt;
+&lt;li&gt;R and RStudio provide a framework for reproducible data manipulation and analysis - rather than sharing output with others, we can share raw data and code and they can reproduce our output&lt;/li&gt;
+&lt;li&gt;Principles of reproducible analysis make it easy to modify previous code for new data or use cases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thinking about the type of analysis we will do in this class, there are some additional rationales for learning and working in R and RStudio:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;R has a powerful set of functions for aggregating and manipulating many data records into a smaller number of summary records - we use these types of functions frequently to summarize neighborhood characteristics&lt;/li&gt;
+&lt;li&gt;R can natively read from and write to many types of data sources - this allows us to perform most or all of our analysis within a single applcation rather than passing data between applications for different types of manipulation or analysis&lt;/li&gt;
+&lt;li&gt;R can help us to automate elements of data visualization, which can be useful when we need to reproduce forms of analysis for different places or other data categories&lt;/li&gt;
+&lt;li&gt;Looking beyond the reasons to use R and RStudio as a platform for analysis, these tools represent one of several programming languages frequently used for data science (the other main language being Python) - learning these langugages prepares you for future interface with other data science tools and strategies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With the basic rationale laid out, let’s start exploring the logic behind the R language.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -441,7 +560,7 @@ There is one required text for this class: Healey, Keiran, 2019. &lt;a href=&#34
 &lt;li&gt;Another important framing document is Keiran Healy’s &lt;a href=&#34;https://plain-text.co&#34;&gt;The Plain Person’s Guide to Plain Text Social Science&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.tidytuesday.com&#34;&gt;Tidy Tuesday&lt;/a&gt;: podcast that walks through data analysis using a new dataset weekly in R. Also check out &lt;a href=&#34;https://juliasilge.com&#34;&gt;Julia Silge’s&lt;/a&gt; blog and video tutorials that perform more advanced analysis on Tidy Tuesday data.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Good reasons to not be a Data Scientist:&lt;br&gt;&lt;br&gt;- It is a lot of work&lt;br&gt;- Literally nobody will know what you&amp;#39;re talking about&lt;br&gt;- In the end, your computer will be your only real friend&lt;/p&gt;&amp;mdash; 🔥Kareem Carr🔥 (@kareem_carr) &lt;a href=&#34;https://twitter.com/kareem_carr/status/1352655262054834182?ref_src=twsrc%5Etfw&#34;&gt;January 22, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Good reasons to not be a Data Scientist:&lt;br&gt;&lt;br&gt;- It is a lot of work&lt;br&gt;- Literally nobody will know what you&amp;#39;re talking about&lt;br&gt;- In the end, your computer will be your only real friend&lt;/p&gt;&amp;mdash; Kareem Carr 🙃 (@kareem_carr) &lt;a href=&#34;https://twitter.com/kareem_carr/status/1352655262054834182?ref_src=twsrc%5Etfw&#34;&gt;January 22, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;/div&gt;
@@ -485,7 +604,10 @@ There is one required text for this class: Healey, Keiran, 2019. &lt;a href=&#34
 
 &lt;p&gt;The majority of the work you produce this semester will be submitted via a &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt; repository which you will create.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://octodex.github.com/images/codercat.jpg&#34; style=&#34;width:30.0%&#34; /&gt;
-GitHub offers some services for free, however, as a student at an educational institution, you can register via &lt;a href=&#34;https://education.github.com&#34;&gt;GitHub for Education&lt;/a&gt; to recieve enhanced benefits and services. Let’s get this set up:&lt;/p&gt;
+Github is an implementation of Git, which is a version control system designed to help you keep track of files (especially code) which are likely to be updated often. GitHub has some features similar to Dropbox or Box, but with far more emphasis on versioning your work and tracking changes.&lt;/p&gt;
+&lt;p&gt;Within our class, we’ll use GitHub as a location where you’ll store work outputs which you will receive feedback on. Early on in the class, you’ll manually push files to your GitHub repository. As we move forward in class, you’ll learn how GitHub is integrated with R, and you can learn how to use R to interact directly with GitHub.&lt;/p&gt;
+&lt;p&gt;GitHub offers some services for free, however, as a student at an educational institution, you can register via &lt;a href=&#34;https://education.github.com&#34;&gt;GitHub for Education&lt;/a&gt; to recieve enhanced benefits and services.&lt;/p&gt;
+&lt;p&gt;Let’s get this set up:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;If you do not already have a GitHub account, go to &lt;a href=&#34;https://github.com&#34;&gt;GitHub.com&lt;/a&gt; and then click on Sign Up to create a new account. You will make a username (see some &lt;a href=&#34;https://happygitwithr.com/big-picture.html#is-it-going-to-hurt&#34;&gt;sage username advice here&lt;/a&gt;), enter your email address, and password, and then hit create account. I recommend using your UIUC email address for this step if you’re creating a new account (for my rationale, see the next step).&lt;/li&gt;
 &lt;li&gt;GitHub offers some services for free which you can access with your basic account, however, as a student at an educational institution, you can register with &lt;a href=&#34;https://education.github.com&#34;&gt;GitHub Education&lt;/a&gt; to receive enhanced benefits and services. You will be asked to verify your association with an academic institution, which you can do by entering your [netid]&lt;span class=&#34;citation&#34;&gt;@illinois.edu&lt;/span&gt; email address and taking a picture of your &lt;a href=&#34;https://www.icardnet.uillinois.edu/public/&#34;&gt;I-Card&lt;/a&gt;.&lt;/li&gt;
