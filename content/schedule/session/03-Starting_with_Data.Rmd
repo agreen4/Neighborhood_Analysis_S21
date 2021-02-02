@@ -42,7 +42,7 @@ This lab will serve as your initial introduction to the R programming language a
 
 ### Lab Download
 
-1. Please [download the lab files](/schedule/session/03-Starting_with_Data_files/Lab_01_Getting_Started.zip).
+1. Please [download the lab files](/schedule/session/03-Starting_with_Data_files/Session 3 Lab.zip).
 2. Once downloaded and decompressed, click on the "Lab_01_Getting_Started.Rproj" file. R will open, but nothing will (seem to) happen.
 3. In R, open the "Lab_01_Workbook_Blank.Rmd" file. You can start following the instructions contained within the file. (To make things easier to read, you may want to hit the "Knit: button, which will produce an html file you can open in any browser.)
 
