@@ -12,6 +12,8 @@ weight: 5
 
 ## Session Description
 
+This session marks our first explorations of data visualization in R using the GGPlot2 package. We will spend time working through structuring our data for visualization, and work to develop several options for visualizing common data types. We will also talk about pre-visualization and thinking about how data fits into our narrative structure.
+
 ## This Week's Reflection Prompt
 
 - How is working with data via a command line interface different from using a graphical user interface?
@@ -20,9 +22,7 @@ weight: 5
 
 ## Before Class
 
-Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (Chapters 5, 6, and 7)
-
-Optional Supplement - Data Carpentry ([Visualizing Data](https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html))
+Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (Chapters 3 and 4)
 
 ## Slides
 

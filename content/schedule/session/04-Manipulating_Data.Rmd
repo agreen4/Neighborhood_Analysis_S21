@@ -11,12 +11,13 @@ weight: 4
 ---
 
 ## Session Description
+In this session, we'll spend some more time learning how to use more advanced tools for data manipulation. We will talk about principles of *tidy* data, and explore the use of the `dplyr` package for more efficient data manipulation and summarization.
 
 ## Before Class
 
-Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (Chapters 3 and 4)
-
 Data Carpentry ([Manipulating Data Frames](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html))
+
+Please [download the Session 4 workbook]().
 
 ## Slides
 
