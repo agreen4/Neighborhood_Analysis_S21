@@ -17,7 +17,7 @@ In this session, we'll spend some more time learning how to use more advanced to
 
 Data Carpentry ([Manipulating Data Frames](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html))
 
-Please [download the Session 4 workbook]().
+Please [download the Session 4 workbook](/schedule/session/04-Manipulating_Data_files/Session 4 Lab.zip).
 
 ## Slides
 
