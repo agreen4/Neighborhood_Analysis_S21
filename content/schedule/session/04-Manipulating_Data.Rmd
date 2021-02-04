@@ -19,6 +19,8 @@ Data Carpentry ([Manipulating Data Frames](https://datacarpentry.org/R-ecology-l
 
 Please [download the Session 4 workbook](/schedule/session/04-Manipulating_Data_files/Session 4 Lab.zip).
 
+Optional: Check out Allison Horsts' [interactive dplyr tutorial] (https://allisonhorst.shinyapps.io/dplyr-learnr/)
+
 ## Slides
 
 ## Other Resources
