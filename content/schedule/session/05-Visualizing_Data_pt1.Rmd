@@ -24,6 +24,11 @@ This session marks our first explorations of data visualization in R using the G
 
 Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (Chapters 3 and 4)
 
+Please [download the Session 5 workbook](/schedule/session/05-Visualizing_Data_files/Session 5 Lab.zip).
+
 ## Slides
 
 ## Other Resources
+
+[GGPlot2 Book](https://ggplot2-book.org)
+[R Graph Gallery](https://www.r-graph-gallery.com)
