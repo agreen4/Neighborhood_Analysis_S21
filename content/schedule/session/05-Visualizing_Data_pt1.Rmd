@@ -26,7 +26,14 @@ Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: 
 
 Please [download the Session 5 workbook](/schedule/session/05-Visualizing_Data_files/Session 5 Lab.zip).
 
+{{% callout warning %}}
+Please ensure that Andrew has both *read* and *write* access to your GitHub repository so he can push comments to your files.
+{{% /callout %}}
+
 ## Slides
+```{r embed-xaringan, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "/slides/Session_5/Session-5.html", ratio = "16:9")
+```
 
 ## Other Resources
 

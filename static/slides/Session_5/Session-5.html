@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>UP 494-AG: Neighborhood Analysis</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andrew J. Greenlee" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/sfah.css" type="text/css" />
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+name: Visualizing Data
+class: right, top, inverse
+background-image: url(images/01_VisualizingData.jpg)
+background-size: cover
+
+# Neighborhood Analysis
+.font-35[Session 5: Visualizing Data]
+
+???
+
+---
+name: Why Visualization?
+class: right, middle
+
+# Why do we visualize our data?
+---
+name: DuBois
+class: left, top
+background-image: url(images/02_DuBois_1.png)
+background-size: contain
+---
+class: left, middle
+
+.pull-left[
+![](images/03_Du_Bois.jpg)
+]
+
+.pull-right[
+“I got a couple of my best students and put a series of facts into charts: the size and growth of the Negro American group; its division by age and sex; its distribution, education and occupations; its books and periodicals. We made a most interesting set of drawings, limned on pasteboard cards about a yard square and mounted on a number of moveable standards. The details of finishing these 50 or more charts, in colors, with accuracy, was terribly difficult with little money, limited time and not much encouragement.”
+]
+---
+class: left, middle
+
+.pull-left[
+![](images/03_Du_Bois.jpg)
+]
+
+.pull-right[
+![](images/04_Du_Bois.jpg)
+]
+---
+name: Lessons from DuBois
+class: left, middle
+
+# What power do DuBois' visualizations have today?
+---
+class: left, middle
+
+## Does the abundance of data and visualization dilute their power?
+---
+class: left, middle
+
+.pull-left[
+![](images/05_GA.png)
+]
+
+.pull-right[
+### How do craft visualizations that tell a story?
+]
+---
+class: left, middle
+
+.pull-left[.font-35[
+&lt;br&gt;
+![](images/06_GGplot.png)
+&lt;br&gt;&lt;br&gt;
+In this week's labs you'll start to learn the *grammar of graphics* in GGplot]
+]
+---
+class: left, middle
+
+.pull-left[.font-35[
+&lt;br&gt;
+![](images/06_GGplot.png)
+&lt;br&gt;&lt;br&gt;
+In this week's labs you'll start to learn the *grammar of graphics* in GGplot]
+]
+
+.pull-right[
+![](images/07_layers.png)
+&lt;br&gt;
+&lt;span style='color: #FDC87A;'&gt;Data:&lt;/span&gt; Your source data
+
+&lt;span style='color: #50A781;'&gt;Aesthetics:&lt;/span&gt; What variables are visualized and how
+
+&lt;span style='color: #568DC1;'&gt;Geometry:&lt;/span&gt; The specific plot type we would like to make
+
+&lt;span style='color: #946EB2;'&gt;Facets:&lt;/span&gt; Facets allow us to (optionally) split our plot into a multiple subsets
+
+&lt;span style='color: #D6656A;'&gt;Statistics:&lt;/span&gt; summaries or indicators of the distribution of our data
+
+&lt;span style='color: #C3A385;'&gt;Coordinates:&lt;/span&gt; Coordinate system for the plot
+
+&lt;span style='color: #FDC87A;'&gt;Themes:&lt;/span&gt; Collections of plot styles and options
+]
+---
+class: left, top
+
+#   Basic template
+
+- ggplot: "Initialize" a map object (data frame, aesthetics, columns...)
+- geom: add layers (use the ** + ** operator)
+- The **+** sign used to add new layers must be placed at the end of the line
+
+
+
+```r
+ggplot(data = &lt;DATA&gt;, mapping = aes(&lt;MAPPINGS&gt;)) +  &lt;GEOM_FUNCTION&gt;()
+```
+---
+# Aesthetics
+
+Item | Description
+---------| -------------
+x	| Position on x-axis
+y	| Position on y-axis
+shape	| Shape
+color |	Color of border of elements
+fill | 	Color of inside of elements (changes the color of the graph by group/facor)
+size |	Size
+alpha | 	Transparency (1: opaque; 0: transparent)
+line type  |	Type of line (e.g., solid, dashed)
+
+---
+class: left, top
+
+# Geometries
+
+Item | Description
+---------| -------------
+geom_point | Scatter plots, dot plots, etc.     
+geom_boxplot | Boxplots    
+geom_line | Trend lines, time series, etc.   
+geom_path |Connects the observations in the order in which they appear in the data
+geom_histogram | Visualise the distribution of a single continuous variable 
+geom_hline  | Add horizontal reference lines
+geom_vline  | Add vertical reference lines
+geom_smooth  | Add a smoothing line in order to see what the trends look like
+geom_sf| Visualize simple feature (sf) objects(maps)
+
+---
+class: middle
+
+.font-35[With &lt;span style='color: #FDC87A;'&gt;Data&lt;/span&gt; , 
+&lt;span style='color: #50A781;'&gt;Aesthetics&lt;/span&gt;, and 
+&lt;span style='color: #568DC1;'&gt;Geometry&lt;/span&gt;, you can make a plot - in this lab you'll learn how to start layering plot elements together and refining plots iteratively.]
+---
+name: Next Class
+class: top, left
+
+# Thursday's Class
+.font-35[On Thursday, we'll continue working on our manipulation of basic data visualizations]
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
