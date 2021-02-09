@@ -11,6 +11,13 @@ weight: 7
 ---
 
 ## Session Description
+In this session, we'll take a step back from the nuts and bolts of our R training and will examine modes of neighborhood analysis.
+
+## This Week's Reflection Prompt
+
+- What types of questions do you have about the structure and function of neighborhoods?
+- What forms of analysis do you see as being useful to your own work?
+- What types of analytic approaches do you see as being useful to your own work?
 
 ## Before Class
 

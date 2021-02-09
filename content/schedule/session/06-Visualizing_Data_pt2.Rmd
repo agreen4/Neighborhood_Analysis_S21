@@ -12,13 +12,18 @@ weight: 6
 
 ## Session Description
 
-We'll continue to work on the same lab from our last session. Please bring any questions you have from the last session!
+We'll continue to work on the same lab from our last session. Please bring any questions you have from the last session! Towards the end of the lab, we'll spend some time sharing visualizations we've produced.
 
 ## Before Class
+
 Healy, Kieran. (2019). Data Visualization: A Practical Introduction. Princeton: Princeton University Press. (Chapters  5, 6, and 7)
 
-Optional Supplement - Data Carpentry ([Visualizing Data](https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html))
+{{% callout warning %}}
+Please ensure that Andrew has both *read* and *write* access to your GitHub repository so he can push comments to your files. There are currently some repositories that are not accessible.
+{{% /callout %}}
 
 ## Slides
 
 ## Other Resources
+
+Optional Supplement - Data Carpentry ([Visualizing Data](https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html))

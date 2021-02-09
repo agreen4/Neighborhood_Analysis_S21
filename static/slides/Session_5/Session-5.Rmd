@@ -70,15 +70,6 @@ class: left, middle
 ![](images/04_Du_Bois.jpg)
 ]
 ---
-name: Lessons from DuBois
-class: left, middle
-
-# What power do DuBois' visualizations have today?
----
-class: left, middle
-
-## Does the abundance of data and visualization dilute their power?
----
 class: left, middle
 
 .pull-left[
@@ -86,7 +77,7 @@ class: left, middle
 ]
 
 .pull-right[
-### How do craft visualizations that tell a story?
+### How do craft visualizations that tell a story today?
 ]
 ---
 class: left, middle
@@ -116,9 +107,9 @@ In this week's labs you'll start to learn the *grammar of graphics* in GGplot]
 
 <span style='color: #568DC1;'>Geometry:</span> The specific plot type we would like to make
 
-<span style='color: #946EB2;'>Facets:</span> Facets allow us to (optionally) split our plot into a multiple subsets
+<span style='color: #946EB2;'>Facets:</span> Facets allow us to create small multiples
 
-<span style='color: #D6656A;'>Statistics:</span> summaries or indicators of the distribution of our data
+<span style='color: #D6656A;'>Statistics:</span> summaries of data distribution
 
 <span style='color: #C3A385;'>Coordinates:</span> Coordinate system for the plot
 
@@ -140,6 +131,9 @@ ggplot(data = <DATA>, mapping = aes(<MAPPINGS>)) +  <GEOM_FUNCTION>()
 ```
 ---
 # Aesthetics
+```{r eval=FALSE}
+ggplpt(data = <DATA>, mapping = aes(<mappings)) + <GEOM_FUNCTION>()
+```
 
 Item | Description
 ---------| -------------
@@ -156,7 +150,9 @@ line type  |	Type of line (e.g., solid, dashed)
 class: left, top
 
 # Geometries
-
+```{r eval=FALSE}
+ggplpt(data = <DATA>, mapping = aes(<mappings)) + <GEOM_FUNCTION>()
+```
 Item | Description
 ---------| -------------
 geom_point | Scatter plots, dot plots, etc.     
@@ -170,15 +166,303 @@ geom_smooth  | Add a smoothing line in order to see what the trends look like
 geom_sf| Visualize simple feature (sf) objects(maps)
 
 ---
+name: pause for covid
+class: top, left
+
+# A Tweet sparks a question...
+.pull-left[
+```{r CDPH_Tweet, echo=FALSE, out.width="83%"}
+include_graphics("images/CDPH_Tweet.png")
+```
+]
+
+.pull-right[
+.font-35[
+Sorry to bring COVID into this...
+
+What demographic factors help to explain the difference between where people are dying and where vaccinations are occurring?
+]
+]
+---
+name: Get Data
+class: top, left
+
+```{r chi_portal, echo=FALSE, out.width="100%"}
+include_graphics("images/chi_portal_covid.png")
+```
+---
+name: Get Data 2
+class: top, left
+
+```{r chi_portal2, echo=FALSE, out.width="100%"}
+include_graphics("images/chi_portal_covid_2.png")
+```
+---
+name: Get Data 3
+class: top, left
+
+```{r chi_portal3, echo=FALSE, out.width="100%"}
+include_graphics("images/chi_portal_covid_3.png")
+```
+---
+name: Scatterplot COVID Infection Rate
+class: top, left
+```{r work_stuff, echo=FALSE}
+pacman::p_load("ggplot2", "RSocrata", "sf", "tidyverse", "tigris")
+
+if (file.exists("data/chi_ph.rds")){dataset<-readRDS("data/chi_ph.rds")}
+if (!file.exists("data/chi_ph.rds")){
+  cdph<-RSocrata::read.socrata("https://data.cityofchicago.org/resource/yhhz-zm2v.json")
+cdph_vacc<-RSocrata::read.socrata("https://data.cityofchicago.org/resource/553k-3xzc.json")
+
+cdph_chart<-cdph %>% 
+  filter(week_number == 3) %>% 
+  select(zip_code, percent_tested_positive_cumulative, death_rate_cumulative) %>% mutate(percent_tested_positive_cumulative = as.numeric(percent_tested_positive_cumulative), death_rate_cumulative = as.numeric(death_rate_cumulative))
+
+vacc_chart<-cdph_vacc %>% 
+  filter(date == "2021-01-25") %>% 
+  select(zip_code, X_1st_dose_percent_population) %>% mutate(X_1st_dose_percent_population = as.numeric(X_1st_dose_percent_population))
+dataset<-left_join(cdph_chart, vacc_chart, by="zip_code")
+
+dir.create("data")
+saveRDS(dataset, "data/chi_ph.rds")
+rm(cdph, cdph_vacc)
+}
+
+```
+
+.font-35[What's the relationship between COVID *cases* and vaccinations?]
+.pull-left[
+
+.panelset[
+   .panel[.panel-name[Output]
+
+```{r scatterplot, echo=FALSE}
+ggplot(dataset %>% filter(percent_tested_positive_cumulative !=0)) +
+  geom_point(aes(x=percent_tested_positive_cumulative, y=X_1st_dose_percent_population))+
+  labs(x="Pop. Positive (%)", y="Pop. Vaccinated (%)")+
+  scale_x_continuous(labels=scales::percent)+
+  scale_y_continuous(labels=scales::percent)+
+  theme_minimal()
+```
+   ]
+   .panel[.panel-name[Code]
+```{r scatterplot_code, eval=FALSE}
+ggplot(dataset %>% filter(percent_tested_positive_cumulative !=0)) +
+  geom_point(aes(x=percent_tested_positive_cumulative, y=X_1st_dose_percent_population))+
+  labs(x="Pop. Positive (%)", y="Pop. Vaccinated (%)")+
+  scale_x_continuous(labels=scales::percent)+
+  scale_y_continuous(labels=scales::percent)+
+  theme_minimal()
+```
+   ]
+]
+]
+.pull-right[
+How would you describe this in your own words?
+
+- What does each point represent?
+
+- Are the scales for X and Y reasonable? What do they tell you?
+
+- Is there a particular region on this plot that might spark questions for further exploration?
+
+- Are you ready to write an op-ed for the Chicago Tribune or Sun Times (the two major newspapers)?
+]
+---
+name: Scatterplot death rate
+class: top, left
+
+.font-35[What's the relationship between COVID *deaths* and vaccinations?]
+.pull-left[
+.panelset[
+.panel[.panel-name[Output]
+```{r scatterplot_death, echo=FALSE}
+ggplot(dataset %>% filter(death_rate_cumulative !=0)) +
+  geom_point(aes(x=death_rate_cumulative, y=X_1st_dose_percent_population))+
+  labs(x="Death Rate (per 1,000)", y="Pop. Vaccinated (%)")+
+  scale_x_continuous(labels=scales::percent)+
+  scale_y_continuous(labels=scales::percent)+
+  theme_minimal()
+```
+]
+
+.panel[.panel-name[Code]
+```{r scatterplot_death_output, eval=FALSE}
+ggplot(dataset %>% filter(percent_tested_positive_cumulative !=0)) +
+  geom_point(aes(x=death_rate_cumulative, y=X_1st_dose_percent_population))+
+  labs(x="Death Rate (per 1,000)", y="Pop. Vaccinated (%)")+
+  scale_x_continuous(labels=scales::percent)+
+  scale_y_continuous(labels=scales::percent)+
+  theme_minimal()
+```
+]
+
+]
+]
+.pull-right[
+How would you describe this in your own words?
+
+- What does each point represent?
+
+- Are the scales for X and Y reasonable? What do they tell you?
+
+- Is there a particular region on this plot that might spark questions for further exploration?
+
+- Are you ready to write an op-ed for the Chicago Tribune or Sun Times (the two major newspapers)?
+]
+---
+name: Maps
+class: top, left
+
+```{r map_it, echo=FALSE}
+if(file.exists("data/zips.rds")){
+  zips<-readRDS("data/zips.rds")
+  zips<-st_as_sf(zips)
+}
+
+if(!file.exists("data/zips.rds")){
+  zips<-tigris::zctas(state="IL", class="sf") %>% 
+    filter(substr(GEOID10, 0, 3) %in% c("606", "608"))
+  saveRDS(zips, "data/zips.rds")
+}
+
+if(file.exists("data/chi.rds")){
+  chi<-readRDS("data/chi.rds")
+  chi<-st_as_sf(zips)
+}
+
+if(!file.exists("data/chi.rds")){
+chi<-tigris::places(state="IL", class="sf") %>% filter(NAME == "Chicago")
+saveRDS(chi, "data/chi.rds")
+}
+
+dataset<-left_join(dataset, zips, by=c("zip_code" = "GEOID10")) %>% st_as_sf()
+```
+.pull-left[
+.panelset[
+.panel[.panel-name[Output]
+```{r map_tested, echo=FALSE}
+ggplot() +
+  geom_sf(data=dataset, aes(fill=percent_tested_positive_cumulative))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Positive (%)")+
+  theme_minimal()
+```
+]
+.panel[.panel-name[Code]
+```{r map_tested_code, eval=FALSE}
+ggplot() +
+  geom_sf(data=dataset, aes(fill=percent_tested_positive_cumulative))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Positive (%)")+
+  theme_minimal()
+```
+]
+]]
+
+.pull-right[
+.panelset[
+.panel[.panel-name[Output]
+```{r map_vaccinated, echo=FALSE}
+ggplot() +
+  geom_sf(data=dataset, aes(fill=X_1st_dose_percent_population))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Vaccinated (%)")+
+  theme_minimal()
+```
+]
+.panel[.panel-name[Code]
+```{r map_vaccinated_code, eval=FALSE}
+ggplot() +
+  geom_sf(data=dataset, aes(fill=X_1st_dose_percent_population))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Vaccinated (%)")+
+  theme_minimal()
+```
+]
+]
+
+]
+
+---
+name: Maps2
+class: top, left
+
+.pull-left[
+.panelset[
+.panel[.panel-name[Output]
+```{r map_died, echo=FALSE}
+ggplot() +
+  geom_sf(data=dataset, aes(fill=death_rate_cumulative))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Died (%)")+
+  theme_minimal()
+```
+]
+.panel[.panel-name[Code]
+```{r map_died_code, eval=FALSE}
+ggplot() +
+  geom_sf(data=dataset, aes(fill=death_rate_cumulative))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Died (%)")+
+  theme_minimal()
+```
+]
+]]
+
+.pull-right[
+.panelset[
+.panel[.panel-name[Output]
+```{r map_vaccinated2, echo=FALSE}
+ggplot() +
+  geom_sf(data=dataset, aes(fill=X_1st_dose_percent_population))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Vaccinated (%)")+
+  theme_minimal()
+```
+]
+.panel[.panel-name[Code]
+```{r map_vaccinated_code2, eval=FALSE}
+ggplot() +
+  geom_sf(data=dataset, aes(fill=X_1st_dose_percent_population))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Vaccinated (%)")+
+  theme_minimal()
+```
+]
+]
+
+]
+---
+name: What Next?
+class: bottom, left
+background-image: url(images/kelly-sikkema-cXkrqY2wFyc-unsplash.jpg)
+background-size: cover
+
+### .salt[What Next?]
+.font-35[
+What are the types of things you would want to <br>explore to understand what's going on here?
+
+Where might the information come from?
+]
+---
 class: middle
 
 .font-35[With <span style='color: #FDC87A;'>Data</span> , 
 <span style='color: #50A781;'>Aesthetics</span>, and 
-<span style='color: #568DC1;'>Geometry</span>, you can make a plot - in this lab you'll learn how to start layering plot elements together and refining plots iteratively.]
+<span style='color: #568DC1;'>Geometry</span>, you can make a plot - in this week's lab you'll learn how to start layering plot elements together and take an iterative approach to refining plots.]
 ---
 name: Next Class
 class: top, left
 
 # Thursday's Class
 .font-35[On Thursday, we'll continue working on our manipulation of basic data visualizations]
----

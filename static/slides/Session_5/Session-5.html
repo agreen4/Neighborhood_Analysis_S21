@@ -62,15 +62,6 @@ class: left, middle
 ![](images/04_Du_Bois.jpg)
 ]
 ---
-name: Lessons from DuBois
-class: left, middle
-
-# What power do DuBois' visualizations have today?
----
-class: left, middle
-
-## Does the abundance of data and visualization dilute their power?
----
 class: left, middle
 
 .pull-left[
@@ -78,7 +69,7 @@ class: left, middle
 ]
 
 .pull-right[
-### How do craft visualizations that tell a story?
+### How do craft visualizations that tell a story today?
 ]
 ---
 class: left, middle
@@ -108,9 +99,9 @@ In this week's labs you'll start to learn the *grammar of graphics* in GGplot]
 
 &lt;span style='color: #568DC1;'&gt;Geometry:&lt;/span&gt; The specific plot type we would like to make
 
-&lt;span style='color: #946EB2;'&gt;Facets:&lt;/span&gt; Facets allow us to (optionally) split our plot into a multiple subsets
+&lt;span style='color: #946EB2;'&gt;Facets:&lt;/span&gt; Facets allow us to create small multiples
 
-&lt;span style='color: #D6656A;'&gt;Statistics:&lt;/span&gt; summaries or indicators of the distribution of our data
+&lt;span style='color: #D6656A;'&gt;Statistics:&lt;/span&gt; summaries of data distribution
 
 &lt;span style='color: #C3A385;'&gt;Coordinates:&lt;/span&gt; Coordinate system for the plot
 
@@ -133,6 +124,10 @@ ggplot(data = &lt;DATA&gt;, mapping = aes(&lt;MAPPINGS&gt;)) +  &lt;GEOM_FUNCTIO
 ---
 # Aesthetics
 
+```r
+ggplpt(data = &lt;DATA&gt;, mapping = aes(&lt;mappings)) + &lt;GEOM_FUNCTION&gt;()
+```
+
 Item | Description
 ---------| -------------
 x	| Position on x-axis
@@ -149,6 +144,9 @@ class: left, top
 
 # Geometries
 
+```r
+ggplpt(data = &lt;DATA&gt;, mapping = aes(&lt;mappings)) + &lt;GEOM_FUNCTION&gt;()
+```
 Item | Description
 ---------| -------------
 geom_point | Scatter plots, dot plots, etc.     
@@ -162,18 +160,217 @@ geom_smooth  | Add a smoothing line in order to see what the trends look like
 geom_sf| Visualize simple feature (sf) objects(maps)
 
 ---
+name: pause for covid
+class: top, left
+
+# A Tweet sparks a question...
+.pull-left[
+&lt;img src="images/CDPH_Tweet.png" width="83%" /&gt;
+]
+
+.pull-right[
+.font-35[
+Sorry to bring COVID into this...
+
+What demographic factors help to explain the difference between where people are dying and where vaccinations are occurring?
+]
+]
+---
+name: Get Data
+class: top, left
+
+&lt;img src="images/chi_portal_covid.png" width="100%" /&gt;
+---
+name: Get Data 2
+class: top, left
+
+&lt;img src="images/chi_portal_covid_2.png" width="100%" /&gt;
+---
+name: Get Data 3
+class: top, left
+
+&lt;img src="images/chi_portal_covid_3.png" width="100%" /&gt;
+---
+name: Scatterplot COVID Infection Rate
+class: top, left
+
+
+.font-35[What's the relationship between COVID *cases* and vaccinations?]
+.pull-left[
+
+.panelset[
+   .panel[.panel-name[Output]
+
+![](Session-5_files/figure-html/scatterplot-1.png)&lt;!-- --&gt;
+   ]
+   .panel[.panel-name[Code]
+
+```r
+ggplot(dataset %&gt;% filter(percent_tested_positive_cumulative !=0)) +
+  geom_point(aes(x=percent_tested_positive_cumulative, y=X_1st_dose_percent_population))+
+  labs(x="Pop. Positive (%)", y="Pop. Vaccinated (%)")+
+  scale_x_continuous(labels=scales::percent)+
+  scale_y_continuous(labels=scales::percent)+
+  theme_minimal()
+```
+   ]
+]
+]
+.pull-right[
+How would you describe this in your own words?
+
+- What does each point represent?
+
+- Are the scales for X and Y reasonable? What do they tell you?
+
+- Is there a particular region on this plot that might spark questions for further exploration?
+
+- Are you ready to write an op-ed for the Chicago Tribune or Sun Times (the two major newspapers)?
+]
+---
+name: Scatterplot death rate
+class: top, left
+
+.font-35[What's the relationship between COVID *deaths* and vaccinations?]
+.pull-left[
+.panelset[
+.panel[.panel-name[Output]
+![](Session-5_files/figure-html/scatterplot_death-1.png)&lt;!-- --&gt;
+]
+
+.panel[.panel-name[Code]
+
+```r
+ggplot(dataset %&gt;% filter(percent_tested_positive_cumulative !=0)) +
+  geom_point(aes(x=death_rate_cumulative, y=X_1st_dose_percent_population))+
+  labs(x="Death Rate (per 1,000)", y="Pop. Vaccinated (%)")+
+  scale_x_continuous(labels=scales::percent)+
+  scale_y_continuous(labels=scales::percent)+
+  theme_minimal()
+```
+]
+
+]
+]
+.pull-right[
+How would you describe this in your own words?
+
+- What does each point represent?
+
+- Are the scales for X and Y reasonable? What do they tell you?
+
+- Is there a particular region on this plot that might spark questions for further exploration?
+
+- Are you ready to write an op-ed for the Chicago Tribune or Sun Times (the two major newspapers)?
+]
+---
+name: Maps
+class: top, left
+
+
+.pull-left[
+.panelset[
+.panel[.panel-name[Output]
+![](Session-5_files/figure-html/map_tested-1.png)&lt;!-- --&gt;
+]
+.panel[.panel-name[Code]
+
+```r
+ggplot() +
+  geom_sf(data=dataset, aes(fill=percent_tested_positive_cumulative))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Positive (%)")+
+  theme_minimal()
+```
+]
+]]
+
+.pull-right[
+.panelset[
+.panel[.panel-name[Output]
+![](Session-5_files/figure-html/map_vaccinated-1.png)&lt;!-- --&gt;
+]
+.panel[.panel-name[Code]
+
+```r
+ggplot() +
+  geom_sf(data=dataset, aes(fill=X_1st_dose_percent_population))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Vaccinated (%)")+
+  theme_minimal()
+```
+]
+]
+
+]
+
+---
+name: Maps2
+class: top, left
+
+.pull-left[
+.panelset[
+.panel[.panel-name[Output]
+![](Session-5_files/figure-html/map_died-1.png)&lt;!-- --&gt;
+]
+.panel[.panel-name[Code]
+
+```r
+ggplot() +
+  geom_sf(data=dataset, aes(fill=death_rate_cumulative))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Died (%)")+
+  theme_minimal()
+```
+]
+]]
+
+.pull-right[
+.panelset[
+.panel[.panel-name[Output]
+![](Session-5_files/figure-html/map_vaccinated2-1.png)&lt;!-- --&gt;
+]
+.panel[.panel-name[Code]
+
+```r
+ggplot() +
+  geom_sf(data=dataset, aes(fill=X_1st_dose_percent_population))+
+  scale_fill_continuous(trans = 'reverse')+
+  geom_sf(data=chi, colour="gray40", fill=NA)+
+  labs(fill="Pop. Vaccinated (%)")+
+  theme_minimal()
+```
+]
+]
+
+]
+---
+name: What Next?
+class: bottom, left
+background-image: url(images/kelly-sikkema-cXkrqY2wFyc-unsplash.jpg)
+background-size: cover
+
+### .salt[What Next?]
+.font-35[
+What are the types of things you would want to &lt;br&gt;explore to understand what's going on here?
+
+Where might the information come from?
+]
+---
 class: middle
 
 .font-35[With &lt;span style='color: #FDC87A;'&gt;Data&lt;/span&gt; , 
 &lt;span style='color: #50A781;'&gt;Aesthetics&lt;/span&gt;, and 
-&lt;span style='color: #568DC1;'&gt;Geometry&lt;/span&gt;, you can make a plot - in this lab you'll learn how to start layering plot elements together and refining plots iteratively.]
+&lt;span style='color: #568DC1;'&gt;Geometry&lt;/span&gt;, you can make a plot - in this week's lab you'll learn how to start layering plot elements together and take an iterative approach to refining plots.]
 ---
 name: Next Class
 class: top, left
 
 # Thursday's Class
 .font-35[On Thursday, we'll continue working on our manipulation of basic data visualizations]
----
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
