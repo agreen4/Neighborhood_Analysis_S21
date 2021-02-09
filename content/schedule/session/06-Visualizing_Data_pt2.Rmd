@@ -12,7 +12,7 @@ weight: 6
 
 ## Session Description
 
-We'll continue to work on the same lab from our last session. Please bring any questions you have from the last session! Towards the end of the lab, we'll spend some time sharing visualizations we've produced.
+We'll continue to work on the same lab from our last session. We'll start with unstructured work time. Please bring any questions you have from the last session! Towards the end of the lab (last 15 minutes), we'll spend some time sharing visualizations we've produced. If you want to share, you can either share your screen or can practice using `ggsave()` to save your plot outputs to your local computer.
 
 ## Before Class
 
