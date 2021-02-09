@@ -1,0 +1,27 @@
+---
+title: Build a Website
+linktitle: Build a Website
+menu:
+  howto:
+    parent: How To
+    weight: 5
+toc: true
+type: docs
+weight: 5
+---
+
+The ability to integrate R Markdown into websites and virtual portfolios makes for a very powerful communications platform. This website, for instance, is all written using the `blogdown` packaged and it's integrations with Hugo, and Netlify, which allow for seamless site rendering and hosting. It's possible for you to learn how to build your own site using the same strategy, but there are also simpler methods which you can employ.
+
+## Web Building Resources
+
+[Blogdown Book](https://bookdown.org/yihui/blogdown/)
+
+Alison Hill and Desiree De Leon's presentation [Sharing on Short Notice](https://rstudio.com/resources/webinars/sharing-on-short-notice-how-to-get-your-materials-online-with-r-markdown/) provides a great overview for three different website workflows.
+
+Alison Hill's [Up and Running with Blogdown in 2021](https://alison.rbind.io/post/new-year-new-blogdown/) is a great resource with up to date information on how to make a site similar to this one.
+
+[R Blogdown: Websites for Academics](https://codeburst.io/r-blogdown-websites-for-academics-8c381b8372ac)
+
+## Inspiration
+
+[Tiny Stats](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) is a statistical education website written in R Markdown. Check out [this presentation](https://www.youtube.com/watch?v=69IyhzQ_gys&t=895s) on creating the site as well.
