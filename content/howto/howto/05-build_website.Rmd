@@ -10,7 +10,7 @@ type: docs
 weight: 5
 ---
 
-The ability to integrate R Markdown into websites and virtual portfolios makes for a very powerful communications platform. This website, for instance, is all written using the `blogdown` packaged and it's integrations with Hugo, and Netlify, which allow for seamless site rendering and hosting. It's possible for you to learn how to build your own site using the same strategy, but there are also simpler methods which you can employ.
+The ability to integrate R Markdown into websites and virtual portfolios makes for a very powerful communications platform. This website, for instance, is all written using the `blogdown` packaged and it's integration with [Hugo](https://gohugo.io), [GitHub](https://github.com), and [Netlify](https://www.netlify.com), which allow for seamless site rendering and hosting. It's possible for you to learn how to build your own site using the same strategy, but there are also simpler methods which you can employ.
 
 ## Web Building Resources
 
