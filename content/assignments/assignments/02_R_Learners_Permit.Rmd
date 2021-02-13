@@ -18,6 +18,9 @@ Over the course of the first few weeks of our class, you have learned some basic
 This R Learner's Permit is designed to assess your knowledge of the elements of the R language and software that we have focused on so far in class.
 
 ## Instructions
+
+[Download your Learner's Permit Workbook from Here](https://uofi.box.com/s/ut4xdxfpwl4tmu2ftdxd4pssb3gmhjzq)
+
 Working by yourself, please follow the instructions contained in the included R Notebook, which involve filling in code and generating output. Most instructions ask you to add or fill in code chunks. Others ask you to provide a written interpretation in the notebook portion of the document.
 
 Complete as many items as you can. If you run into trouble completing an item, add comments to your code or in the notebook describing where you are running into problems, and what you think the next step might be to solving the problem you're having.
