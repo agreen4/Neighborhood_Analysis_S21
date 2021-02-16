@@ -32,3 +32,47 @@ Lynch, Kevin (1960). The Image of the City. [Chapter 3](https://uofi.box.com/s/j
 ## Slides
 
 ## Other Resources
+
+### Activity Prompt
+
+Early in the class, we spent time talking about some ways to describe the essential characteristics of neighborhoods. We now also have some foundational data manipulation skills in hand. It's time to start thinking about how we might bring together our conceptual understanding of neighborhoods with some of our increased knowledge about data and types of description.
+
+For today's class session, you also read a diverse range of materials designed to help you think through some of the different ways we use information to tell stories about neighborhoods and within planning more generally. 
+
+Let's try to bring these things together in a collaborative exercise.
+
+As you'll recall, last week, we took a look at a series of maps for Chicago zip codes that described who is dying from SARS-CoV19 and who is vaccinated:
+
+```{r, echo=FALSE}
+blogdown::shortcode("twitter", "1361495870416580608")
+```
+
+As this information circulates amongst groups throughout the city and region, many groups seek to respond and to produce information that will help their constituents.
+
+You will divide into four groups (breakout rooms) who have a vested interest in understanding better the implications of SARS-CoV-19 vaccinations and death rates for their constituents:
+
+*Austin Neighbors United* - a (fictitious) Neighborhood Group in Chicago's Austin neighborhood focused on improving the quality of life for local residents:
+
+*City of Chicago* - a task force assembled by the Mayor to focus on neighborhood health and wellbeing during the SARS-CoV19 Pandemic.
+
+*Chicago Council of Small Business Owners* - a (fictitious) advocacy group focused on the needs of home-based businesses and businesses with fewer than 20 employees throughout the city.
+
+*Metropolitan Planning Council* - an independent regional organization focused on shaping a more equitable, sustainable, and prosperous Chicago region through research and policy development. 
+
+Working together, prepare a short (5 minute) presentation that engages with the following prompts:
+
+1. *Interest*: Articulate why your organization or group is interested in the relationship between COVID deaths and vaccinations. Aside from there being potential major equity issues (as we've talked about in the past), why specifically would your constituents be concerned? How would this influence the work of your organization?
+
+2. *Questions*: Articulate 2 to 4 specific questions which build upon your knowledge of what these maps show and that help to engage your organization's interest.
+
+3. *Scale*: What is the geographic and temporal scale at which these questions need to be answered? What are the trade-offs involved with engaging at this scale versus alternatives?
+
+4. *Key Measures*: Describe 2-3 key measures which will be important for your work. Research where the information will come from that constitutes these measures, their availability at the scale you wish to work at, and identify tradeoffs between these measures and alternatives. What's the precedent for the use of these measures?
+
+4. *Key Analyses*: Describe 2-3 key analyses which you will perform in order to engage with the questions you have identified.
+
+5. *Visual Outputs*: Describe at least one visual output associated with each of your analyses. If you have time, prepare a rough sketch of what each output might look like conceptually, and prepare to share it.
+
+6. *Overall Outputs and Communications Plan*: How will you share the information from your analyses with your constituents? How do you anticipate they will make use of it? How will you ensure that it is accessible and reproducible for others?
+
+As a group, spend around 30 minute thinking through these aspects of your analysis. We will then return to plenary, and each group will spend 5 minutes presenting and will also have 5 minutes for discussion and conversation.
