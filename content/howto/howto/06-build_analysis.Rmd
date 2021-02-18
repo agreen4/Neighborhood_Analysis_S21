@@ -3,11 +3,11 @@ title: Develop an Analysis
 linktitle: Develop an Analysis
 menu:
   howto:
-    parent: How To
-    weight: 6
+    parent: Code
+    weight: 2
 toc: true
 type: docs
-weight: 6
+weight: 2
 ---
 # Description
 
