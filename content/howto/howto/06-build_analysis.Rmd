@@ -9,13 +9,11 @@ toc: true
 type: docs
 weight: 2
 ---
-# Description
-
 This brief tutorial takes you through the basics of a "real world" analytic workflow. In this case, the workflow is built around conducting an independent analysis of the [Protect Chicago Plus](https://www.chicago.gov/city/en/sites/covid-19/home/protect-chicago.html) program that enhances SARS-CoV-19 Vaccination availability and outreach in communities in which uptake is low and infections and deaths are high. 
 
 We've examined maps that help to visualize the disparities in where COVID cases are and where vaccinations are more prevalent:
 
-```{r}
+```{r, echo=FALSE}
 blogdown::shortcode("twitter", "1362220407189864450")
 ```
 
