@@ -23,9 +23,9 @@ Please find descriptions of each of our course sessions here - you will also fin
 | [Session 5](session/05-visualizing_data_pt1) | February 9 | Introduction to R: Visualizing Data |
 | [Session 6](session/06-visualizing_data_pt2) | February 11 | Introduction to R: Visualizing Data |
 | [Session 7](session/07-modes_of_analysis) | February 16 | Modes of Neighborhood Analysis |
-| [Session 8](session/08-population_pt1) | February 18 | Population and Population Change |
-| [Session 9](session/09-population_pt2) | February 23 | Population and Population Change |
-| [Session 10](session/10-population_pt3) | February 25 | Population and Population Change |
+| [Session 8](session/08-modes_of_analysis_pt2) | February 18 | Modes of Neighborhood Analysis |
+| [Session 9](session/09-population_pt1) | February 23 | Population and Population Change |
+| [Session 10](session/10-population_pt1) | February 25 | Population and Population Change |
 | [Session 11](session/11-population_projection_pt1) | March 2 | Population Projections and Forecasts |
 | [Session 12](session/12-population_projection_pt2) | March 4 | Population Projections and Forecasts |
 | [Session 13](session/13-population_segregation_pt1) | March 9 | Analyzing Population Distributions and Segregation |
