@@ -1,0 +1,359 @@
+---
+title: Develop an Analysis
+linktitle: Develop an Analysis
+menu:
+  howto:
+    parent: How To
+    weight: 6
+toc: true
+type: docs
+weight: 6
+---
+# Description
+
+# Getting Set Up
+As usual, we'll start by loading some packages.
+```{r}
+library(ggplot2)
+library(tidyverse)
+library(RSocrata)
+```
+
+We've spent time with `ggplot2` and `tidyverse` prior but not `RSocrata`. `RSocrata` is an R interface for [Socrata](https://www.tylertech.com/products/socrata), which is a data platform designed to host public-facing open data (and which is used by many local governments).
+
+In this case, we'll use RSocrata to load data for City of Chicago's datasets on [Covid Cases and Deaths](https://data.cityofchicago.org/Health-Human-Services/COVID-19-Cases-Tests-and-Deaths-by-ZIP-Code/yhhz-zm2v)
+```{r}
+cdph<-RSocrata::read.socrata("https://data.cityofchicago.org/resource/yhhz-zm2v.json")
+```
+
+# Exploratory Plotting
+
+The data on COVID case positivity contain multiple observations for each ZIP code (one per week). We can use `geom_path()` to create line charts:
+
+```{r}
+cdph %>% 
+  ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), group = zip_code))+geom_path()
+```
+
+Who - a little messy, but we can already see some general trends regarding case positivity.
+
+# Identify Protect Chicago ZIP Codes
+
+Documentation from Protect Chicago lists the specific Chicago community areas where enhanced outreach and vaccinations will take place:
+
+![](https://www.chicago.gov/content/dam/city/sites/covid-19-vaccine/images/ProtectChicagoPlus_Map.png)
+
+This is great, however, the data we have on COVID case rates and vaccinations is at the ZIP code level. We could be fancy and use some spatial methods to find the overlap between the seelcted community areas and zip codes, but let's do this manually for now.
+
+Here's a [map from City of Chicago](https://www.chicago.gov/content/dam/city/sites/covid/reports/2020-04-24/ChicagoCommunityAreaandZipcodeMap.pdf) that overlays Community Areas and ZIP Codes.
+
+We can start eyeballing which ZIP codes overlap which Community Areas
+
+- Austin - 60707, 60639, 60644, 60651
+- Archer Heights - 60632
+- Back of the Yards (New City) - 60609
+- Belmont Cragin - 60634, 60639, 60641
+- Chicago Lawn - 60629
+- Englewood - 60621
+- Gage Park - 60629, 60632 
+- Humboldt Park - 60612, 60624, 60651
+- Little Village - 60608
+- North Lawndale - 60623
+- Montclare - 60707, 60634
+- Roseland - 60628
+- South Deering - 60617
+- Washington Heights - 60620, 60643
+- West Englewood - 60636
+
+Great- now we have a list of the ZIP codes which are (roughly) targeted for Protect Chicago.
+
+Let's create a new categorical variable in our CDPH data called Targeted, and label those ZIP codes that are part of our list "Protect Chicago" and all other ZIP codes "Other ZIP Code":
+
+```{r}
+cdph<-cdph %>% mutate(Targeted = case_when(zip_code %in% c(
+  "60608", 
+  "60609", 
+  "60612", 
+  "60617", 
+  "60620", 
+  "60621", 
+  "60623", 
+  "60624", 
+  "60628", 
+  "60629", 
+  "60632", 
+  "60634", 
+  "60636", 
+  "60639", 
+  "60641", 
+  "60643", 
+  "60644", 
+  "60651", 
+  "60707") ~ "Protect Chicago",
+  TRUE ~ "Other ZIP Code"))
+```
+
+`case_when()` is a useful tool for conditionally recoding values. As a reminder, we use a `mutate()` statement to create a new variable.
+
+Now we can re-visit the previous plot, but this time, let's color each of the zip codes by whether they are targeted under Protect Chicago or not:
+
+```{r}
+cdph %>% 
+  filter(population > 0) %>% 
+  ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), colour = Targeted))+geom_path()
+```
+
+It looks like there may be a pattern, but it can be a bit hard to see due to overplotting. Let's change the alpha (transparency) on our plot geometry to see what's going on under all those lines:
+
+```{r}
+cdph %>% 
+  filter(population > 0) %>% 
+  ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), colour = Targeted))+geom_path(alpha=.2)
+```
+
+And let's also add a statistical summary line for each series. By default GGPlot uses a smoothed line:
+
+```{r}
+cdph %>% 
+  filter(population > 0) %>% 
+  ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), colour = Targeted))+
+  geom_path(alpha=.2)+
+  stat_smooth(se=FALSE)
+```
+
+I removed the error shading for visual simplicity.
+
+This is looking pretty good - we can see some substantial differences in case positivity rates for Protect Chicago zip codes versus those that are not targeted. We should expect this given the program's purpose.
+
+At this point, the plot looks pretty good - let's clean it up a bit more by adding sensible labels and scale formats:
+
+```{r}
+cdph %>% 
+  filter(population > 0) %>% 
+  ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), colour = Targeted))+
+  geom_path(alpha=.2)+
+  stat_smooth(se=FALSE)+
+  labs(x="Date", y="COVID Case Rate (per 100,000)", colour = "Type")+
+  scale_y_continuous(labels = scales::comma_format())+
+  theme_classic()
+```
+
+At this point, we might also consider a plot that does not include the data series but which just visualizes the statistical summaries of the data:
+
+```{r}
+cdph %>% 
+  filter(population > 0) %>% 
+  ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), colour = Targeted))+
+  stat_smooth(se=FALSE)+
+  labs(x="Date", y="COVID Case Rate (per 100,000)", colour = "Type")+
+  scale_y_continuous(labels = scales::comma_format())+
+  theme_classic()
+```
+
+# COVID Deaths
+
+Now let's repeat the same thing for COVID deaths:
+
+```{r}
+cdph %>% 
+  filter(population > 0) %>% 
+  ggplot(aes(x=week_end, y=as.numeric(death_rate_weekly), colour = Targeted))+
+  geom_path(alpha=.2)+
+  stat_smooth(se=FALSE)+
+  labs(x="Date", y="COVID Death Rate (per 100,000)", colour = "Type")+
+  scale_y_continuous(labels = scales::comma_format())+
+  theme_classic()
+```
+
+And the plot of the statistical summaries:
+
+```{r}
+cdph %>% 
+  filter(population > 0) %>% 
+  ggplot(aes(x=week_end, y=as.numeric(death_rate_weekly), colour = Targeted))+
+  stat_smooth(se=FALSE)+
+  labs(x="Date", y="COVID Death Rate (per 100,000)", colour = "Type")+
+  scale_y_continuous(labels = scales::comma_format())+
+  theme_classic()
+```
+
+# COVID Vaccination Data
+
+Let's now load City of Chicago data on [COVID Vaccination Rates](https://data.cityofchicago.org/Health-Human-Services/COVID-19-Vaccinations-by-ZIP-Code/553k-3xzc)
+```{r}
+cdph_vacc<-RSocrata::read.socrata("https://data.cityofchicago.org/resource/553k-3xzc.json")
+```
+
+Now that we've downloaded vaccination data, we can create the Targeted variable in these data:
+
+```{r}
+cdph_vacc<-cdph_vacc %>% mutate(Targeted = case_when(zip_code %in% c(
+  "60608", 
+  "60609", 
+  "60612", 
+  "60617", 
+  "60620", 
+  "60621", 
+  "60623", 
+  "60624", 
+  "60628", 
+  "60629", 
+  "60632", 
+  "60634", 
+  "60636", 
+  "60639", 
+  "60641", 
+  "60643", 
+  "60644", 
+  "60651", 
+  "60707") ~ "Protect Chicago",
+  TRUE ~ "Other ZIP Code"))
+```
+
+Now that we've added the Targeted variable, let's make an initial plot similar to our final plots for COVID cases and deaths
+
+```{r}
+cdph_vacc %>% 
+  filter(population > 0) %>% 
+  ggplot(aes(x=date, y=as.numeric(vaccine_series_completed_percent_population), colour = Targeted))+
+  geom_path(alpha=.2)+
+  stat_smooth(se=FALSE)+
+  labs(x="Date", y="COVID Vaccination Rate", colour = "Type")+
+  scale_y_continuous(labels = scales::percent_format())+
+  theme_classic()
+```
+
+Ok, probably some clean up or noise in the data - it looks like we're probably missing data for some zip codes (the straight lines). We could remove, but let's proceed for now.
+
+Let's add a summary smoothed line as we've done before
+
+```{r}
+cdph_vacc %>% 
+  filter(population > 0) %>% 
+  ggplot(aes(x=date, y=as.numeric(vaccine_series_completed_percent_population), colour = Targeted))+
+  geom_path(alpha=.2)+
+  stat_smooth(se=FALSE)+
+  labs(x="Date", y="COVID Vaccination Rate", colour = "Type")+
+  scale_y_continuous(labels = scales::percent_format())+
+  theme_classic()
+```
+
+And let's plot the summary without the data series:
+```{r}
+cdph_vacc %>% 
+  filter(population > 0) %>% 
+  ggplot(aes(x=date, y=as.numeric(vaccine_series_completed_percent_population), colour = Targeted))+
+  #geom_path(alpha=.2)+
+  stat_smooth(se=FALSE)+
+  labs(x="Date", y="COVID Vaccination Rate", colour = "Type")+
+  scale_y_continuous(labels = scales::percent_format())+
+  theme_classic()
+```
+
+If we stop here, we could affirm that Protect Chicago seems to be targeting some of the most acutely impacted zip codes in the city, which is good, since that's a major targeting principle of the policy!
+
+Let's go a little further. Our list of targeted zip codes might lead us to be curious about the demographics of targeted and not targeted zip codes. I've downloaded some American Community Survey data which we can now load (downloading Census data is another tutorial):
+
+```{r}
+chi_zcta<-read_rds("06_build_analysis/chi_zcta.rds")
+```
+
+We've loaded data on ZIP Code Tabulation Areas (ZCTAs) which are the Census Bureau's proxy for US Postal Service ZIP codes.
+
+Let's add a new column with our Targeted designations:
+```{r}
+chi_zcta <-chi_zcta %>% mutate(Targeted = case_when(GEOID10 %in% c(
+  "60608", 
+  "60609", 
+  "60612", 
+  "60617", 
+  "60620", 
+  "60621", 
+  "60623", 
+  "60624", 
+  "60628", 
+  "60629", 
+  "60632", 
+  "60634", 
+  "60636", 
+  "60639", 
+  "60641", 
+  "60643", 
+  "60644", 
+  "60651", 
+  "60707") ~ "Protect Chicago",
+  TRUE ~ "Other ZIP Code"))
+```
+
+For these data, we could start by plotting, but in this case, let's produce a summary table. We take the data, group it by whether a ZIP code was targeted or not, and then produce a summary table with the average values for ZIP codes (`summarise_at` allows you to select the specific variables you wish to summarize and then applies the same summary function to all of them).
+
+Let's start by summarizing a few race variables:
+
+```{r}
+chi_zcta %>% group_by(Targeted) %>% summarise_at(vars(PWhite:PForeignborn), mean, na.rm=TRUE)
+```
+
+Next up, a few income variables:
+
+```{r}
+chi_zcta %>% group_by(Targeted) %>% summarise_at(vars(Pov, PCI, MHHI, ServOccup, Commute), mean, na.rm=TRUE)
+```
+
+And finally, let's summarize some housing characteristics:
+
+```{r}
+chi_zcta %>% group_by(Targeted) %>% summarise_at(vars(MHV, OCB, RCB, MGR), mean, na.rm=TRUE)
+```
+
+Now might be a good time for some more exploratory plotting, starting with some selected univariate descriptions:
+
+## Exploratory Plots: Income
+
+```{r}
+chi_zcta %>% ggplot(aes(x=MHHI, fill = Targeted))+geom_histogram()
+```
+
+```{r}
+chi_zcta %>% ggplot(aes(x=MHHI, colour = Targeted))+geom_boxplot()
+```
+
+
+## Exploratory Plots: Poverty
+
+```{r}
+chi_zcta %>% ggplot(aes(x=Pov, fill = Targeted))+geom_histogram()
+```
+
+```{r}
+chi_zcta %>% ggplot(aes(x=Pov, colour = Targeted))+geom_boxplot()
+```
+
+## Exploratory Plots: Nonwhite Population
+
+```{r}
+chi_zcta %>% ggplot(aes(x=PNonwhite, fill = Targeted))+geom_histogram()
+```
+
+```{r}
+chi_zcta %>% ggplot(aes(x=PNonwhite, colour = Targeted))+geom_density()
+```
+
+
+```{r}
+chi_zcta %>% ggplot(aes(x=PNonwhite, colour = Targeted))+geom_boxplot()
+```
+
+## Exploratory Plots Workers in Service Occupation
+```{r}
+chi_zcta %>% ggplot(aes(x=ServOccup, fill = Targeted))+geom_histogram()
+```
+
+```{r}
+chi_zcta %>% ggplot(aes(x=ServOccup, colour = Targeted))+geom_density()
+```
+
+```{r}
+chi_zcta %>% ggplot(aes(x=ServOccup, colour = Targeted))+geom_boxplot()
+```
+
+
