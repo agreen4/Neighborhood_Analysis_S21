@@ -15,9 +15,11 @@ weight: 2
 
 </div>
 
-<div id="description" class="section level1">
-<h1>Description</h1>
-</div>
+<p>This brief tutorial takes you through the basics of a “real world” analytic workflow. In this case, the workflow is built around conducting an independent analysis of the <a href="https://www.chicago.gov/city/en/sites/covid-19/home/protect-chicago.html">Protect Chicago Plus</a> program that enhances SARS-CoV-19 Vaccination availability and outreach in communities in which uptake is low and infections and deaths are high.</p>
+<p>We’ve examined maps that help to visualize the disparities in where COVID cases are and where vaccinations are more prevalent:</p>
+{{% twitter "1362220407189864450" %}}
+<p>The initial goal of our analysis will be to verify that the City has designated those community areas for Protect Chicago Plus with high levels of need. From there, we will also explore some of the demographic correlates associated with these neighborhoods to think about further questions that may emerge.</p>
+<p>What we’re doing here is loosely a validation of existing policy targeting. From there we can think about how we might use questions that emerge from our validation for further exploration and explanation.</p>
 <div id="getting-set-up" class="section level1">
 <h1>Getting Set Up</h1>
 <p>As usual, we’ll start by loading some packages.</p>
@@ -33,25 +35,26 @@ library(tidyverse)</code></pre>
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>library(RSocrata)</code></pre>
 <p>We’ve spent time with <code>ggplot2</code> and <code>tidyverse</code> prior but not <code>RSocrata</code>. <code>RSocrata</code> is an R interface for <a href="https://www.tylertech.com/products/socrata">Socrata</a>, which is a data platform designed to host public-facing open data (and which is used by many local governments).</p>
-<p>In this case, we’ll use RSocrata to load data for City of Chicago’s datasets on <a href="https://data.cityofchicago.org/Health-Human-Services/COVID-19-Cases-Tests-and-Deaths-by-ZIP-Code/yhhz-zm2v">Covid Cases and Deaths</a></p>
+<p>In this case, we’ll use RSocrata to load data for City of Chicago’s datasets on <a href="https://data.cityofchicago.org/Health-Human-Services/COVID-19-Cases-Tests-and-Deaths-by-ZIP-Code/yhhz-zm2v">COVID Cases and Deaths</a></p>
 <pre class="r"><code>cdph&lt;-RSocrata::read.socrata(&quot;https://data.cityofchicago.org/resource/yhhz-zm2v.json&quot;)</code></pre>
 </div>
 <div id="exploratory-plotting" class="section level1">
 <h1>Exploratory Plotting</h1>
-<p>The data on COVID case positivity contain multiple observations for each ZIP code (one per week). We can use <code>geom_path()</code> to create line charts:</p>
+<p>The data on COVID case positivity contain multiple observations for each ZIP code (one per week). We can use <code>geom_path()</code> to create line charts that chart the positivity rate over time:</p>
 <pre class="r"><code>cdph %&gt;% 
   ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), group = zip_code))+geom_path()</code></pre>
 <pre><code>## Warning: Removed 187 row(s) containing missing values (geom_path).</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>Who - a little messy, but we can already see some general trends regarding case positivity.</p>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Who - a little messy, but we can already see some general trends regarding case positivity. THere are two main “humps” where overall case rates go up, one in summer, and one in fall. At the same time, we can see that there’s some spread - some ZIP codes have much higher peaks and do not see rates return as low as others.</p>
+<p>The primary question at this point is, do those ZIP codes with higher peaks and continued elevated rates correspond with the Protect Chicago Plus designation?</p>
 </div>
-<div id="identify-protect-chicago-zip-codes" class="section level1">
-<h1>Identify Protect Chicago ZIP Codes</h1>
-<p>Documentation from Protect Chicago lists the specific Chicago community areas where enhanced outreach and vaccinations will take place:</p>
-<p><img src="https://www.chicago.gov/content/dam/city/sites/covid-19-vaccine/images/ProtectChicagoPlus_Map.png" /></p>
-<p>This is great, however, the data we have on COVID case rates and vaccinations is at the ZIP code level. We could be fancy and use some spatial methods to find the overlap between the seelcted community areas and zip codes, but let’s do this manually for now.</p>
+<div id="identify-protect-chicago-plus-zip-codes" class="section level1">
+<h1>Identify Protect Chicago Plus ZIP Codes</h1>
+<p>Documentation from Protect Chicago Plus lists the specific Chicago community areas where enhanced outreach and vaccinations will take place. Here’s a Community Area map for reference with Protect Chicago Plus areas highlighted in blue:</p>
+<p><img src="https://www.chicago.gov/content/dam/city/sites/covid-19-vaccine/images/ProtectChicagoPlus_Map.png" />
+Community Areas are a Chicago-specific geography. The data we downloaded on case positivity is at the ZIP code level. How do we reconcile these two things? We could be fancy and use some spatial methods to find the overlap between the selcted community areas and zip codes, but let’s do this manually for now using visual inspection.</p>
 <p>Here’s a <a href="https://www.chicago.gov/content/dam/city/sites/covid/reports/2020-04-24/ChicagoCommunityAreaandZipcodeMap.pdf">map from City of Chicago</a> that overlays Community Areas and ZIP Codes.</p>
-<p>We can start eyeballing which ZIP codes overlap which Community Areas</p>
+<p>We can start eyeballing which ZIP codes overlap which Community Areas. Here’s a rough list of the overlap:</p>
 <ul>
 <li>Austin - 60707, 60639, 60644, 60651</li>
 <li>Archer Heights - 60632</li>
@@ -69,7 +72,7 @@ library(tidyverse)</code></pre>
 <li>Washington Heights - 60620, 60643</li>
 <li>West Englewood - 60636</li>
 </ul>
-<p>Great- now we have a list of the ZIP codes which are (roughly) targeted for Protect Chicago.</p>
+<p>Our visual inspection leaves us with a list of the ZIP codes which are (roughly) targeted for Protect Chicago. There is not perfect correspondence, and some of the residents of the ZIP codes will not be targeted. However, the rough correspondence should help us understand some general patterns that allow us to compare case positivity between designated and undesignated ZIP codes.</p>
 <p>Let’s create a new categorical variable in our CDPH data called Targeted, and label those ZIP codes that are part of our list “Protect Chicago” and all other ZIP codes “Other ZIP Code”:</p>
 <pre class="r"><code>cdph&lt;-cdph %&gt;% mutate(Targeted = case_when(zip_code %in% c(
   &quot;60608&quot;, 
@@ -92,20 +95,20 @@ library(tidyverse)</code></pre>
   &quot;60651&quot;, 
   &quot;60707&quot;) ~ &quot;Protect Chicago&quot;,
   TRUE ~ &quot;Other ZIP Code&quot;))</code></pre>
-<p><code>case_when()</code> is a useful tool for conditionally recoding values. As a reminder, we use a <code>mutate()</code> statement to create a new variable.</p>
+<p><code>case_when()</code> is a useful tool for conditionally recoding values. Here we are telling it when a value in the zip_code column corresponds to the list of ZIP codes given, we’ll label those rows “Protect Chicago”. All other rows will be labelled “Other ZIP Code”. As a reminder, we use a <code>mutate()</code> statement to create a new variable.</p>
 <p>Now we can re-visit the previous plot, but this time, let’s color each of the zip codes by whether they are targeted under Protect Chicago or not:</p>
 <pre class="r"><code>cdph %&gt;% 
   filter(population &gt; 0) %&gt;% 
   ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), colour = Targeted))+geom_path()</code></pre>
 <pre><code>## Warning: Removed 4 row(s) containing missing values (geom_path).</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
-<p>It looks like there may be a pattern, but it can be a bit hard to see due to overplotting. Let’s change the alpha (transparency) on our plot geometry to see what’s going on under all those lines:</p>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>It looks like there may be a pattern, but it can be a bit hard to see due to <em>overplotting</em>. Let’s change the alpha (transparency) on our plot geometry to see what’s going on under all those lines:</p>
 <pre class="r"><code>cdph %&gt;% 
   filter(population &gt; 0) %&gt;% 
   ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), colour = Targeted))+geom_path(alpha=.2)</code></pre>
 <pre><code>## Warning: Removed 4 row(s) containing missing values (geom_path).</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
-<p>And let’s also add a statistical summary line for each series. By default GGPlot uses a smoothed line:</p>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>And let’s also add a statistical summary line for each series. By default GGPlot uses a <a href="http://r-statistics.co/Loess-Regression-With-R.html">loess smoothed</a> line:</p>
 <pre class="r"><code>cdph %&gt;% 
   filter(population &gt; 0) %&gt;% 
   ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), colour = Targeted))+
@@ -114,10 +117,10 @@ library(tidyverse)</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;gam&#39; and formula &#39;y ~ s(x, bs = &quot;cs&quot;)&#39;</code></pre>
 <pre><code>## Warning: Removed 133 rows containing non-finite values (stat_smooth).</code></pre>
 <pre><code>## Warning: Removed 4 row(s) containing missing values (geom_path).</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<p>I removed the error shading for visual simplicity.</p>
-<p>This is looking pretty good - we can see some substantial differences in case positivity rates for Protect Chicago zip codes versus those that are not targeted. We should expect this given the program’s purpose.</p>
-<p>At this point, the plot looks pretty good - let’s clean it up a bit more by adding sensible labels and scale formats:</p>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>In the above code, I also removed the removed the error shading (<code>se=FALSE</code>) for visual simplicity.</p>
+<p>This is looking pretty good - we can see some substantial differences in case positivity rates for Protect Chicago ZIP codes versus those that are not targeted. This gives us some confidence that the program’s targeting is appropriate.</p>
+<p>We now have results that at face value make sense and help us to feel fairly confident that the program is targeting communities with the highest need. Given that, let’s invest in a clean up our plot by adding sensible labels and scale formats:</p>
 <pre class="r"><code>cdph %&gt;% 
   filter(population &gt; 0) %&gt;% 
   ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), colour = Targeted))+
@@ -129,7 +132,7 @@ library(tidyverse)</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;gam&#39; and formula &#39;y ~ s(x, bs = &quot;cs&quot;)&#39;</code></pre>
 <pre><code>## Warning: Removed 133 rows containing non-finite values (stat_smooth).</code></pre>
 <pre><code>## Warning: Removed 4 row(s) containing missing values (geom_path).</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>At this point, we might also consider a plot that does not include the data series but which just visualizes the statistical summaries of the data:</p>
 <pre class="r"><code>cdph %&gt;% 
   filter(population &gt; 0) %&gt;% 
@@ -140,11 +143,11 @@ library(tidyverse)</code></pre>
   theme_classic()</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;gam&#39; and formula &#39;y ~ s(x, bs = &quot;cs&quot;)&#39;</code></pre>
 <pre><code>## Warning: Removed 133 rows containing non-finite values (stat_smooth).</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 </div>
 <div id="covid-deaths" class="section level1">
 <h1>COVID Deaths</h1>
-<p>Now let’s repeat the same thing for COVID deaths:</p>
+<p>We have focused on plotting case positivity. In the past we’ve looked at COVID deaths as another important measure of need. Do the Protect Chicago Plus ZIP codes also have elevated rates of deaths per capita due to COVID? Let’s repeat the same plot for COVID deaths:</p>
 <pre class="r"><code>cdph %&gt;% 
   filter(population &gt; 0) %&gt;% 
   ggplot(aes(x=week_end, y=as.numeric(death_rate_weekly), colour = Targeted))+
@@ -154,7 +157,7 @@ library(tidyverse)</code></pre>
   scale_y_continuous(labels = scales::comma_format())+
   theme_classic()</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;gam&#39; and formula &#39;y ~ s(x, bs = &quot;cs&quot;)&#39;</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <p>And the plot of the statistical summaries:</p>
 <pre class="r"><code>cdph %&gt;% 
   filter(population &gt; 0) %&gt;% 
@@ -164,13 +167,14 @@ library(tidyverse)</code></pre>
   scale_y_continuous(labels = scales::comma_format())+
   theme_classic()</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;gam&#39; and formula &#39;y ~ s(x, bs = &quot;cs&quot;)&#39;</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>Much quicker now that we have a general plot format developed. We now have a good sense of one portion of the rationale for Protect Chicago Plus targeting - We know the program is targeting neighborhoods that tend to have elevated case positivity rates and death rates. But what about the vaccine situation in these same places?</p>
 </div>
 <div id="covid-vaccination-data" class="section level1">
 <h1>COVID Vaccination Data</h1>
 <p>Let’s now load City of Chicago data on <a href="https://data.cityofchicago.org/Health-Human-Services/COVID-19-Vaccinations-by-ZIP-Code/553k-3xzc">COVID Vaccination Rates</a></p>
 <pre class="r"><code>cdph_vacc&lt;-RSocrata::read.socrata(&quot;https://data.cityofchicago.org/resource/553k-3xzc.json&quot;)</code></pre>
-<p>Now that we’ve downloaded vaccination data, we can create the Targeted variable in these data:</p>
+<p>Now that we’ve downloaded vaccination data, we can create the same Targeted variable in these data:</p>
 <pre class="r"><code>cdph_vacc&lt;-cdph_vacc %&gt;% mutate(Targeted = case_when(zip_code %in% c(
   &quot;60608&quot;, 
   &quot;60609&quot;, 
@@ -202,7 +206,7 @@ library(tidyverse)</code></pre>
   scale_y_continuous(labels = scales::percent_format())+
   theme_classic()</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;gam&#39; and formula &#39;y ~ s(x, bs = &quot;cs&quot;)&#39;</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <p>Ok, probably some clean up or noise in the data - it looks like we’re probably missing data for some zip codes (the straight lines). We could remove, but let’s proceed for now.</p>
 <p>Let’s add a summary smoothed line as we’ve done before</p>
 <pre class="r"><code>cdph_vacc %&gt;% 
@@ -214,7 +218,7 @@ library(tidyverse)</code></pre>
   scale_y_continuous(labels = scales::percent_format())+
   theme_classic()</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;gam&#39; and formula &#39;y ~ s(x, bs = &quot;cs&quot;)&#39;</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 <p>And let’s plot the summary without the data series:</p>
 <pre class="r"><code>cdph_vacc %&gt;% 
   filter(population &gt; 0) %&gt;% 
@@ -225,8 +229,11 @@ library(tidyverse)</code></pre>
   scale_y_continuous(labels = scales::percent_format())+
   theme_classic()</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;gam&#39; and formula &#39;y ~ s(x, bs = &quot;cs&quot;)&#39;</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 <p>If we stop here, we could affirm that Protect Chicago seems to be targeting some of the most acutely impacted zip codes in the city, which is good, since that’s a major targeting principle of the policy!</p>
+</div>
+<div id="neighborhood-demographics" class="section level1">
+<h1>Neighborhood Demographics</h1>
 <p>Let’s go a little further. Our list of targeted zip codes might lead us to be curious about the demographics of targeted and not targeted zip codes. I’ve downloaded some American Community Survey data which we can now load (downloading Census data is another tutorial):</p>
 <pre class="r"><code>chi_zcta&lt;-read_rds(&quot;06_build_analysis/chi_zcta.rds&quot;)</code></pre>
 <p>We’ve loaded data on ZIP Code Tabulation Areas (ZCTAs) which are the Census Bureau’s proxy for US Postal Service ZIP codes.</p>
@@ -279,36 +286,40 @@ library(tidyverse)</code></pre>
 <h2>Exploratory Plots: Income</h2>
 <pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=MHHI, fill = Targeted))+geom_histogram()</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
-<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=MHHI, colour = Targeted))+geom_boxplot()</code></pre>
 <p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=MHHI, colour = Targeted))+geom_boxplot()</code></pre>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
 </div>
 <div id="exploratory-plots-poverty" class="section level2">
 <h2>Exploratory Plots: Poverty</h2>
 <pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=Pov, fill = Targeted))+geom_histogram()</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
-<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=Pov, colour = Targeted))+geom_boxplot()</code></pre>
 <p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=Pov, colour = Targeted))+geom_boxplot()</code></pre>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
 </div>
 <div id="exploratory-plots-nonwhite-population" class="section level2">
 <h2>Exploratory Plots: Nonwhite Population</h2>
 <pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=PNonwhite, fill = Targeted))+geom_histogram()</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
-<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=PNonwhite, colour = Targeted))+geom_density()</code></pre>
 <p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
-<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=PNonwhite, colour = Targeted))+geom_boxplot()</code></pre>
+<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=PNonwhite, colour = Targeted))+geom_density()</code></pre>
 <p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=PNonwhite, colour = Targeted))+geom_boxplot()</code></pre>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
 </div>
 <div id="exploratory-plots-workers-in-service-occupation" class="section level2">
 <h2>Exploratory Plots Workers in Service Occupation</h2>
 <pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=ServOccup, fill = Targeted))+geom_histogram()</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
-<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=ServOccup, colour = Targeted))+geom_density()</code></pre>
 <p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
-<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=ServOccup, colour = Targeted))+geom_boxplot()</code></pre>
+<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=ServOccup, colour = Targeted))+geom_density()</code></pre>
 <p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<pre class="r"><code>chi_zcta %&gt;% ggplot(aes(x=ServOccup, colour = Targeted))+geom_boxplot()</code></pre>
+<p><img src="/howto/howto/06-build_analysis_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
 </div>
+</div>
+<div id="questions" class="section level1">
+<h1>Questions</h1>
+<p>What questions do these exploratory plots and tables bring to mind? What other types of information would you want to overlay next in order to explore further?</p>
 </div>
