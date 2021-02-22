@@ -12,7 +12,7 @@ weight: 10
 
 ## Session Description
 
-In this "lab" session, you will continue working on the Population lab notebook. We'll start with independent work time, and then reconvene for the final 10 minutes of class to debrief.
+In this lab session, you will continue working on the Population lab notebook. We'll start with independent work time, and then reconvene for the final 15 minutes of class to debrief.
 
 ## Before Class
 
@@ -21,3 +21,8 @@ Natalie P. Voorhees Center. (2014). [The Socioeconomic Change of Chicago’s Com
 ## Slides
 
 ## Other Resources
+
+`get_acs()` from the `tidycensus` package to programmatically download census data at various geographic summary levels
+`case_when()` To conditionally change values in character vectors
+`rename()` and `select()` to rename columns
+`bind_rows()` and `bind_columns()` to bind together rows or columns
