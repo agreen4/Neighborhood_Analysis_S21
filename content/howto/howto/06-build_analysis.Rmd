@@ -9,17 +9,7 @@ toc: true
 type: docs
 weight: 2
 ---
-This brief tutorial takes you through the basics of a "real world" analytic workflow. In this case, the workflow is built around conducting an independent analysis of the [Protect Chicago Plus](https://www.chicago.gov/city/en/sites/covid-19/home/protect-chicago.html) program that enhances SARS-CoV-19 Vaccination availability and outreach in communities in which uptake is low and infections and deaths are high. 
-
-We've examined maps that help to visualize the disparities in where COVID cases are and where vaccinations are more prevalent:
-
-```{r, echo=FALSE}
-blogdown::shortcode("twitter", "1362220407189864450")
-```
-
-The initial goal of our analysis will be to verify that the City has designated those community areas for Protect Chicago Plus with high levels of need. From there, we will also explore some of the demographic correlates associated with these neighborhoods to think about further questions that may emerge.
-
-What we're doing here is loosely a validation of existing policy targeting. From there we can think about how we might use questions that emerge from our validation for further exploration and explanation.
+# Description
 
 # Getting Set Up
 As usual, we'll start by loading some packages.
@@ -31,34 +21,33 @@ library(RSocrata)
 
 We've spent time with `ggplot2` and `tidyverse` prior but not `RSocrata`. `RSocrata` is an R interface for [Socrata](https://www.tylertech.com/products/socrata), which is a data platform designed to host public-facing open data (and which is used by many local governments).
 
-In this case, we'll use RSocrata to load data for City of Chicago's datasets on [COVID Cases and Deaths](https://data.cityofchicago.org/Health-Human-Services/COVID-19-Cases-Tests-and-Deaths-by-ZIP-Code/yhhz-zm2v)
+In this case, we'll use RSocrata to load data for City of Chicago's datasets on [Covid Cases and Deaths](https://data.cityofchicago.org/Health-Human-Services/COVID-19-Cases-Tests-and-Deaths-by-ZIP-Code/yhhz-zm2v)
 ```{r}
 cdph<-RSocrata::read.socrata("https://data.cityofchicago.org/resource/yhhz-zm2v.json")
 ```
 
 # Exploratory Plotting
 
-The data on COVID case positivity contain multiple observations for each ZIP code (one per week). We can use `geom_path()` to create line charts that chart the positivity rate over time:
+The data on COVID case positivity contain multiple observations for each ZIP code (one per week). We can use `geom_path()` to create line charts:
 
 ```{r}
 cdph %>% 
   ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), group = zip_code))+geom_path()
 ```
 
-Who - a little messy, but we can already see some general trends regarding case positivity. THere are two main "humps" where overall case rates go up, one in summer, and one in fall. At the same time, we can see that there's some spread - some ZIP codes have much higher peaks and do not see rates return as low as others.
+Who - a little messy, but we can already see some general trends regarding case positivity.
 
-The primary question at this point is, do those ZIP codes with higher peaks and continued elevated rates correspond with the Protect Chicago Plus designation?
+# Identify Protect Chicago ZIP Codes
 
-# Identify Protect Chicago Plus ZIP Codes
-
-Documentation from Protect Chicago Plus lists the specific Chicago community areas where enhanced outreach and vaccinations will take place. Here's a Community Area map for reference with Protect Chicago Plus areas highlighted in blue:
+Documentation from Protect Chicago lists the specific Chicago community areas where enhanced outreach and vaccinations will take place:
 
 ![](https://www.chicago.gov/content/dam/city/sites/covid-19-vaccine/images/ProtectChicagoPlus_Map.png)
-Community Areas are a Chicago-specific geography. The data we downloaded on case positivity is at the ZIP code level. How do we reconcile these two things? We could be fancy and use some spatial methods to find the overlap between the selcted community areas and zip codes, but let's do this manually for now using visual inspection.
+
+This is great, however, the data we have on COVID case rates and vaccinations is at the ZIP code level. We could be fancy and use some spatial methods to find the overlap between the seelcted community areas and zip codes, but let's do this manually for now.
 
 Here's a [map from City of Chicago](https://www.chicago.gov/content/dam/city/sites/covid/reports/2020-04-24/ChicagoCommunityAreaandZipcodeMap.pdf) that overlays Community Areas and ZIP Codes.
 
-We can start eyeballing which ZIP codes overlap which Community Areas. Here's a rough list of the overlap:
+We can start eyeballing which ZIP codes overlap which Community Areas
 
 - Austin - 60707, 60639, 60644, 60651
 - Archer Heights - 60632
@@ -76,7 +65,7 @@ We can start eyeballing which ZIP codes overlap which Community Areas. Here's a 
 - Washington Heights - 60620, 60643
 - West Englewood - 60636
 
-Our visual inspection leaves us with a list of the ZIP codes which are (roughly) targeted for Protect Chicago. There is not perfect correspondence, and some of the residents of the ZIP codes will not be targeted. However, the rough correspondence should help us understand some general patterns that allow us to compare case positivity between designated and undesignated ZIP codes.
+Great- now we have a list of the ZIP codes which are (roughly) targeted for Protect Chicago.
 
 Let's create a new categorical variable in our CDPH data called Targeted, and label those ZIP codes that are part of our list "Protect Chicago" and all other ZIP codes "Other ZIP Code":
 
@@ -104,7 +93,7 @@ cdph<-cdph %>% mutate(Targeted = case_when(zip_code %in% c(
   TRUE ~ "Other ZIP Code"))
 ```
 
-`case_when()` is a useful tool for conditionally recoding values. Here we are telling it when a value in the zip_code column corresponds to the list of ZIP codes given, we'll label those rows "Protect Chicago". All other rows will be labelled "Other ZIP Code". As a reminder, we use a `mutate()` statement to create a new variable.
+`case_when()` is a useful tool for conditionally recoding values. As a reminder, we use a `mutate()` statement to create a new variable.
 
 Now we can re-visit the previous plot, but this time, let's color each of the zip codes by whether they are targeted under Protect Chicago or not:
 
@@ -114,7 +103,7 @@ cdph %>%
   ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), colour = Targeted))+geom_path()
 ```
 
-It looks like there may be a pattern, but it can be a bit hard to see due to *overplotting*. Let's change the alpha (transparency) on our plot geometry to see what's going on under all those lines:
+It looks like there may be a pattern, but it can be a bit hard to see due to overplotting. Let's change the alpha (transparency) on our plot geometry to see what's going on under all those lines:
 
 ```{r}
 cdph %>% 
@@ -122,7 +111,7 @@ cdph %>%
   ggplot(aes(x=week_end, y=as.numeric(case_rate_weekly), colour = Targeted))+geom_path(alpha=.2)
 ```
 
-And let's also add a statistical summary line for each series. By default GGPlot uses a [loess smoothed](http://r-statistics.co/Loess-Regression-With-R.html) line:
+And let's also add a statistical summary line for each series. By default GGPlot uses a smoothed line:
 
 ```{r}
 cdph %>% 
@@ -132,11 +121,11 @@ cdph %>%
   stat_smooth(se=FALSE)
 ```
 
-In the above code, I also removed the removed the error shading (`se=FALSE`) for visual simplicity.
+I removed the error shading for visual simplicity.
 
-This is looking pretty good - we can see some substantial differences in case positivity rates for Protect Chicago ZIP codes versus those that are not targeted. This gives us some confidence that the program's targeting is appropriate.
+This is looking pretty good - we can see some substantial differences in case positivity rates for Protect Chicago zip codes versus those that are not targeted. We should expect this given the program's purpose.
 
-We now have results that at face value make sense and help us to feel fairly confident that the program is targeting communities with the highest need. Given that, let's invest in a clean up our plot by adding sensible labels and scale formats:
+At this point, the plot looks pretty good - let's clean it up a bit more by adding sensible labels and scale formats:
 
 ```{r}
 cdph %>% 
@@ -163,7 +152,7 @@ cdph %>%
 
 # COVID Deaths
 
-We have focused on plotting case positivity. In the past we've looked at COVID deaths as another important measure of need. Do the Protect Chicago Plus ZIP codes also have elevated rates of deaths per capita due to COVID? Let's repeat the same plot for COVID deaths:
+Now let's repeat the same thing for COVID deaths:
 
 ```{r}
 cdph %>% 
@@ -188,8 +177,6 @@ cdph %>%
   theme_classic()
 ```
 
-Much quicker now that we have a general plot format developed. We now have a good sense of one portion of the rationale for Protect Chicago Plus targeting - We know the program is targeting neighborhoods that tend to have elevated case positivity rates and death rates. But what about the vaccine situation in these same places?
-
 # COVID Vaccination Data
 
 Let's now load City of Chicago data on [COVID Vaccination Rates](https://data.cityofchicago.org/Health-Human-Services/COVID-19-Vaccinations-by-ZIP-Code/553k-3xzc)
@@ -197,7 +184,7 @@ Let's now load City of Chicago data on [COVID Vaccination Rates](https://data.ci
 cdph_vacc<-RSocrata::read.socrata("https://data.cityofchicago.org/resource/553k-3xzc.json")
 ```
 
-Now that we've downloaded vaccination data, we can create the same Targeted variable in these data:
+Now that we've downloaded vaccination data, we can create the Targeted variable in these data:
 
 ```{r}
 cdph_vacc<-cdph_vacc %>% mutate(Targeted = case_when(zip_code %in% c(
@@ -264,8 +251,6 @@ cdph_vacc %>%
 ```
 
 If we stop here, we could affirm that Protect Chicago seems to be targeting some of the most acutely impacted zip codes in the city, which is good, since that's a major targeting principle of the policy!
-
-# Neighborhood Demographics
 
 Let's go a little further. Our list of targeted zip codes might lead us to be curious about the demographics of targeted and not targeted zip codes. I've downloaded some American Community Survey data which we can now load (downloading Census data is another tutorial):
 
@@ -371,6 +356,4 @@ chi_zcta %>% ggplot(aes(x=ServOccup, colour = Targeted))+geom_density()
 chi_zcta %>% ggplot(aes(x=ServOccup, colour = Targeted))+geom_boxplot()
 ```
 
-# Questions
 
-What questions do these exploratory plots and tables bring to mind? What other types of information would you want to overlay next in order to explore further? 
