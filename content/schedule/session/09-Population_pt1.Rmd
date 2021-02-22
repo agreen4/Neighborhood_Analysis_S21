@@ -26,7 +26,7 @@ If you do not have one, please reigster for a [U.S. Census Bureau API Key](https
 
 ### New functions this week
 
-`get_acs()` from the `tidycensus` package to programmatically download census data at various geographic summary levels
-`case_when()` To conditionally change values in character vectors
-`rename()` and `select()` to rename columns
-`bind_rows()` and `bind_columns()` to bind together rows or columns
+- `get_acs()` from the `tidycensus` package to programmatically download census data at various geographic summary levels
+- `case_when()` To conditionally change values in character vectors
+- `rename()` and `select()` to rename columns
+- `bind_rows()` and `bind_columns()` to bind together rows or columns
