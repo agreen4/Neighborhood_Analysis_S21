@@ -1,0 +1,2958 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>UP 494-AG: Neighborhood Analysis</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andrew J. Greenlee" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/sfah.css" type="text/css" />
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+name: Population Demographics
+class: right, bottom
+background-image: url(images/01_timon-studler-ABGaVhJxwDQ-unsplash.jpg)
+background-size: cover
+
+# Neighborhood Analysis
+.font-35[Session 9: Population]
+
+???
+---
+name: What's a Population?
+class: left, bottom, inverse
+background-image: url(images/01a_population.jpeg)
+background-size: cover
+
+# What's a population?
+--
+.font-35[The total number of people living in a location at a particular point in time]
+---
+name: What's a Population?
+class: left, middle
+
+.pull-left[
+![](images/02_Champaign.png)
+
+.fat[Administrative]
+
+]
+--
+.pull-right[
+
+.font-35[
+- This is Champaign County, Illinois. It has a 2019 population of 209,689
+
+- What are some other examples of administrative geographies?
+]]
+---
+name: What's a Population?
+class: left, middle
+
+.pull-left[
+![](images/03_Stateville.jpg)
+
+.salt[Institutional]
+
+]
+--
+.pull-right[
+
+.font-35[
+
+- This is Stateville Correctional Center in Crest Hill Illinois. It has a capacity of 4,134 and a population of 2,256.
+
+- What are some other examples of institutional geographies?
+]]
+---
+name: What's a Population?
+class: left, middle
+
+.pull-left[
+![](images/04_EU.png)
+
+.font-35[Political]
+
+]
+--
+.pull-right[
+
+.font-35[
+
+- This is The European Union. It has a population of 447.7 million people.
+
+- What are some other examples of political geographies?
+]]
+---
+name: Population Characteristics and Structure
+class: top, left
+
+.pull-left[
+## Population Structure
+
+.font-35[
+- Population Size
+- Population Density
+- Age Structure
+- Gender
+- Fertility
+- Mortality
+- Age Dependency Ratio
+]
+]
+---
+## Population Pyramids
+
+.pull-left[
+- Age by *Cohort*
+- Gender
+]
+
+.pull-right[
+![](images/06_constrictive.png)
+]
+---
+## Population Pyramids
+
+.pull-left[
+- Age by *Cohort*
+- Gender
+]
+
+.pull-right[
+![](images/05_expansive.png)
+]
+
+---
+## Population Pyramids
+
+.pull-left[
+- Age by *Cohort*
+- Gender
+]
+
+.pull-right[
+![](images/07_stationary.png)
+]
+---
+background-image: url(images/08_world-pyramid.jpg)
+background-size: contain
+---
+background-image: url(images/09_longitudinal.png)
+background-size: contain
+---
+background-image: url(images/10_comparison.gif)
+background-size: contain
+---
+class: middle
+## Champaign Co. and Cook Co. Age Structure
+.pull-left[
+![](images/11_pyramid_champaign.png)
+]
+.pull-right[
+![](images/12_pyramid_cook.png)
+]
+---
+## Other Elements
+
+.pull-left[
+
+**Composition**
+- Age structure
+- Gender
+- Age Dependence Ratio
+- Population Density
+
+**Income**
+- Per Capita Income
+- Median Household Income
+- Median Family Income
+- Poverty Rate
+
+**Identity**
+- Race
+- Ethnicity
+- Foreign-Born Population
+]
+
+.pull-right[
+**Housing**
+- Median Gross Rent
+- Median Home Value
+- Housing Costs as Percent of Income
+- Housing Cost Burden (30% income)
+
+**Jobs**
+- Unemployment rate
+- Work by sector
+
+**Transportation**
+- Commute time
+- Commute mode
+- Households without Cars
+]
+---
+# Working With Census Data
+
+.pull-left[
+![](images/WB_1_Census.png)&lt;!-- --&gt;
+]
+
+.pull-right[Planners work with Census data frequently, but it can be time consuming to download and manipulate.
+
+[data.census.gov](data.census.gov) is the primary access point for Census data
+
+The Census Bureau maintains an API (Application Programming Interface) from which we can request raw data from the Census servers
+
+The `tidycensus` package is designed to make the requests on our behalf and to format the results.]
+
+---
+# Common Census Geographies
+
+.pull-left[
+![](images/WB_3_Geogs.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+States, Counties, Places, and Tracts are the most common reference geographies for planners
+
+States, counties, and tracts are hierarchical - states contain counties, and counties contain tracts.
+
+Zip Code Tabulation Areas (ZCTAs) and Transportation Analysis Zones (TAZs) have more specialized applications
+
+]
+
+---
+# Tables
+
+.pull-left[
+![](images/WB_7_Census.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+![](images/WB_8_Census.png)&lt;!-- --&gt;
+]
+
+---
+# Tables
+
+.pull-left[
+
+![](images/WB_11_Census.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+![](images/WB_8_Census.png)&lt;!-- --&gt;
+]
+
+---
+# How can tidycensus help?
+
+.pull-left[
+
+```r
+library(tidycensus)
+census_api_key("936c96236b979ae522c6cf67edb51923cd391fb3")
+
+dataset&lt;-get_acs(geography="state", table = "B01001", year=2019, survey="acs5", format="wide")
+```
+]
+
+.pull-right[
+
+|GEOID |NAME                 |variable   | estimate|  moe|
+|:-----|:--------------------|:----------|--------:|----:|
+|01    |Alabama              |B01001_001 |  4876250|   NA|
+|01    |Alabama              |B01001_002 |  2359355| 1270|
+|01    |Alabama              |B01001_003 |   149090|  704|
+|01    |Alabama              |B01001_004 |   153494| 2290|
+|01    |Alabama              |B01001_005 |   158617| 2274|
+|01    |Alabama              |B01001_006 |    98257|  468|
+|01    |Alabama              |B01001_007 |    64980|  834|
+|01    |Alabama              |B01001_008 |    35870| 1436|
+|01    |Alabama              |B01001_009 |    35040| 1472|
+|01    |Alabama              |B01001_010 |    95065| 1916|
+|01    |Alabama              |B01001_011 |   165052|  760|
+|01    |Alabama              |B01001_012 |   149779|  832|
+|01    |Alabama              |B01001_013 |   145896| 2164|
+|01    |Alabama              |B01001_014 |   142753| 2283|
+|01    |Alabama              |B01001_015 |   150054|  630|
+|01    |Alabama              |B01001_016 |   156317|  628|
+|01    |Alabama              |B01001_017 |   159122| 1819|
+|01    |Alabama              |B01001_018 |    61482| 1524|
+|01    |Alabama              |B01001_019 |    88291| 1690|
+|01    |Alabama              |B01001_020 |    52535| 1283|
+|01    |Alabama              |B01001_021 |    71531| 1654|
+|01    |Alabama              |B01001_022 |    96020| 1560|
+|01    |Alabama              |B01001_023 |    62845| 1222|
+|01    |Alabama              |B01001_024 |    39335| 1106|
+|01    |Alabama              |B01001_025 |    27930|  939|
+|01    |Alabama              |B01001_026 |  2516895| 1270|
+|01    |Alabama              |B01001_027 |   144097|  726|
+|01    |Alabama              |B01001_028 |   147570| 2214|
+|01    |Alabama              |B01001_029 |   151839| 2214|
+|01    |Alabama              |B01001_030 |    93412|  465|
+|01    |Alabama              |B01001_031 |    65837|  969|
+|01    |Alabama              |B01001_032 |    35427| 1496|
+|01    |Alabama              |B01001_033 |    33548| 1285|
+|01    |Alabama              |B01001_034 |    93230| 1792|
+|01    |Alabama              |B01001_035 |   167570|  687|
+|01    |Alabama              |B01001_036 |   155546|  677|
+|01    |Alabama              |B01001_037 |   154545| 2292|
+|01    |Alabama              |B01001_038 |   153194| 2240|
+|01    |Alabama              |B01001_039 |   159501|  574|
+|01    |Alabama              |B01001_040 |   166787|  565|
+|01    |Alabama              |B01001_041 |   174087| 2203|
+|01    |Alabama              |B01001_042 |    69293| 1602|
+|01    |Alabama              |B01001_043 |    96727| 1906|
+|01    |Alabama              |B01001_044 |    59558| 1433|
+|01    |Alabama              |B01001_045 |    83413| 1601|
+|01    |Alabama              |B01001_046 |   113624| 1546|
+|01    |Alabama              |B01001_047 |    82251| 1188|
+|01    |Alabama              |B01001_048 |    59420| 1175|
+|01    |Alabama              |B01001_049 |    56419| 1311|
+|02    |Alaska               |B01001_001 |   737068|   NA|
+|02    |Alaska               |B01001_002 |   384915|  401|
+|02    |Alaska               |B01001_003 |    27062|  182|
+|02    |Alaska               |B01001_004 |    26776|  907|
+|02    |Alaska               |B01001_005 |    25921|  897|
+|02    |Alaska               |B01001_006 |    15200|  216|
+|02    |Alaska               |B01001_007 |     9746|  259|
+|02    |Alaska               |B01001_008 |     6154|  640|
+|02    |Alaska               |B01001_009 |     6029|  512|
+|02    |Alaska               |B01001_010 |    19262|  822|
+|02    |Alaska               |B01001_011 |    33136|  214|
+|02    |Alaska               |B01001_012 |    30027|  268|
+|02    |Alaska               |B01001_013 |    26569|  707|
+|02    |Alaska               |B01001_014 |    21886|  776|
+|02    |Alaska               |B01001_015 |    22918|  307|
+|02    |Alaska               |B01001_016 |    24477|  337|
+|02    |Alaska               |B01001_017 |    25581|  723|
+|02    |Alaska               |B01001_018 |     9826|  526|
+|02    |Alaska               |B01001_019 |    13370|  638|
+|02    |Alaska               |B01001_020 |     8044|  502|
+|02    |Alaska               |B01001_021 |    10016|  516|
+|02    |Alaska               |B01001_022 |    10959|  526|
+|02    |Alaska               |B01001_023 |     5844|  336|
+|02    |Alaska               |B01001_024 |     3606|  313|
+|02    |Alaska               |B01001_025 |     2506|  276|
+|02    |Alaska               |B01001_026 |   352153|  401|
+|02    |Alaska               |B01001_027 |    26175|  170|
+|02    |Alaska               |B01001_028 |    26034|  712|
+|02    |Alaska               |B01001_029 |    23348|  734|
+|02    |Alaska               |B01001_030 |    13878|  168|
+|02    |Alaska               |B01001_031 |     7880|  182|
+|02    |Alaska               |B01001_032 |     4003|  371|
+|02    |Alaska               |B01001_033 |     4659|  403|
+|02    |Alaska               |B01001_034 |    14355|  529|
+|02    |Alaska               |B01001_035 |    29069|  285|
+|02    |Alaska               |B01001_036 |    27092|  233|
+|02    |Alaska               |B01001_037 |    24203|  749|
+|02    |Alaska               |B01001_038 |    20726|  716|
+|02    |Alaska               |B01001_039 |    21008|  296|
+|02    |Alaska               |B01001_040 |    22294|  255|
+|02    |Alaska               |B01001_041 |    24504|  667|
+|02    |Alaska               |B01001_042 |     9531|  515|
+|02    |Alaska               |B01001_043 |    11786|  570|
+|02    |Alaska               |B01001_044 |     6658|  493|
+|02    |Alaska               |B01001_045 |     9489|  618|
+|02    |Alaska               |B01001_046 |    11121|  663|
+|02    |Alaska               |B01001_047 |     5978|  359|
+|02    |Alaska               |B01001_048 |     4381|  396|
+|02    |Alaska               |B01001_049 |     3981|  339|
+|04    |Arizona              |B01001_001 |  7050299|   NA|
+|04    |Arizona              |B01001_002 |  3504509|  349|
+|04    |Arizona              |B01001_003 |   221817|  261|
+|04    |Arizona              |B01001_004 |   228224| 2431|
+|04    |Arizona              |B01001_005 |   241782| 2465|
+|04    |Arizona              |B01001_006 |   142358|  240|
+|04    |Arizona              |B01001_007 |    99160|  485|
+|04    |Arizona              |B01001_008 |    53415| 1747|
+|04    |Arizona              |B01001_009 |    52100| 1915|
+|04    |Arizona              |B01001_010 |   149020| 2168|
+|04    |Arizona              |B01001_011 |   260409|  354|
+|04    |Arizona              |B01001_012 |   239400|  317|
+|04    |Arizona              |B01001_013 |   224585| 2483|
+|04    |Arizona              |B01001_014 |   213395| 2518|
+|04    |Arizona              |B01001_015 |   211838|  283|
+|04    |Arizona              |B01001_016 |   208076|  328|
+|04    |Arizona              |B01001_017 |   204916| 1940|
+|04    |Arizona              |B01001_018 |    81354| 1713|
+|04    |Arizona              |B01001_019 |   116718| 1803|
+|04    |Arizona              |B01001_020 |    73745| 1496|
+|04    |Arizona              |B01001_021 |   106023| 1748|
+|04    |Arizona              |B01001_022 |   148322| 2050|
+|04    |Arizona              |B01001_023 |   108212| 1611|
+|04    |Arizona              |B01001_024 |    67677| 1333|
+|04    |Arizona              |B01001_025 |    51963| 1595|
+|04    |Arizona              |B01001_026 |  3545790|  349|
+|04    |Arizona              |B01001_027 |   212151|  238|
+|04    |Arizona              |B01001_028 |   222346| 2644|
+|04    |Arizona              |B01001_029 |   229950| 2608|
+|04    |Arizona              |B01001_030 |   136716|  239|
+|04    |Arizona              |B01001_031 |    95118|  791|
+|04    |Arizona              |B01001_032 |    49240| 1772|
+|04    |Arizona              |B01001_033 |    48432| 1945|
+|04    |Arizona              |B01001_034 |   135938| 2051|
+|04    |Arizona              |B01001_035 |   240952|  290|
+|04    |Arizona              |B01001_036 |   224186|  291|
+|04    |Arizona              |B01001_037 |   219056| 2504|
+|04    |Arizona              |B01001_038 |   209752| 2519|
+|04    |Arizona              |B01001_039 |   213146|  218|
+|04    |Arizona              |B01001_040 |   214302|  180|
+|04    |Arizona              |B01001_041 |   222592| 2318|
+|04    |Arizona              |B01001_042 |    89972| 2049|
+|04    |Arizona              |B01001_043 |   131135| 1758|
+|04    |Arizona              |B01001_044 |    85291| 1539|
+|04    |Arizona              |B01001_045 |   121138| 1747|
+|04    |Arizona              |B01001_046 |   166001| 1825|
+|04    |Arizona              |B01001_047 |   121595| 1793|
+|04    |Arizona              |B01001_048 |    77798| 1623|
+|04    |Arizona              |B01001_049 |    78983| 1869|
+|05    |Arkansas             |B01001_001 |  2999370|   NA|
+|05    |Arkansas             |B01001_002 |  1471760|  979|
+|05    |Arkansas             |B01001_003 |    96986|  542|
+|05    |Arkansas             |B01001_004 |   100270| 1854|
+|05    |Arkansas             |B01001_005 |   101442| 1926|
+|05    |Arkansas             |B01001_006 |    61421|  536|
+|05    |Arkansas             |B01001_007 |    41658|  670|
+|05    |Arkansas             |B01001_008 |    23070| 1128|
+|05    |Arkansas             |B01001_009 |    21553| 1158|
+|05    |Arkansas             |B01001_010 |    59319| 1550|
+|05    |Arkansas             |B01001_011 |   100466|  641|
+|05    |Arkansas             |B01001_012 |    95098|  636|
+|05    |Arkansas             |B01001_013 |    92836| 1663|
+|05    |Arkansas             |B01001_014 |    89930| 1730|
+|05    |Arkansas             |B01001_015 |    89791|  552|
+|05    |Arkansas             |B01001_016 |    93367|  477|
+|05    |Arkansas             |B01001_017 |    94658| 1511|
+|05    |Arkansas             |B01001_018 |    36335| 1104|
+|05    |Arkansas             |B01001_019 |    51933| 1319|
+|05    |Arkansas             |B01001_020 |    31556|  997|
+|05    |Arkansas             |B01001_021 |    45109| 1199|
+|05    |Arkansas             |B01001_022 |    58729| 1114|
+|05    |Arkansas             |B01001_023 |    42066|  934|
+|05    |Arkansas             |B01001_024 |    24801|  688|
+|05    |Arkansas             |B01001_025 |    19366|  758|
+|05    |Arkansas             |B01001_026 |  1527610|  979|
+|05    |Arkansas             |B01001_027 |    92650|  530|
+|05    |Arkansas             |B01001_028 |    96604| 1822|
+|05    |Arkansas             |B01001_029 |    96362| 1733|
+|05    |Arkansas             |B01001_030 |    58533|  552|
+|05    |Arkansas             |B01001_031 |    39493|  619|
+|05    |Arkansas             |B01001_032 |    20986| 1229|
+|05    |Arkansas             |B01001_033 |    20550| 1050|
+|05    |Arkansas             |B01001_034 |    56834| 1252|
+|05    |Arkansas             |B01001_035 |   101534|  675|
+|05    |Arkansas             |B01001_036 |    94719|  659|
+|05    |Arkansas             |B01001_037 |    95001| 1741|
+|05    |Arkansas             |B01001_038 |    90690| 1660|
+|05    |Arkansas             |B01001_039 |    92242|  492|
+|05    |Arkansas             |B01001_040 |    96411|  500|
+|05    |Arkansas             |B01001_041 |   100562| 1451|
+|05    |Arkansas             |B01001_042 |    40560| 1196|
+|05    |Arkansas             |B01001_043 |    56728| 1474|
+|05    |Arkansas             |B01001_044 |    35669| 1117|
+|05    |Arkansas             |B01001_045 |    49920| 1129|
+|05    |Arkansas             |B01001_046 |    69390| 1373|
+|05    |Arkansas             |B01001_047 |    49857|  969|
+|05    |Arkansas             |B01001_048 |    35058|  973|
+|05    |Arkansas             |B01001_049 |    37257|  939|
+|06    |California           |B01001_001 | 39283497|   NA|
+|06    |California           |B01001_002 | 19526298| 1141|
+|06    |California           |B01001_003 |  1254607|  535|
+|06    |California           |B01001_004 |  1257974| 6123|
+|06    |California           |B01001_005 |  1318355| 6152|
+|06    |California           |B01001_006 |   779960|  618|
+|06    |California           |B01001_007 |   529837|  837|
+|06    |California           |B01001_008 |   295438| 4457|
+|06    |California           |B01001_009 |   285103| 3566|
+|06    |California           |B01001_010 |   839739| 5625|
+|06    |California           |B01001_011 |  1591508|  680|
+|06    |California           |B01001_012 |  1484698|  740|
+|06    |California           |B01001_013 |  1359631| 6596|
+|06    |California           |B01001_014 |  1262846| 6501|
+|06    |California           |B01001_015 |  1279131|  682|
+|06    |California           |B01001_016 |  1261859|  539|
+|06    |California           |B01001_017 |  1209041| 4848|
+|06    |California           |B01001_018 |   463834| 3944|
+|06    |California           |B01001_019 |   614865| 4658|
+|06    |California           |B01001_020 |   371074| 3539|
+|06    |California           |B01001_021 |   487802| 3811|
+|06    |California           |B01001_022 |   617578| 4097|
+|06    |California           |B01001_023 |   420939| 3293|
+|06    |California           |B01001_024 |   278686| 3207|
+|06    |California           |B01001_025 |   261793| 3162|
+|06    |California           |B01001_026 | 19757199| 1141|
+|06    |California           |B01001_027 |  1196921|  629|
+|06    |California           |B01001_028 |  1210252| 6725|
+|06    |California           |B01001_029 |  1257108| 6643|
+|06    |California           |B01001_030 |   746969|  549|
+|06    |California           |B01001_031 |   508404|  823|
+|06    |California           |B01001_032 |   264323| 3826|
+|06    |California           |B01001_033 |   265098| 4264|
+|06    |California           |B01001_034 |   801866| 4498|
+|06    |California           |B01001_035 |  1486984|  673|
+|06    |California           |B01001_036 |  1404674|  768|
+|06    |California           |B01001_037 |  1321745| 5724|
+|06    |California           |B01001_038 |  1261665| 5786|
+|06    |California           |B01001_039 |  1284503|  542|
+|06    |California           |B01001_040 |  1275929|  524|
+|06    |California           |B01001_041 |  1264187| 4805|
+|06    |California           |B01001_042 |   490110| 4588|
+|06    |California           |B01001_043 |   668292| 5041|
+|06    |California           |B01001_044 |   409644| 3610|
+|06    |California           |B01001_045 |   556798| 3773|
+|06    |California           |B01001_046 |   729375| 4360|
+|06    |California           |B01001_047 |   518080| 3848|
+|06    |California           |B01001_048 |   382536| 3482|
+|06    |California           |B01001_049 |   451736| 3547|
+|08    |Colorado             |B01001_001 |  5610349|   NA|
+|08    |Colorado             |B01001_002 |  2823201| 1044|
+|08    |Colorado             |B01001_003 |   170300|  463|
+|08    |Colorado             |B01001_004 |   180524| 1749|
+|08    |Colorado             |B01001_005 |   185281| 1751|
+|08    |Colorado             |B01001_006 |   108925|  392|
+|08    |Colorado             |B01001_007 |    76031|  728|
+|08    |Colorado             |B01001_008 |    38961| 1566|
+|08    |Colorado             |B01001_009 |    38944| 1472|
+|08    |Colorado             |B01001_010 |   119820| 2309|
+|08    |Colorado             |B01001_011 |   229326|  705|
+|08    |Colorado             |B01001_012 |   225509|  629|
+|08    |Colorado             |B01001_013 |   205640| 2234|
+|08    |Colorado             |B01001_014 |   187064| 2366|
+|08    |Colorado             |B01001_015 |   184400|  553|
+|08    |Colorado             |B01001_016 |   175678|  649|
+|08    |Colorado             |B01001_017 |   179037| 1987|
+|08    |Colorado             |B01001_018 |    69192| 1477|
+|08    |Colorado             |B01001_019 |    94840| 1791|
+|08    |Colorado             |B01001_020 |    58391| 1265|
+|08    |Colorado             |B01001_021 |    76337| 1494|
+|08    |Colorado             |B01001_022 |    94181| 1473|
+|08    |Colorado             |B01001_023 |    58616|  969|
+|08    |Colorado             |B01001_024 |    35363|  904|
+|08    |Colorado             |B01001_025 |    30841|  899|
+|08    |Colorado             |B01001_026 |  2787148| 1044|
+|08    |Colorado             |B01001_027 |   163732|  468|
+|08    |Colorado             |B01001_028 |   172738| 2135|
+|08    |Colorado             |B01001_029 |   175663| 2182|
+|08    |Colorado             |B01001_030 |   103842|  398|
+|08    |Colorado             |B01001_031 |    69757|  620|
+|08    |Colorado             |B01001_032 |    35463| 1425|
+|08    |Colorado             |B01001_033 |    34961| 1453|
+|08    |Colorado             |B01001_034 |   109828| 1783|
+|08    |Colorado             |B01001_035 |   209736|  514|
+|08    |Colorado             |B01001_036 |   206929|  485|
+|08    |Colorado             |B01001_037 |   195787| 2271|
+|08    |Colorado             |B01001_038 |   175692| 2288|
+|08    |Colorado             |B01001_039 |   177373|  409|
+|08    |Colorado             |B01001_040 |   176069|  387|
+|08    |Colorado             |B01001_041 |   185125| 1853|
+|08    |Colorado             |B01001_042 |    73671| 1578|
+|08    |Colorado             |B01001_043 |   100805| 1638|
+|08    |Colorado             |B01001_044 |    61882| 1242|
+|08    |Colorado             |B01001_045 |    82036| 1510|
+|08    |Colorado             |B01001_046 |   105518| 1708|
+|08    |Colorado             |B01001_047 |    69081| 1212|
+|08    |Colorado             |B01001_048 |    47666| 1090|
+|08    |Colorado             |B01001_049 |    53794| 1108|
+|09    |Connecticut          |B01001_001 |  3575074|   NA|
+|09    |Connecticut          |B01001_002 |  1744245|  441|
+|09    |Connecticut          |B01001_003 |    94516|  291|
+|09    |Connecticut          |B01001_004 |   100677| 1622|
+|09    |Connecticut          |B01001_005 |   113237| 1584|
+|09    |Connecticut          |B01001_006 |    71984|  203|
+|09    |Connecticut          |B01001_007 |    52666|  353|
+|09    |Connecticut          |B01001_008 |    25439| 1115|
+|09    |Connecticut          |B01001_009 |    25480| 1204|
+|09    |Connecticut          |B01001_010 |    75282| 1256|
+|09    |Connecticut          |B01001_011 |   113876|  237|
+|09    |Connecticut          |B01001_012 |   110366|  244|
+|09    |Connecticut          |B01001_013 |   103719| 1925|
+|09    |Connecticut          |B01001_014 |   104301| 1923|
+|09    |Connecticut          |B01001_015 |   117313|  251|
+|09    |Connecticut          |B01001_016 |   129088|  251|
+|09    |Connecticut          |B01001_017 |   128121| 1733|
+|09    |Connecticut          |B01001_018 |    49589| 1279|
+|09    |Connecticut          |B01001_019 |    67558| 1480|
+|09    |Connecticut          |B01001_020 |    37806|  945|
+|09    |Connecticut          |B01001_021 |    51550| 1017|
+|09    |Connecticut          |B01001_022 |    66940| 1199|
+|09    |Connecticut          |B01001_023 |    45353|  963|
+|09    |Connecticut          |B01001_024 |    28713|  957|
+|09    |Connecticut          |B01001_025 |    30671|  961|
+|09    |Connecticut          |B01001_026 |  1830829|  441|
+|09    |Connecticut          |B01001_027 |    89292|  214|
+|09    |Connecticut          |B01001_028 |    97323| 1424|
+|09    |Connecticut          |B01001_029 |   108088| 1451|
+|09    |Connecticut          |B01001_030 |    68716|  195|
+|09    |Connecticut          |B01001_031 |    50883|  330|
+|09    |Connecticut          |B01001_032 |    25549| 1258|
+|09    |Connecticut          |B01001_033 |    23831| 1192|
+|09    |Connecticut          |B01001_034 |    69016| 1402|
+|09    |Connecticut          |B01001_035 |   107227|  267|
+|09    |Connecticut          |B01001_036 |   110273|  315|
+|09    |Connecticut          |B01001_037 |   106939| 1699|
+|09    |Connecticut          |B01001_038 |   109780| 1641|
+|09    |Connecticut          |B01001_039 |   124830|  261|
+|09    |Connecticut          |B01001_040 |   137197|  193|
+|09    |Connecticut          |B01001_041 |   136683| 1551|
+|09    |Connecticut          |B01001_042 |    53746| 1507|
+|09    |Connecticut          |B01001_043 |    71436| 1379|
+|09    |Connecticut          |B01001_044 |    41696| 1116|
+|09    |Connecticut          |B01001_045 |    58640| 1445|
+|09    |Connecticut          |B01001_046 |    79790| 1542|
+|09    |Connecticut          |B01001_047 |    56882| 1138|
+|09    |Connecticut          |B01001_048 |    43939| 1115|
+|09    |Connecticut          |B01001_049 |    59073| 1238|
+|10    |Delaware             |B01001_001 |   957248|   NA|
+|10    |Delaware             |B01001_002 |   462890|  166|
+|10    |Delaware             |B01001_003 |    27732|  149|
+|10    |Delaware             |B01001_004 |    27087| 1053|
+|10    |Delaware             |B01001_005 |    30472| 1059|
+|10    |Delaware             |B01001_006 |    17785|   84|
+|10    |Delaware             |B01001_007 |    12405|   75|
+|10    |Delaware             |B01001_008 |     6316|  483|
+|10    |Delaware             |B01001_009 |     6371|  584|
+|10    |Delaware             |B01001_010 |    17411|  689|
+|10    |Delaware             |B01001_011 |    33367|  140|
+|10    |Delaware             |B01001_012 |    30570|  145|
+|10    |Delaware             |B01001_013 |    28083|  899|
+|10    |Delaware             |B01001_014 |    25779|  904|
+|10    |Delaware             |B01001_015 |    28420|   96|
+|10    |Delaware             |B01001_016 |    31229|  128|
+|10    |Delaware             |B01001_017 |    32502|  877|
+|10    |Delaware             |B01001_018 |    12291|  586|
+|10    |Delaware             |B01001_019 |    17394|  799|
+|10    |Delaware             |B01001_020 |    11414|  614|
+|10    |Delaware             |B01001_021 |    15530|  665|
+|10    |Delaware             |B01001_022 |    21051|  694|
+|10    |Delaware             |B01001_023 |    14556|  556|
+|10    |Delaware             |B01001_024 |     8097|  474|
+|10    |Delaware             |B01001_025 |     7028|  464|
+|10    |Delaware             |B01001_026 |   494358|  166|
+|10    |Delaware             |B01001_027 |    27098|   79|
+|10    |Delaware             |B01001_028 |    26687|  879|
+|10    |Delaware             |B01001_029 |    29734|  931|
+|10    |Delaware             |B01001_030 |    17089|  103|
+|10    |Delaware             |B01001_031 |    12615|  139|
+|10    |Delaware             |B01001_032 |     7365|  646|
+|10    |Delaware             |B01001_033 |     5624|  522|
+|10    |Delaware             |B01001_034 |    16137|  714|
+|10    |Delaware             |B01001_035 |    33050|  114|
+|10    |Delaware             |B01001_036 |    30631|   60|
+|10    |Delaware             |B01001_037 |    28704| 1005|
+|10    |Delaware             |B01001_038 |    28032|  997|
+|10    |Delaware             |B01001_039 |    30680|   70|
+|10    |Delaware             |B01001_040 |    33925|   84|
+|10    |Delaware             |B01001_041 |    35264|  972|
+|10    |Delaware             |B01001_042 |    13674|  654|
+|10    |Delaware             |B01001_043 |    21551|  837|
+|10    |Delaware             |B01001_044 |    13413|  641|
+|10    |Delaware             |B01001_045 |    18294|  555|
+|10    |Delaware             |B01001_046 |    24484|  640|
+|10    |Delaware             |B01001_047 |    17768|  674|
+|10    |Delaware             |B01001_048 |    11140|  550|
+|10    |Delaware             |B01001_049 |    11399|  586|
+|11    |District of Columbia |B01001_001 |   692683|   NA|
+|11    |District of Columbia |B01001_002 |   328644|   74|
+|11    |District of Columbia |B01001_003 |    22874|   61|
+|11    |District of Columbia |B01001_004 |    17846|  630|
+|11    |District of Columbia |B01001_005 |    13997|  633|
+|11    |District of Columbia |B01001_006 |     7905|    6|
+|11    |District of Columbia |B01001_007 |     9643|  185|
+|11    |District of Columbia |B01001_008 |     5454|  558|
+|11    |District of Columbia |B01001_009 |     5185|  514|
+|11    |District of Columbia |B01001_010 |    13565|  712|
+|11    |District of Columbia |B01001_011 |    38104|   73|
+|11    |District of Columbia |B01001_012 |    37811|   73|
+|11    |District of Columbia |B01001_013 |    29531|  877|
+|11    |District of Columbia |B01001_014 |    20961|  872|
+|11    |District of Columbia |B01001_015 |    19316|    6|
+|11    |District of Columbia |B01001_016 |    18929|   85|
+|11    |District of Columbia |B01001_017 |    18428|  576|
+|11    |District of Columbia |B01001_018 |     6307|  542|
+|11    |District of Columbia |B01001_019 |     8526|  509|
+|11    |District of Columbia |B01001_020 |     5126|  479|
+|11    |District of Columbia |B01001_021 |     6780|  507|
+|11    |District of Columbia |B01001_022 |     9005|  452|
+|11    |District of Columbia |B01001_023 |     6075|  382|
+|11    |District of Columbia |B01001_024 |     3550|  319|
+|11    |District of Columbia |B01001_025 |     3726|  334|
+|11    |District of Columbia |B01001_026 |   364039|   74|
+|11    |District of Columbia |B01001_027 |    22166|   33|
+|11    |District of Columbia |B01001_028 |    16415|  738|
+|11    |District of Columbia |B01001_029 |    14948|  739|
+|11    |District of Columbia |B01001_030 |     7779|   59|
+|11    |District of Columbia |B01001_031 |    12113|  375|
+|11    |District of Columbia |B01001_032 |     5834|  654|
+|11    |District of Columbia |B01001_033 |     5523|  556|
+|11    |District of Columbia |B01001_034 |    17320|  799|
+|11    |District of Columbia |B01001_035 |    44689|   92|
+|11    |District of Columbia |B01001_036 |    41268|   68|
+|11    |District of Columbia |B01001_037 |    29655|  883|
+|11    |District of Columbia |B01001_038 |    22154|  884|
+|11    |District of Columbia |B01001_039 |    19166|   35|
+|11    |District of Columbia |B01001_040 |    18712|   44|
+|11    |District of Columbia |B01001_041 |    18311|  711|
+|11    |District of Columbia |B01001_042 |     7434|  561|
+|11    |District of Columbia |B01001_043 |    11144|  628|
+|11    |District of Columbia |B01001_044 |     6493|  446|
+|11    |District of Columbia |B01001_045 |     9081|  490|
+|11    |District of Columbia |B01001_046 |    11669|  565|
+|11    |District of Columbia |B01001_047 |     8720|  485|
+|11    |District of Columbia |B01001_048 |     5993|  473|
+|11    |District of Columbia |B01001_049 |     7452|  527|
+|12    |Florida              |B01001_001 | 20901636|   NA|
+|12    |Florida              |B01001_002 | 10220813| 1549|
+|12    |Florida              |B01001_003 |   577348|  791|
+|12    |Florida              |B01001_004 |   576826| 4899|
+|12    |Florida              |B01001_005 |   612687| 4894|
+|12    |Florida              |B01001_006 |   369763|  780|
+|12    |Florida              |B01001_007 |   248570| 1013|
+|12    |Florida              |B01001_008 |   137718| 3201|
+|12    |Florida              |B01001_009 |   131506| 3070|
+|12    |Florida              |B01001_010 |   381473| 3976|
+|12    |Florida              |B01001_011 |   711093|  879|
+|12    |Florida              |B01001_012 |   665891|  894|
+|12    |Florida              |B01001_013 |   635575| 5429|
+|12    |Florida              |B01001_014 |   617319| 5454|
+|12    |Florida              |B01001_015 |   656770| 1012|
+|12    |Florida              |B01001_016 |   689307|  971|
+|12    |Florida              |B01001_017 |   681973| 3987|
+|12    |Florida              |B01001_018 |   264002| 3128|
+|12    |Florida              |B01001_019 |   366371| 3658|
+|12    |Florida              |B01001_020 |   240228| 3413|
+|12    |Florida              |B01001_021 |   345946| 3550|
+|12    |Florida              |B01001_022 |   488271| 4031|
+|12    |Florida              |B01001_023 |   374097| 3239|
+|12    |Florida              |B01001_024 |   238778| 2979|
+|12    |Florida              |B01001_025 |   209301| 3087|
+|12    |Florida              |B01001_026 | 10680823| 1549|
+|12    |Florida              |B01001_027 |   550866|  864|
+|12    |Florida              |B01001_028 |   555437| 4741|
+|12    |Florida              |B01001_029 |   585198| 4624|
+|12    |Florida              |B01001_030 |   354337|  755|
+|12    |Florida              |B01001_031 |   233376| 1041|
+|12    |Florida              |B01001_032 |   132905| 3362|
+|12    |Florida              |B01001_033 |   126974| 3074|
+|12    |Florida              |B01001_034 |   360907| 3669|
+|12    |Florida              |B01001_035 |   685703|  759|
+|12    |Florida              |B01001_036 |   654166|  785|
+|12    |Florida              |B01001_037 |   644120| 4769|
+|12    |Florida              |B01001_038 |   628269| 4704|
+|12    |Florida              |B01001_039 |   675827|  681|
+|12    |Florida              |B01001_040 |   720130|  564|
+|12    |Florida              |B01001_041 |   749165| 4235|
+|12    |Florida              |B01001_042 |   291389| 3895|
+|12    |Florida              |B01001_043 |   423247| 4170|
+|12    |Florida              |B01001_044 |   278339| 3325|
+|12    |Florida              |B01001_045 |   401994| 3484|
+|12    |Florida              |B01001_046 |   566616| 3817|
+|12    |Florida              |B01001_047 |   424863| 3101|
+|12    |Florida              |B01001_048 |   301637| 3472|
+|12    |Florida              |B01001_049 |   335358| 3237|
+|13    |Georgia              |B01001_001 | 10403847|   NA|
+|13    |Georgia              |B01001_002 |  5062096| 1660|
+|13    |Georgia              |B01001_003 |   335418|  989|
+|13    |Georgia              |B01001_004 |   353427| 3638|
+|13    |Georgia              |B01001_005 |   367305| 3624|
+|13    |Georgia              |B01001_006 |   220516|  878|
+|13    |Georgia              |B01001_007 |   149282| 1391|
+|13    |Georgia              |B01001_008 |    79395| 2461|
+|13    |Georgia              |B01001_009 |    74003| 2174|
+|13    |Georgia              |B01001_010 |   212984| 2896|
+|13    |Georgia              |B01001_011 |   370961| 1272|
+|13    |Georgia              |B01001_012 |   341060| 1375|
+|13    |Georgia              |B01001_013 |   337271| 3639|
+|13    |Georgia              |B01001_014 |   327778| 3751|
+|13    |Georgia              |B01001_015 |   344508| 1110|
+|13    |Georgia              |B01001_016 |   338704|  930|
+|13    |Georgia              |B01001_017 |   321553| 2938|
+|13    |Georgia              |B01001_018 |   119863| 2209|
+|13    |Georgia              |B01001_019 |   156497| 2307|
+|13    |Georgia              |B01001_020 |    95312| 1821|
+|13    |Georgia              |B01001_021 |   132969| 2103|
+|13    |Georgia              |B01001_022 |   166635| 2275|
+|13    |Georgia              |B01001_023 |   110045| 1555|
+|13    |Georgia              |B01001_024 |    61592| 1323|
+|13    |Georgia              |B01001_025 |    45018| 1286|
+|13    |Georgia              |B01001_026 |  5341751| 1661|
+|13    |Georgia              |B01001_027 |   321259|  969|
+|13    |Georgia              |B01001_028 |   336657| 3409|
+|13    |Georgia              |B01001_029 |   357469| 3361|
+|13    |Georgia              |B01001_030 |   213189|  875|
+|13    |Georgia              |B01001_031 |   145658| 1213|
+|13    |Georgia              |B01001_032 |    71342| 2227|
+|13    |Georgia              |B01001_033 |    71424| 2211|
+|13    |Georgia              |B01001_034 |   206240| 2711|
+|13    |Georgia              |B01001_035 |   372643|  924|
+|13    |Georgia              |B01001_036 |   356110|  976|
+|13    |Georgia              |B01001_037 |   360810| 3422|
+|13    |Georgia              |B01001_038 |   348275| 3398|
+|13    |Georgia              |B01001_039 |   365106|  988|
+|13    |Georgia              |B01001_040 |   358810|  862|
+|13    |Georgia              |B01001_041 |   345304| 3530|
+|13    |Georgia              |B01001_042 |   133141| 2665|
+|13    |Georgia              |B01001_043 |   183400| 3092|
+|13    |Georgia              |B01001_044 |   112358| 2097|
+|13    |Georgia              |B01001_045 |   155095| 2378|
+|13    |Georgia              |B01001_046 |   204926| 2303|
+|13    |Georgia              |B01001_047 |   138987| 2372|
+|13    |Georgia              |B01001_048 |    92745| 2047|
+|13    |Georgia              |B01001_049 |    90803| 1839|
+|15    |Hawaii               |B01001_001 |  1422094|   NA|
+|15    |Hawaii               |B01001_002 |   713260|  157|
+|15    |Hawaii               |B01001_003 |    45831|  101|
+|15    |Hawaii               |B01001_004 |    43395|  881|
+|15    |Hawaii               |B01001_005 |    43196|  897|
+|15    |Hawaii               |B01001_006 |    24143|   57|
+|15    |Hawaii               |B01001_007 |    15908|  121|
+|15    |Hawaii               |B01001_008 |    10257|  711|
+|15    |Hawaii               |B01001_009 |    10735|  567|
+|15    |Hawaii               |B01001_010 |    31120|  785|
+|15    |Hawaii               |B01001_011 |    55319|  135|
+|15    |Hawaii               |B01001_012 |    51230|  100|
+|15    |Hawaii               |B01001_013 |    46511|  979|
+|15    |Hawaii               |B01001_014 |    44357|  948|
+|15    |Hawaii               |B01001_015 |    43478|  112|
+|15    |Hawaii               |B01001_016 |    43593|  119|
+|15    |Hawaii               |B01001_017 |    45686|  911|
+|15    |Hawaii               |B01001_018 |    18247|  673|
+|15    |Hawaii               |B01001_019 |    25446|  838|
+|15    |Hawaii               |B01001_020 |    17361|  755|
+|15    |Hawaii               |B01001_021 |    23254|  828|
+|15    |Hawaii               |B01001_022 |    29006|  880|
+|15    |Hawaii               |B01001_023 |    19501|  580|
+|15    |Hawaii               |B01001_024 |    12297|  631|
+|15    |Hawaii               |B01001_025 |    13389|  606|
+|15    |Hawaii               |B01001_026 |   708834|  157|
+|15    |Hawaii               |B01001_027 |    43011|   75|
+|15    |Hawaii               |B01001_028 |    41457|  907|
+|15    |Hawaii               |B01001_029 |    40419|  891|
+|15    |Hawaii               |B01001_030 |    23186|  123|
+|15    |Hawaii               |B01001_031 |    14475|  169|
+|15    |Hawaii               |B01001_032 |     7077|  523|
+|15    |Hawaii               |B01001_033 |     8285|  667|
+|15    |Hawaii               |B01001_034 |    26594|  705|
+|15    |Hawaii               |B01001_035 |    49228|  121|
+|15    |Hawaii               |B01001_036 |    48530|  121|
+|15    |Hawaii               |B01001_037 |    46465| 1104|
+|15    |Hawaii               |B01001_038 |    41643| 1106|
+|15    |Hawaii               |B01001_039 |    42877|  105|
+|15    |Hawaii               |B01001_040 |    44073|   88|
+|15    |Hawaii               |B01001_041 |    46315|  851|
+|15    |Hawaii               |B01001_042 |    18395|  720|
+|15    |Hawaii               |B01001_043 |    28006|  935|
+|15    |Hawaii               |B01001_044 |    18790|  731|
+|15    |Hawaii               |B01001_045 |    24432|  820|
+|15    |Hawaii               |B01001_046 |    31078|  765|
+|15    |Hawaii               |B01001_047 |    22239|  828|
+|15    |Hawaii               |B01001_048 |    17137|  706|
+|15    |Hawaii               |B01001_049 |    25122|  804|
+|16    |Idaho                |B01001_001 |  1717750|   NA|
+|16    |Idaho                |B01001_002 |   861025|  651|
+|16    |Idaho                |B01001_003 |    58246|  376|
+|16    |Idaho                |B01001_004 |    63364| 1489|
+|16    |Idaho                |B01001_005 |    65530| 1579|
+|16    |Idaho                |B01001_006 |    38552|  403|
+|16    |Idaho                |B01001_007 |    23727|  579|
+|16    |Idaho                |B01001_008 |    11826|  905|
+|16    |Idaho                |B01001_009 |    12076|  871|
+|16    |Idaho                |B01001_010 |    36283| 1226|
+|16    |Idaho                |B01001_011 |    58383|  447|
+|16    |Idaho                |B01001_012 |    55590|  432|
+|16    |Idaho                |B01001_013 |    56576| 1237|
+|16    |Idaho                |B01001_014 |    51894| 1206|
+|16    |Idaho                |B01001_015 |    50657|  485|
+|16    |Idaho                |B01001_016 |    49784|  402|
+|16    |Idaho                |B01001_017 |    51927| 1076|
+|16    |Idaho                |B01001_018 |    21145|  849|
+|16    |Idaho                |B01001_019 |    30322|  907|
+|16    |Idaho                |B01001_020 |    19135|  868|
+|16    |Idaho                |B01001_021 |    25519|  818|
+|16    |Idaho                |B01001_022 |    33590|  870|
+|16    |Idaho                |B01001_023 |    21993|  811|
+|16    |Idaho                |B01001_024 |    14196|  695|
+|16    |Idaho                |B01001_025 |    10710|  670|
+|16    |Idaho                |B01001_026 |   856725|  651|
+|16    |Idaho                |B01001_027 |    56115|  377|
+|16    |Idaho                |B01001_028 |    60656| 1397|
+|16    |Idaho                |B01001_029 |    61888| 1363|
+|16    |Idaho                |B01001_030 |    36796|  308|
+|16    |Idaho                |B01001_031 |    22710|  496|
+|16    |Idaho                |B01001_032 |    12045|  815|
+|16    |Idaho                |B01001_033 |    10752|  765|
+|16    |Idaho                |B01001_034 |    31628|  814|
+|16    |Idaho                |B01001_035 |    55987|  391|
+|16    |Idaho                |B01001_036 |    55014|  426|
+|16    |Idaho                |B01001_037 |    54996| 1313|
+|16    |Idaho                |B01001_038 |    50748| 1356|
+|16    |Idaho                |B01001_039 |    49267|  388|
+|16    |Idaho                |B01001_040 |    50316|  473|
+|16    |Idaho                |B01001_041 |    55143| 1227|
+|16    |Idaho                |B01001_042 |    21890| 1022|
+|16    |Idaho                |B01001_043 |    31028| 1201|
+|16    |Idaho                |B01001_044 |    20282|  845|
+|16    |Idaho                |B01001_045 |    26617| 1100|
+|16    |Idaho                |B01001_046 |    35054|  925|
+|16    |Idaho                |B01001_047 |    24517|  743|
+|16    |Idaho                |B01001_048 |    15871|  616|
+|16    |Idaho                |B01001_049 |    17405|  679|
+|17    |Illinois             |B01001_001 | 12770631|   NA|
+|17    |Illinois             |B01001_002 |  6272172|  951|
+|17    |Illinois             |B01001_003 |   392347|  495|
+|17    |Illinois             |B01001_004 |   402708| 3265|
+|17    |Illinois             |B01001_005 |   422860| 3282|
+|17    |Illinois             |B01001_006 |   257971|  486|
+|17    |Illinois             |B01001_007 |   170240|  628|
+|17    |Illinois             |B01001_008 |    87147| 2246|
+|17    |Illinois             |B01001_009 |    88649| 2221|
+|17    |Illinois             |B01001_010 |   261119| 2530|
+|17    |Illinois             |B01001_011 |   454276|  607|
+|17    |Illinois             |B01001_012 |   439469|  621|
+|17    |Illinois             |B01001_013 |   420916| 3832|
+|17    |Illinois             |B01001_014 |   400248| 3682|
+|17    |Illinois             |B01001_015 |   408702|  534|
+|17    |Illinois             |B01001_016 |   417296|  489|
+|17    |Illinois             |B01001_017 |   420547| 2803|
+|17    |Illinois             |B01001_018 |   163232| 2290|
+|17    |Illinois             |B01001_019 |   219357| 2393|
+|17    |Illinois             |B01001_020 |   129128| 1989|
+|17    |Illinois             |B01001_021 |   170245| 2042|
+|17    |Illinois             |B01001_022 |   218086| 2355|
+|17    |Illinois             |B01001_023 |   147616| 1647|
+|17    |Illinois             |B01001_024 |    96152| 1519|
+|17    |Illinois             |B01001_025 |    83861| 1540|
+|17    |Illinois             |B01001_026 |  6498459|  951|
+|17    |Illinois             |B01001_027 |   374846|  418|
+|17    |Illinois             |B01001_028 |   385427| 2823|
+|17    |Illinois             |B01001_029 |   407573| 2741|
+|17    |Illinois             |B01001_030 |   247794|  426|
+|17    |Illinois             |B01001_031 |   161702|  564|
+|17    |Illinois             |B01001_032 |    85549| 2365|
+|17    |Illinois             |B01001_033 |    83047| 2174|
+|17    |Illinois             |B01001_034 |   255353| 2747|
+|17    |Illinois             |B01001_035 |   443204|  506|
+|17    |Illinois             |B01001_036 |   433341|  586|
+|17    |Illinois             |B01001_037 |   421648| 3304|
+|17    |Illinois             |B01001_038 |   401719| 3224|
+|17    |Illinois             |B01001_039 |   416835|  488|
+|17    |Illinois             |B01001_040 |   429387|  421|
+|17    |Illinois             |B01001_041 |   442526| 3063|
+|17    |Illinois             |B01001_042 |   173996| 2569|
+|17    |Illinois             |B01001_043 |   237066| 2484|
+|17    |Illinois             |B01001_044 |   145630| 2037|
+|17    |Illinois             |B01001_045 |   192024| 2063|
+|17    |Illinois             |B01001_046 |   258252| 2315|
+|17    |Illinois             |B01001_047 |   190284| 2241|
+|17    |Illinois             |B01001_048 |   140389| 1723|
+|17    |Illinois             |B01001_049 |   170867| 2108|
+|18    |Indiana              |B01001_001 |  6665703|   NA|
+|18    |Indiana              |B01001_002 |  3284846| 1051|
+|18    |Indiana              |B01001_003 |   214647|  587|
+|18    |Indiana              |B01001_004 |   219483| 2410|
+|18    |Indiana              |B01001_005 |   231006| 2505|
+|18    |Indiana              |B01001_006 |   139112|  488|
+|18    |Indiana              |B01001_007 |    95812|  774|
+|18    |Indiana              |B01001_008 |    50082| 1746|
+|18    |Indiana              |B01001_009 |    51500| 1764|
+|18    |Indiana              |B01001_010 |   142889| 2424|
+|18    |Indiana              |B01001_011 |   224782|  737|
+|18    |Indiana              |B01001_012 |   210400|  690|
+|18    |Indiana              |B01001_013 |   212415| 2644|
+|18    |Indiana              |B01001_014 |   196331| 2543|
+|18    |Indiana              |B01001_015 |   208959|  770|
+|18    |Indiana              |B01001_016 |   214854|  678|
+|18    |Indiana              |B01001_017 |   218670| 2040|
+|18    |Indiana              |B01001_018 |    85250| 1759|
+|18    |Indiana              |B01001_019 |   118973| 1868|
+|18    |Indiana              |B01001_020 |    70530| 1465|
+|18    |Indiana              |B01001_021 |    92350| 1617|
+|18    |Indiana              |B01001_022 |   116975| 1589|
+|18    |Indiana              |B01001_023 |    78760| 1108|
+|18    |Indiana              |B01001_024 |    48840| 1135|
+|18    |Indiana              |B01001_025 |    42226| 1163|
+|18    |Indiana              |B01001_026 |  3380857| 1051|
+|18    |Indiana              |B01001_027 |   204038|  601|
+|18    |Indiana              |B01001_028 |   212799| 2142|
+|18    |Indiana              |B01001_029 |   217708| 2211|
+|18    |Indiana              |B01001_030 |   133698|  517|
+|18    |Indiana              |B01001_031 |    91557|  795|
+|18    |Indiana              |B01001_032 |    50112| 2031|
+|18    |Indiana              |B01001_033 |    48256| 1475|
+|18    |Indiana              |B01001_034 |   132511| 2178|
+|18    |Indiana              |B01001_035 |   220883|  638|
+|18    |Indiana              |B01001_036 |   210372|  703|
+|18    |Indiana              |B01001_037 |   210719| 2224|
+|18    |Indiana              |B01001_038 |   200536| 2197|
+|18    |Indiana              |B01001_039 |   208990|  760|
+|18    |Indiana              |B01001_040 |   219664|  653|
+|18    |Indiana              |B01001_041 |   229476| 2365|
+|18    |Indiana              |B01001_042 |    89369| 1945|
+|18    |Indiana              |B01001_043 |   126262| 1866|
+|18    |Indiana              |B01001_044 |    75858| 1572|
+|18    |Indiana              |B01001_045 |   105973| 1794|
+|18    |Indiana              |B01001_046 |   135529| 1577|
+|18    |Indiana              |B01001_047 |   100956| 1578|
+|18    |Indiana              |B01001_048 |    71508| 1105|
+|18    |Indiana              |B01001_049 |    84083| 1482|
+|19    |Iowa                 |B01001_001 |  3139508|   NA|
+|19    |Iowa                 |B01001_002 |  1558536| 1077|
+|19    |Iowa                 |B01001_003 |    99916|  466|
+|19    |Iowa                 |B01001_004 |   104906| 1420|
+|19    |Iowa                 |B01001_005 |   104340| 1401|
+|19    |Iowa                 |B01001_006 |    63034|  387|
+|19    |Iowa                 |B01001_007 |    46381|  492|
+|19    |Iowa                 |B01001_008 |    24650| 1457|
+|19    |Iowa                 |B01001_009 |    23975|  941|
+|19    |Iowa                 |B01001_010 |    68657| 1715|
+|19    |Iowa                 |B01001_011 |   101316|  557|
+|19    |Iowa                 |B01001_012 |   100192|  505|
+|19    |Iowa                 |B01001_013 |   102137| 1204|
+|19    |Iowa                 |B01001_014 |    88541| 1304|
+|19    |Iowa                 |B01001_015 |    92715|  498|
+|19    |Iowa                 |B01001_016 |    98130|  416|
+|19    |Iowa                 |B01001_017 |   104304| 1354|
+|19    |Iowa                 |B01001_018 |    42561| 1090|
+|19    |Iowa                 |B01001_019 |    58756| 1154|
+|19    |Iowa                 |B01001_020 |    35173|  908|
+|19    |Iowa                 |B01001_021 |    46332|  908|
+|19    |Iowa                 |B01001_022 |    58035|  980|
+|19    |Iowa                 |B01001_023 |    40629|  691|
+|19    |Iowa                 |B01001_024 |    27790|  810|
+|19    |Iowa                 |B01001_025 |    26066|  621|
+|19    |Iowa                 |B01001_026 |  1580972| 1077|
+|19    |Iowa                 |B01001_027 |    96511|  446|
+|19    |Iowa                 |B01001_028 |    98586| 1453|
+|19    |Iowa                 |B01001_029 |   101835| 1375|
+|19    |Iowa                 |B01001_030 |    59609|  358|
+|19    |Iowa                 |B01001_031 |    44523|  543|
+|19    |Iowa                 |B01001_032 |    23792| 1085|
+|19    |Iowa                 |B01001_033 |    22744| 1244|
+|19    |Iowa                 |B01001_034 |    63264| 1356|
+|19    |Iowa                 |B01001_035 |    97267|  426|
+|19    |Iowa                 |B01001_036 |    96289|  508|
+|19    |Iowa                 |B01001_037 |    96661| 1418|
+|19    |Iowa                 |B01001_038 |    88288| 1425|
+|19    |Iowa                 |B01001_039 |    91065|  452|
+|19    |Iowa                 |B01001_040 |    98510|  448|
+|19    |Iowa                 |B01001_041 |   108001| 1296|
+|19    |Iowa                 |B01001_042 |    42140|  978|
+|19    |Iowa                 |B01001_043 |    60390| 1084|
+|19    |Iowa                 |B01001_044 |    36715| 1036|
+|19    |Iowa                 |B01001_045 |    49484| 1119|
+|19    |Iowa                 |B01001_046 |    64402|  981|
+|19    |Iowa                 |B01001_047 |    50316|  985|
+|19    |Iowa                 |B01001_048 |    39464|  950|
+|19    |Iowa                 |B01001_049 |    51116| 1102|
+|20    |Kansas               |B01001_001 |  2910652|   NA|
+|20    |Kansas               |B01001_002 |  1450697|  949|
+|20    |Kansas               |B01001_003 |    97911|  433|
+|20    |Kansas               |B01001_004 |   101650| 1527|
+|20    |Kansas               |B01001_005 |   103190| 1537|
+|20    |Kansas               |B01001_006 |    61186|  455|
+|20    |Kansas               |B01001_007 |    41830|  538|
+|20    |Kansas               |B01001_008 |    24281| 1017|
+|20    |Kansas               |B01001_009 |    24886| 1396|
+|20    |Kansas               |B01001_010 |    65199| 1537|
+|20    |Kansas               |B01001_011 |   100285|  550|
+|20    |Kansas               |B01001_012 |    96321|  563|
+|20    |Kansas               |B01001_013 |    93812| 1515|
+|20    |Kansas               |B01001_014 |    85149| 1611|
+|20    |Kansas               |B01001_015 |    84321|  560|
+|20    |Kansas               |B01001_016 |    88198|  486|
+|20    |Kansas               |B01001_017 |    94711| 1427|
+|20    |Kansas               |B01001_018 |    35324| 1023|
+|20    |Kansas               |B01001_019 |    51647| 1379|
+|20    |Kansas               |B01001_020 |    30679|  922|
+|20    |Kansas               |B01001_021 |    41036|  974|
+|20    |Kansas               |B01001_022 |    49995|  988|
+|20    |Kansas               |B01001_023 |    33707|  746|
+|20    |Kansas               |B01001_024 |    23275|  656|
+|20    |Kansas               |B01001_025 |    22104|  671|
+|20    |Kansas               |B01001_026 |  1459955|  949|
+|20    |Kansas               |B01001_027 |    93202|  468|
+|20    |Kansas               |B01001_028 |    98296| 1557|
+|20    |Kansas               |B01001_029 |    97581| 1539|
+|20    |Kansas               |B01001_030 |    58054|  428|
+|20    |Kansas               |B01001_031 |    39974|  623|
+|20    |Kansas               |B01001_032 |    21745| 1039|
+|20    |Kansas               |B01001_033 |    19517| 1022|
+|20    |Kansas               |B01001_034 |    59871| 1327|
+|20    |Kansas               |B01001_035 |    92836|  452|
+|20    |Kansas               |B01001_036 |    93513|  545|
+|20    |Kansas               |B01001_037 |    91887| 1482|
+|20    |Kansas               |B01001_038 |    82465| 1389|
+|20    |Kansas               |B01001_039 |    83230|  463|
+|20    |Kansas               |B01001_040 |    89464|  449|
+|20    |Kansas               |B01001_041 |    96262| 1377|
+|20    |Kansas               |B01001_042 |    38423| 1082|
+|20    |Kansas               |B01001_043 |    55104| 1242|
+|20    |Kansas               |B01001_044 |    32783|  853|
+|20    |Kansas               |B01001_045 |    43197|  944|
+|20    |Kansas               |B01001_046 |    56635| 1094|
+|20    |Kansas               |B01001_047 |    42908|  893|
+|20    |Kansas               |B01001_048 |    32705|  767|
+|20    |Kansas               |B01001_049 |    40303|  958|
+|21    |Kentucky             |B01001_001 |  4449052|   NA|
+|21    |Kentucky             |B01001_002 |  2190922| 1184|
+|21    |Kentucky             |B01001_003 |   140962|  723|
+|21    |Kentucky             |B01001_004 |   141685| 1794|
+|21    |Kentucky             |B01001_005 |   146827| 1764|
+|21    |Kentucky             |B01001_006 |    88702|  636|
+|21    |Kentucky             |B01001_007 |    59899|  791|
+|21    |Kentucky             |B01001_008 |    34221| 1512|
+|21    |Kentucky             |B01001_009 |    31431| 1389|
+|21    |Kentucky             |B01001_010 |    91799| 1779|
+|21    |Kentucky             |B01001_011 |   152781|  724|
+|21    |Kentucky             |B01001_012 |   138799|  734|
+|21    |Kentucky             |B01001_013 |   137791| 1906|
+|21    |Kentucky             |B01001_014 |   138491| 1902|
+|21    |Kentucky             |B01001_015 |   141754|  569|
+|21    |Kentucky             |B01001_016 |   146884|  639|
+|21    |Kentucky             |B01001_017 |   148696| 1941|
+|21    |Kentucky             |B01001_018 |    57212| 1472|
+|21    |Kentucky             |B01001_019 |    79744| 1726|
+|21    |Kentucky             |B01001_020 |    48523| 1190|
+|21    |Kentucky             |B01001_021 |    66129| 1238|
+|21    |Kentucky             |B01001_022 |    83711| 1209|
+|21    |Kentucky             |B01001_023 |    55925|  952|
+|21    |Kentucky             |B01001_024 |    33676|  974|
+|21    |Kentucky             |B01001_025 |    25280|  807|
+|21    |Kentucky             |B01001_026 |  2258130| 1184|
+|21    |Kentucky             |B01001_027 |   133630|  657|
+|21    |Kentucky             |B01001_028 |   133781| 1790|
+|21    |Kentucky             |B01001_029 |   140525| 1701|
+|21    |Kentucky             |B01001_030 |    83194|  465|
+|21    |Kentucky             |B01001_031 |    58441|  810|
+|21    |Kentucky             |B01001_032 |    32853| 1474|
+|21    |Kentucky             |B01001_033 |    30181| 1236|
+|21    |Kentucky             |B01001_034 |    81828| 1783|
+|21    |Kentucky             |B01001_035 |   148803|  653|
+|21    |Kentucky             |B01001_036 |   137184|  727|
+|21    |Kentucky             |B01001_037 |   140255| 1761|
+|21    |Kentucky             |B01001_038 |   136893| 1806|
+|21    |Kentucky             |B01001_039 |   143559|  548|
+|21    |Kentucky             |B01001_040 |   152592|  607|
+|21    |Kentucky             |B01001_041 |   157802| 1950|
+|21    |Kentucky             |B01001_042 |    62920| 1440|
+|21    |Kentucky             |B01001_043 |    86795| 1450|
+|21    |Kentucky             |B01001_044 |    53014|  971|
+|21    |Kentucky             |B01001_045 |    74726| 1268|
+|21    |Kentucky             |B01001_046 |    98301| 1340|
+|21    |Kentucky             |B01001_047 |    69864| 1245|
+|21    |Kentucky             |B01001_048 |    49954| 1125|
+|21    |Kentucky             |B01001_049 |    51035| 1358|
+|22    |Louisiana            |B01001_001 |  4664362|   NA|
+|22    |Louisiana            |B01001_002 |  2278986| 1162|
+|22    |Louisiana            |B01001_003 |   156310|  573|
+|22    |Louisiana            |B01001_004 |   153422| 2162|
+|22    |Louisiana            |B01001_005 |   159808| 2262|
+|22    |Louisiana            |B01001_006 |    92871|  520|
+|22    |Louisiana            |B01001_007 |    61301|  907|
+|22    |Louisiana            |B01001_008 |    35386| 1581|
+|22    |Louisiana            |B01001_009 |    33176| 1362|
+|22    |Louisiana            |B01001_010 |    92537| 1909|
+|22    |Louisiana            |B01001_011 |   171712|  826|
+|22    |Louisiana            |B01001_012 |   162436|  855|
+|22    |Louisiana            |B01001_013 |   154901| 2365|
+|22    |Louisiana            |B01001_014 |   132464| 2365|
+|22    |Louisiana            |B01001_015 |   135297|  771|
+|22    |Louisiana            |B01001_016 |   143590|  699|
+|22    |Louisiana            |B01001_017 |   147336| 1985|
+|22    |Louisiana            |B01001_018 |    58912| 1774|
+|22    |Louisiana            |B01001_019 |    81771| 1702|
+|22    |Louisiana            |B01001_020 |    48096| 1247|
+|22    |Louisiana            |B01001_021 |    65010| 1354|
+|22    |Louisiana            |B01001_022 |    80297| 1511|
+|22    |Louisiana            |B01001_023 |    53635| 1083|
+|22    |Louisiana            |B01001_024 |    33329| 1075|
+|22    |Louisiana            |B01001_025 |    25389|  852|
+|22    |Louisiana            |B01001_026 |  2385376| 1162|
+|22    |Louisiana            |B01001_027 |   151125|  606|
+|22    |Louisiana            |B01001_028 |   151083| 2228|
+|22    |Louisiana            |B01001_029 |   149049| 2231|
+|22    |Louisiana            |B01001_030 |    89682|  532|
+|22    |Louisiana            |B01001_031 |    56468|  705|
+|22    |Louisiana            |B01001_032 |    34244| 1483|
+|22    |Louisiana            |B01001_033 |    31734| 1491|
+|22    |Louisiana            |B01001_034 |    91013| 1866|
+|22    |Louisiana            |B01001_035 |   171239|  675|
+|22    |Louisiana            |B01001_036 |   163826|  462|
+|22    |Louisiana            |B01001_037 |   155994| 2310|
+|22    |Louisiana            |B01001_038 |   138195| 2346|
+|22    |Louisiana            |B01001_039 |   142177|  558|
+|22    |Louisiana            |B01001_040 |   153207|  495|
+|22    |Louisiana            |B01001_041 |   160256| 1912|
+|22    |Louisiana            |B01001_042 |    64284| 1595|
+|22    |Louisiana            |B01001_043 |    89538| 2122|
+|22    |Louisiana            |B01001_044 |    53491| 1432|
+|22    |Louisiana            |B01001_045 |    73377| 1503|
+|22    |Louisiana            |B01001_046 |    96450| 1687|
+|22    |Louisiana            |B01001_047 |    69962| 1390|
+|22    |Louisiana            |B01001_048 |    48337| 1325|
+|22    |Louisiana            |B01001_049 |    50645| 1332|
+|23    |Maine                |B01001_001 |  1335492|   NA|
+|23    |Maine                |B01001_002 |   653942|  422|
+|23    |Maine                |B01001_003 |    33029|  182|
+|23    |Maine                |B01001_004 |    35824| 1095|
+|23    |Maine                |B01001_005 |    37271| 1108|
+|23    |Maine                |B01001_006 |    23704|  202|
+|23    |Maine                |B01001_007 |    16880|  253|
+|23    |Maine                |B01001_008 |     7754|  519|
+|23    |Maine                |B01001_009 |     7813|  523|
+|23    |Maine                |B01001_010 |    23696|  752|
+|23    |Maine                |B01001_011 |    39866|  319|
+|23    |Maine                |B01001_012 |    39039|  311|
+|23    |Maine                |B01001_013 |    37082| 1044|
+|23    |Maine                |B01001_014 |    37841| 1047|
+|23    |Maine                |B01001_015 |    42869|  283|
+|23    |Maine                |B01001_016 |    48164|  296|
+|23    |Maine                |B01001_017 |    52203| 1101|
+|23    |Maine                |B01001_018 |    20194|  878|
+|23    |Maine                |B01001_019 |    29254|  857|
+|23    |Maine                |B01001_020 |    19157|  673|
+|23    |Maine                |B01001_021 |    24983|  842|
+|23    |Maine                |B01001_022 |    31794|  793|
+|23    |Maine                |B01001_023 |    20751|  610|
+|23    |Maine                |B01001_024 |    12848|  531|
+|23    |Maine                |B01001_025 |    11926|  590|
+|23    |Maine                |B01001_026 |   681550|  422|
+|23    |Maine                |B01001_027 |    31006|  249|
+|23    |Maine                |B01001_028 |    33633|  874|
+|23    |Maine                |B01001_029 |    35503|  879|
+|23    |Maine                |B01001_030 |    22528|  236|
+|23    |Maine                |B01001_031 |    16024|  276|
+|23    |Maine                |B01001_032 |     8099|  607|
+|23    |Maine                |B01001_033 |     8143|  673|
+|23    |Maine                |B01001_034 |    20468|  799|
+|23    |Maine                |B01001_035 |    39601|  258|
+|23    |Maine                |B01001_036 |    39689|  310|
+|23    |Maine                |B01001_037 |    38098|  921|
+|23    |Maine                |B01001_038 |    39464|  917|
+|23    |Maine                |B01001_039 |    44472|  292|
+|23    |Maine                |B01001_040 |    49963|  243|
+|23    |Maine                |B01001_041 |    55001|  975|
+|23    |Maine                |B01001_042 |    22302|  738|
+|23    |Maine                |B01001_043 |    31447|  853|
+|23    |Maine                |B01001_044 |    20353|  723|
+|23    |Maine                |B01001_045 |    26662|  728|
+|23    |Maine                |B01001_046 |    35332|  870|
+|23    |Maine                |B01001_047 |    24283|  675|
+|23    |Maine                |B01001_048 |    17362|  715|
+|23    |Maine                |B01001_049 |    22117|  830|
+|24    |Maryland             |B01001_001 |  6018848|   NA|
+|24    |Maryland             |B01001_002 |  2917613|  619|
+|24    |Maryland             |B01001_003 |   186260|  352|
+|24    |Maryland             |B01001_004 |   189641| 2268|
+|24    |Maryland             |B01001_005 |   192189| 2282|
+|24    |Maryland             |B01001_006 |   116720|  337|
+|24    |Maryland             |B01001_007 |    78990|  472|
+|24    |Maryland             |B01001_008 |    40874| 1366|
+|24    |Maryland             |B01001_009 |    38650| 1253|
+|24    |Maryland             |B01001_010 |   115660| 1646|
+|24    |Maryland             |B01001_011 |   208364|  448|
+|24    |Maryland             |B01001_012 |   203171|  480|
+|24    |Maryland             |B01001_013 |   195139| 2025|
+|24    |Maryland             |B01001_014 |   179393| 1984|
+|24    |Maryland             |B01001_015 |   194449|  491|
+|24    |Maryland             |B01001_016 |   206881|  393|
+|24    |Maryland             |B01001_017 |   201069| 2037|
+|24    |Maryland             |B01001_018 |    75917| 1736|
+|24    |Maryland             |B01001_019 |   104117| 1898|
+|24    |Maryland             |B01001_020 |    60018| 1148|
+|24    |Maryland             |B01001_021 |    80510| 1476|
+|24    |Maryland             |B01001_022 |   101508| 1539|
+|24    |Maryland             |B01001_023 |    67085| 1189|
+|24    |Maryland             |B01001_024 |    43476| 1119|
+|24    |Maryland             |B01001_025 |    37532| 1033|
+|24    |Maryland             |B01001_026 |  3101235|  619|
+|24    |Maryland             |B01001_027 |   178608|  377|
+|24    |Maryland             |B01001_028 |   181046| 2385|
+|24    |Maryland             |B01001_029 |   185189| 2438|
+|24    |Maryland             |B01001_030 |   112029|  333|
+|24    |Maryland             |B01001_031 |    76588|  447|
+|24    |Maryland             |B01001_032 |    36441| 1381|
+|24    |Maryland             |B01001_033 |    36488| 1378|
+|24    |Maryland             |B01001_034 |   114467| 1705|
+|24    |Maryland             |B01001_035 |   206536|  359|
+|24    |Maryland             |B01001_036 |   209873|  400|
+|24    |Maryland             |B01001_037 |   205889| 2470|
+|24    |Maryland             |B01001_038 |   189184| 2449|
+|24    |Maryland             |B01001_039 |   209176|  372|
+|24    |Maryland             |B01001_040 |   224806|  306|
+|24    |Maryland             |B01001_041 |   220566| 2218|
+|24    |Maryland             |B01001_042 |    84548| 1868|
+|24    |Maryland             |B01001_043 |   117252| 1781|
+|24    |Maryland             |B01001_044 |    70092| 1562|
+|24    |Maryland             |B01001_045 |    94549| 1362|
+|24    |Maryland             |B01001_046 |   123760| 1797|
+|24    |Maryland             |B01001_047 |    89871| 1369|
+|24    |Maryland             |B01001_048 |    61855| 1216|
+|24    |Maryland             |B01001_049 |    72422| 1280|
+|25    |Massachusetts        |B01001_001 |  6850553|   NA|
+|25    |Massachusetts        |B01001_002 |  3324207|  463|
+|25    |Massachusetts        |B01001_003 |   184591|  280|
+|25    |Massachusetts        |B01001_004 |   183921| 2307|
+|25    |Massachusetts        |B01001_005 |   204666| 2314|
+|25    |Massachusetts        |B01001_006 |   127189|  342|
+|25    |Massachusetts        |B01001_007 |   102416|  382|
+|25    |Massachusetts        |B01001_008 |    51247| 1543|
+|25    |Massachusetts        |B01001_009 |    49999| 1480|
+|25    |Massachusetts        |B01001_010 |   143312| 1990|
+|25    |Massachusetts        |B01001_011 |   251951|  377|
+|25    |Massachusetts        |B01001_012 |   235460|  334|
+|25    |Massachusetts        |B01001_013 |   208330| 2699|
+|25    |Massachusetts        |B01001_014 |   201918| 2725|
+|25    |Massachusetts        |B01001_015 |   218469|  281|
+|25    |Massachusetts        |B01001_016 |   236953|  269|
+|25    |Massachusetts        |B01001_017 |   234920| 2178|
+|25    |Massachusetts        |B01001_018 |    87693| 1896|
+|25    |Massachusetts        |B01001_019 |   122408| 1742|
+|25    |Massachusetts        |B01001_020 |    71894| 1493|
+|25    |Massachusetts        |B01001_021 |    95531| 1431|
+|25    |Massachusetts        |B01001_022 |   125392| 1690|
+|25    |Massachusetts        |B01001_023 |    79264| 1227|
+|25    |Massachusetts        |B01001_024 |    54353| 1081|
+|25    |Massachusetts        |B01001_025 |    52330| 1240|
+|25    |Massachusetts        |B01001_026 |  3526346|  463|
+|25    |Massachusetts        |B01001_027 |   176425|  271|
+|25    |Massachusetts        |B01001_028 |   181968| 2274|
+|25    |Massachusetts        |B01001_029 |   190991| 2328|
+|25    |Massachusetts        |B01001_030 |   121509|  248|
+|25    |Massachusetts        |B01001_031 |   105744|  425|
+|25    |Massachusetts        |B01001_032 |    50401| 1375|
+|25    |Massachusetts        |B01001_033 |    50068| 1567|
+|25    |Massachusetts        |B01001_034 |   144423| 1902|
+|25    |Massachusetts        |B01001_035 |   248208|  398|
+|25    |Massachusetts        |B01001_036 |   237866|  252|
+|25    |Massachusetts        |B01001_037 |   214195| 2464|
+|25    |Massachusetts        |B01001_038 |   211924| 2425|
+|25    |Massachusetts        |B01001_039 |   232329|  251|
+|25    |Massachusetts        |B01001_040 |   250351|  241|
+|25    |Massachusetts        |B01001_041 |   249462| 2211|
+|25    |Massachusetts        |B01001_042 |    96171| 1724|
+|25    |Massachusetts        |B01001_043 |   135986| 2065|
+|25    |Massachusetts        |B01001_044 |    81362| 1574|
+|25    |Massachusetts        |B01001_045 |   110082| 1707|
+|25    |Massachusetts        |B01001_046 |   148936| 1938|
+|25    |Massachusetts        |B01001_047 |   105241| 1805|
+|25    |Massachusetts        |B01001_048 |    78358| 1539|
+|25    |Massachusetts        |B01001_049 |   104346| 1773|
+|26    |Michigan             |B01001_001 |  9965265|   NA|
+|26    |Michigan             |B01001_002 |  4905240|  848|
+|26    |Michigan             |B01001_003 |   292118|  414|
+|26    |Michigan             |B01001_004 |   303257| 2625|
+|26    |Michigan             |B01001_005 |   318238| 2628|
+|26    |Michigan             |B01001_006 |   200977|  384|
+|26    |Michigan             |B01001_007 |   137171|  451|
+|26    |Michigan             |B01001_008 |    75218| 1758|
+|26    |Michigan             |B01001_009 |    74280| 1682|
+|26    |Michigan             |B01001_010 |   210975| 2178|
+|26    |Michigan             |B01001_011 |   341403|  624|
+|26    |Michigan             |B01001_012 |   301100|  586|
+|26    |Michigan             |B01001_013 |   296034| 2253|
+|26    |Michigan             |B01001_014 |   282649| 2201|
+|26    |Michigan             |B01001_015 |   315149|  463|
+|26    |Michigan             |B01001_016 |   335100|  420|
+|26    |Michigan             |B01001_017 |   349826| 2177|
+|26    |Michigan             |B01001_018 |   138184| 1861|
+|26    |Michigan             |B01001_019 |   190254| 2108|
+|26    |Michigan             |B01001_020 |   115667| 1566|
+|26    |Michigan             |B01001_021 |   152958| 1569|
+|26    |Michigan             |B01001_022 |   192224| 2012|
+|26    |Michigan             |B01001_023 |   128832| 1293|
+|26    |Michigan             |B01001_024 |    82409| 1134|
+|26    |Michigan             |B01001_025 |    71217| 1282|
+|26    |Michigan             |B01001_026 |  5060025|  847|
+|26    |Michigan             |B01001_027 |   278976|  406|
+|26    |Michigan             |B01001_028 |   287808| 2558|
+|26    |Michigan             |B01001_029 |   305096| 2530|
+|26    |Michigan             |B01001_030 |   191408|  379|
+|26    |Michigan             |B01001_031 |   131943|  483|
+|26    |Michigan             |B01001_032 |    71500| 1868|
+|26    |Michigan             |B01001_033 |    71444| 1761|
+|26    |Michigan             |B01001_034 |   201376| 2357|
+|26    |Michigan             |B01001_035 |   327180|  452|
+|26    |Michigan             |B01001_036 |   298092|  513|
+|26    |Michigan             |B01001_037 |   297858| 2100|
+|26    |Michigan             |B01001_038 |   288829| 2203|
+|26    |Michigan             |B01001_039 |   321928|  413|
+|26    |Michigan             |B01001_040 |   345081|  348|
+|26    |Michigan             |B01001_041 |   368182| 2439|
+|26    |Michigan             |B01001_042 |   145389| 2009|
+|26    |Michigan             |B01001_043 |   204899| 2037|
+|26    |Michigan             |B01001_044 |   124491| 1653|
+|26    |Michigan             |B01001_045 |   168528| 1688|
+|26    |Michigan             |B01001_046 |   221549| 1672|
+|26    |Michigan             |B01001_047 |   159336| 1802|
+|26    |Michigan             |B01001_048 |   113276| 1580|
+|26    |Michigan             |B01001_049 |   135856| 1857|
+|27    |Minnesota            |B01001_001 |  5563378|   NA|
+|27    |Minnesota            |B01001_002 |  2770873|  655|
+|27    |Minnesota            |B01001_003 |   180180|  430|
+|27    |Minnesota            |B01001_004 |   186179| 1798|
+|27    |Minnesota            |B01001_005 |   186170| 1789|
+|27    |Minnesota            |B01001_006 |   110623|  371|
+|27    |Minnesota            |B01001_007 |    72410|  668|
+|27    |Minnesota            |B01001_008 |    37386| 1381|
+|27    |Minnesota            |B01001_009 |    36120| 1328|
+|27    |Minnesota            |B01001_010 |   108119| 1775|
+|27    |Minnesota            |B01001_011 |   191022|  575|
+|27    |Minnesota            |B01001_012 |   195106|  457|
+|27    |Minnesota            |B01001_013 |   187712| 1885|
+|27    |Minnesota            |B01001_014 |   165740| 1893|
+|27    |Minnesota            |B01001_015 |   172394|  548|
+|27    |Minnesota            |B01001_016 |   183867|  450|
+|27    |Minnesota            |B01001_017 |   194157| 1663|
+|27    |Minnesota            |B01001_018 |    72577| 1260|
+|27    |Minnesota            |B01001_019 |   102628| 1458|
+|27    |Minnesota            |B01001_020 |    59997|  972|
+|27    |Minnesota            |B01001_021 |    78804| 1284|
+|27    |Minnesota            |B01001_022 |    97641| 1167|
+|27    |Minnesota            |B01001_023 |    67035| 1023|
+|27    |Minnesota            |B01001_024 |    43625|  887|
+|27    |Minnesota            |B01001_025 |    41381|  869|
+|27    |Minnesota            |B01001_026 |  2792505|  655|
+|27    |Minnesota            |B01001_027 |   171484|  377|
+|27    |Minnesota            |B01001_028 |   177681| 1726|
+|27    |Minnesota            |B01001_029 |   178515| 1749|
+|27    |Minnesota            |B01001_030 |   105016|  358|
+|27    |Minnesota            |B01001_031 |    69464|  455|
+|27    |Minnesota            |B01001_032 |    35133| 1284|
+|27    |Minnesota            |B01001_033 |    34639| 1396|
+|27    |Minnesota            |B01001_034 |   107359| 1535|
+|27    |Minnesota            |B01001_035 |   180720|  517|
+|27    |Minnesota            |B01001_036 |   189489|  437|
+|27    |Minnesota            |B01001_037 |   181728| 1736|
+|27    |Minnesota            |B01001_038 |   161897| 1763|
+|27    |Minnesota            |B01001_039 |   168379|  438|
+|27    |Minnesota            |B01001_040 |   184028|  376|
+|27    |Minnesota            |B01001_041 |   199114| 1715|
+|27    |Minnesota            |B01001_042 |    73883| 1196|
+|27    |Minnesota            |B01001_043 |   103761| 1455|
+|27    |Minnesota            |B01001_044 |    62264| 1236|
+|27    |Minnesota            |B01001_045 |    84920| 1441|
+|27    |Minnesota            |B01001_046 |   107113| 1387|
+|27    |Minnesota            |B01001_047 |    80710| 1122|
+|27    |Minnesota            |B01001_048 |    60683| 1076|
+|27    |Minnesota            |B01001_049 |    74525| 1295|
+|28    |Mississippi          |B01001_001 |  2984418|   NA|
+|28    |Mississippi          |B01001_002 |  1447873| 1265|
+|28    |Mississippi          |B01001_003 |    95204|  699|
+|28    |Mississippi          |B01001_004 |   102265| 2034|
+|28    |Mississippi          |B01001_005 |   103765| 2108|
+|28    |Mississippi          |B01001_006 |    63265|  804|
+|28    |Mississippi          |B01001_007 |    44304|  904|
+|28    |Mississippi          |B01001_008 |    22965| 1158|
+|28    |Mississippi          |B01001_009 |    22392| 1342|
+|28    |Mississippi          |B01001_010 |    60701| 1824|
+|28    |Mississippi          |B01001_011 |   101259|  750|
+|28    |Mississippi          |B01001_012 |    89411| 1025|
+|28    |Mississippi          |B01001_013 |    92385| 1949|
+|28    |Mississippi          |B01001_014 |    88087| 1966|
+|28    |Mississippi          |B01001_015 |    88245|  817|
+|28    |Mississippi          |B01001_016 |    91743|  643|
+|28    |Mississippi          |B01001_017 |    93643| 1400|
+|28    |Mississippi          |B01001_018 |    37243| 1136|
+|28    |Mississippi          |B01001_019 |    50738| 1226|
+|28    |Mississippi          |B01001_020 |    30908| 1054|
+|28    |Mississippi          |B01001_021 |    42067| 1171|
+|28    |Mississippi          |B01001_022 |    53727| 1109|
+|28    |Mississippi          |B01001_023 |    37341|  906|
+|28    |Mississippi          |B01001_024 |    20558|  760|
+|28    |Mississippi          |B01001_025 |    15657|  719|
+|28    |Mississippi          |B01001_026 |  1536545| 1265|
+|28    |Mississippi          |B01001_027 |    91443|  685|
+|28    |Mississippi          |B01001_028 |    95132| 2026|
+|28    |Mississippi          |B01001_029 |   102443| 2038|
+|28    |Mississippi          |B01001_030 |    59976|  708|
+|28    |Mississippi          |B01001_031 |    43138|  869|
+|28    |Mississippi          |B01001_032 |    23181| 1205|
+|28    |Mississippi          |B01001_033 |    22132| 1162|
+|28    |Mississippi          |B01001_034 |    56442| 1325|
+|28    |Mississippi          |B01001_035 |   101941|  814|
+|28    |Mississippi          |B01001_036 |    95033|  810|
+|28    |Mississippi          |B01001_037 |    99681| 1804|
+|28    |Mississippi          |B01001_038 |    91147| 1858|
+|28    |Mississippi          |B01001_039 |    94653|  635|
+|28    |Mississippi          |B01001_040 |    98173|  464|
+|28    |Mississippi          |B01001_041 |   103167| 1568|
+|28    |Mississippi          |B01001_042 |    39576| 1354|
+|28    |Mississippi          |B01001_043 |    58523| 1409|
+|28    |Mississippi          |B01001_044 |    34658| 1132|
+|28    |Mississippi          |B01001_045 |    48357| 1073|
+|28    |Mississippi          |B01001_046 |    63956| 1318|
+|28    |Mississippi          |B01001_047 |    46185|  944|
+|28    |Mississippi          |B01001_048 |    33178| 1149|
+|28    |Mississippi          |B01001_049 |    34430|  966|
+|29    |Missouri             |B01001_001 |  6104910|   NA|
+|29    |Missouri             |B01001_002 |  2995725| 1185|
+|29    |Missouri             |B01001_003 |   190266|  693|
+|29    |Missouri             |B01001_004 |   194254| 2173|
+|29    |Missouri             |B01001_005 |   201182| 2227|
+|29    |Missouri             |B01001_006 |   121641|  538|
+|29    |Missouri             |B01001_007 |    82080|  927|
+|29    |Missouri             |B01001_008 |    43926| 1521|
+|29    |Missouri             |B01001_009 |    44133| 1573|
+|29    |Missouri             |B01001_010 |   123433| 2090|
+|29    |Missouri             |B01001_011 |   208704|  929|
+|29    |Missouri             |B01001_012 |   199400|  723|
+|29    |Missouri             |B01001_013 |   194276| 2254|
+|29    |Missouri             |B01001_014 |   172941| 2317|
+|29    |Missouri             |B01001_015 |   182889|  621|
+|29    |Missouri             |B01001_016 |   196184|  630|
+|29    |Missouri             |B01001_017 |   205640| 2145|
+|29    |Missouri             |B01001_018 |    80273| 1709|
+|29    |Missouri             |B01001_019 |   111100| 1835|
+|29    |Missouri             |B01001_020 |    64004| 1445|
+|29    |Missouri             |B01001_021 |    88986| 1322|
+|29    |Missouri             |B01001_022 |   116331| 1441|
+|29    |Missouri             |B01001_023 |    79726| 1381|
+|29    |Missouri             |B01001_024 |    51262| 1229|
+|29    |Missouri             |B01001_025 |    43094| 1184|
+|29    |Missouri             |B01001_026 |  3109185| 1185|
+|29    |Missouri             |B01001_027 |   181304|  559|
+|29    |Missouri             |B01001_028 |   185863| 2387|
+|29    |Missouri             |B01001_029 |   191693| 2477|
+|29    |Missouri             |B01001_030 |   115409|  650|
+|29    |Missouri             |B01001_031 |    76775|  752|
+|29    |Missouri             |B01001_032 |    42157| 1431|
+|29    |Missouri             |B01001_033 |    40495| 1708|
+|29    |Missouri             |B01001_034 |   120250| 1973|
+|29    |Missouri             |B01001_035 |   206547|  662|
+|29    |Missouri             |B01001_036 |   198756|  608|
+|29    |Missouri             |B01001_037 |   192901| 2378|
+|29    |Missouri             |B01001_038 |   178065| 2184|
+|29    |Missouri             |B01001_039 |   188193|  631|
+|29    |Missouri             |B01001_040 |   202661|  563|
+|29    |Missouri             |B01001_041 |   220688| 2140|
+|29    |Missouri             |B01001_042 |    84819| 1487|
+|29    |Missouri             |B01001_043 |   119287| 1562|
+|29    |Missouri             |B01001_044 |    72107| 1380|
+|29    |Missouri             |B01001_045 |   100768| 1799|
+|29    |Missouri             |B01001_046 |   135530| 1722|
+|29    |Missouri             |B01001_047 |   101735| 1487|
+|29    |Missouri             |B01001_048 |    71503| 1298|
+|29    |Missouri             |B01001_049 |    81679| 1613|
+|30    |Montana              |B01001_001 |  1050649|   NA|
+|30    |Montana              |B01001_002 |   528573|  653|
+|30    |Montana              |B01001_003 |    31547|  364|
+|30    |Montana              |B01001_004 |    32638|  856|
+|30    |Montana              |B01001_005 |    33659|  838|
+|30    |Montana              |B01001_006 |    19676|  276|
+|30    |Montana              |B01001_007 |    14175|  479|
+|30    |Montana              |B01001_008 |     8105|  660|
+|30    |Montana              |B01001_009 |     7738|  551|
+|30    |Montana              |B01001_010 |    22426|  850|
+|30    |Montana              |B01001_011 |    34823|  458|
+|30    |Montana              |B01001_012 |    33265|  364|
+|30    |Montana              |B01001_013 |    33553|  983|
+|30    |Montana              |B01001_014 |    30030|  987|
+|30    |Montana              |B01001_015 |    29898|  352|
+|30    |Montana              |B01001_016 |    31863|  293|
+|30    |Montana              |B01001_017 |    35650|  732|
+|30    |Montana              |B01001_018 |    16126|  731|
+|30    |Montana              |B01001_019 |    22223|  702|
+|30    |Montana              |B01001_020 |    14123|  607|
+|30    |Montana              |B01001_021 |    18984|  700|
+|30    |Montana              |B01001_022 |    24134|  791|
+|30    |Montana              |B01001_023 |    16352|  606|
+|30    |Montana              |B01001_024 |     9600|  521|
+|30    |Montana              |B01001_025 |     7985|  486|
+|30    |Montana              |B01001_026 |   522076|  653|
+|30    |Montana              |B01001_027 |    29488|  306|
+|30    |Montana              |B01001_028 |    30578|  875|
+|30    |Montana              |B01001_029 |    32279|  883|
+|30    |Montana              |B01001_030 |    18521|  287|
+|30    |Montana              |B01001_031 |    12570|  448|
+|30    |Montana              |B01001_032 |     6412|  662|
+|30    |Montana              |B01001_033 |     6836|  627|
+|30    |Montana              |B01001_034 |    20706|  949|
+|30    |Montana              |B01001_035 |    32843|  332|
+|30    |Montana              |B01001_036 |    32473|  399|
+|30    |Montana              |B01001_037 |    32484|  781|
+|30    |Montana              |B01001_038 |    28348|  903|
+|30    |Montana              |B01001_039 |    28995|  340|
+|30    |Montana              |B01001_040 |    32157|  273|
+|30    |Montana              |B01001_041 |    38418|  740|
+|30    |Montana              |B01001_042 |    16481|  587|
+|30    |Montana              |B01001_043 |    22954|  622|
+|30    |Montana              |B01001_044 |    14034|  645|
+|30    |Montana              |B01001_045 |    19055|  718|
+|30    |Montana              |B01001_046 |    24299|  711|
+|30    |Montana              |B01001_047 |    17566|  620|
+|30    |Montana              |B01001_048 |    11504|  600|
+|30    |Montana              |B01001_049 |    13075|  558|
+|31    |Nebraska             |B01001_001 |  1914571|   NA|
+|31    |Nebraska             |B01001_002 |   954950|  616|
+|31    |Nebraska             |B01001_003 |    67670|  334|
+|31    |Nebraska             |B01001_004 |    67575| 1179|
+|31    |Nebraska             |B01001_005 |    68388| 1164|
+|31    |Nebraska             |B01001_006 |    39705|  338|
+|31    |Nebraska             |B01001_007 |    27165|  447|
+|31    |Nebraska             |B01001_008 |    14002|  780|
+|31    |Nebraska             |B01001_009 |    14687|  790|
+|31    |Nebraska             |B01001_010 |    41010| 1056|
+|31    |Nebraska             |B01001_011 |    64937|  321|
+|31    |Nebraska             |B01001_012 |    65882|  386|
+|31    |Nebraska             |B01001_013 |    63955|  984|
+|31    |Nebraska             |B01001_014 |    56249| 1089|
+|31    |Nebraska             |B01001_015 |    55272|  380|
+|31    |Nebraska             |B01001_016 |    57660|  255|
+|31    |Nebraska             |B01001_017 |    60950|  883|
+|31    |Nebraska             |B01001_018 |    24876|  662|
+|31    |Nebraska             |B01001_019 |    33321|  852|
+|31    |Nebraska             |B01001_020 |    20335|  725|
+|31    |Nebraska             |B01001_021 |    25915|  640|
+|31    |Nebraska             |B01001_022 |    32915|  670|
+|31    |Nebraska             |B01001_023 |    22838|  591|
+|31    |Nebraska             |B01001_024 |    15332|  617|
+|31    |Nebraska             |B01001_025 |    14311|  507|
+|31    |Nebraska             |B01001_026 |   959621|  616|
+|31    |Nebraska             |B01001_027 |    63803|  331|
+|31    |Nebraska             |B01001_028 |    64665| 1087|
+|31    |Nebraska             |B01001_029 |    64673| 1016|
+|31    |Nebraska             |B01001_030 |    37628|  286|
+|31    |Nebraska             |B01001_031 |    25704|  350|
+|31    |Nebraska             |B01001_032 |    14261|  780|
+|31    |Nebraska             |B01001_033 |    13655|  691|
+|31    |Nebraska             |B01001_034 |    38954|  973|
+|31    |Nebraska             |B01001_035 |    61260|  381|
+|31    |Nebraska             |B01001_036 |    63018|  346|
+|31    |Nebraska             |B01001_037 |    63024| 1077|
+|31    |Nebraska             |B01001_038 |    53222| 1080|
+|31    |Nebraska             |B01001_039 |    53509|  300|
+|31    |Nebraska             |B01001_040 |    57268|  280|
+|31    |Nebraska             |B01001_041 |    62693|  980|
+|31    |Nebraska             |B01001_042 |    24096|  789|
+|31    |Nebraska             |B01001_043 |    35765|  714|
+|31    |Nebraska             |B01001_044 |    20777|  769|
+|31    |Nebraska             |B01001_045 |    28919|  711|
+|31    |Nebraska             |B01001_046 |    36678|  805|
+|31    |Nebraska             |B01001_047 |    27024|  745|
+|31    |Nebraska             |B01001_048 |    21879|  772|
+|31    |Nebraska             |B01001_049 |    27146|  752|
+|32    |Nevada               |B01001_001 |  2972382|   NA|
+|32    |Nevada               |B01001_002 |  1491294|  419|
+|32    |Nevada               |B01001_003 |    93629|  206|
+|32    |Nevada               |B01001_004 |    97101| 1706|
+|32    |Nevada               |B01001_005 |    98880| 1634|
+|32    |Nevada               |B01001_006 |    58234|  324|
+|32    |Nevada               |B01001_007 |    33923|  213|
+|32    |Nevada               |B01001_008 |    19265|  986|
+|32    |Nevada               |B01001_009 |    19123| 1114|
+|32    |Nevada               |B01001_010 |    54331| 1215|
+|32    |Nevada               |B01001_011 |   112293|  328|
+|32    |Nevada               |B01001_012 |   108898|  361|
+|32    |Nevada               |B01001_013 |   102589| 1679|
+|32    |Nevada               |B01001_014 |    97382| 1691|
+|32    |Nevada               |B01001_015 |   100303|  302|
+|32    |Nevada               |B01001_016 |    98246|  234|
+|32    |Nevada               |B01001_017 |    95045| 1386|
+|32    |Nevada               |B01001_018 |    35020| 1158|
+|32    |Nevada               |B01001_019 |    50948| 1291|
+|32    |Nevada               |B01001_020 |    31233|  972|
+|32    |Nevada               |B01001_021 |    44767| 1272|
+|32    |Nevada               |B01001_022 |    60382| 1189|
+|32    |Nevada               |B01001_023 |    39973| 1009|
+|32    |Nevada               |B01001_024 |    23489|  930|
+|32    |Nevada               |B01001_025 |    16240|  842|
+|32    |Nevada               |B01001_026 |  1481088|  419|
+|32    |Nevada               |B01001_027 |    89905|  317|
+|32    |Nevada               |B01001_028 |    91641| 1485|
+|32    |Nevada               |B01001_029 |    96296| 1494|
+|32    |Nevada               |B01001_030 |    55356|  243|
+|32    |Nevada               |B01001_031 |    31178|  237|
+|32    |Nevada               |B01001_032 |    18116|  947|
+|32    |Nevada               |B01001_033 |    17439|  974|
+|32    |Nevada               |B01001_034 |    53270| 1225|
+|32    |Nevada               |B01001_035 |   108337|  204|
+|32    |Nevada               |B01001_036 |   104137|  264|
+|32    |Nevada               |B01001_037 |    98926| 1714|
+|32    |Nevada               |B01001_038 |    96534| 1680|
+|32    |Nevada               |B01001_039 |    97298|  253|
+|32    |Nevada               |B01001_040 |    94919|  223|
+|32    |Nevada               |B01001_041 |    95024| 1300|
+|32    |Nevada               |B01001_042 |    37568| 1096|
+|32    |Nevada               |B01001_043 |    54047| 1171|
+|32    |Nevada               |B01001_044 |    34975| 1147|
+|32    |Nevada               |B01001_045 |    47659| 1099|
+|32    |Nevada               |B01001_046 |    64618| 1224|
+|32    |Nevada               |B01001_047 |    43514|  985|
+|32    |Nevada               |B01001_048 |    26033|  985|
+|32    |Nevada               |B01001_049 |    24298|  900|
+|33    |New Hampshire        |B01001_001 |  1348124|   NA|
+|33    |New Hampshire        |B01001_002 |   667689|  424|
+|33    |New Hampshire        |B01001_003 |    32629|  258|
+|33    |New Hampshire        |B01001_004 |    35913|  908|
+|33    |New Hampshire        |B01001_005 |    39131|  965|
+|33    |New Hampshire        |B01001_006 |    25339|  222|
+|33    |New Hampshire        |B01001_007 |    19082|  326|
+|33    |New Hampshire        |B01001_008 |     9831|  627|
+|33    |New Hampshire        |B01001_009 |     8612|  617|
+|33    |New Hampshire        |B01001_010 |    27797|  929|
+|33    |New Hampshire        |B01001_011 |    43695|  312|
+|33    |New Hampshire        |B01001_012 |    41600|  306|
+|33    |New Hampshire        |B01001_013 |    38159|  994|
+|33    |New Hampshire        |B01001_014 |    38708| 1005|
+|33    |New Hampshire        |B01001_015 |    45627|  277|
+|33    |New Hampshire        |B01001_016 |    51219|  279|
+|33    |New Hampshire        |B01001_017 |    54806| 1090|
+|33    |New Hampshire        |B01001_018 |    20033|  704|
+|33    |New Hampshire        |B01001_019 |    27835|  873|
+|33    |New Hampshire        |B01001_020 |    17117|  697|
+|33    |New Hampshire        |B01001_021 |    22820|  608|
+|33    |New Hampshire        |B01001_022 |    28423|  778|
+|33    |New Hampshire        |B01001_023 |    17556|  649|
+|33    |New Hampshire        |B01001_024 |    11230|  534|
+|33    |New Hampshire        |B01001_025 |    10527|  581|
+|33    |New Hampshire        |B01001_026 |   680435|  424|
+|33    |New Hampshire        |B01001_027 |    31214|  232|
+|33    |New Hampshire        |B01001_028 |    34231|  901|
+|33    |New Hampshire        |B01001_029 |    37652|  947|
+|33    |New Hampshire        |B01001_030 |    23855|  211|
+|33    |New Hampshire        |B01001_031 |    18886|  301|
+|33    |New Hampshire        |B01001_032 |     9038|  611|
+|33    |New Hampshire        |B01001_033 |     8912|  638|
+|33    |New Hampshire        |B01001_034 |    25665|  792|
+|33    |New Hampshire        |B01001_035 |    39749|  278|
+|33    |New Hampshire        |B01001_036 |    40149|  266|
+|33    |New Hampshire        |B01001_037 |    38420|  942|
+|33    |New Hampshire        |B01001_038 |    39415|  934|
+|33    |New Hampshire        |B01001_039 |    46274|  175|
+|33    |New Hampshire        |B01001_040 |    52522|  232|
+|33    |New Hampshire        |B01001_041 |    56456| 1055|
+|33    |New Hampshire        |B01001_042 |    21345|  776|
+|33    |New Hampshire        |B01001_043 |    28530|  864|
+|33    |New Hampshire        |B01001_044 |    17695|  619|
+|33    |New Hampshire        |B01001_045 |    24218|  790|
+|33    |New Hampshire        |B01001_046 |    31183|  888|
+|33    |New Hampshire        |B01001_047 |    21343|  725|
+|33    |New Hampshire        |B01001_048 |    14990|  673|
+|33    |New Hampshire        |B01001_049 |    18693|  619|
+|34    |New Jersey           |B01001_001 |  8878503|   NA|
+|34    |New Jersey           |B01001_002 |  4335032|  594|
+|34    |New Jersey           |B01001_003 |   265206|  229|
+|34    |New Jersey           |B01001_004 |   272935| 2457|
+|34    |New Jersey           |B01001_005 |   286319| 2442|
+|34    |New Jersey           |B01001_006 |   176704|  201|
+|34    |New Jersey           |B01001_007 |   111239|  295|
+|34    |New Jersey           |B01001_008 |    55792| 1905|
+|34    |New Jersey           |B01001_009 |    58466| 1737|
+|34    |New Jersey           |B01001_010 |   168892| 2267|
+|34    |New Jersey           |B01001_011 |   291657|  298|
+|34    |New Jersey           |B01001_012 |   286134|  251|
+|34    |New Jersey           |B01001_013 |   283984| 3238|
+|34    |New Jersey           |B01001_014 |   279559| 3199|
+|34    |New Jersey           |B01001_015 |   298842|  258|
+|34    |New Jersey           |B01001_016 |   314920|  255|
+|34    |New Jersey           |B01001_017 |   308338| 2541|
+|34    |New Jersey           |B01001_018 |   115872| 2156|
+|34    |New Jersey           |B01001_019 |   154410| 2001|
+|34    |New Jersey           |B01001_020 |    88911| 1587|
+|34    |New Jersey           |B01001_021 |   120671| 1591|
+|34    |New Jersey           |B01001_022 |   154812| 1724|
+|34    |New Jersey           |B01001_023 |   105954| 1720|
+|34    |New Jersey           |B01001_024 |    69202| 1446|
+|34    |New Jersey           |B01001_025 |    66213| 1516|
+|34    |New Jersey           |B01001_026 |  4543471|  594|
+|34    |New Jersey           |B01001_027 |   254318|  244|
+|34    |New Jersey           |B01001_028 |   263429| 2543|
+|34    |New Jersey           |B01001_029 |   273737| 2578|
+|34    |New Jersey           |B01001_030 |   168873|  246|
+|34    |New Jersey           |B01001_031 |   103627|  351|
+|34    |New Jersey           |B01001_032 |    53432| 1621|
+|34    |New Jersey           |B01001_033 |    53171| 1854|
+|34    |New Jersey           |B01001_034 |   165984| 2115|
+|34    |New Jersey           |B01001_035 |   278157|  278|
+|34    |New Jersey           |B01001_036 |   282312|  243|
+|34    |New Jersey           |B01001_037 |   291669| 2616|
+|34    |New Jersey           |B01001_038 |   282116| 2615|
+|34    |New Jersey           |B01001_039 |   313033|  295|
+|34    |New Jersey           |B01001_040 |   332796|  284|
+|34    |New Jersey           |B01001_041 |   328726| 2540|
+|34    |New Jersey           |B01001_042 |   126402| 2222|
+|34    |New Jersey           |B01001_043 |   167167| 2524|
+|34    |New Jersey           |B01001_044 |   101045| 1858|
+|34    |New Jersey           |B01001_045 |   139941| 1982|
+|34    |New Jersey           |B01001_046 |   188530| 2019|
+|34    |New Jersey           |B01001_047 |   140178| 2230|
+|34    |New Jersey           |B01001_048 |   103495| 1826|
+|34    |New Jersey           |B01001_049 |   131333| 1885|
+|35    |New Mexico           |B01001_001 |  2092454|   NA|
+|35    |New Mexico           |B01001_002 |  1036190|  693|
+|35    |New Mexico           |B01001_003 |    64429|  550|
+|35    |New Mexico           |B01001_004 |    68180| 1522|
+|35    |New Mexico           |B01001_005 |    74163| 1383|
+|35    |New Mexico           |B01001_006 |    42757|  383|
+|35    |New Mexico           |B01001_007 |    28875|  403|
+|35    |New Mexico           |B01001_008 |    14284| 1009|
+|35    |New Mexico           |B01001_009 |    16466| 1027|
+|35    |New Mexico           |B01001_010 |    44819| 1202|
+|35    |New Mexico           |B01001_011 |    73483|  488|
+|35    |New Mexico           |B01001_012 |    71354|  467|
+|35    |New Mexico           |B01001_013 |    67520| 1295|
+|35    |New Mexico           |B01001_014 |    58010| 1290|
+|35    |New Mexico           |B01001_015 |    59118|  366|
+|35    |New Mexico           |B01001_016 |    61493|  275|
+|35    |New Mexico           |B01001_017 |    65950| 1126|
+|35    |New Mexico           |B01001_018 |    26830| 1064|
+|35    |New Mexico           |B01001_019 |    37532| 1043|
+|35    |New Mexico           |B01001_020 |    23676|  938|
+|35    |New Mexico           |B01001_021 |    31957|  934|
+|35    |New Mexico           |B01001_022 |    43623| 1044|
+|35    |New Mexico           |B01001_023 |    28479|  865|
+|35    |New Mexico           |B01001_024 |    18490|  806|
+|35    |New Mexico           |B01001_025 |    14702|  800|
+|35    |New Mexico           |B01001_026 |  1056264|  693|
+|35    |New Mexico           |B01001_027 |    61721|  412|
+|35    |New Mexico           |B01001_028 |    67207| 1616|
+|35    |New Mexico           |B01001_029 |    69317| 1537|
+|35    |New Mexico           |B01001_030 |    40702|  353|
+|35    |New Mexico           |B01001_031 |    27031|  434|
+|35    |New Mexico           |B01001_032 |    14811|  929|
+|35    |New Mexico           |B01001_033 |    13727|  941|
+|35    |New Mexico           |B01001_034 |    40594| 1238|
+|35    |New Mexico           |B01001_035 |    69087|  499|
+|35    |New Mexico           |B01001_036 |    67679|  452|
+|35    |New Mexico           |B01001_037 |    63689| 1167|
+|35    |New Mexico           |B01001_038 |    60213| 1235|
+|35    |New Mexico           |B01001_039 |    60330|  458|
+|35    |New Mexico           |B01001_040 |    65346|  329|
+|35    |New Mexico           |B01001_041 |    71852| 1191|
+|35    |New Mexico           |B01001_042 |    28559|  977|
+|35    |New Mexico           |B01001_043 |    42639| 1199|
+|35    |New Mexico           |B01001_044 |    26525|  910|
+|35    |New Mexico           |B01001_045 |    36933| 1071|
+|35    |New Mexico           |B01001_046 |    47410| 1144|
+|35    |New Mexico           |B01001_047 |    33765|  927|
+|35    |New Mexico           |B01001_048 |    22903|  857|
+|35    |New Mexico           |B01001_049 |    24224|  859|
+|36    |New York             |B01001_001 | 19572319|   NA|
+|36    |New York             |B01001_002 |  9501001|  981|
+|36    |New York             |B01001_003 |   590459|  578|
+|36    |New York             |B01001_004 |   564601| 3604|
+|36    |New York             |B01001_005 |   586741| 3642|
+|36    |New York             |B01001_006 |   359109|  494|
+|36    |New York             |B01001_007 |   256892|  826|
+|36    |New York             |B01001_008 |   136233| 2835|
+|36    |New York             |B01001_009 |   131364| 2304|
+|36    |New York             |B01001_010 |   395860| 3568|
+|36    |New York             |B01001_011 |   741840|  724|
+|36    |New York             |B01001_012 |   690784|  748|
+|36    |New York             |B01001_013 |   619075| 4187|
+|36    |New York             |B01001_014 |   577791| 4185|
+|36    |New York             |B01001_015 |   617208|  757|
+|36    |New York             |B01001_016 |   652591|  473|
+|36    |New York             |B01001_017 |   646211| 4189|
+|36    |New York             |B01001_018 |   250699| 3194|
+|36    |New York             |B01001_019 |   335279| 3607|
+|36    |New York             |B01001_020 |   201650| 2355|
+|36    |New York             |B01001_021 |   264453| 2585|
+|36    |New York             |B01001_022 |   343853| 2934|
+|36    |New York             |B01001_023 |   233901| 2761|
+|36    |New York             |B01001_024 |   155772| 2163|
+|36    |New York             |B01001_025 |   148635| 2628|
+|36    |New York             |B01001_026 | 10071318|  981|
+|36    |New York             |B01001_027 |   563742|  461|
+|36    |New York             |B01001_028 |   538811| 3793|
+|36    |New York             |B01001_029 |   561652| 3813|
+|36    |New York             |B01001_030 |   343384|  399|
+|36    |New York             |B01001_031 |   251407|  967|
+|36    |New York             |B01001_032 |   132410| 2433|
+|36    |New York             |B01001_033 |   130917| 2530|
+|36    |New York             |B01001_034 |   396800| 3499|
+|36    |New York             |B01001_035 |   739676|  649|
+|36    |New York             |B01001_036 |   693650|  590|
+|36    |New York             |B01001_037 |   637305| 3688|
+|36    |New York             |B01001_038 |   598836| 3624|
+|36    |New York             |B01001_039 |   648524|  574|
+|36    |New York             |B01001_040 |   694758|  497|
+|36    |New York             |B01001_041 |   692335| 3840|
+|36    |New York             |B01001_042 |   278508| 2825|
+|36    |New York             |B01001_043 |   370561| 3146|
+|36    |New York             |B01001_044 |   228867| 2850|
+|36    |New York             |B01001_045 |   310496| 2802|
+|36    |New York             |B01001_046 |   421102| 3384|
+|36    |New York             |B01001_047 |   312390| 2793|
+|36    |New York             |B01001_048 |   232280| 2495|
+|36    |New York             |B01001_049 |   292907| 2862|
+|37    |North Carolina       |B01001_001 | 10264876|   NA|
+|37    |North Carolina       |B01001_002 |  4996638| 1311|
+|37    |North Carolina       |B01001_003 |   309721|  850|
+|37    |North Carolina       |B01001_004 |   320727| 3325|
+|37    |North Carolina       |B01001_005 |   339855| 3344|
+|37    |North Carolina       |B01001_006 |   202556|  762|
+|37    |North Carolina       |B01001_007 |   145319|  956|
+|37    |North Carolina       |B01001_008 |    76660| 1985|
+|37    |North Carolina       |B01001_009 |    75374| 2123|
+|37    |North Carolina       |B01001_010 |   211168| 2712|
+|37    |North Carolina       |B01001_011 |   352512|  888|
+|37    |North Carolina       |B01001_012 |   322380|  829|
+|37    |North Carolina       |B01001_013 |   312212| 3149|
+|37    |North Carolina       |B01001_014 |   320863| 2946|
+|37    |North Carolina       |B01001_015 |   337645|  920|
+|37    |North Carolina       |B01001_016 |   333436|  690|
+|37    |North Carolina       |B01001_017 |   326968| 2922|
+|37    |North Carolina       |B01001_018 |   125115| 2119|
+|37    |North Carolina       |B01001_019 |   172944| 2158|
+|37    |North Carolina       |B01001_020 |   107801| 2024|
+|37    |North Carolina       |B01001_021 |   148672| 2046|
+|37    |North Carolina       |B01001_022 |   192963| 2214|
+|37    |North Carolina       |B01001_023 |   126694| 1842|
+|37    |North Carolina       |B01001_024 |    75679| 1514|
+|37    |North Carolina       |B01001_025 |    59374| 1689|
+|37    |North Carolina       |B01001_026 |  5268238| 1311|
+|37    |North Carolina       |B01001_027 |   295404|  823|
+|37    |North Carolina       |B01001_028 |   309820| 3158|
+|37    |North Carolina       |B01001_029 |   323224| 2980|
+|37    |North Carolina       |B01001_030 |   195307|  750|
+|37    |North Carolina       |B01001_031 |   141496| 1121|
+|37    |North Carolina       |B01001_032 |    69495| 2274|
+|37    |North Carolina       |B01001_033 |    66558| 2201|
+|37    |North Carolina       |B01001_034 |   198333| 2259|
+|37    |North Carolina       |B01001_035 |   353987|  809|
+|37    |North Carolina       |B01001_036 |   333698|  681|
+|37    |North Carolina       |B01001_037 |   333595| 3054|
+|37    |North Carolina       |B01001_038 |   331363| 2823|
+|37    |North Carolina       |B01001_039 |   352655|  784|
+|37    |North Carolina       |B01001_040 |   352545|  522|
+|37    |North Carolina       |B01001_041 |   356872| 2871|
+|37    |North Carolina       |B01001_042 |   138994| 2287|
+|37    |North Carolina       |B01001_043 |   198062| 2518|
+|37    |North Carolina       |B01001_044 |   123508| 1803|
+|37    |North Carolina       |B01001_045 |   171720| 2412|
+|37    |North Carolina       |B01001_046 |   232130| 2200|
+|37    |North Carolina       |B01001_047 |   162049| 2028|
+|37    |North Carolina       |B01001_048 |   111800| 1888|
+|37    |North Carolina       |B01001_049 |   115623| 1957|
+|38    |North Dakota         |B01001_001 |   756717|   NA|
+|38    |North Dakota         |B01001_002 |   387555|  729|
+|38    |North Dakota         |B01001_003 |    27209|  322|
+|38    |North Dakota         |B01001_004 |    25724|  808|
+|38    |North Dakota         |B01001_005 |    23978|  777|
+|38    |North Dakota         |B01001_006 |    13221|  329|
+|38    |North Dakota         |B01001_007 |    11533|  320|
+|38    |North Dakota         |B01001_008 |     6981|  553|
+|38    |North Dakota         |B01001_009 |     6899|  662|
+|38    |North Dakota         |B01001_010 |    20183|  850|
+|38    |North Dakota         |B01001_011 |    33164|  352|
+|38    |North Dakota         |B01001_012 |    29494|  363|
+|38    |North Dakota         |B01001_013 |    25292|  895|
+|38    |North Dakota         |B01001_014 |    21329|  854|
+|38    |North Dakota         |B01001_015 |    20505|  418|
+|38    |North Dakota         |B01001_016 |    22417|  363|
+|38    |North Dakota         |B01001_017 |    24779|  568|
+|38    |North Dakota         |B01001_018 |    10165|  496|
+|38    |North Dakota         |B01001_019 |    13213|  565|
+|38    |North Dakota         |B01001_020 |     8113|  470|
+|38    |North Dakota         |B01001_021 |     9910|  426|
+|38    |North Dakota         |B01001_022 |    12416|  448|
+|38    |North Dakota         |B01001_023 |     8735|  396|
+|38    |North Dakota         |B01001_024 |     5897|  337|
+|38    |North Dakota         |B01001_025 |     6398|  376|
+|38    |North Dakota         |B01001_026 |   369162|  729|
+|38    |North Dakota         |B01001_027 |    26006|  368|
+|38    |North Dakota         |B01001_028 |    24941|  679|
+|38    |North Dakota         |B01001_029 |    22050|  736|
+|38    |North Dakota         |B01001_030 |    12615|  361|
+|38    |North Dakota         |B01001_031 |     9956|  290|
+|38    |North Dakota         |B01001_032 |     5515|  573|
+|38    |North Dakota         |B01001_033 |     5600|  520|
+|38    |North Dakota         |B01001_034 |    19238|  681|
+|38    |North Dakota         |B01001_035 |    28212|  506|
+|38    |North Dakota         |B01001_036 |    24609|  344|
+|38    |North Dakota         |B01001_037 |    22271|  721|
+|38    |North Dakota         |B01001_038 |    19254|  668|
+|38    |North Dakota         |B01001_039 |    19175|  313|
+|38    |North Dakota         |B01001_040 |    21413|  295|
+|38    |North Dakota         |B01001_041 |    24458|  663|
+|38    |North Dakota         |B01001_042 |     9186|  486|
+|38    |North Dakota         |B01001_043 |    13249|  544|
+|38    |North Dakota         |B01001_044 |     7562|  390|
+|38    |North Dakota         |B01001_045 |     9907|  510|
+|38    |North Dakota         |B01001_046 |    13331|  423|
+|38    |North Dakota         |B01001_047 |    10133|  496|
+|38    |North Dakota         |B01001_048 |     8864|  537|
+|38    |North Dakota         |B01001_049 |    11617|  566|
+|39    |Ohio                 |B01001_001 | 11655397|   NA|
+|39    |Ohio                 |B01001_002 |  5711765| 1244|
+|39    |Ohio                 |B01001_003 |   355693|  538|
+|39    |Ohio                 |B01001_004 |   361228| 2925|
+|39    |Ohio                 |B01001_005 |   381146| 2914|
+|39    |Ohio                 |B01001_006 |   234620|  569|
+|39    |Ohio                 |B01001_007 |   158923|  734|
+|39    |Ohio                 |B01001_008 |    83045| 1832|
+|39    |Ohio                 |B01001_009 |    80797| 1720|
+|39    |Ohio                 |B01001_010 |   224157| 1920|
+|39    |Ohio                 |B01001_011 |   399629|  739|
+|39    |Ohio                 |B01001_012 |   366263|  692|
+|39    |Ohio                 |B01001_013 |   353854| 3032|
+|39    |Ohio                 |B01001_014 |   338033| 2954|
+|39    |Ohio                 |B01001_015 |   364503|  733|
+|39    |Ohio                 |B01001_016 |   382462|  683|
+|39    |Ohio                 |B01001_017 |   402113| 2690|
+|39    |Ohio                 |B01001_018 |   158276| 2134|
+|39    |Ohio                 |B01001_019 |   217424| 2599|
+|39    |Ohio                 |B01001_020 |   132156| 1762|
+|39    |Ohio                 |B01001_021 |   175690| 1960|
+|39    |Ohio                 |B01001_022 |   213511| 2036|
+|39    |Ohio                 |B01001_023 |   148415| 1686|
+|39    |Ohio                 |B01001_024 |    94738| 1477|
+|39    |Ohio                 |B01001_025 |    85089| 1288|
+|39    |Ohio                 |B01001_026 |  5943632| 1244|
+|39    |Ohio                 |B01001_027 |   339018|  625|
+|39    |Ohio                 |B01001_028 |   344085| 2689|
+|39    |Ohio                 |B01001_029 |   365929| 2722|
+|39    |Ohio                 |B01001_030 |   223291|  536|
+|39    |Ohio                 |B01001_031 |   152137|  774|
+|39    |Ohio                 |B01001_032 |    78500| 2221|
+|39    |Ohio                 |B01001_033 |    79094| 2148|
+|39    |Ohio                 |B01001_034 |   217957| 2544|
+|39    |Ohio                 |B01001_035 |   389805|  606|
+|39    |Ohio                 |B01001_036 |   366178|  685|
+|39    |Ohio                 |B01001_037 |   356500| 2913|
+|39    |Ohio                 |B01001_038 |   343360| 2728|
+|39    |Ohio                 |B01001_039 |   372220|  562|
+|39    |Ohio                 |B01001_040 |   395148|  655|
+|39    |Ohio                 |B01001_041 |   423321| 3411|
+|39    |Ohio                 |B01001_042 |   169116| 2564|
+|39    |Ohio                 |B01001_043 |   236278| 2797|
+|39    |Ohio                 |B01001_044 |   144209| 1954|
+|39    |Ohio                 |B01001_045 |   196479| 1987|
+|39    |Ohio                 |B01001_046 |   254594| 2535|
+|39    |Ohio                 |B01001_047 |   193012| 1863|
+|39    |Ohio                 |B01001_048 |   137687| 1610|
+|39    |Ohio                 |B01001_049 |   165714| 2024|
+|40    |Oklahoma             |B01001_001 |  3932870|   NA|
+|40    |Oklahoma             |B01001_002 |  1949528|  688|
+|40    |Oklahoma             |B01001_003 |   133835|  327|
+|40    |Oklahoma             |B01001_004 |   136290| 1424|
+|40    |Oklahoma             |B01001_005 |   138420| 1348|
+|40    |Oklahoma             |B01001_006 |    81242|  364|
+|40    |Oklahoma             |B01001_007 |    55592|  578|
+|40    |Oklahoma             |B01001_008 |    30656|  961|
+|40    |Oklahoma             |B01001_009 |    30360| 1193|
+|40    |Oklahoma             |B01001_010 |    82906| 1406|
+|40    |Oklahoma             |B01001_011 |   140485|  543|
+|40    |Oklahoma             |B01001_012 |   135434|  601|
+|40    |Oklahoma             |B01001_013 |   127313| 1682|
+|40    |Oklahoma             |B01001_014 |   117294| 1720|
+|40    |Oklahoma             |B01001_015 |   115501|  570|
+|40    |Oklahoma             |B01001_016 |   118444|  438|
+|40    |Oklahoma             |B01001_017 |   123565| 1212|
+|40    |Oklahoma             |B01001_018 |    46639| 1053|
+|40    |Oklahoma             |B01001_019 |    66857| 1140|
+|40    |Oklahoma             |B01001_020 |    39255|  824|
+|40    |Oklahoma             |B01001_021 |    53328|  967|
+|40    |Oklahoma             |B01001_022 |    71375|  848|
+|40    |Oklahoma             |B01001_023 |    48649|  808|
+|40    |Oklahoma             |B01001_024 |    31155|  744|
+|40    |Oklahoma             |B01001_025 |    24933|  763|
+|40    |Oklahoma             |B01001_026 |  1983342|  688|
+|40    |Oklahoma             |B01001_027 |   127481|  424|
+|40    |Oklahoma             |B01001_028 |   129228| 1575|
+|40    |Oklahoma             |B01001_029 |   133618| 1628|
+|40    |Oklahoma             |B01001_030 |    76850|  350|
+|40    |Oklahoma             |B01001_031 |    50672|  495|
+|40    |Oklahoma             |B01001_032 |    30762| 1046|
+|40    |Oklahoma             |B01001_033 |    28006| 1049|
+|40    |Oklahoma             |B01001_034 |    74864| 1295|
+|40    |Oklahoma             |B01001_035 |   136035|  474|
+|40    |Oklahoma             |B01001_036 |   131457|  462|
+|40    |Oklahoma             |B01001_037 |   126218| 1374|
+|40    |Oklahoma             |B01001_038 |   115682| 1310|
+|40    |Oklahoma             |B01001_039 |   114719|  396|
+|40    |Oklahoma             |B01001_040 |   120152|  373|
+|40    |Oklahoma             |B01001_041 |   129984| 1415|
+|40    |Oklahoma             |B01001_042 |    50841| 1175|
+|40    |Oklahoma             |B01001_043 |    72074| 1469|
+|40    |Oklahoma             |B01001_044 |    43077|  931|
+|40    |Oklahoma             |B01001_045 |    61337| 1045|
+|40    |Oklahoma             |B01001_046 |    82209| 1106|
+|40    |Oklahoma             |B01001_047 |    59981| 1141|
+|40    |Oklahoma             |B01001_048 |    43376| 1140|
+|40    |Oklahoma             |B01001_049 |    44719| 1030|
+|41    |Oregon               |B01001_001 |  4129803|   NA|
+|41    |Oregon               |B01001_002 |  2047338|  680|
+|41    |Oregon               |B01001_003 |   118296|  385|
+|41    |Oregon               |B01001_004 |   123603| 1969|
+|41    |Oregon               |B01001_005 |   127148| 1933|
+|41    |Oregon               |B01001_006 |    75979|  345|
+|41    |Oregon               |B01001_007 |    49694|  514|
+|41    |Oregon               |B01001_008 |    27183| 1089|
+|41    |Oregon               |B01001_009 |    27315| 1180|
+|41    |Oregon               |B01001_010 |    81219| 1388|
+|41    |Oregon               |B01001_011 |   149441|  464|
+|41    |Oregon               |B01001_012 |   147197|  480|
+|41    |Oregon               |B01001_013 |   144951| 2046|
+|41    |Oregon               |B01001_014 |   131686| 2035|
+|41    |Oregon               |B01001_015 |   131082|  475|
+|41    |Oregon               |B01001_016 |   126305|  401|
+|41    |Oregon               |B01001_017 |   129031| 1794|
+|41    |Oregon               |B01001_018 |    53353| 1418|
+|41    |Oregon               |B01001_019 |    79187| 1375|
+|41    |Oregon               |B01001_020 |    51442| 1369|
+|41    |Oregon               |B01001_021 |    68059| 1429|
+|41    |Oregon               |B01001_022 |    85319| 1559|
+|41    |Oregon               |B01001_023 |    55211| 1229|
+|41    |Oregon               |B01001_024 |    34682| 1016|
+|41    |Oregon               |B01001_025 |    29955|  873|
+|41    |Oregon               |B01001_026 |  2082465|  680|
+|41    |Oregon               |B01001_027 |   112261|  345|
+|41    |Oregon               |B01001_028 |   119280| 1783|
+|41    |Oregon               |B01001_029 |   119332| 1772|
+|41    |Oregon               |B01001_030 |    72044|  395|
+|41    |Oregon               |B01001_031 |    48139|  607|
+|41    |Oregon               |B01001_032 |    26831| 1065|
+|41    |Oregon               |B01001_033 |    27340| 1198|
+|41    |Oregon               |B01001_034 |    75189| 1490|
+|41    |Oregon               |B01001_035 |   143841|  525|
+|41    |Oregon               |B01001_036 |   143749|  484|
+|41    |Oregon               |B01001_037 |   144050| 1937|
+|41    |Oregon               |B01001_038 |   126862| 1848|
+|41    |Oregon               |B01001_039 |   129337|  517|
+|41    |Oregon               |B01001_040 |   127131|  415|
+|41    |Oregon               |B01001_041 |   136637| 1568|
+|41    |Oregon               |B01001_042 |    58623| 1513|
+|41    |Oregon               |B01001_043 |    86932| 1585|
+|41    |Oregon               |B01001_044 |    54799| 1303|
+|41    |Oregon               |B01001_045 |    76528| 1575|
+|41    |Oregon               |B01001_046 |    94580| 1576|
+|41    |Oregon               |B01001_047 |    64202| 1384|
+|41    |Oregon               |B01001_048 |    41883| 1030|
+|41    |Oregon               |B01001_049 |    52895| 1300|
+|42    |Pennsylvania         |B01001_001 | 12791530|   NA|
+|42    |Pennsylvania         |B01001_002 |  6265113|  741|
+|42    |Pennsylvania         |B01001_003 |   361510|  409|
+|42    |Pennsylvania         |B01001_004 |   367642| 2837|
+|42    |Pennsylvania         |B01001_005 |   391734| 2818|
+|42    |Pennsylvania         |B01001_006 |   241767|  419|
+|42    |Pennsylvania         |B01001_007 |   176892|  745|
+|42    |Pennsylvania         |B01001_008 |    86978| 2063|
+|42    |Pennsylvania         |B01001_009 |    86351| 1919|
+|42    |Pennsylvania         |B01001_010 |   246170| 2394|
+|42    |Pennsylvania         |B01001_011 |   440358|  602|
+|42    |Pennsylvania         |B01001_012 |   413820|  661|
+|42    |Pennsylvania         |B01001_013 |   383517| 2978|
+|42    |Pennsylvania         |B01001_014 |   361949| 2895|
+|42    |Pennsylvania         |B01001_015 |   403092| 1591|
+|42    |Pennsylvania         |B01001_016 |   432175|  492|
+|42    |Pennsylvania         |B01001_017 |   452046| 2900|
+|42    |Pennsylvania         |B01001_018 |   177423| 2153|
+|42    |Pennsylvania         |B01001_019 |   246866| 2464|
+|42    |Pennsylvania         |B01001_020 |   148309| 2000|
+|42    |Pennsylvania         |B01001_021 |   199007| 2162|
+|42    |Pennsylvania         |B01001_022 |   250720| 2529|
+|42    |Pennsylvania         |B01001_023 |   172551| 1901|
+|42    |Pennsylvania         |B01001_024 |   114641| 1581|
+|42    |Pennsylvania         |B01001_025 |   109595| 1731|
+|42    |Pennsylvania         |B01001_026 |  6526417|  741|
+|42    |Pennsylvania         |B01001_027 |   345053|  369|
+|42    |Pennsylvania         |B01001_028 |   356026| 2776|
+|42    |Pennsylvania         |B01001_029 |   369838| 2843|
+|42    |Pennsylvania         |B01001_030 |   228821|  447|
+|42    |Pennsylvania         |B01001_031 |   172650|  586|
+|42    |Pennsylvania         |B01001_032 |    84272| 1903|
+|42    |Pennsylvania         |B01001_033 |    86400| 2022|
+|42    |Pennsylvania         |B01001_034 |   235194| 2198|
+|42    |Pennsylvania         |B01001_035 |   422780|  471|
+|42    |Pennsylvania         |B01001_036 |   403949|  464|
+|42    |Pennsylvania         |B01001_037 |   379934| 3085|
+|42    |Pennsylvania         |B01001_038 |   368504| 3090|
+|42    |Pennsylvania         |B01001_039 |   410219|  508|
+|42    |Pennsylvania         |B01001_040 |   447384|  364|
+|42    |Pennsylvania         |B01001_041 |   475034| 3407|
+|42    |Pennsylvania         |B01001_042 |   189229| 2997|
+|42    |Pennsylvania         |B01001_043 |   264233| 2360|
+|42    |Pennsylvania         |B01001_044 |   161705| 1982|
+|42    |Pennsylvania         |B01001_045 |   222098| 2197|
+|42    |Pennsylvania         |B01001_046 |   294851| 2377|
+|42    |Pennsylvania         |B01001_047 |   223351| 2195|
+|42    |Pennsylvania         |B01001_048 |   169619| 1847|
+|42    |Pennsylvania         |B01001_049 |   215273| 2228|
+|44    |Rhode Island         |B01001_001 |  1057231|   NA|
+|44    |Rhode Island         |B01001_002 |   513792|  315|
+|44    |Rhode Island         |B01001_003 |    28040|  187|
+|44    |Rhode Island         |B01001_004 |    27961| 1027|
+|44    |Rhode Island         |B01001_005 |    31065| 1028|
+|44    |Rhode Island         |B01001_006 |    19044|  157|
+|44    |Rhode Island         |B01001_007 |    17167|  334|
+|44    |Rhode Island         |B01001_008 |     8437|  739|
+|44    |Rhode Island         |B01001_009 |     7764|  744|
+|44    |Rhode Island         |B01001_010 |    22787|  897|
+|44    |Rhode Island         |B01001_011 |    38786|  219|
+|44    |Rhode Island         |B01001_012 |    34983|  305|
+|44    |Rhode Island         |B01001_013 |    31882|  967|
+|44    |Rhode Island         |B01001_014 |    29420|  964|
+|44    |Rhode Island         |B01001_015 |    32925|  225|
+|44    |Rhode Island         |B01001_016 |    36384|  223|
+|44    |Rhode Island         |B01001_017 |    36410|  954|
+|44    |Rhode Island         |B01001_018 |    14681|  718|
+|44    |Rhode Island         |B01001_019 |    19436|  801|
+|44    |Rhode Island         |B01001_020 |    11766|  703|
+|44    |Rhode Island         |B01001_021 |    15829|  742|
+|44    |Rhode Island         |B01001_022 |    19172|  741|
+|44    |Rhode Island         |B01001_023 |    13272|  530|
+|44    |Rhode Island         |B01001_024 |     8708|  487|
+|44    |Rhode Island         |B01001_025 |     7873|  497|
+|44    |Rhode Island         |B01001_026 |   543439|  315|
+|44    |Rhode Island         |B01001_027 |    26632|  176|
+|44    |Rhode Island         |B01001_028 |    28016|  753|
+|44    |Rhode Island         |B01001_029 |    28168|  750|
+|44    |Rhode Island         |B01001_030 |    18418|  160|
+|44    |Rhode Island         |B01001_031 |    18379|  322|
+|44    |Rhode Island         |B01001_032 |     9326|  742|
+|44    |Rhode Island         |B01001_033 |     8531|  701|
+|44    |Rhode Island         |B01001_034 |    20296|  875|
+|44    |Rhode Island         |B01001_035 |    37226|  291|
+|44    |Rhode Island         |B01001_036 |    34222|  282|
+|44    |Rhode Island         |B01001_037 |    32979|  953|
+|44    |Rhode Island         |B01001_038 |    29076|  964|
+|44    |Rhode Island         |B01001_039 |    34902|  260|
+|44    |Rhode Island         |B01001_040 |    38882|  242|
+|44    |Rhode Island         |B01001_041 |    39928|  932|
+|44    |Rhode Island         |B01001_042 |    15933|  861|
+|44    |Rhode Island         |B01001_043 |    21256|  754|
+|44    |Rhode Island         |B01001_044 |    13161|  624|
+|44    |Rhode Island         |B01001_045 |    16754|  757|
+|44    |Rhode Island         |B01001_046 |    23345|  753|
+|44    |Rhode Island         |B01001_047 |    16543|  575|
+|44    |Rhode Island         |B01001_048 |    13120|  642|
+|44    |Rhode Island         |B01001_049 |    18346|  593|
+|45    |South Carolina       |B01001_001 |  5020806|   NA|
+|45    |South Carolina       |B01001_002 |  2435472|  868|
+|45    |South Carolina       |B01001_003 |   148386|  541|
+|45    |South Carolina       |B01001_004 |   156379| 2373|
+|45    |South Carolina       |B01001_005 |   161165| 2406|
+|45    |South Carolina       |B01001_006 |    95819|  545|
+|45    |South Carolina       |B01001_007 |    73177|  922|
+|45    |South Carolina       |B01001_008 |    37512| 1620|
+|45    |South Carolina       |B01001_009 |    36795| 1700|
+|45    |South Carolina       |B01001_010 |    95861| 1812|
+|45    |South Carolina       |B01001_011 |   170444|  609|
+|45    |South Carolina       |B01001_012 |   154303|  734|
+|45    |South Carolina       |B01001_013 |   149815| 2513|
+|45    |South Carolina       |B01001_014 |   147291| 2507|
+|45    |South Carolina       |B01001_015 |   152959|  658|
+|45    |South Carolina       |B01001_016 |   159017|  484|
+|45    |South Carolina       |B01001_017 |   160216| 2235|
+|45    |South Carolina       |B01001_018 |    63007| 1393|
+|45    |South Carolina       |B01001_019 |    89469| 1673|
+|45    |South Carolina       |B01001_020 |    55814| 1354|
+|45    |South Carolina       |B01001_021 |    82413| 1570|
+|45    |South Carolina       |B01001_022 |   107609| 1726|
+|45    |South Carolina       |B01001_023 |    69474| 1374|
+|45    |South Carolina       |B01001_024 |    39418| 1153|
+|45    |South Carolina       |B01001_025 |    29129|  986|
+|45    |South Carolina       |B01001_026 |  2585334|  868|
+|45    |South Carolina       |B01001_027 |   142545|  503|
+|45    |South Carolina       |B01001_028 |   151115| 2159|
+|45    |South Carolina       |B01001_029 |   154416| 2101|
+|45    |South Carolina       |B01001_030 |    92677|  552|
+|45    |South Carolina       |B01001_031 |    67389|  762|
+|45    |South Carolina       |B01001_032 |    32689| 1491|
+|45    |South Carolina       |B01001_033 |    33745| 1374|
+|45    |South Carolina       |B01001_034 |    94165| 1670|
+|45    |South Carolina       |B01001_035 |   173965|  690|
+|45    |South Carolina       |B01001_036 |   160522|  523|
+|45    |South Carolina       |B01001_037 |   159871| 2352|
+|45    |South Carolina       |B01001_038 |   152471| 2239|
+|45    |South Carolina       |B01001_039 |   162945|  524|
+|45    |South Carolina       |B01001_040 |   171995|  403|
+|45    |South Carolina       |B01001_041 |   180847| 2289|
+|45    |South Carolina       |B01001_042 |    73333| 1626|
+|45    |South Carolina       |B01001_043 |   100943| 1778|
+|45    |South Carolina       |B01001_044 |    64934| 1564|
+|45    |South Carolina       |B01001_045 |    94587| 1831|
+|45    |South Carolina       |B01001_046 |   125578| 1815|
+|45    |South Carolina       |B01001_047 |    83660| 1263|
+|45    |South Carolina       |B01001_048 |    54673| 1251|
+|45    |South Carolina       |B01001_049 |    56269| 1083|
+|46    |South Dakota         |B01001_001 |   870638|   NA|
+|46    |South Dakota         |B01001_002 |   438946|  666|
+|46    |South Dakota         |B01001_003 |    30755|  253|
+|46    |South Dakota         |B01001_004 |    31310|  690|
+|46    |South Dakota         |B01001_005 |    30111|  654|
+|46    |South Dakota         |B01001_006 |    17545|  319|
+|46    |South Dakota         |B01001_007 |    12606|  429|
+|46    |South Dakota         |B01001_008 |     6320|  486|
+|46    |South Dakota         |B01001_009 |     6584|  605|
+|46    |South Dakota         |B01001_010 |    17920|  848|
+|46    |South Dakota         |B01001_011 |    30290|  474|
+|46    |South Dakota         |B01001_012 |    29487|  352|
+|46    |South Dakota         |B01001_013 |    28718|  907|
+|46    |South Dakota         |B01001_014 |    23929|  815|
+|46    |South Dakota         |B01001_015 |    24161|  272|
+|46    |South Dakota         |B01001_016 |    26303|  284|
+|46    |South Dakota         |B01001_017 |    29587|  750|
+|46    |South Dakota         |B01001_018 |    11273|  653|
+|46    |South Dakota         |B01001_019 |    16961|  588|
+|46    |South Dakota         |B01001_020 |    11060|  582|
+|46    |South Dakota         |B01001_021 |    12832|  522|
+|46    |South Dakota         |B01001_022 |    16177|  530|
+|46    |South Dakota         |B01001_023 |    10490|  470|
+|46    |South Dakota         |B01001_024 |     7332|  459|
+|46    |South Dakota         |B01001_025 |     7195|  420|
+|46    |South Dakota         |B01001_026 |   431692|  666|
+|46    |South Dakota         |B01001_027 |    29644|  311|
+|46    |South Dakota         |B01001_028 |    29227|  810|
+|46    |South Dakota         |B01001_029 |    29271|  757|
+|46    |South Dakota         |B01001_030 |    16245|  351|
+|46    |South Dakota         |B01001_031 |    11161|  405|
+|46    |South Dakota         |B01001_032 |     6110|  524|
+|46    |South Dakota         |B01001_033 |     5423|  490|
+|46    |South Dakota         |B01001_034 |    18013|  667|
+|46    |South Dakota         |B01001_035 |    27237|  446|
+|46    |South Dakota         |B01001_036 |    27357|  359|
+|46    |South Dakota         |B01001_037 |    26132|  753|
+|46    |South Dakota         |B01001_038 |    22786|  737|
+|46    |South Dakota         |B01001_039 |    22824|  327|
+|46    |South Dakota         |B01001_040 |    25761|  230|
+|46    |South Dakota         |B01001_041 |    29730|  837|
+|46    |South Dakota         |B01001_042 |    11393|  603|
+|46    |South Dakota         |B01001_043 |    16930|  715|
+|46    |South Dakota         |B01001_044 |    10272|  580|
+|46    |South Dakota         |B01001_045 |    12851|  606|
+|46    |South Dakota         |B01001_046 |    17465|  717|
+|46    |South Dakota         |B01001_047 |    12809|  483|
+|46    |South Dakota         |B01001_048 |    10163|  517|
+|46    |South Dakota         |B01001_049 |    12888|  520|
+|47    |Tennessee            |B01001_001 |  6709356|   NA|
+|47    |Tennessee            |B01001_002 |  3273278| 1507|
+|47    |Tennessee            |B01001_003 |   208598|  796|
+|47    |Tennessee            |B01001_004 |   209037| 2400|
+|47    |Tennessee            |B01001_005 |   219974| 2346|
+|47    |Tennessee            |B01001_006 |   131597|  630|
+|47    |Tennessee            |B01001_007 |    86975|  724|
+|47    |Tennessee            |B01001_008 |    47118| 1630|
+|47    |Tennessee            |B01001_009 |    46308| 1487|
+|47    |Tennessee            |B01001_010 |   132886| 1978|
+|47    |Tennessee            |B01001_011 |   237180|  851|
+|47    |Tennessee            |B01001_012 |   214566|  826|
+|47    |Tennessee            |B01001_013 |   208154| 2383|
+|47    |Tennessee            |B01001_014 |   205669| 2267|
+|47    |Tennessee            |B01001_015 |   216500|  649|
+|47    |Tennessee            |B01001_016 |   217556|  775|
+|47    |Tennessee            |B01001_017 |   214036| 2121|
+|47    |Tennessee            |B01001_018 |    83519| 1429|
+|47    |Tennessee            |B01001_019 |   118982| 1855|
+|47    |Tennessee            |B01001_020 |    73646| 1445|
+|47    |Tennessee            |B01001_021 |    99784| 1563|
+|47    |Tennessee            |B01001_022 |   126648| 1713|
+|47    |Tennessee            |B01001_023 |    86059| 1532|
+|47    |Tennessee            |B01001_024 |    50375| 1299|
+|47    |Tennessee            |B01001_025 |    38111| 1167|
+|47    |Tennessee            |B01001_026 |  3436078| 1507|
+|47    |Tennessee            |B01001_027 |   197840|  731|
+|47    |Tennessee            |B01001_028 |   200705| 2573|
+|47    |Tennessee            |B01001_029 |   211097| 2473|
+|47    |Tennessee            |B01001_030 |   126072|  636|
+|47    |Tennessee            |B01001_031 |    81817|  615|
+|47    |Tennessee            |B01001_032 |    44576| 1490|
+|47    |Tennessee            |B01001_033 |    45178| 1704|
+|47    |Tennessee            |B01001_034 |   132185| 1720|
+|47    |Tennessee            |B01001_035 |   239613|  817|
+|47    |Tennessee            |B01001_036 |   220386|  765|
+|47    |Tennessee            |B01001_037 |   216950| 2308|
+|47    |Tennessee            |B01001_038 |   207468| 2378|
+|47    |Tennessee            |B01001_039 |   222848|  557|
+|47    |Tennessee            |B01001_040 |   229902|  701|
+|47    |Tennessee            |B01001_041 |   237175| 2237|
+|47    |Tennessee            |B01001_042 |    91565| 1877|
+|47    |Tennessee            |B01001_043 |   130200| 2072|
+|47    |Tennessee            |B01001_044 |    78823| 1554|
+|47    |Tennessee            |B01001_045 |   112465| 1765|
+|47    |Tennessee            |B01001_046 |   152048| 1966|
+|47    |Tennessee            |B01001_047 |   106536| 1513|
+|47    |Tennessee            |B01001_048 |    74070| 1515|
+|47    |Tennessee            |B01001_049 |    76559| 1703|
+|48    |Texas                |B01001_001 | 28260856|   NA|
+|48    |Texas                |B01001_002 | 14034009| 2058|
+|48    |Texas                |B01001_003 |  1021356| 1274|
+|48    |Texas                |B01001_004 |  1028870| 5769|
+|48    |Texas                |B01001_005 |  1068907| 5641|
+|48    |Texas                |B01001_006 |   622762| 1074|
+|48    |Texas                |B01001_007 |   410177| 1486|
+|48    |Texas                |B01001_008 |   217098| 3873|
+|48    |Texas                |B01001_009 |   209922| 3868|
+|48    |Texas                |B01001_010 |   603301| 4849|
+|48    |Texas                |B01001_011 |  1072395| 1292|
+|48    |Texas                |B01001_012 |  1038855| 1387|
+|48    |Texas                |B01001_013 |   981624| 7036|
+|48    |Texas                |B01001_014 |   932871| 6965|
+|48    |Texas                |B01001_015 |   895107| 1075|
+|48    |Texas                |B01001_016 |   852614| 1198|
+|48    |Texas                |B01001_017 |   821666| 5006|
+|48    |Texas                |B01001_018 |   303432| 3981|
+|48    |Texas                |B01001_019 |   409933| 4242|
+|48    |Texas                |B01001_020 |   242964| 3021|
+|48    |Texas                |B01001_021 |   323140| 3988|
+|48    |Texas                |B01001_022 |   406623| 3634|
+|48    |Texas                |B01001_023 |   269690| 2882|
+|48    |Texas                |B01001_024 |   168250| 2596|
+|48    |Texas                |B01001_025 |   132452| 2409|
+|48    |Texas                |B01001_026 | 14226847| 2058|
+|48    |Texas                |B01001_027 |   978447| 1086|
+|48    |Texas                |B01001_028 |   995139| 6414|
+|48    |Texas                |B01001_029 |  1021683| 6440|
+|48    |Texas                |B01001_030 |   601281| 1152|
+|48    |Texas                |B01001_031 |   383424| 1565|
+|48    |Texas                |B01001_032 |   200921| 3405|
+|48    |Texas                |B01001_033 |   192709| 3514|
+|48    |Texas                |B01001_034 |   573305| 3511|
+|48    |Texas                |B01001_035 |  1031796| 1285|
+|48    |Texas                |B01001_036 |  1011136| 1246|
+|48    |Texas                |B01001_037 |   978493| 5700|
+|48    |Texas                |B01001_038 |   930097| 5896|
+|48    |Texas                |B01001_039 |   909299| 1166|
+|48    |Texas                |B01001_040 |   869223| 1003|
+|48    |Texas                |B01001_041 |   851971| 4545|
+|48    |Texas                |B01001_042 |   326985| 3686|
+|48    |Texas                |B01001_043 |   451530| 4937|
+|48    |Texas                |B01001_044 |   267478| 3315|
+|48    |Texas                |B01001_045 |   364184| 3308|
+|48    |Texas                |B01001_046 |   477460| 3784|
+|48    |Texas                |B01001_047 |   333784| 3243|
+|48    |Texas                |B01001_048 |   233086| 2504|
+|48    |Texas                |B01001_049 |   243416| 2921|
+|49    |Utah                 |B01001_001 |  3096848|   NA|
+|49    |Utah                 |B01001_002 |  1558868|  603|
+|49    |Utah                 |B01001_003 |   128877|  306|
+|49    |Utah                 |B01001_004 |   133300| 1484|
+|49    |Utah                 |B01001_005 |   135033| 1508|
+|49    |Utah                 |B01001_006 |    77326|  312|
+|49    |Utah                 |B01001_007 |    46402|  410|
+|49    |Utah                 |B01001_008 |    23766| 1059|
+|49    |Utah                 |B01001_009 |    27386| 1142|
+|49    |Utah                 |B01001_010 |    80493| 1399|
+|49    |Utah                 |B01001_011 |   121306|  293|
+|49    |Utah                 |B01001_012 |   111166|  347|
+|49    |Utah                 |B01001_013 |   115828| 1603|
+|49    |Utah                 |B01001_014 |    98853| 1601|
+|49    |Utah                 |B01001_015 |    84636|  357|
+|49    |Utah                 |B01001_016 |    75127|  290|
+|49    |Utah                 |B01001_017 |    74046| 1193|
+|49    |Utah                 |B01001_018 |    29565|  853|
+|49    |Utah                 |B01001_019 |    40776| 1078|
+|49    |Utah                 |B01001_020 |    24057|  940|
+|49    |Utah                 |B01001_021 |    31637| 1100|
+|49    |Utah                 |B01001_022 |    40027|  924|
+|49    |Utah                 |B01001_023 |    27067|  762|
+|49    |Utah                 |B01001_024 |    17495|  712|
+|49    |Utah                 |B01001_025 |    14699|  652|
+|49    |Utah                 |B01001_026 |  1537980|  603|
+|49    |Utah                 |B01001_027 |   122008|  331|
+|49    |Utah                 |B01001_028 |   128545| 1460|
+|49    |Utah                 |B01001_029 |   125414| 1534|
+|49    |Utah                 |B01001_030 |    73080|  292|
+|49    |Utah                 |B01001_031 |    46403|  391|
+|49    |Utah                 |B01001_032 |    22749| 1064|
+|49    |Utah                 |B01001_033 |    26363| 1062|
+|49    |Utah                 |B01001_034 |    75651| 1145|
+|49    |Utah                 |B01001_035 |   115688|  386|
+|49    |Utah                 |B01001_036 |   108590|  380|
+|49    |Utah                 |B01001_037 |   110465| 1634|
+|49    |Utah                 |B01001_038 |    96942| 1619|
+|49    |Utah                 |B01001_039 |    81941|  306|
+|49    |Utah                 |B01001_040 |    75276|  344|
+|49    |Utah                 |B01001_041 |    75525| 1291|
+|49    |Utah                 |B01001_042 |    30924|  970|
+|49    |Utah                 |B01001_043 |    43449| 1171|
+|49    |Utah                 |B01001_044 |    25114|  935|
+|49    |Utah                 |B01001_045 |    34277| 1125|
+|49    |Utah                 |B01001_046 |    44889| 1075|
+|49    |Utah                 |B01001_047 |    30693|  730|
+|49    |Utah                 |B01001_048 |    22998|  804|
+|49    |Utah                 |B01001_049 |    20996|  788|
+|50    |Vermont              |B01001_001 |   624313|   NA|
+|50    |Vermont              |B01001_002 |   308097|  353|
+|50    |Vermont              |B01001_003 |    15302|  183|
+|50    |Vermont              |B01001_004 |    16280|  550|
+|50    |Vermont              |B01001_005 |    17450|  588|
+|50    |Vermont              |B01001_006 |    11067|  148|
+|50    |Vermont              |B01001_007 |    10937|  227|
+|50    |Vermont              |B01001_008 |     5655|  434|
+|50    |Vermont              |B01001_009 |     5815|  615|
+|50    |Vermont              |B01001_010 |    12352|  625|
+|50    |Vermont              |B01001_011 |    18959|  211|
+|50    |Vermont              |B01001_012 |    17978|  255|
+|50    |Vermont              |B01001_013 |    17582|  591|
+|50    |Vermont              |B01001_014 |    17083|  567|
+|50    |Vermont              |B01001_015 |    19562|  232|
+|50    |Vermont              |B01001_016 |    21594|  169|
+|50    |Vermont              |B01001_017 |    23024|  528|
+|50    |Vermont              |B01001_018 |     9616|  498|
+|50    |Vermont              |B01001_019 |    14106|  504|
+|50    |Vermont              |B01001_020 |     8279|  412|
+|50    |Vermont              |B01001_021 |    11469|  417|
+|50    |Vermont              |B01001_022 |    14552|  468|
+|50    |Vermont              |B01001_023 |     8783|  358|
+|50    |Vermont              |B01001_024 |     6052|  397|
+|50    |Vermont              |B01001_025 |     4600|  322|
+|50    |Vermont              |B01001_026 |   316216|  353|
+|50    |Vermont              |B01001_027 |    14266|  145|
+|50    |Vermont              |B01001_028 |    15780|  518|
+|50    |Vermont              |B01001_029 |    16046|  532|
+|50    |Vermont              |B01001_030 |    10463|  158|
+|50    |Vermont              |B01001_031 |    10082|  178|
+|50    |Vermont              |B01001_032 |     5500|  450|
+|50    |Vermont              |B01001_033 |     5044|  455|
+|50    |Vermont              |B01001_034 |    11814|  692|
+|50    |Vermont              |B01001_035 |    18071|  196|
+|50    |Vermont              |B01001_036 |    18025|  166|
+|50    |Vermont              |B01001_037 |    18235|  516|
+|50    |Vermont              |B01001_038 |    17256|  536|
+|50    |Vermont              |B01001_039 |    19735|  150|
+|50    |Vermont              |B01001_040 |    22845|  182|
+|50    |Vermont              |B01001_041 |    24947|  571|
+|50    |Vermont              |B01001_042 |    10405|  521|
+|50    |Vermont              |B01001_043 |    14173|  587|
+|50    |Vermont              |B01001_044 |     8523|  453|
+|50    |Vermont              |B01001_045 |    12371|  434|
+|50    |Vermont              |B01001_046 |    15635|  524|
+|50    |Vermont              |B01001_047 |    10694|  411|
+|50    |Vermont              |B01001_048 |     6846|  423|
+|50    |Vermont              |B01001_049 |     9460|  392|
+|51    |Virginia             |B01001_001 |  8454463|   NA|
+|51    |Virginia             |B01001_002 |  4159173| 1541|
+|51    |Virginia             |B01001_003 |   261093|  971|
+|51    |Virginia             |B01001_004 |   261238| 2880|
+|51    |Virginia             |B01001_005 |   269460| 2849|
+|51    |Virginia             |B01001_006 |   161407|  863|
+|51    |Virginia             |B01001_007 |   120450| 1479|
+|51    |Virginia             |B01001_008 |    61995| 1811|
+|51    |Virginia             |B01001_009 |    59609| 1911|
+|51    |Virginia             |B01001_010 |   177303| 2121|
+|51    |Virginia             |B01001_011 |   300642| 1017|
+|51    |Virginia             |B01001_012 |   292140|  939|
+|51    |Virginia             |B01001_013 |   282417| 2541|
+|51    |Virginia             |B01001_014 |   265478| 2527|
+|51    |Virginia             |B01001_015 |   275408|  963|
+|51    |Virginia             |B01001_016 |   282937|  772|
+|51    |Virginia             |B01001_017 |   277103| 2538|
+|51    |Virginia             |B01001_018 |   106242| 2242|
+|51    |Virginia             |B01001_019 |   141306| 2320|
+|51    |Virginia             |B01001_020 |    85985| 1750|
+|51    |Virginia             |B01001_021 |   118006| 2134|
+|51    |Virginia             |B01001_022 |   148009| 1782|
+|51    |Virginia             |B01001_023 |    97630| 1396|
+|51    |Virginia             |B01001_024 |    61854| 1305|
+|51    |Virginia             |B01001_025 |    51461| 1295|
+|51    |Virginia             |B01001_026 |  4295290| 1541|
+|51    |Virginia             |B01001_027 |   247306|  876|
+|51    |Virginia             |B01001_028 |   254647| 2989|
+|51    |Virginia             |B01001_029 |   256244| 2845|
+|51    |Virginia             |B01001_030 |   154304|  905|
+|51    |Virginia             |B01001_031 |   115101| 1156|
+|51    |Virginia             |B01001_032 |    58583| 1542|
+|51    |Virginia             |B01001_033 |    55685| 1848|
+|51    |Virginia             |B01001_034 |   163152| 2087|
+|51    |Virginia             |B01001_035 |   291918| 1011|
+|51    |Virginia             |B01001_036 |   289391|  908|
+|51    |Virginia             |B01001_037 |   286451| 2412|
+|51    |Virginia             |B01001_038 |   266114| 2390|
+|51    |Virginia             |B01001_039 |   283689| 1110|
+|51    |Virginia             |B01001_040 |   297202|  761|
+|51    |Virginia             |B01001_041 |   294718| 2430|
+|51    |Virginia             |B01001_042 |   115596| 1920|
+|51    |Virginia             |B01001_043 |   156188| 2015|
+|51    |Virginia             |B01001_044 |    96539| 1408|
+|51    |Virginia             |B01001_045 |   133288| 2012|
+|51    |Virginia             |B01001_046 |   174885| 2009|
+|51    |Virginia             |B01001_047 |   123297| 1890|
+|51    |Virginia             |B01001_048 |    86216| 1496|
+|51    |Virginia             |B01001_049 |    94776| 1959|
+|53    |Washington           |B01001_001 |  7404107|   NA|
+|53    |Washington           |B01001_002 |  3703301|  802|
+|53    |Washington           |B01001_003 |   233206|  449|
+|53    |Washington           |B01001_004 |   238036| 2691|
+|53    |Washington           |B01001_005 |   231437| 2697|
+|53    |Washington           |B01001_006 |   138345|  401|
+|53    |Washington           |B01001_007 |    90300|  476|
+|53    |Washington           |B01001_008 |    50862| 1523|
+|53    |Washington           |B01001_009 |    49862| 1658|
+|53    |Washington           |B01001_010 |   152425| 2335|
+|53    |Washington           |B01001_011 |   294987|  552|
+|53    |Washington           |B01001_012 |   282170|  493|
+|53    |Washington           |B01001_013 |   262764| 2572|
+|53    |Washington           |B01001_014 |   233390| 2619|
+|53    |Washington           |B01001_015 |   237793|  499|
+|53    |Washington           |B01001_016 |   233735|  381|
+|53    |Washington           |B01001_017 |   238606| 2689|
+|53    |Washington           |B01001_018 |    93283| 2008|
+|53    |Washington           |B01001_019 |   132434| 2448|
+|53    |Washington           |B01001_020 |    81127| 1609|
+|53    |Washington           |B01001_021 |   105513| 1524|
+|53    |Washington           |B01001_022 |   137047| 1828|
+|53    |Washington           |B01001_023 |    85596| 1235|
+|53    |Washington           |B01001_024 |    54219| 1254|
+|53    |Washington           |B01001_025 |    46164| 1209|
+|53    |Washington           |B01001_026 |  3700806|  802|
+|53    |Washington           |B01001_027 |   221158|  457|
+|53    |Washington           |B01001_028 |   227002| 2618|
+|53    |Washington           |B01001_029 |   222160| 2705|
+|53    |Washington           |B01001_030 |   132202|  322|
+|53    |Washington           |B01001_031 |    85633|  731|
+|53    |Washington           |B01001_032 |    44863| 1742|
+|53    |Washington           |B01001_033 |    45611| 1646|
+|53    |Washington           |B01001_034 |   139381| 2113|
+|53    |Washington           |B01001_035 |   272279|  374|
+|53    |Washington           |B01001_036 |   267381|  468|
+|53    |Washington           |B01001_037 |   252440| 2715|
+|53    |Washington           |B01001_038 |   229095| 2809|
+|53    |Washington           |B01001_039 |   232929|  398|
+|53    |Washington           |B01001_040 |   234337|  406|
+|53    |Washington           |B01001_041 |   247418| 2390|
+|53    |Washington           |B01001_042 |    97993| 1711|
+|53    |Washington           |B01001_043 |   140917| 2462|
+|53    |Washington           |B01001_044 |    85507| 1661|
+|53    |Washington           |B01001_045 |   117241| 1829|
+|53    |Washington           |B01001_046 |   153489| 1827|
+|53    |Washington           |B01001_047 |   100750| 1707|
+|53    |Washington           |B01001_048 |    68451| 1434|
+|53    |Washington           |B01001_049 |    82569| 1735|
+|54    |West Virginia        |B01001_001 |  1817305|   NA|
+|54    |West Virginia        |B01001_002 |   898578|  865|
+|54    |West Virginia        |B01001_003 |    49961|  407|
+|54    |West Virginia        |B01001_004 |    51175| 1129|
+|54    |West Virginia        |B01001_005 |    54433| 1117|
+|54    |West Virginia        |B01001_006 |    33367|  376|
+|54    |West Virginia        |B01001_007 |    23661|  457|
+|54    |West Virginia        |B01001_008 |    12576|  726|
+|54    |West Virginia        |B01001_009 |    13011|  983|
+|54    |West Virginia        |B01001_010 |    33880| 1063|
+|54    |West Virginia        |B01001_011 |    56614|  397|
+|54    |West Virginia        |B01001_012 |    52158|  433|
+|54    |West Virginia        |B01001_013 |    55153| 1198|
+|54    |West Virginia        |B01001_014 |    55904| 1187|
+|54    |West Virginia        |B01001_015 |    58711|  371|
+|54    |West Virginia        |B01001_016 |    60554|  366|
+|54    |West Virginia        |B01001_017 |    62926| 1423|
+|54    |West Virginia        |B01001_018 |    25948|  965|
+|54    |West Virginia        |B01001_019 |    38940| 1214|
+|54    |West Virginia        |B01001_020 |    23413|  870|
+|54    |West Virginia        |B01001_021 |    34921|  899|
+|54    |West Virginia        |B01001_022 |    41717|  908|
+|54    |West Virginia        |B01001_023 |    29105|  742|
+|54    |West Virginia        |B01001_024 |    16777|  802|
+|54    |West Virginia        |B01001_025 |    13673|  584|
+|54    |West Virginia        |B01001_026 |   918727|  865|
+|54    |West Virginia        |B01001_027 |    47579|  363|
+|54    |West Virginia        |B01001_028 |    49968| 1196|
+|54    |West Virginia        |B01001_029 |    51720| 1171|
+|54    |West Virginia        |B01001_030 |    31235|  315|
+|54    |West Virginia        |B01001_031 |    21069|  446|
+|54    |West Virginia        |B01001_032 |    11948|  850|
+|54    |West Virginia        |B01001_033 |    11666|  793|
+|54    |West Virginia        |B01001_034 |    32629|  861|
+|54    |West Virginia        |B01001_035 |    54631|  422|
+|54    |West Virginia        |B01001_036 |    50713|  358|
+|54    |West Virginia        |B01001_037 |    52808| 1145|
+|54    |West Virginia        |B01001_038 |    56436| 1041|
+|54    |West Virginia        |B01001_039 |    58110|  331|
+|54    |West Virginia        |B01001_040 |    61158|  399|
+|54    |West Virginia        |B01001_041 |    65833| 1386|
+|54    |West Virginia        |B01001_042 |    27619|  918|
+|54    |West Virginia        |B01001_043 |    41097| 1135|
+|54    |West Virginia        |B01001_044 |    25755|  873|
+|54    |West Virginia        |B01001_045 |    36768|  918|
+|54    |West Virginia        |B01001_046 |    45684| 1130|
+|54    |West Virginia        |B01001_047 |    33878|  964|
+|54    |West Virginia        |B01001_048 |    23426|  930|
+|54    |West Virginia        |B01001_049 |    26997|  875|
+|55    |Wisconsin            |B01001_001 |  5790716|   NA|
+|55    |Wisconsin            |B01001_002 |  2879894|  833|
+|55    |Wisconsin            |B01001_003 |   170642|  440|
+|55    |Wisconsin            |B01001_004 |   180327| 1922|
+|55    |Wisconsin            |B01001_005 |   189906| 1960|
+|55    |Wisconsin            |B01001_006 |   114676|  381|
+|55    |Wisconsin            |B01001_007 |    78858|  470|
+|55    |Wisconsin            |B01001_008 |    42483| 1563|
+|55    |Wisconsin            |B01001_009 |    41629| 1581|
+|55    |Wisconsin            |B01001_010 |   118941| 1925|
+|55    |Wisconsin            |B01001_011 |   188245|  489|
+|55    |Wisconsin            |B01001_012 |   185212|  409|
+|55    |Wisconsin            |B01001_013 |   186562| 1993|
+|55    |Wisconsin            |B01001_014 |   167942| 2054|
+|55    |Wisconsin            |B01001_015 |   179985|  400|
+|55    |Wisconsin            |B01001_016 |   199103|  428|
+|55    |Wisconsin            |B01001_017 |   209729| 1942|
+|55    |Wisconsin            |B01001_018 |    80965| 1537|
+|55    |Wisconsin            |B01001_019 |   111877| 1580|
+|55    |Wisconsin            |B01001_020 |    67795| 1394|
+|55    |Wisconsin            |B01001_021 |    90210| 1255|
+|55    |Wisconsin            |B01001_022 |   108206| 1421|
+|55    |Wisconsin            |B01001_023 |    73756|  982|
+|55    |Wisconsin            |B01001_024 |    49913|  850|
+|55    |Wisconsin            |B01001_025 |    42932|  983|
+|55    |Wisconsin            |B01001_026 |  2910822|  833|
+|55    |Wisconsin            |B01001_027 |   162542|  395|
+|55    |Wisconsin            |B01001_028 |   173801| 1731|
+|55    |Wisconsin            |B01001_029 |   179138| 1766|
+|55    |Wisconsin            |B01001_030 |   109871|  412|
+|55    |Wisconsin            |B01001_031 |    76482|  433|
+|55    |Wisconsin            |B01001_032 |    40425| 1347|
+|55    |Wisconsin            |B01001_033 |    41081| 1549|
+|55    |Wisconsin            |B01001_034 |   114209| 1922|
+|55    |Wisconsin            |B01001_035 |   177454|  454|
+|55    |Wisconsin            |B01001_036 |   180573|  428|
+|55    |Wisconsin            |B01001_037 |   179430| 1692|
+|55    |Wisconsin            |B01001_038 |   165875| 1591|
+|55    |Wisconsin            |B01001_039 |   178020|  395|
+|55    |Wisconsin            |B01001_040 |   200489|  363|
+|55    |Wisconsin            |B01001_041 |   215257| 1660|
+|55    |Wisconsin            |B01001_042 |    81194| 1273|
+|55    |Wisconsin            |B01001_043 |   114222| 1469|
+|55    |Wisconsin            |B01001_044 |    69698| 1181|
+|55    |Wisconsin            |B01001_045 |    92459| 1242|
+|55    |Wisconsin            |B01001_046 |   121782| 1383|
+|55    |Wisconsin            |B01001_047 |    87862| 1339|
+|55    |Wisconsin            |B01001_048 |    66395| 1221|
+|55    |Wisconsin            |B01001_049 |    82563| 1241|
+|56    |Wyoming              |B01001_001 |   581024|   NA|
+|56    |Wyoming              |B01001_002 |   296202|  809|
+|56    |Wyoming              |B01001_003 |    18997|  408|
+|56    |Wyoming              |B01001_004 |    19680|  764|
+|56    |Wyoming              |B01001_005 |    20185|  738|
+|56    |Wyoming              |B01001_006 |    11441|  304|
+|56    |Wyoming              |B01001_007 |     7794|  440|
+|56    |Wyoming              |B01001_008 |     4805|  595|
+|56    |Wyoming              |B01001_009 |     3920|  563|
+|56    |Wyoming              |B01001_010 |    12315|  696|
+|56    |Wyoming              |B01001_011 |    20577|  455|
+|56    |Wyoming              |B01001_012 |    21129|  447|
+|56    |Wyoming              |B01001_013 |    19158|  730|
+|56    |Wyoming              |B01001_014 |    17896|  705|
+|56    |Wyoming              |B01001_015 |    16840|  352|
+|56    |Wyoming              |B01001_016 |    17706|  388|
+|56    |Wyoming              |B01001_017 |    19927|  719|
+|56    |Wyoming              |B01001_018 |     8898|  555|
+|56    |Wyoming              |B01001_019 |    11202|  567|
+|56    |Wyoming              |B01001_020 |     6802|  499|
+|56    |Wyoming              |B01001_021 |     9668|  544|
+|56    |Wyoming              |B01001_022 |    11486|  543|
+|56    |Wyoming              |B01001_023 |     7356|  427|
+|56    |Wyoming              |B01001_024 |     4719|  389|
+|56    |Wyoming              |B01001_025 |     3701|  288|
+|56    |Wyoming              |B01001_026 |   284822|  809|
+|56    |Wyoming              |B01001_027 |    17544|  356|
+|56    |Wyoming              |B01001_028 |    19482|  850|
+|56    |Wyoming              |B01001_029 |    18587|  861|
+|56    |Wyoming              |B01001_030 |    10455|  285|
+|56    |Wyoming              |B01001_031 |     7031|  300|
+|56    |Wyoming              |B01001_032 |     4307|  445|
+|56    |Wyoming              |B01001_033 |     3197|  399|
+|56    |Wyoming              |B01001_034 |    10768|  647|
+|56    |Wyoming              |B01001_035 |    18873|  380|
+|56    |Wyoming              |B01001_036 |    19295|  487|
+|56    |Wyoming              |B01001_037 |    18442|  755|
+|56    |Wyoming              |B01001_038 |    16310|  655|
+|56    |Wyoming              |B01001_039 |    15739|  300|
+|56    |Wyoming              |B01001_040 |    17286|  315|
+|56    |Wyoming              |B01001_041 |    20356|  524|
+|56    |Wyoming              |B01001_042 |     7747|  538|
+|56    |Wyoming              |B01001_043 |    11673|  561|
+|56    |Wyoming              |B01001_044 |     6427|  451|
+|56    |Wyoming              |B01001_045 |     9478|  547|
+|56    |Wyoming              |B01001_046 |    11579|  562|
+|56    |Wyoming              |B01001_047 |     8419|  503|
+|56    |Wyoming              |B01001_048 |     5624|  471|
+|56    |Wyoming              |B01001_049 |     6203|  458|
+|72    |Puerto Rico          |B01001_001 |  3318447|   NA|
+|72    |Puerto Rico          |B01001_002 |  1578318|  343|
+|72    |Puerto Rico          |B01001_003 |    73576|  291|
+|72    |Puerto Rico          |B01001_004 |    88943| 1727|
+|72    |Puerto Rico          |B01001_005 |   101828| 1715|
+|72    |Puerto Rico          |B01001_006 |    66530|  223|
+|72    |Puerto Rico          |B01001_007 |    46627|  358|
+|72    |Puerto Rico          |B01001_008 |    25468| 1417|
+|72    |Puerto Rico          |B01001_009 |    25517| 1354|
+|72    |Puerto Rico          |B01001_010 |    66965| 1712|
+|72    |Puerto Rico          |B01001_011 |   109507|  286|
+|72    |Puerto Rico          |B01001_012 |    92308|  279|
+|72    |Puerto Rico          |B01001_013 |    95123| 2010|
+|72    |Puerto Rico          |B01001_014 |   100369| 1977|
+|72    |Puerto Rico          |B01001_015 |   100890|  313|
+|72    |Puerto Rico          |B01001_016 |   103361|   NA|
+|72    |Puerto Rico          |B01001_017 |   101004| 1659|
+|72    |Puerto Rico          |B01001_018 |    40567| 1247|
+|72    |Puerto Rico          |B01001_019 |    55446| 1401|
+|72    |Puerto Rico          |B01001_020 |    36606| 1291|
+|72    |Puerto Rico          |B01001_021 |    52351| 1258|
+|72    |Puerto Rico          |B01001_022 |    74453| 1336|
+|72    |Puerto Rico          |B01001_023 |    54829| 1154|
+|72    |Puerto Rico          |B01001_024 |    36569| 1022|
+|72    |Puerto Rico          |B01001_025 |    29481|  894|
+|72    |Puerto Rico          |B01001_026 |  1740129|  343|
+|72    |Puerto Rico          |B01001_027 |    70047|  290|
+|72    |Puerto Rico          |B01001_028 |    86264| 1737|
+|72    |Puerto Rico          |B01001_029 |    97680| 1745|
+|72    |Puerto Rico          |B01001_030 |    63478|  276|
+|72    |Puerto Rico          |B01001_031 |    44951|  436|
+|72    |Puerto Rico          |B01001_032 |    24715| 1117|
+|72    |Puerto Rico          |B01001_033 |    23950| 1126|
+|72    |Puerto Rico          |B01001_034 |    65949| 1390|
+|72    |Puerto Rico          |B01001_035 |   111738|  317|
+|72    |Puerto Rico          |B01001_036 |    99643|  142|
+|72    |Puerto Rico          |B01001_037 |   107961| 1948|
+|72    |Puerto Rico          |B01001_038 |   109078| 2004|
+|72    |Puerto Rico          |B01001_039 |   112383|  224|
+|72    |Puerto Rico          |B01001_040 |   119636|   NA|
+|72    |Puerto Rico          |B01001_041 |   115948| 1715|
+|72    |Puerto Rico          |B01001_042 |    47753| 1298|
+|72    |Puerto Rico          |B01001_043 |    69508| 1730|
+|72    |Puerto Rico          |B01001_044 |    42423| 1356|
+|72    |Puerto Rico          |B01001_045 |    64035| 1421|
+|72    |Puerto Rico          |B01001_046 |    92647| 1671|
+|72    |Puerto Rico          |B01001_047 |    70601| 1500|
+|72    |Puerto Rico          |B01001_048 |    50218| 1376|
+|72    |Puerto Rico          |B01001_049 |    49523| 1167|
+]
+
+name: Next Class
+class: top, left
+---
+# Thursday's Class
+.font-35[On Thursday, we'll continue working on our population lab]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

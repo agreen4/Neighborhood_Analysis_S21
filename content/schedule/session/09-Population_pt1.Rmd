@@ -21,7 +21,9 @@ In this session, we will talk about how planners measure basic dimensions of pop
 If you do not have one, please reigster for a [U.S. Census Bureau API Key](https://api.census.gov/data/key_signup.html)
 
 ## Slides
-
+```{r embed-xaringan, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "/slides/Session_9/Session-9.html", ratio = "16:9")
+```
 ## Other Resources
 
 ### New functions this week
