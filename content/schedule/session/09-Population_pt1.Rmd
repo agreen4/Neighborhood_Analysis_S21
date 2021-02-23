@@ -28,7 +28,10 @@ xaringanExtra::embed_xaringan(url = "/slides/Session_9/Session-9.html", ratio = 
 
 ### New functions this week
 
-- `get_acs()` from the `tidycensus` package to programmatically download census data at various geographic summary levels
+- The basic functions and use of the `tidycensus` package, including ways to download whole tables, specific variables, and options for shaping how data is downloaded.
+- The use of several elements from the `stringr` package that help us to search, find, and replace string values
 - `case_when()` To conditionally change values in character vectors
 - `rename()` and `select()` to rename columns
 - `bind_rows()` and `bind_columns()` to bind together rows or columns
+- The use of `arrange()` to sort data
+- More advanced features of the `select()` command, including renaming variables
