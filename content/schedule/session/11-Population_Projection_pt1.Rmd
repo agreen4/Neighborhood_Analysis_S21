@@ -12,11 +12,15 @@ weight: 11
 
 ## Session Description
 
+In this session, we will spend some time discussing your final projects. We'll also spend time learning more about how planners use population projections and forecasts as part of their work.
+
 ## Before Class
 
 [Hopkins 9](https://uofi.box.com/s/p251aw1783lqevufdh137w8vogouv92q)
 
 Klosterman [Chapter 3](https://uofi.box.com/s/q46d20tpwa5eynoqvcckon1c86yijr1y), [Chapter 4](https://uofi.box.com/s/8iueatbw3l3qebvfu9nesufzpvwntg0q), [Chapter 5](https://uofi.box.com/s/x0orydmrxcxaecmj4vyevwo398dtzeg6)
+
+Please [download the Session 11 workbook](/schedule/session/011-Population_Projection_pt1_files/Session 11 Lab.zip). We will use this same workbook on Thursday as well.
 
 ## Slides
 
