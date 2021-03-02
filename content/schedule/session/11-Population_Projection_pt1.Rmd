@@ -23,6 +23,10 @@ Klosterman [Chapter 3](https://uofi.box.com/s/q46d20tpwa5eynoqvcckon1c86yijr1y),
 Please [download the Session 11 workbook](/schedule/session/11-Population_Projection_pt1_files/Session 11 Lab.zip). We will use this same workbook on Thursday as well.
 
 ## Slides
+```{r}
+knitr::include_url("/slides/Session_11/index.html")
+```
+
 
 ## Other Resources
 
