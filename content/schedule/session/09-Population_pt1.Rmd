@@ -22,6 +22,10 @@ If you do not have one, please reigster for a [U.S. Census Bureau API Key](https
 
 Please [download the Session 9 workbook](/schedule/session/09-Population_pt1_files/Session 9 Lab.zip). We will use this same workbook on Thursday as well.
 
+## This Week's Reflection Prompt
+
+- Open reflection
+
 ## Slides
 ```{r embed-xaringan, echo=FALSE}
 xaringanExtra::embed_xaringan(url = "/slides/Session_9/Session-9.html", ratio = "16:9")

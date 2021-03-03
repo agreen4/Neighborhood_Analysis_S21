@@ -22,6 +22,12 @@ Klosterman [Chapter 3](https://uofi.box.com/s/q46d20tpwa5eynoqvcckon1c86yijr1y),
 
 Please [download the Session 11 workbook](/schedule/session/11-Population_Projection_pt1_files/Session 11 Lab.zip). We will use this same workbook on Thursday as well.
 
+## This Week's Reflection Prompt
+
+- How do the differences between forecasts and projections matter? 
+- What are the implications of these differences for your own areas of focus or study?
+- Based upon your area of study or specialization, what types of information help you to assess the accuracy or certainty of a forecast?
+
 ## Slides
 ```{r, echo=FALSE}
 knitr::include_url("/slides/Session_11/index.html")
