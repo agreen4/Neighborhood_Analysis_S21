@@ -12,6 +12,8 @@ weight: 13
 
 ## Session Description
 
+In this session, we will continue to debrief on your population projection and forecasting lab. We will also begin a conversation about the nature of residential segregation, and the common ways in which it is measured.
+
 ## Before Class
 
 Cunningham, Mary K., and Augrey Droesch. [Neighborhood Quality and Racial Segregation](https://uofi.box.com/s/vwuk8s7ys53bgddv3buio7jhjgg13sgy). The Urban Institute

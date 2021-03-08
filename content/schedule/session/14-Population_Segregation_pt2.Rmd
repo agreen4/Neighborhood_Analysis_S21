@@ -12,6 +12,8 @@ weight: 14
 
 ## Session Description
 
+In this session, we will begin to work on a lab focused on measures of residential segregation.
+
 ## Before Class
 
 ## Slides
