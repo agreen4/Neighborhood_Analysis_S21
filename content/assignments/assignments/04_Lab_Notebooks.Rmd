@@ -19,7 +19,7 @@ This course requirement asks you to choose two of these labs to produce a more p
 Taking cues from the lab notebook and the prompts you will find at the end of the notebook, prepare a separate analytic notebook using RMarkdown that contains analysis and accompanying write-up. Your polished notebook should focus on interpreting the data itself, and posing and answering questions arising from the data (as opposed to focusing on intermediate data analysis steps). Using your notebook, you will weave together narrative description of the data with your analytic outputs, and should target creating a data brief of between 1,000-2,000 words plus analytic output.
 
 ## Helpful Resources
-You may wish to reference the How To on [customizing code chunks](/howto/howto/07-customize_chunks.html) to control how your output looks in your rendered notebook.
+You may wish to reference the How To on [customizing code chunks](/howto/howto/07-customize_chunks/) to control how your output looks in your rendered notebook.
 
 ## Submission Instructions
 
