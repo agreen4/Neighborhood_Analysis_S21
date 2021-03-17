@@ -43,14 +43,24 @@ Please prepare a 3-4 page (single-spaced) proposal. Your proposal should address
 ## Project Background
 **Due Date:** March 26, 2021| **Submit Via:** Upload to Github
 
-You will prepare some general project background that includes a descriptive analysis. More on this soon.
+The project background deliverable is designed to get you working independently on your final project. For this deliverable, you should be able to share an early version of your analysis. To meet the expectations for this deliverable, you should have identified the data sources you plan to work with, identified the methods you are using the analyze the data, and you should have implemented some aspects of your analysis. It is expected that your analysis will not yet be complete, but that you will be far enough along that you can articulate a pathway and future steps towards your final analysis and deliverable at the end of the semester. 
+
+Your project background should include the following:
+
+- **Context and Background:** Provide a brief update on context and background for your analysis. This should be high-level and just enough information to provide context for the remaining portions of your project background.
+- **Methods and Approach:** Describe your approach to analysis - how are you analyzing the data? What precedents or work that others have done is helping to inform your approach?
+- **Data Sources:** Describe the data source(s) that you are using for your analysis. Where are these data coming from? What are each contributing? What are the specific indicators you are using from these data?
+- **Data Description, Preliminary Analysis and Interpretation:** Please share the preliminary analysis which you've done with the data, as well as your written interpretation based upon your analysis.
+- **Directions for the Future:** Provide a summary of how you plan to expand upon your preliminary analysis moving forward to your final project.
+
+Please submit your project background document as a R Notebook with all accompanying files necessary to knit it.
 
 ## Final Project
 **Due Date:** May 7, 2021 |**Submit Via:** Upload to Github
 
-You will synthesize elements of your project proposal, project background, and additional analysis into a final project that includes analysis and interpretation.
+Building upon your project proposal and project background, you will produce a final project which includes your analysis and interpretation.
 
-More on this soon.
+Please upload your final project as a R Notebook (or other format as specified in your learning contract) and all files necessary to replicate it to GitHub.
 
 ## Project Presentation
 **Due Date:** April 25, 2021 | **Submit Via:** Upload to Github
