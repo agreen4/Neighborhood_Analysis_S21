@@ -16,7 +16,10 @@ Over the course of the semester, you will work on a series of lab notebooks whic
 
 This course requirement asks you to choose two of these labs to produce a more polished analysis and data brief. You may select any of the labs to polish and to work with. You are expected to submit *at least* one of these polished notebooks in March and one in April.
 
-Taking cues from the lab notebook and the prompts you will find at the end of the notebook, prepare a separate analytical notebook using RMarkdown that contains analysis and accompanying write-up. Rather than focusing on specific methodological steps as you will in the lab notebook, you should focus on interpreting the data itself, and posing and answering questions arising from the data. Using your notebook, you will weave together narrative description of the data with your analytic outputs, and should target creating a data brief of between 1,000-2,000 words plus analytic output.
+Taking cues from the lab notebook and the prompts you will find at the end of the notebook, prepare a separate analytic notebook using RMarkdown that contains analysis and accompanying write-up. Your polished notebook should focus on interpreting the data itself, and posing and answering questions arising from the data (as opposed to focusing on intermediate data analysis steps). Using your notebook, you will weave together narrative description of the data with your analytic outputs, and should target creating a data brief of between 1,000-2,000 words plus analytic output.
+
+## Helpful Resources
+You may wish to reference the How To on [customizing code chunks](/howto/howto/07-customize_chunks.html) to control how your output looks in your rendered notebook.
 
 ## Submission Instructions
 
