@@ -12,9 +12,16 @@ weight: 19
 
 ## Session Description
 
+In this session, we'll introduce our next theme - crime and incarceration. Crime data are inhrently challenging to effectively analyze. There tends to be a lot of information, but all crimes (and all crime reports) are not created equally. In this session, we'll explore one strategy used to shift the conversation away from where crimes occur to focus on the neighbothoods where substantial public dollars are being invested in incarcerating residents. We'll try our hand at performing this analysis in the lab, and will then thtink about some of the implications of what we find, especially as they relate to deliberation and public decision-making.
+
 ## Before Class
 
 Cooper, Dan. And Ryan Lugalia-Hollan. [Chicago’s Million Dollar Blocks](https://chicagosmilliondollarblocks.com).
+
+## This Week's Reflection Questions
+
+- The Million Dollar Blocks analytic framework shifts the conversation about crime from one about where crimes occur to one about where public dollars are being spent on incarceration? What are the implications of shifting towards a conversation focused on the public impact and cost of incarceration versus one focused on where offenses occur?
+- In general, neighborhood crime data can be tricky to accurately represent - why might this be the case? What questions do we need to ask about crime reporting in order to effectively analyze and facilitate deliberation using data on were crimes occur?
 
 ## Slides
 
