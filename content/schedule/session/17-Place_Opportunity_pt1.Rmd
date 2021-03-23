@@ -12,11 +12,19 @@ weight: 17
 
 ## Session Description
 
+In this session, we'll begin to examine opportunity analysis and mapping, which is a strategy used to compare multiple measures of sociodemographic wellbeing to create a single measure of how supportive a place is for economic and social mobility. Opportunity mapping in various forms has been used to craft legal remedies to discrimination and segregation, to design policy interventions, and as a source of information for planning and the allocation of resources.
+
+Your readings for today provide a) a contemporary overview of opportunity mapping, and b) a conceptual overview of the application of opportunity mapping by one of it's originators, john powell.
+
+In addition to our discussion of opportunity mapping, we'll also take a few moments to check in on your final assignment progress, your detailed project description, and more generally about how things are going with the class.
+
 ## Before Class
 
 Stromberg, Brian. (2016). [Opportunity Mapping](https://uofi.box.com/s/icccjttbig4mq94nbi123b6x3o33a4zi). National Housing Conference
 
 powell, john. (2005). [Remedial Phase Expert Report of john powell in Thompson v. HUD](https://uofi.box.com/s/59a51ibzzk5sd9b14obvvz7u5l12u07k)
+
+Please [download the Session 17 workbook](/schedule/session/17-Place_Opportunity_pt1_files/Session 17 Lab.zip). We will use this same workbook on Thursday as well.
 
 ## Slides
 
