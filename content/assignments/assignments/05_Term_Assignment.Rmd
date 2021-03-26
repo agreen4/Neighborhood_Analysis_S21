@@ -41,7 +41,7 @@ Please prepare a 3-4 page (single-spaced) proposal. Your proposal should address
 - The judicious use of maps, photographs, charts, tables, and diagrams should be considered as a valuable means of effectively conveying information. These do not count against your proposal page limit.
 
 ## Project Background
-**Due Date:** March 26, 2021| **Submit Via:** Upload to Github
+**Due Date:** March 26, 2021 **(Extended to April 2, 2021)**| **Submit Via:** Upload to Github
 
 The project background deliverable is designed to get you working independently on your final project. For this deliverable, you should be able to share an early version of your analysis. To meet the expectations for this deliverable, you should have identified the data sources you plan to work with, identified the methods you are using the analyze the data, and you should have implemented some aspects of your analysis. It is expected that your analysis will not yet be complete, but that you will be far enough along that you can articulate a pathway and future steps towards your final analysis and deliverable at the end of the semester. 
 
