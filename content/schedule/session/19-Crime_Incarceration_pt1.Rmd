@@ -18,6 +18,8 @@ In this session, we'll introduce our next theme - crime and incarceration. Crime
 
 Cooper, Dan. And Ryan Lugalia-Hollan. [Chicago’s Million Dollar Blocks](https://chicagosmilliondollarblocks.com).
 
+Please [download the Session 19 and 20 workbooks](/schedule/session/19-Crime_Incarceration_pt1_files/Session 19 Lab.zip). We will use the Session 19 notebook on Tuesday and the Session 20 notebook on Thursday.
+
 ## This Week's Reflection Questions
 
 - The Million Dollar Blocks analytic framework shifts the conversation about crime from one about where crimes occur to one about where public dollars are being spent on incarceration? What are the implications of shifting towards a conversation focused on the public impact and cost of incarceration versus one focused on where offenses occur?

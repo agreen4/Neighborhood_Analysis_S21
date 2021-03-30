@@ -11,8 +11,11 @@ weight: 20
 ---
 
 ## Session Description
+In this session, we'll continue to work with data on crime and incarceration. You'll spend time interpreting visual representations of where crime is occurring, and will think about how to use spatial joins to summarize this information to census tracts.
 
 ## Before Class
+
+Please [download the Session 19 and 20 workbooks](/schedule/session/19-Crime_Incarceration_pt1_files/Session 19 Lab.zip). We will use the Session 19 notebook on Tuesday and the Session 20 notebook on Thursday.
 
 ## Slides
 
