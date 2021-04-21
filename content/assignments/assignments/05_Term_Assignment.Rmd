@@ -91,6 +91,8 @@ E. Dastrup
 W. Finkelstein
 F. Hu
 
+Please upload your slides in either keynote, PowerPoint, or PDF format to the appropriate folder on GitHub.
+
 ## Submission Instructions
 
 Upload your final project components to the appropriate folder in your class GitHub repository.
