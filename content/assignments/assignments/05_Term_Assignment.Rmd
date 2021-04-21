@@ -65,8 +65,31 @@ Please upload your final project as a R Notebook (or other format as specified i
 ## Project Presentation
 **Due Date:** April 25, 2021 | **Submit Via:** Upload to Github
 
-Graduate students are required to include a 10-minute presentation on their final project which will be given during one of our final course sessions as part of their grading contract. Undergraduate students are not required to complete a final project presentation, but may contract to do so for a higher grade (see more information on our approach to grades this semester below).
+Graduate students are required to include a 10-minute presentation on their final project which will be given during one of our final course sessions as part of their grading contract. Undergraduate students are not required to complete a final project presentation, but may contract to do so for a higher grade.
 
+### Session 27 (Tuesday April 27, 2021)
+C. Ackerman
+A. Barnes
+T. Dunne
+W. Jeong
+L. Kim
+S. Patel
+L. Torres Beltran
+
+### Session 28 (Thursday April 29, 2021)
+A. Banerjee
+R. Barrera
+G. Harrison
+A. Jones
+K.H. Lee
+D. Takov
+M. Tullis
+
+### Session 29 (Tuesday May 4, 2021)
+S. Banerjee
+E. Dastrup
+W. Finkelstein
+F. Hu
 
 ## Submission Instructions
 

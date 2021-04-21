@@ -12,6 +12,12 @@ weight: 22
 
 ## Session Description
 
+We will be taking a pause today. 
+
+Our zoom class session is cancelled. Instead of working on your lab, use the 80 minutes to go for a walk, take a nap, listen to music, go see the blossoming cherry trees, or call a friend. I am going to adjust the planned lab for tomorrow to refocus some of the content so that you can be prepared for our session next week.
+
+I will send further information so that you can be prepared for next Thursday’s session shortly. Please let me know if you have any questions about this adjustment. Please also keep those R and class questions coming on Slack.
+
 ## Before Class
 
 ## Slides

@@ -12,10 +12,12 @@ weight: 29
 
 ## Session Description
 
-You made it! This is the final session for Neighborhood Analysis. A portion of this session is reserved for any remaining presentations. In addition, we will discuss what we have covered over the course of the semester, as well as some next steps in your journey as neighborhood analysts.
+You made it! This is the final session for Neighborhood Analysis. A portion of this session is reserved for remaining final presentations. In addition, we will discuss what we have covered over the course of the semester, as well as some next steps in your journey as neighborhood analysts.
 
-## Before Class
+## Today's Presenters
 
-## Slides
+S. Banerjee
+E. Dastrup
+W. Finkelstein
+F. Hu
 
-## Other Resources

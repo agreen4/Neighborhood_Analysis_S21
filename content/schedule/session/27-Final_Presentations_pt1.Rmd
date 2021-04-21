@@ -14,8 +14,12 @@ weight: 27
 
 This session is reserved for final presentations. We will talk more about final presentations in class, and eventually the order for today's presentations will be posted here.
 
-## Before Class
+## Today's Presenters
 
-## Slides
-
-## Other Resources
+C. Ackerman
+A. Barnes
+T. Dunne
+W. Jeong
+L. Kim
+S. Patel
+L. Torres Beltran
