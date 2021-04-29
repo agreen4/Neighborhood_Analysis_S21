@@ -15,11 +15,10 @@ weight: 28
 This session is reserved for final presentations. We will talk more about final presentations in class, and eventually the order for today's presentations will be posted here.
 
 ## Today's Presenters
-
-A. Banjerjee
+L. Torres Beltran
+A. Banerjee
 R. Barrera
 G. Harrison
-A. Jones
 K.H. Lee
 D. Takov
 M. Tullis
