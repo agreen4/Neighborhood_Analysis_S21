@@ -14,11 +14,16 @@ weight: 29
 
 You made it! This is the final session for Neighborhood Analysis. A portion of this session is reserved for remaining final presentations. In addition, we will discuss what we have covered over the course of the semester, as well as some next steps in your journey as neighborhood analysts.
 
+1. Are there things that you wish we covered over the course of the semester that we didn't?
+2. Are there ways that Professor Greenlee could have better supported learning (individually and collectively) over the course of the semester?
+3. Was there sufficient balance between technical and non-technical content?
+4. Were labs and other supporting materials clear? Were there resources or content you wish you had to support your independent learning using this format?
+
 ## Today's Presenters
 
-M. Tullis
-S. Banerjee
-E. Dastrup
-W. Finkelstein
-F. Hu
+- M. Tullis
+- S. Banerjee
+- E. Dastrup
+- W. Finkelstein
+- F. Hu
 
