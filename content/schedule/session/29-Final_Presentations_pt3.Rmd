@@ -14,6 +14,8 @@ weight: 29
 
 You made it! This is the final session for Neighborhood Analysis. A portion of this session is reserved for remaining final presentations. In addition, we will discuss what we have covered over the course of the semester, as well as some next steps in your journey as neighborhood analysts.
 
+Some questions to seed our discussion:
+
 1. Are there things that you wish we covered over the course of the semester that we didn't?
 2. Are there ways that Professor Greenlee could have better supported learning (individually and collectively) over the course of the semester?
 3. Was there sufficient balance between technical and non-technical content?
